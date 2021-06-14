@@ -12,4 +12,4 @@
 #SBATCH --mem64G
 
 module load python
-./geode2/home/u100/taylor11/Carbonate/Downloads/Rebound/ReboundResonances/reboundttorbatch.ipynb
+/geode2/home/u100/taylor11/Carbonate/Downloads/Rebound/ReboundResonances/reboundttorbatch.ipynb
