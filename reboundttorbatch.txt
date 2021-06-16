@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH -J ReboundTTORBatchJob
+#SBATCH -p general
+#SBATCH -o FirstBatchJob%j.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=taylor11@iu.edu
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=12
+#SBATCH --time=02:00:00
+
+cd Carbonate/Downloads/Rebound/ReboundResonances/
+module load python
+reboundttorbatch.py
