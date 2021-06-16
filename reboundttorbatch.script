@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -J ReboundTTORBatchJob
+#SBATCH -J ReboundTTORBatchJob1000
 #SBATCH -p general
 #SBATCH -o FirstBatchJob%j.txt
 #SBATCH --mail-type=ALL
