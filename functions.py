@@ -285,7 +285,10 @@ def remove(AU, sim = sim):
 
 # In[ ]:
 
-
-def test1():
-    print("hi")
+def histo(data: list, bins = 30: int, title: str = 'Semi-Major Axis Dist. for N=1000 & Seed=0'):
+    fig, axs = plt.subplots()
+    plt.xlabel('Semi-Major Axis (AU)')
+    plt.ylabel('Frequency')
+    plt.title('Semi-Major Axis Dist. for N=1000 & Seed=0')
+    axs.hist(data, bins=bins)
 
