@@ -1,0 +1,4 @@
+python/3.6.8(27):ERROR:150: Module 'python/3.6.8' conflicts with the currently loaded module(s) 'anaconda/python3.7/2019.03'
+python/3.6.8(27):ERROR:102: Tcl command execution failed: conflict anaconda
+
+/var/spool/slurm/d/job453783/slurm_script: line 13: reboundttorbatch.py: command not found
