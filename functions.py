@@ -286,5 +286,6 @@ def remove(AU, sim = sim):
 # In[ ]:
 
 
-
+def test1():
+    print("hi")
 
