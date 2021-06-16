@@ -283,7 +283,7 @@ ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
 for a in range(numberOfSims):
     print("Beginning seed {}.".format(a))
-    sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 2000)
+    sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
     quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 10)
     ps = sim.particles
     print("Masses {} and {}.".format(ps[1].m,ps[2].m))
