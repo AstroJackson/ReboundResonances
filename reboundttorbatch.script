@@ -1,8 +1,9 @@
 #!/bin/bash
+export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
 
 #SBATCH -J ReboundTTORBatchJob1000
 #SBATCH -p general
-#SBATCH -o FirstBatchJob%j.txt
+#SBATCH -o First1000BatchJob.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1

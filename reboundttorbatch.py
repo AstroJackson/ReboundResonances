@@ -293,8 +293,7 @@ for a in range(numberOfSims):
 BIGfinal = tiempo.time()
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
-masslist_txt(ttor_masses,'batchTestTtormasses1000.txt','ttor','w')
+masslist_txt(ttor_masses,'First1000BatchJob.txt','ttor','w')
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
-#ding()
 
