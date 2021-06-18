@@ -1,0 +1,4 @@
+qt.qpa.screen: QXcbConnection: Could not connect to display :16
+Could not connect to any X display.
+qt.qpa.screen: QXcbConnection: Could not connect to display :16
+Could not connect to any X display.

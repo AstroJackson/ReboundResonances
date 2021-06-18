@@ -277,7 +277,7 @@ def remove(AU, sim = sim):
 # In[20]:
 
 
-numberOfSims = 10 
+numberOfSims = 1
 endTime = 5000 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
