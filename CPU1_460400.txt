@@ -1,0 +1,3 @@
+That in total took 144 seconds (2.4 minutes).
+[['inner planet mass', 'outer planet mass', 'seed'], [0.0011400000000000004, 0.0011600000000000004, 1.7543859649122848, 0]]
+There are 973 particles remaining.
