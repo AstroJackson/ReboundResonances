@@ -6,7 +6,8 @@
 
 import rebound
 import numpy as np
-import matplotlib as plt
+import matplotlib as mpl
+mpl.use('Agg') # found here:https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server
 import matplotlib.pyplot as plt
 import time as tiempo
 import math
@@ -240,7 +241,7 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     ps = sim.particles
     for i, t in enumerate(times):
         sim.integrate(t)
-        ####print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"        .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)        ,round((tiempo.time()-initialtime)/60,1)))
+        print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"        .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)        ,round((tiempo.time()-initialtime)/60,1)))
         #sim.ri_whfast.recalculate_coordinates_this_timestep = 1
         #sim.integrator_synchronize()
         #diftimes.append(sim.t+dT)
@@ -260,11 +261,11 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     finaltime = tiempo.time()
 #     print('done')
     #print("{} done at {} seconds!".format((a+1)/10,int(finaltime-initialtime)))
-    #####print("Done at {} seconds!".format((int(finaltime-initialtime))))
+    print("Done at {} seconds!".format((int(finaltime-initialtime))))
 #     print("The inner planet ended with a mass of {}.".format(ps[1].m))
 #     print("The outer planet ended with a mass of {}.".format(ps[2].m))
 #     print("There are {} particles remaining.".format(sim.N))
-    quickplot(sim)
+    ####quickplot(sim)
     #ding()
     
 def remove(AU, sim = sim):
@@ -278,22 +279,22 @@ def remove(AU, sim = sim):
 
 
 numberOfSims = 1
-endTime = 100 #years of simulation
+endTime = 10 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
 for a in range(numberOfSims):
-    # print("Beginning seed {}.".format(a))
+    print("Beginning seed {}.".format(a))
     sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
     quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 10)
     ps = sim.particles
-    # print("Masses {} and {}.".format(ps[1].m,ps[2].m))
-    # print("Ending seed {}.\n".format(a))
+    print("Masses {} and {}.".format(ps[1].m,ps[2].m))
+    print("Ending seed {}.\n".format(a))
     pre_list = [ps[1].m, ps[2].m,a]
     ttor_masses.append(pre_list)
 BIGfinal = tiempo.time()
 totaltime = BIGfinal - BIGinitial
-# print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
-#masslist_txt(ttor_masses,'First1000BatchJobmasses.txt','ttor','w')
-# print(ttor_masses)
-# print("There are {} particles remaining.".format(sim.N))
+print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
+masslist_txt(ttor_masses,'Masslists/massesFromBatch.txt','ttor','w')
+print(ttor_masses)
+print("There are {} particles remaining.".format(sim.N))
 

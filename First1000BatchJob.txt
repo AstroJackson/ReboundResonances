@@ -1,3 +1,6 @@
-QStandardPaths: XDG_RUNTIME_DIR points to non-existing path '/run/user/1755031', please create it with 0700 permissions.
-qt.qpa.screen: QXcbConnection: Could not connect to display :16
-Could not connect to any X display.
+ttor
+Inner planet mass	Outer planet mass	Percent Difference	Seed
+0.002850000000000005	0.0028000000000000047	1.7543859649122824	0	
+
+Average percent difference= 1.7543859649122824.
+
