@@ -278,7 +278,7 @@ def remove(AU, sim = sim):
 
 
 numberOfSims = 1
-endTime = 5000 #years of simulation
+endTime = 100 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
 for a in range(numberOfSims):
@@ -293,7 +293,7 @@ for a in range(numberOfSims):
 BIGfinal = tiempo.time()
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
-masslist_txt(ttor_masses,'First1000BatchJob.txt','ttor','w')
+masslist_txt(ttor_masses,'First1000BatchJobmasses.txt','ttor','w')
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
