@@ -17,5 +17,5 @@ This was for 5000 years.
 Initial Conditions:
 5e-4 AU planetary radii
 1e-3 solar mass per planet
-1e-5 solar mass are the asteroids.
+1e-5 solar mass per asteroid.
 1000 asteroids

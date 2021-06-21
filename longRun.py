@@ -279,12 +279,12 @@ def remove(AU, sim = sim):
 
 
 numberOfSims = 1
-endTime = 10 #years of simulation
+endTime = 5000 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
 for a in range(numberOfSims):
     print("Beginning seed {}.".format(a))
-    sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 500)
+    sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
     quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 10)
     ps = sim.particles
     print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -294,7 +294,7 @@ for a in range(numberOfSims):
 BIGfinal = tiempo.time()
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
-masslist_txt(ttor_masses,'Masslists/massesFromBatch.txt','ttor','w')
+masslist_txt(ttor_masses,'Masslists/longRunMass10000yrs.txt','ttor','w')
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
