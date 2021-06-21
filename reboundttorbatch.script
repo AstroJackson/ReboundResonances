@@ -8,9 +8,11 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=24
-#SBATCH --time=01:00:00
-#SBATCH --mem=64G
+#SBATCH --time=00:01:00
+#SBATCH --mem-per-cpu=100
 
-SelectType=select/linear
+#module load python
 export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
 python reboundttorbatch.py
+
+date
