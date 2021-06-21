@@ -170,7 +170,39 @@ def masslist_txt(masslist,filepath,sim = None, write_type = 'a'):
         file.write(sim+'\n')
         file.write(message)
 
-
+def masslist_txt_append(masslist,sim = None,write_type = 'a', **kwargs):
+    """
+    Saves the masslists into a formatted txt file. This is similar to masslist_txt except 
+    it lends itself better to appending.
+    """
+    
+    def avg(listt):
+        sum = 0
+        for i in listt:
+            sum += i
+        return sum / len(listt)
+    
+    masslistcopy = masslist.copy() # Don't want to edit the original data
+    global percentlist
+    message = ''
+    if kwargs.get('first'): 
+        percentlist = list()
+        message += sim+'\n'
+        message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
+    for data in masslistcopy[1:]:
+        #data = data.copy() #comment out this line to not have the original list change
+        percentdif = abs((data[0]-data[1])/data[0])*100
+        roundedpercentdif = round(percentdif,2)
+        percentlist.append(percentdif)
+        data.insert(2,percentdif)
+        for j in data:
+            message += str(j)
+            message +='\t'
+        message +='\n'   
+    if kwargs.get('last'):
+        message+= "\nAverage percent difference= {}.\n\n".format(avg(percentlist))
+    with open('test.txt',write_type) as file:
+        file.write(message)
 # In[4]:
 
 
