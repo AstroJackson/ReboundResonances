@@ -156,6 +156,7 @@ def masslist_txt(masslist,filepath,sim = None, write_type = 'a'):
     message = ''
     message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
     for data in masslistcopy[1:]:
+        data = data.copy() #comment out this line to not have the original list change
         percentdif = abs((data[0]-data[1])/data[0])*100
         roundedpercentdif = round(percentdif,2)
         percentlist.append(percentdif)
