@@ -332,7 +332,7 @@ pre_list = [ps[1].m, ps[2].m,a]
 ttor_masses.append(pre_list)
 BIGfinal = tiempo.time()
 #
-if True:
+if True: # toggle off to not write into a file
     totaltime = BIGfinal - BIGinitial
     print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
     masslist_txt_append(ttor_masses,'Masslists/appendTest.txt','ttor','a', first = False, last = False)
