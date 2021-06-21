@@ -1,0 +1,39 @@
+Beginning seed 5.
+| 0.0 time = 0.0 years | 503 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+| 6.981317007977318 time = 1.1111111111111112 years | 502 particles | 1 step number |
+| 2.2 second | 0.0 minutes.
+
+| 13.962634015954636 time = 2.2222222222222223 years | 499 particles | 2 step number |
+| 4.9 second | 0.1 minutes.
+
+| 20.943951023931955 time = 3.3333333333333335 years | 497 particles | 3 step number |
+| 8.7 second | 0.1 minutes.
+
+| 27.925268031909273 time = 4.444444444444445 years | 497 particles | 4 step number |
+| 11.2 second | 0.2 minutes.
+
+| 34.90658503988659 time = 5.555555555555556 years | 495 particles | 5 step number |
+| 14.7 second | 0.2 minutes.
+
+| 41.88790204786391 time = 6.666666666666667 years | 495 particles | 6 step number |
+| 16.0 second | 0.3 minutes.
+
+| 48.86921905584123 time = 7.777777777777778 years | 494 particles | 7 step number |
+| 18.4 second | 0.3 minutes.
+
+| 55.850536063818545 time = 8.88888888888889 years | 493 particles | 8 step number |
+| 21.8 second | 0.4 minutes.
+
+| 62.83185307179586 time = 10.0 years | 489 particles | 9 step number |
+| 25.3 second | 0.4 minutes.
+
+Done at 25 seconds!
+Masses 0.0010700000000000002 and 0.0010700000000000002.
+Ending seed 5.
+
+That in total took 25 seconds (0.42 minutes).
+[['inner planet mass', 'outer planet mass', 'seed'], [0.0010700000000000002, 0.0010700000000000002, 0.0, 5]]
+There are 489 particles remaining.
+Mon Jun 21 13:47:23 EDT 2021

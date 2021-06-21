@@ -1,0 +1,15 @@
+Beginning seed 1.
+Traceback (most recent call last):
+  File "mtrand.pyx", line 678, in mtrand.RandomState.seed
+TypeError: 'str' object cannot be interpreted as an integer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "reboundttorbatch.py", line 326, in <module>
+    sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 500)
+  File "reboundttorbatch.py", line 233, in generatettor
+    np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
+  File "mtrand.pyx", line 687, in mtrand.RandomState.seed
+TypeError: Cannot cast array from dtype('<U1') to dtype('int64') according to the rule 'safe'
+Mon Jun 21 13:33:34 EDT 2021

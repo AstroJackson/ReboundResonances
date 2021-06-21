@@ -4,13 +4,9 @@
 # In[2]:
 
 
-import rebound
-import numpy as np
-import matplotlib as mpl
+import rebound, numpy as np, matplotlib as mpl
 mpl.use('Agg') # found here:https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server
-import matplotlib.pyplot as plt
-import time as tiempo
-import math
+import matplotlib.pyplot as plt, time as tiempo, math, sys
 
 sim = rebound.Simulation()
 tau = 2*np.pi
@@ -97,6 +93,7 @@ def my_merge(sim_pointer, collided_particles_index):
     j1 = collided_particles_index.p2
     
     if ps[i1]==0 and ps[j1]==0:
+        print("both are asteroids")
         return 0
     else:
         if ps[i1].m==0: #assigns k as the planet with mass and l as the particle w/o mass
@@ -170,7 +167,7 @@ def masslist_txt(masslist,filepath,sim = None, write_type = 'a'):
         file.write(sim+'\n')
         file.write(message)
 
-def masslist_txt_append(masslist,sim = None,write_type = 'a', **kwargs):
+def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs):
     """
     Saves the masslists into a formatted txt file. This is similar to masslist_txt except 
     it lends itself better to appending.
@@ -183,25 +180,24 @@ def masslist_txt_append(masslist,sim = None,write_type = 'a', **kwargs):
         return sum / len(listt)
     
     masslistcopy = masslist.copy() # Don't want to edit the original data
-    global percentlist
     message = ''
-    if kwargs.get('first'): 
-        percentlist = list()
+    if kwargs.get('first'):
         message += sim+'\n'
         message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
     for data in masslistcopy[1:]:
         #data = data.copy() #comment out this line to not have the original list change
         percentdif = abs((data[0]-data[1])/data[0])*100
         roundedpercentdif = round(percentdif,2)
-        percentlist.append(percentdif)
+        #percentlist.append(percentdif)
         data.insert(2,percentdif)
         for j in data:
             message += str(j)
             message +='\t'
         message +='\n'   
     if kwargs.get('last'):
-        message+= "\nAverage percent difference= {}.\n\n".format(avg(percentlist))
-    with open('test.txt',write_type) as file:
+        pass
+        #message+= "\nAverage percent difference= {}.\n\n".format(avg(percentlist))
+    with open(filepath,write_type) as file:
         file.write(message)
 # In[4]:
 
@@ -311,23 +307,35 @@ def remove(AU, sim = sim):
 # In[20]:
 
 
-numberOfSims = 1
+#numberOfSims = 1
 endTime = 10 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
-for a in range(numberOfSims):
-    print("Beginning seed {}.".format(a))
-    sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 500)
-    quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 10)
-    ps = sim.particles
-    print("Masses {} and {}.".format(ps[1].m,ps[2].m))
-    print("Ending seed {}.\n".format(a))
-    pre_list = [ps[1].m, ps[2].m,a]
-    ttor_masses.append(pre_list)
+#
+#for a in range(numberOfSims):
+try:
+    a = int(sys.argv[1])
+except:
+    print("#"*40)
+    print("\n"*5)
+    print("Sys.argv had an error! Setting the seed equal to 0!")
+    print("\n"*5)
+    print("#"*40)
+    a = 0
+print("Beginning seed {}.".format(a))
+sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 500)
+quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 10)
+ps = sim.particles
+print("Masses {} and {}.".format(ps[1].m,ps[2].m))
+print("Ending seed {}.\n".format(a))
+pre_list = [ps[1].m, ps[2].m,a]
+ttor_masses.append(pre_list)
 BIGfinal = tiempo.time()
-totaltime = BIGfinal - BIGinitial
-print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
-masslist_txt(ttor_masses,'Masslists/massesFromBatch.txt','ttor','w')
-print(ttor_masses)
-print("There are {} particles remaining.".format(sim.N))
+#
+if True:
+    totaltime = BIGfinal - BIGinitial
+    print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
+    masslist_txt_append(ttor_masses,'Masslists/appendTest.txt','ttor','a', first = False, last = False)
+    print(ttor_masses)
+    print("There are {} particles remaining.".format(sim.N))
 
