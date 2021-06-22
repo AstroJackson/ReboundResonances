@@ -198,7 +198,8 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     if kwargs.get('last'):
         with open(filepath, "a") as file:
             file.write("\nAverage percent difference: {}"
-                       .format(averagePercent(filepath)), end = "#"*40)
+                       .format(averagePercent(filepath)))
+            file.write("\n"+"#"*40)
 # In
 def masslist_read(filePath):
     """
@@ -305,9 +306,9 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     ps = sim.particles
     for i, t in enumerate(times):
         sim.integrate(t)
-        print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-            .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
-                ,round((tiempo.time()-initialtime)/60,1)))
+        ####print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
+            ####.format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+                ####,round((tiempo.time()-initialtime)/60,1)))
         ps = sim.particles
         interplanetdistance[i] = np.linalg.norm(np.array(ps[2].xyz)-np.array(ps[1].xyz))
         position1[i] = [ps[1].x,ps[1].y]
@@ -367,7 +368,7 @@ BIGfinal = tiempo.time()
 #
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
-masslist_txt_append(ttor_masses,'Masslists/appendTest.txt','ttor','a', first = False, last = False)
+masslist_txt_append(ttor_masses,'Masslists/appendTest.txt','ttor','a', first = False, last = True)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
