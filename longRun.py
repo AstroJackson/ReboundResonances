@@ -282,15 +282,18 @@ numberOfSims = 1
 endTime = 5000 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
-for a in range(numberOfSims):
-    print("Beginning seed {}.".format(a))
-    sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
-    quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 10)
-    ps = sim.particles
-    print("Masses {} and {}.".format(ps[1].m,ps[2].m))
-    print("Ending seed {}.\n".format(a))
-    pre_list = [ps[1].m, ps[2].m,a]
-    ttor_masses.append(pre_list)
+#
+#for a in range(numberOfSims):
+a = 0
+print("Beginning seed {}.".format(a))
+sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
+quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 2)
+ps = sim.particles
+print("Masses {} and {}.".format(ps[1].m,ps[2].m))
+print("Ending seed {}.\n".format(a))
+pre_list = [ps[1].m, ps[2].m,a]
+ttor_masses.append(pre_list)
+#
 BIGfinal = tiempo.time()
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
