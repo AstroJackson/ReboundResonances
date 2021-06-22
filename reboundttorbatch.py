@@ -301,15 +301,14 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     position1 = np.zeros((len(times),2))
     position2 = np.zeros((len(times),2))
     interplanetdistance = np.zeros((len(times),1))
+    masses = np.zeros((len(times),n))
     ps = sim.particles
     for i, t in enumerate(times):
         sim.integrate(t)
-        print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"        .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)        ,round((tiempo.time()-initialtime)/60,1)))
-        #sim.ri_whfast.recalculate_coordinates_this_timestep = 1
-        #sim.integrator_synchronize()
-        #diftimes.append(sim.t+dT)
-        #if i== int(stepnumber/2):
-            #print("1/2 done at {} seconds.".format(int(tiempo.time() - initialtime)))
+        print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
+            .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+                ,round((tiempo.time()-initialtime)/60,1)))
+        ps = sim.particles
         interplanetdistance[i] = np.linalg.norm(np.array(ps[2].xyz)-np.array(ps[1].xyz))
         position1[i] = [ps[1].x,ps[1].y]
         position2[i] = [ps[2].x,ps[2].y]
@@ -319,8 +318,8 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
             relative_x_value[i,planet] = ps[planetdif].x - ps[0].x
             relative_y_value[i,planet] = ps[planetdif].y - ps[0].y
             eccs[i,planet] = ps[planetdif].e
-        position1[i] = [relative_x_value[i,0],relative_y_value[i,0]]
-        position2[i] = [relative_x_value[i,1],relative_y_value[i,1]]
+            masses[i,planet] = ps[planetdif].m
+            #
     finaltime = tiempo.time()
 #     print('done')
     #print("{} done at {} seconds!".format((a+1)/10,int(finaltime-initialtime)))
