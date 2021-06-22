@@ -350,9 +350,9 @@ try:
     a = int(sys.argv[1])
 except:
     print("#"*40)
-    print("\n"*5)
+    print("\n"*3)
     print("Sys.argv had an error! Setting the seed equal to 0!")
-    print("\n"*5)
+    print("\n"*3)
     print("#"*40)
     a = 0
 print("Beginning seed {}.".format(a))
@@ -365,10 +365,9 @@ pre_list = [ps[1].m, ps[2].m,a]
 ttor_masses.append(pre_list)
 BIGfinal = tiempo.time()
 #
-if True: # toggle off to not write into a file
-    totaltime = BIGfinal - BIGinitial
-    print("That in total took {} seconds ({} minutes).".format(int(totaltime),                                                            round(totaltime/60,2)))
-    masslist_txt_append(ttor_masses,'Masslists/appendTest.txt','ttor','a', first = False, last = False)
-    print(ttor_masses)
-    print("There are {} particles remaining.".format(sim.N))
+totaltime = BIGfinal - BIGinitial
+print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
+masslist_txt_append(ttor_masses,'Masslists/appendTest.txt','ttor','a', first = False, last = False)
+print(ttor_masses)
+print("There are {} particles remaining.".format(sim.N))
 
