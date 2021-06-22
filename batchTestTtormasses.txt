@@ -1,0 +1,6 @@
+ttor
+Inner planet mass	Outer planet mass	Percent Difference	Seed
+0.0011400000000000004	0.0011600000000000004	1.7543859649122848	0	
+
+Average percent difference= 1.7543859649122848.
+

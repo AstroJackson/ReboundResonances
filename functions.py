@@ -198,17 +198,51 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
         #data = data.copy() #comment out this line to not have the original list change
         percentdif = abs((data[0]-data[1])/data[0])*100
         roundedpercentdif = round(percentdif,2)
-        #percentlist.append(percentdif)
         data.insert(2,percentdif)
         for j in data:
             message += str(j)
             message +='\t'
-        message +='\n'   
-    if kwargs.get('last'):
-        pass
-        #message+= "\nAverage percent difference= {}.\n\n".format(avg(percentlist))
+        message +='\n'
     with open(filepath,write_type) as file:
         file.write(message)
+    if kwargs.get('last'):
+        with open(filepath, "a") as file:
+            file.write("\nAverage percent difference: {}"
+                       .format(averagePercent(filepath)), end = "#"*40)
+# In
+def masslist_read(filePath):
+    """
+    Inverse of masslist_txt()
+    """
+    with open(filePath,'r') as datafile:
+        contents = datafile.read()
+    contents = contents.split()
+    finalList = []
+    for index,value in enumerate(contents):
+        try:
+            value = float(value)
+            finalList.append(value)
+            ####contents[index] = value
+        except:
+            pass
+    ####for i in range(0,int(len(contents)), 4):
+        ####finalList.append([contents[i:i+4]])
+    return finalList
+#masslist_read('test.txt')
+print(masslist_read("test.txt"))
+
+def avg(listt):
+    sum = 0
+    for i in listt:
+        sum += i
+    return sum / len(listt)
+def averagePercent(filePath):
+    dataList = masslist_read(filePath)
+    percentList = []
+    for i in range(2,len(dataList),4):
+        percentList.append(dataList[i])
+    return avg(percentList)
+
 # In[3]:
 
 
