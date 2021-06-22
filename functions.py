@@ -229,7 +229,6 @@ def masslist_read(filePath):
         ####finalList.append([contents[i:i+4]])
     return finalList
 #masslist_read('test.txt')
-print(masslist_read("test.txt"))
 
 def avg(listt):
     sum = 0
@@ -297,11 +296,12 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     #quickplot(sim)
     return sim
     
-def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first two bodies in a system
+def quickcollect2(n, Ti, Tf, stepnumber, sim = sim): #collects orbital data on the first two bodies in a system
     initialtime = tiempo.time()
+    print(sim.N)
 #     n=2 #number of planets
 #     T=80*2*np.pi #years of simulation
-    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2,     interplanetdistance
+    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, interplanetdistance
     times = np.linspace(Ti,Tf,stepnumber)
     #diftimes = list()
     dist = np.zeros((len(times),n)) 
