@@ -351,5 +351,7 @@ def remove(AU, sim = sim):
 
 # In[ ]:
 
+def saveFigures(times, dist, relative_x_value,relative_y_value, eccs, position1, position2, interplanetdistance):
+    
 
 
