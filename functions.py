@@ -296,7 +296,7 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     #quickplot(sim)
     return sim
     
-def quickcollect2(n, Ti, Tf, stepnumber, sim = sim): #collects orbital data on the first two bodies in a system
+def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first two bodies in a system
     initialtime = tiempo.time()
     print(sim.N)
 #     n=2 #number of planets
