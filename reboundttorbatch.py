@@ -221,7 +221,6 @@ def masslist_read(filePath):
         ####finalList.append([contents[i:i+4]])
     return finalList
 #masslist_read('test.txt')
-print(masslist_read("test.txt"))
 
 def avg(listt):
     sum = 0
@@ -439,17 +438,17 @@ BIGfinal = tiempo.time()
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
 try:
-	if int(sys.argv[2]):
+	if int(sys.argv[2]): # sys.argv=0 will mean this is the first data point, =1 is last
 		first = False
 		last = True
-	else:
+	else: 
 		first = True
 		last = False
-except:
+except: # if first or last not specified, it is a middle data point
 	first = False
 	last = False
 masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_allseeds.txt','ttor','a', first = first, last = last)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
-saveFigs(addOn = "", seed = a)
+saveFigs(addOn = "test", seed = a)
