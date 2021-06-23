@@ -363,6 +363,11 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     interplanetdistance = np.zeros((len(times),1))
     masses = np.zeros((len(times),n))
     ps = sim.particles
+    #
+    print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
+    .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+    ,round((tiempo.time()-initialtime)/60,1)))
+    #
     for i, t in enumerate(times):
         sim.integrate(t)
         ####print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
@@ -388,6 +393,11 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
 #     print("The outer planet ended with a mass of {}.".format(ps[2].m))
 #     print("There are {} particles remaining.".format(sim.N))
     quickplot(sim)
+    #
+    print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
+    .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+    ,round((tiempo.time()-initialtime)/60,1)))
+    #
     #ding()
     
 def remove(AU, sim = sim):
@@ -401,7 +411,7 @@ def remove(AU, sim = sim):
 
 
 #numberOfSims = 1
-endTime = 10 #years of simulation
+endTime = 10000 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
 #
@@ -416,8 +426,8 @@ except:
     print("#"*40)
     a = 0
 print("Beginning seed {}.".format(a))
-sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 500)
-quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 10)
+sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
+quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 1000)
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
 print("Ending seed {}.\n".format(a))
