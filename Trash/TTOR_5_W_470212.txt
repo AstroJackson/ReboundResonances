@@ -1,0 +1,9 @@
+[0.002190000000000003, 0.0022800000000000034, 4.109589041095895, 0.0, 0.002190000000000003, 0.002470000000000004, 12.785388127853897, 1.0, 0.0023200000000000035, 0.0022900000000000034, 1.2931034482758634, 2.0]
+Beginning seed 5.
+Traceback (most recent call last):
+  File "reboundttorbatch.py", line 430, in <module>
+    quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 1000)
+  File "reboundttorbatch.py", line 368, in quickcollect2
+    .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+UnboundLocalError: local variable 't' referenced before assignment
+Wed Jun 23 02:21:44 EDT 2021

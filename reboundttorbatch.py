@@ -182,6 +182,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
     if kwargs.get('first'):
+        write_type = "w"
         message += sim+'\n'
         message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
     for data in masslistcopy[1:]:
@@ -365,7 +366,7 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     ps = sim.particles
     #
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+    .format(0,0/tau,sim.N,0,round((tiempo.time()-initialtime),1)\
     ,round((tiempo.time()-initialtime)/60,1)))
     #
     for i, t in enumerate(times):
@@ -395,7 +396,7 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     quickplot(sim)
     #
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+    .format(Tf,Tf/tau,sim.N,stepnumber,round((tiempo.time()-initialtime),1)\
     ,round((tiempo.time()-initialtime)/60,1)))
     #
     #ding()
@@ -437,7 +438,17 @@ BIGfinal = tiempo.time()
 #
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
-masslist_txt_append(ttor_masses,'Masslists/appendTest.txt','ttor','a', first = False, last = True)
+try:
+	if int(sys.argv[2]):
+		first = False
+		last = True
+	else:
+		first = True
+		last = False
+except:
+	first = False
+	last = False
+masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_allseeds.txt','ttor','a', first = first, last = last)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
