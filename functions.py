@@ -301,7 +301,7 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     print(sim.N)
 #     n=2 #number of planets
 #     T=80*2*np.pi #years of simulation
-    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, interplanetdistance
+    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, interplanetdistance, masses
     times = np.linspace(Ti,Tf,stepnumber)
     #diftimes = list()
     dist = np.zeros((len(times),n)) 
@@ -351,5 +351,98 @@ def remove(AU, sim = sim):
 
 # In[ ]:
 
+def ttv(data, times):
+    """
+    Transit timing variation. Detects the time at which the planet crosses the
+    positive x-axis. 
+    """
+    global innertimes, outertimes
+    innertimes = []
+    outertimes = []
+    for i, x in enumerate(np.delete(data,len(data)-1,0)):
+        # Deleting the last row is one way to avoid an index error
+        if x[0] < 0 and data[i+1][0] > 0: #for inner planet
+            averageT = (times[i]+times[i+1])/2
+            innertimes.append(averageT)
+        if x[1] < 0 and data[i+1][1] > 0: #for outer planet
+            averageT = (times[i]+times[i+1])/2
+            outertimes.append(averageT)
+            
+    # The following measures the time difference between each succesive transit.
+    global innertimesdif, outertimesdif
+    innertimesdif = []
+    for i in range(1,len(innertimes)):
+        dif = innertimes[i]-innertimes[i-1]
+        innertimesdif.append(dif)
+    outertimesdif = []
+    for i in range(1,len(outertimes)):
+        dif = outertimes[i]-outertimes[i-1]
+        outertimesdif.append(dif)
+        
+    # Graphs the difference with respect to the simulation time in which it occured.
+    fig, axs = plt.subplots(2,1)
+    fig.suptitle('TTV')
+    axs[0].plot(innertimes[:len(innertimes)-1], innertimesdif)
+    axs[1].plot(outertimes[:len(outertimes)-1], outertimesdif)
+    plt.xlabel('Time')
+    plt.ylabel('Time between full revolution\n<Outer and Inner>')
 
-
+#
+def saveFigs(addOn = "", seed = 0):
+    """
+    This saves several types of graphs into a folder corresponsing to the seed.
+    Optional ability to add on to the name of a file easily.
+    NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
+    because for some data types the stepnumber needs to be very high.
+    """
+    plt.clf() # clears any graphs
+    quickplot(sim)
+    plt.savefig("Figures/"+str(seed)+"/quickplot"+"addOn"+".pdf")
+    
+    plt.clf()
+    rebound.OrbitPlot(sim,slices=0.3,color=True)
+    plt.savefig("Figures/"+str(seed)+"/reboundPlot.pdf")
+    
+    plt.clf()
+    plt.plot(times, eccs)
+    plt.title('Eccentricity Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Eccentricity')
+    plt.savefig("Figures/"+str(seed)+"/Eccentricity.pdf")
+    
+    plt.clf()
+    plt.plot(times, eccs)
+    plt.title('Eccentricity Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Eccentricity')
+    plt.savefig("Figures/"+str(seed)+"/Eccentricity.pdf")
+    
+    plt.clf()
+    plt.plot(times, relative_x_value)
+    plt.title('X Value From Star Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('X Value (AU)')
+    plt.savefig("Figures/"+str(seed)+"/relativeXValue.pdf")
+    
+    plt.clf()
+    plt.plot(times, masses)
+    plt.title('Mass of Planets Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Mass (Solar Masses)')
+    plt.savefig("Figures/"+str(seed)+"/masses.pdf")
+    
+    plt.clf()
+    fig, axs = plt.subplots(1, 2)
+    fig.suptitle('Planet Positions')
+    axs[0].plot(list(position1[:,0]), list(position1[:,1]),'o')
+    axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
+    axs[0].set_aspect('equal')
+    axs[1].set_aspect('equal')
+    plt.savefig("Figures/"+str(seed)+"/scatterPlotPositions.pdf")
+    
+    plt.clf()
+    plt.plot(times, interplanetdistance)
+    plt.title('Interplanetary Distance Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Distance (AU)')
+    plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance.pdf")
