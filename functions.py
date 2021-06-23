@@ -397,39 +397,32 @@ def saveFigs(addOn = "", seed = 0):
     """
     plt.clf() # clears any graphs
     quickplot(sim)
-    plt.savefig("Figures/"+str(seed)+"/quickplot"+"addOn"+".pdf")
+    plt.savefig("Figures/"+str(seed)+"/quickplot"+addOn+".pdf")
     
     plt.clf()
     rebound.OrbitPlot(sim,slices=0.3,color=True)
-    plt.savefig("Figures/"+str(seed)+"/reboundPlot.pdf")
+    plt.savefig("Figures/"+str(seed)+"/reboundPlot"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, eccs)
     plt.title('Eccentricity Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
-    plt.savefig("Figures/"+str(seed)+"/Eccentricity.pdf")
-    
-    plt.clf()
-    plt.plot(times, eccs)
-    plt.title('Eccentricity Over Time')
-    plt.xlabel('Time (2pi*yr)')
-    plt.ylabel('Eccentricity')
-    plt.savefig("Figures/"+str(seed)+"/Eccentricity.pdf")
+    plt.savefig("Figures/"+str(seed)+"/Eccentricity"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, relative_x_value)
     plt.title('X Value From Star Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('X Value (AU)')
-    plt.savefig("Figures/"+str(seed)+"/relativeXValue.pdf")
+    plt.savefig("Figures/"+str(seed)+"/relativeXValue"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, masses)
     plt.title('Mass of Planets Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Mass (Solar Masses)')
-    plt.savefig("Figures/"+str(seed)+"/masses.pdf")
+    plt.savefig("Figures/"+str(seed)+"/masses"+addOn+".pdf")
     
     plt.clf()
     fig, axs = plt.subplots(1, 2)
@@ -438,11 +431,11 @@ def saveFigs(addOn = "", seed = 0):
     axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
     axs[0].set_aspect('equal')
     axs[1].set_aspect('equal')
-    plt.savefig("Figures/"+str(seed)+"/scatterPlotPositions.pdf")
+    plt.savefig("Figures/"+str(seed)+"/scatterPlotPositions"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, interplanetdistance)
     plt.title('Interplanetary Distance Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Distance (AU)')
-    plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance.pdf")
+    plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance"+addOn+".pdf")
