@@ -1,0 +1,22 @@
+[0.002190000000000003, 0.0022800000000000034, 4.109589041095895, 0.0, 0.002190000000000003, 0.002470000000000004, 12.785388127853897, 1.0, 0.0023200000000000035, 0.0022900000000000034, 1.2931034482758634, 2.0]
+Beginning seed 2.
+| 0 time = 0.0 years | 1003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+Done at 11051 seconds!
+| 62831.853071795864 time = 10000.0 years | 207 particles | 1000 step number |
+| 11051.3 second | 184.2 minutes.
+
+Masses 0.003300000000000006 and 0.0027100000000000045.
+Ending seed 2.
+
+That in total took 11051 seconds (184.19 minutes).
+[['inner planet mass', 'outer planet mass', 'seed'], [0.003300000000000006, 0.0027100000000000045, 17.878787878787893, 2]]
+There are 207 particles remaining.
+Traceback (most recent call last):
+  File "reboundttorbatch.py", line 455, in <module>
+    saveFigs(addOn = "", seed = a)
+  File "reboundttorbatch.py", line 277, in saveFigs
+    plt.plot(times, masses)
+NameError: name 'masses' is not defined
+Wed Jun 23 08:15:08 EDT 2021

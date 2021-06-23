@@ -352,7 +352,7 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     initialtime = tiempo.time()
 #     n=2 #number of planets
 #     T=80*2*np.pi #years of simulation
-    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2,     interplanetdistance
+    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, interplanetdistance, masses
     times = np.linspace(Ti,Tf,stepnumber)
     #diftimes = list()
     dist = np.zeros((len(times),n)) 
