@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH -J TTOR_3_W
+#SBATCH -J TTOR_short_W
 #SBATCH -p general
-#SBATCH -o TTOR_3_W_%j.txt
+#SBATCH -o TTOR_short_W_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
@@ -12,6 +12,6 @@
 #SBATCH --mem-per-cpu=100
 
 export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
-python reboundttorbatch.py 3
+python shortTests.py 0
 
 date
