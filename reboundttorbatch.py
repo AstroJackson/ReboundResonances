@@ -236,20 +236,23 @@ def averagePercent(filePath):
 
 # In[4]:
 
-def saveFigs(addOn = "", seed = 0):
+def saveFigs(addOn = "", seed = 0, **kwargs):
     """
     This saves several types of graphs into a folder corresponsing to the seed.
     Optional ability to add on to the name of a file easily.
     NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
     because for some data types the stepnumber needs to be very high.
     """
+    if kwargs.get("test"):
+        seed = "Tests"
+    
     plt.clf() # clears any graphs
     quickplot(sim)
-    plt.savefig("Figures/"+str(seed)+"/quickplot"+"addOn"+".pdf")
+    plt.savefig("Figures/"+str(seed)+"/quickplot"+addOn+".pdf")
     
     plt.clf()
     rebound.OrbitPlot(sim,slices=0.3,color=True)
-    plt.savefig("Figures/"+str(seed)+"/reboundPlot.pdf")
+    plt.savefig("Figures/"+str(seed)+"/reboundPlot"+addOn+".pdf")
     
     plt.clf()
     rebound.OrbitPlot(sim, slices = .3, color = True, lw = 1, plotparticles = [1,2])
@@ -260,28 +263,21 @@ def saveFigs(addOn = "", seed = 0):
     plt.title('Eccentricity Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
-    plt.savefig("Figures/"+str(seed)+"/Eccentricity.pdf")
-    
-    plt.clf()
-    plt.plot(times, eccs)
-    plt.title('Eccentricity Over Time')
-    plt.xlabel('Time (2pi*yr)')
-    plt.ylabel('Eccentricity')
-    plt.savefig("Figures/"+str(seed)+"/Eccentricity.pdf")
+    plt.savefig("Figures/"+str(seed)+"/Eccentricity"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, relative_x_value)
     plt.title('X Value From Star Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('X Value (AU)')
-    plt.savefig("Figures/"+str(seed)+"/relativeXValue.pdf")
+    plt.savefig("Figures/"+str(seed)+"/relativeXValue"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, masses)
     plt.title('Mass of Planets Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Mass (Solar Masses)')
-    plt.savefig("Figures/"+str(seed)+"/masses.pdf")
+    plt.savefig("Figures/"+str(seed)+"/masses"+addOn+".pdf")
     
     plt.clf()
     fig, axs = plt.subplots(1, 2)
@@ -290,14 +286,14 @@ def saveFigs(addOn = "", seed = 0):
     axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
     axs[0].set_aspect('equal')
     axs[1].set_aspect('equal')
-    plt.savefig("Figures/"+str(seed)+"/scatterPlotPositions.pdf")
+    plt.savefig("Figures/"+str(seed)+"/scatterPlotPositions"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, interplanetdistance)
     plt.title('Interplanetary Distance Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Distance (AU)')
-    plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance.pdf")
+    plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, particleNumber)
@@ -305,6 +301,30 @@ def saveFigs(addOn = "", seed = 0):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('sim.N (AU)')
     plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,100)]], linewidth=1)
+    # Does not plot every asteroid
+    plt.title('Asteroid Semi Major Axis Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Semi Major Axis (AU)')
+    plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
+    plt.savefig("Figures/"+str(seed)+"/RoidSMAxis"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, [avg(asteroidAUList) for asteroidAUList in asteroidAU],linewidth=1)
+    plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Semi Major Axis (AU)')
+    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisAverage"+addOn+".pdf")
+    
+    plt.clf()
+    plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
+    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoStart"+addOn+".pdf")
+    
+    plt.clf()
+    plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
+    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
     
 ###########################################################################################
 
@@ -347,8 +367,9 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
         f = rand_uniform(-np.pi,np.pi)
         p = rebound.Particle(simulation=sim,primary=sim.particles[0], r=r_pl, a=a, e=e, inc=inc, Omega=0, omega=0, f=f)
         # Only add planetesimal if it's far away from the planet
-        d = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[1].xyz))
-        #d=2
+        d1 = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[1].xyz))
+        d2 = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[2].xyz))
+        d = min(d1,d2)
         if d>5e-4:
             sim.add(p)
 
@@ -358,12 +379,26 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     E0 = sim.calculate_energy()
     #quickplot(sim)
     return sim
+
+    #
+    print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
+    .format(0,0/tau,sim.N,0,round((tiempo.time()-initialtime),1)\
+    ,round((tiempo.time()-initialtime)/60,1)))
+    #
     
-def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first two bodies in a system
+    #
+    print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
+    .format(sim.T,sim.T/tau,sim.N,stepnumber,round((tiempo.time()-initialtime),1)\
+    ,round((tiempo.time()-initialtime)/60,1)))
+    #
+    
+def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on the first two bodies in a system
     initialtime = tiempo.time()
 #     n=2 #number of planets
 #     T=80*2*np.pi #years of simulation
-    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, interplanetdistance, masses
+    # Planet variables
+    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, \
+    interplanetdistance, masses, particleNumber
     times = np.linspace(Ti,Tf,stepnumber)
     #diftimes = list()
     dist = np.zeros((len(times),n)) 
@@ -373,8 +408,14 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     position1 = np.zeros((len(times),2))
     position2 = np.zeros((len(times),2))
     interplanetdistance = np.zeros((len(times),1))
+    particleNumber = np.zeros((len(times),1))
     masses = np.zeros((len(times),n))
     ps = sim.particles
+    # Asteroid variables:
+    global asteroidAU, asteroidEccs, simNi
+    simNi = sim.N
+    asteroidAU = np.zeros((len(times),simNi-n-1)) # n is the number of planets, 1 is the number of stars
+    asteroidEccs = np.zeros((len(times),simNi-n-1))
     #
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
     .format(0,0/tau,sim.N,0,round((tiempo.time()-initialtime),1)\
@@ -382,11 +423,18 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
     #
     for i, t in enumerate(times):
         sim.integrate(t)
-        ####print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-            ####.format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
-                ####,round((tiempo.time()-initialtime)/60,1)))
+        ####print("| {} time = {} years | {} particles | {} step number |\n\
+####| {} second | {} minutes.\n"\
+        ####.format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+        ####,round((tiempo.time()-initialtime)/60,1)))
+        #sim.ri_whfast.recalculate_coordinates_this_timestep = 1
+        #sim.integrator_synchronize()
+        #diftimes.append(sim.t+dT)
+        #if i== int(stepnumber/2):
+            #print("1/2 done at {} seconds.".format(int(tiempo.time() - initialtime)))
         ps = sim.particles
         interplanetdistance[i] = np.linalg.norm(np.array(ps[2].xyz)-np.array(ps[1].xyz))
+        particleNumber[i] = sim.N
         position1[i] = [ps[1].x,ps[1].y]
         position2[i] = [ps[2].x,ps[2].y]
         for planet in range(n):
@@ -396,7 +444,19 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
             relative_y_value[i,planet] = ps[planetdif].y - ps[0].y
             eccs[i,planet] = ps[planetdif].e
             masses[i,planet] = ps[planetdif].m
-            #
+        position1[i] = [relative_x_value[i,0],relative_y_value[i,0]]
+        position2[i] = [relative_x_value[i,1],relative_y_value[i,1]]
+        #### Data collection from asteroids:
+        if kwargs.get("asteroidCollect"):
+            for roidNumber in range(3,simNi):
+                #print("index:{}, roidNumber: {}".format(index,roidNumber))
+                index = roidNumber - n -1
+                try:                    
+                    asteroidAU[i,index] = ps[str(roidNumber)].a
+                    asteroidEccs[i,index] = ps[str(roidNumber)].e
+                except:
+                    pass
+        ####
     finaltime = tiempo.time()
 #     print('done')
     #print("{} done at {} seconds!".format((a+1)/10,int(finaltime-initialtime)))
@@ -404,12 +464,12 @@ def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first tw
 #     print("The inner planet ended with a mass of {}.".format(ps[1].m))
 #     print("The outer planet ended with a mass of {}.".format(ps[2].m))
 #     print("There are {} particles remaining.".format(sim.N))
-    quickplot(sim)
     #
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(Tf,Tf/tau,sim.N,stepnumber,round((tiempo.time()-initialtime),1)\
+    .format(0,0/tau,sim.N,0,round((tiempo.time()-initialtime),1)\
     ,round((tiempo.time()-initialtime)/60,1)))
     #
+    quickplot(sim)
     #ding()
     
 def remove(AU, sim = sim):

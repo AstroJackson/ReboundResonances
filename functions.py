@@ -345,8 +345,9 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
         f = rand_uniform(-np.pi,np.pi)
         p = rebound.Particle(simulation=sim,primary=sim.particles[0], r=r_pl, a=a, e=e, inc=inc, Omega=0, omega=0, f=f)
         # Only add planetesimal if it's far away from the planet
-        d = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[1].xyz))
-        #d=2
+        d1 = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[1].xyz))
+        d2 = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[2].xyz))
+        d = min(d1,d2)
         if d>5e-4:
             sim.add(p)
 
