@@ -244,7 +244,66 @@ def averagePercent(filePath):
         percentList.append(dataList[i])
     return avg(percentList)
 
-# In[3]:
+def saveFigs(addOn = "", seed = 0):
+    """
+    This saves several types of graphs into a folder corresponsing to the seed.
+    Optional ability to add on to the name of a file easily.
+    NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
+    because for some data types the stepnumber needs to be very high.
+    """
+    plt.clf() # clears any graphs
+    quickplot(sim)
+    plt.savefig("Figures/"+str(seed)+"/quickplot"+addOn+".pdf")
+    
+    plt.clf()
+    rebound.OrbitPlot(sim,slices=0.3,color=True)
+    plt.savefig("Figures/"+str(seed)+"/reboundPlot"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, eccs)
+    plt.title('Eccentricity Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Eccentricity')
+    plt.savefig("Figures/"+str(seed)+"/Eccentricity"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, relative_x_value)
+    plt.title('X Value From Star Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('X Value (AU)')
+    plt.savefig("Figures/"+str(seed)+"/relativeXValue"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, masses)
+    plt.title('Mass of Planets Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Mass (Solar Masses)')
+    plt.savefig("Figures/"+str(seed)+"/masses"+addOn+".pdf")
+    
+    plt.clf()
+    fig, axs = plt.subplots(1, 2)
+    fig.suptitle('Planet Positions')
+    axs[0].plot(list(position1[:,0]), list(position1[:,1]),'o')
+    axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
+    axs[0].set_aspect('equal')
+    axs[1].set_aspect('equal')
+    plt.savefig("Figures/"+str(seed)+"/scatterPlotPositions"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, interplanetdistance)
+    plt.title('Interplanetary Distance Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Distance (AU)')
+    plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, particleNumber)
+    plt.title('sim.N over time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('sim.N (AU)')
+    plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
+
+# In[3]:#########################################################################################
 
 
 def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):  
@@ -390,54 +449,3 @@ def ttv(data, times):
     plt.ylabel('Time between full revolution\n<Outer and Inner>')
 
 #
-def saveFigs(addOn = "", seed = 0):
-    """
-    This saves several types of graphs into a folder corresponsing to the seed.
-    Optional ability to add on to the name of a file easily.
-    NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
-    because for some data types the stepnumber needs to be very high.
-    """
-    plt.clf() # clears any graphs
-    quickplot(sim)
-    plt.savefig("Figures/"+str(seed)+"/quickplot"+addOn+".pdf")
-    
-    plt.clf()
-    rebound.OrbitPlot(sim,slices=0.3,color=True)
-    plt.savefig("Figures/"+str(seed)+"/reboundPlot"+addOn+".pdf")
-    
-    plt.clf()
-    plt.plot(times, eccs)
-    plt.title('Eccentricity Over Time')
-    plt.xlabel('Time (2pi*yr)')
-    plt.ylabel('Eccentricity')
-    plt.savefig("Figures/"+str(seed)+"/Eccentricity"+addOn+".pdf")
-    
-    plt.clf()
-    plt.plot(times, relative_x_value)
-    plt.title('X Value From Star Over Time')
-    plt.xlabel('Time (2pi*yr)')
-    plt.ylabel('X Value (AU)')
-    plt.savefig("Figures/"+str(seed)+"/relativeXValue"+addOn+".pdf")
-    
-    plt.clf()
-    plt.plot(times, masses)
-    plt.title('Mass of Planets Over Time')
-    plt.xlabel('Time (2pi*yr)')
-    plt.ylabel('Mass (Solar Masses)')
-    plt.savefig("Figures/"+str(seed)+"/masses"+addOn+".pdf")
-    
-    plt.clf()
-    fig, axs = plt.subplots(1, 2)
-    fig.suptitle('Planet Positions')
-    axs[0].plot(list(position1[:,0]), list(position1[:,1]),'o')
-    axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
-    axs[0].set_aspect('equal')
-    axs[1].set_aspect('equal')
-    plt.savefig("Figures/"+str(seed)+"/scatterPlotPositions"+addOn+".pdf")
-    
-    plt.clf()
-    plt.plot(times, interplanetdistance)
-    plt.title('Interplanetary Distance Over Time')
-    plt.xlabel('Time (2pi*yr)')
-    plt.ylabel('Distance (AU)')
-    plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance"+addOn+".pdf")

@@ -298,7 +298,15 @@ def saveFigs(addOn = "", seed = 0):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Distance (AU)')
     plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance.pdf")
-#
+    
+    plt.clf()
+    plt.plot(times, particleNumber)
+    plt.title('sim.N over time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('sim.N (AU)')
+    plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
+    
+###########################################################################################
 
 def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):  
     sim = simulation()
