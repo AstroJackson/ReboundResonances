@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH -J TTOR_5000_W
+#SBATCH -J TTOR_10000_Th
 #SBATCH -p general
-#SBATCH -o TTOR_5000_W_%j.txt
+#SBATCH -o TTOR_10000_Th_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
