@@ -76,7 +76,7 @@ def quickplot(sim): #this uses matplotlib to plot the orbit, instead of rebound
         coords[0][i], coords[1][i] = sim.particles[i].x, sim.particles[i].y
     fig, ax = plt.subplots()
     ax.axis('equal')
-    ax.scatter(coords[0],coords[1])
+    ax.scatter(coords[0],coords[1],marker=".",linewidth=0)
     for i in range(sim.N_active):
         ax.scatter(sim.particles[i].x,sim.particles[i].y); # Planet
         
@@ -250,6 +250,10 @@ def saveFigs(addOn = "", seed = 0):
     plt.clf()
     rebound.OrbitPlot(sim,slices=0.3,color=True)
     plt.savefig("Figures/"+str(seed)+"/reboundPlot.pdf")
+    
+    plt.clf()
+    rebound.OrbitPlot(sim, slices = .3, color = True, lw = 1, plotparticles = [1,2])
+    plt.savefig("Figures/"+str(seed)+"/reboundPlotOnlyPlanets"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, eccs)

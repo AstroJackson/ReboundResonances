@@ -180,7 +180,7 @@ def masslist_txt(masslist,filepath,sim = None, write_type = 'a'):
 def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs):
     """
     Saves the masslists into a formatted txt file. This is similar to masslist_txt except 
-    it lends itself better to appending.
+    it lends itself better to appending. It is meant for simulations ran entirely separately.
     """
     
     def avg(listt):
@@ -192,6 +192,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
     if kwargs.get('first'):
+        write_type = "w"
         message += sim+'\n'
         message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
     for data in masslistcopy[1:]:
@@ -208,7 +209,8 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     if kwargs.get('last'):
         with open(filepath, "a") as file:
             file.write("\nAverage percent difference: {}"
-                       .format(averagePercent(filepath)), end = "#"*40)
+                       .format(averagePercent(filepath)))
+            file.write("\n"+"#"*40)
 # In
 def masslist_read(filePath):
     """
