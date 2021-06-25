@@ -232,11 +232,17 @@ def masslist_read(filePath):
     return finalList
 #masslist_read('test.txt')
 
-def avg(listt):
+def avg(listt, **kwargs):
     sum = 0
+    if kwargs.get('positive'):
+        for i in listt:
+            if i >= 0:
+                sum += i
+        return sum / len(listt)
     for i in listt:
         sum += i
     return sum / len(listt)
+
 def averagePercent(filePath):
     dataList = masslist_read(filePath)
     percentList = []
@@ -311,7 +317,26 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
     
     plt.clf()
-    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,100)]], linewidth=1)
+    plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
+    plt.title('Asteroid Eccentricity Axis Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Eccs')
+    plt.savefig("Figures/"+str(seed)+"/RoidEccs"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, [avg(EccsList, positive = True) for EccsList in asteroidEccs],linewidth=1)
+    plt.title('Asteroid Eccentricity AVERAGE Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Eccentricity')
+    plt.savefig("Figures/"+str(seed)+"/RoidEccsAverage"+addOn+".pdf")
+    
+    plt.clf()
+    num_bins = 30
+    plt.hist([data for data in asteroidEccs[-1] if data >= 0], num_bins)
+    plt.savefig("Figures/"+str(seed)+"/RoidEccsHistoEnd"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
     # Does not plot every asteroid
     plt.title('Asteroid Semi Major Axis Over Time')
     plt.xlabel('Time (2pi*yr)')
@@ -327,7 +352,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxisAverage"+addOn+".pdf")
     
     plt.clf()
-    num_bins = 30
+    num_bins =30
     plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoStart"+addOn+".pdf")
     
