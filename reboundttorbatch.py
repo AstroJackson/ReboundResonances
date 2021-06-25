@@ -198,7 +198,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
         message +='\n'
     with open(filepath,write_type) as file:
         file.write(message)
-    if kwargs.get('last') or len(masslist_read(filepath))/4 >= kwargs.get("lastN"):
+    if kwargs.get('last') and len(masslist_read(filepath))/4 >= kwargs.get("lastN"):
         with open(filepath, "a") as file:
             file.write("\nAverage percent difference: {}"
                        .format(averagePercent(filepath)))
@@ -510,19 +510,21 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
 try:
-	if int(sys.argv[2])>0: #sys.argv[2]>0 could be last data point
-		first = False
-		last = True
-        lastN = sys.argv[2]
-    elif int(sys.argv[2])==-1: # if I ever add a sys.argv[3], this could allow me to define middle data points
-        first = False
-        last = False
-	else:  # sys.argv[2]==0 will mean this is the first data point, 
-		first = True
-		last = False
+    sysarg2 = sys.argv[2]
 except IndexError: # if sys.argv[2] does not exist, it is a middle data point
-	first = False
-	last = False
+    sysarg2 = -1
+lastN = 0
+if int(sys.argv[2])>0: #sys.argv[2]>0 could be last data point
+    first = False
+    last = True
+    lastN = sysarg2
+elif int(sys.argv[2])==-1: #middle data points
+    first = False
+    last = False
+elif int(sys.argv[2])==0:  # sys.argv[2]==0 will mean this is the first data point, 
+    first = True
+    last = False
+
 masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_asteroidDataAsWell.txt','ttor','a', first = first, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
