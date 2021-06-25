@@ -470,10 +470,11 @@ def remove(AU, sim = sim):
 
 # In[ ]:
 
-def ttv(data, times):
+def ttvAverageApprox(data, times):
     """
     Transit timing variation. Detects the time at which the planet crosses the
     positive x-axis. 
+    Uses the average of the points between the detected zeros.
     """
     global innertimes, outertimes
     innertimes = []
@@ -486,6 +487,49 @@ def ttv(data, times):
         if x[1] < 0 and data[i+1][1] > 0: #for outer planet
             averageT = (times[i]+times[i+1])/2
             outertimes.append(averageT)
+            
+    # The following measures the time difference between each succesive transit.
+    global innertimesdif, outertimesdif
+    innertimesdif = []
+    for i in range(1,len(innertimes)):
+        dif = innertimes[i]-innertimes[i-1]
+        innertimesdif.append(dif)
+    outertimesdif = []
+    for i in range(1,len(outertimes)):
+        dif = outertimes[i]-outertimes[i-1]
+        outertimesdif.append(dif)
+        
+    # Graphs the difference with respect to the simulation time in which it occured.
+    fig, axs = plt.subplots(2,1)
+    fig.suptitle('TTV')
+    axs[0].plot(innertimes[:len(innertimes)-1], innertimesdif)
+    axs[1].plot(outertimes[:len(outertimes)-1], outertimesdif)
+    plt.xlabel('Time')
+    plt.ylabel('Time between full revolution\n<Outer and Inner>')
+    
+def ttvLinearApprox(data, times):
+    """
+    Transit timing variation. Detects the time at which the planet crosses the
+    positive x-axis. 
+    Uses the linear approximation of the two points surrounding the zero to approximate.
+    (Newton's method)
+    This method is a vast improvement to the average technique.
+    """
+    global innertimes, outertimes
+    innertimes = []
+    outertimes = []
+    for i, x in enumerate(np.delete(data,len(data)-1,0)):
+        # Deleting the last row is one way to avoid an index error
+        if x[0] < 0 and data[i+1][0] > 0: #for inner planet
+            slope = (data[i+1][0]-data[i][0])/(times[i+1]-times[i])
+            linearApprox = times[i+1]-data[i+1][0]/slope
+            #(times[i]+times[i+1])/2
+            innertimes.append(linearApprox)
+        if x[1] < 0 and data[i+1][1] > 0: #for outer planet
+            #averageT = (times[i]+times[i+1])/2
+            slope = (data[i+1][1]-data[i][1])/(times[i+1]-times[i])
+            linearApprox = times[i+1]-data[i+1][1]/slope
+            outertimes.append(linearApprox)
             
     # The following measures the time difference between each succesive transit.
     global innertimesdif, outertimesdif
