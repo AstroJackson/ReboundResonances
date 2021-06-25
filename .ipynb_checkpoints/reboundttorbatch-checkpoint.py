@@ -512,10 +512,3 @@ print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
 saveFigs(seed = a)
-
-##################################################################################
-def printInfo(*args, **kwargs):
-    """
-    General info relevant to these batch jobs:
-    """
-    timesDict = {"seed":"max/min time needed"}
