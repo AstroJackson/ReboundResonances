@@ -478,7 +478,7 @@ def batchInfo(*args, **kwargs):
     3:"time:5h4m",4:"time:3h18m",5:"3h42m",6:"4h30m",7:"min:9h",8:"time:4h23m",9:"time:4h32m"}
 ##################################################################################
 #numberOfSims = 1
-endTime = 200 #years of simulation
+endTime = 10000 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.monotonic()
 #
@@ -492,7 +492,7 @@ except IndexError:
     print("\n"*3)
     print("#"*40)
     a = 0
-stepFrequency = 10 # how often should a step occur (years)
+stepFrequency = 100 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
