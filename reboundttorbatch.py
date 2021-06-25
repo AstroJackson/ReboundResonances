@@ -382,7 +382,7 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     return sim
     
 def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on the first two bodies in a system
-    initialtime = tiempo.time()
+    initialtime = tiempo.monotonic()
 #     n=2 #number of planets
 #     T=80*2*np.pi #years of simulation
     # Planet variables
@@ -407,15 +407,15 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
     asteroidEccs = np.zeros((len(times),simNi-n-1))
     #
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(0,0/tau,sim.N,0,round((tiempo.time()-initialtime),1)\
-    ,round((tiempo.time()-initialtime)/60,1)))
+    .format(0,0/tau,sim.N,0,round((tiempo.monotonic()-initialtime),1)\
+    ,round((tiempo.monotonic()-initialtime)/60,1)))
     #
     for i, t in enumerate(times):
         sim.integrate(t)
         ####print("| {} time = {} years | {} particles | {} step number |\n\
 ####| {} second | {} minutes.\n"\
-        ####.format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
-        ####,round((tiempo.time()-initialtime)/60,1)))
+        ####.format(t,t/tau,sim.N,i,round((tiempo.monotonic()-initialtime),1)\
+        ####,round((tiempo.monotonic()-initialtime)/60,1)))
         #sim.ri_whfast.recalculate_coordinates_this_timestep = 1
         #sim.integrator_synchronize()
         #diftimes.append(sim.t+dT)
@@ -446,7 +446,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
                 except:
                     pass
         ####
-    finaltime = tiempo.time()
+    finaltime = tiempo.monotonic()
 #     print('done')
     #print("{} done at {} seconds!".format((a+1)/10,int(finaltime-initialtime)))
     print("Done at {} seconds!".format((int(finaltime-initialtime))))
@@ -455,8 +455,8 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
 #     print("There are {} particles remaining.".format(sim.N))
     #
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(0,0/tau,sim.N,0,round((tiempo.time()-initialtime),1)\
-    ,round((tiempo.time()-initialtime)/60,1)))
+    .format(0,0/tau,sim.N,0,round((tiempo.monotonic()-initialtime),1)\
+    ,round((tiempo.monotonic()-initialtime)/60,1)))
     #
     quickplot(sim)
     #ding()
@@ -480,7 +480,7 @@ def batchInfo(*args, **kwargs):
 #numberOfSims = 1
 endTime = 200 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
-BIGinitial = tiempo.time()
+BIGinitial = tiempo.monotonic()
 #
 #for a in range(numberOfSims):
 try:
@@ -497,13 +497,13 @@ steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
 sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 100)
-quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True)
+quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True) # Can override 'steps' by setting a value directory
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
 print("Ending seed {}.\n".format(a))
 pre_list = [ps[1].m, ps[2].m,a]
 ttor_masses.append(pre_list)
-BIGfinal = tiempo.time()
+BIGfinal = tiempo.monotonic()
 #
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
