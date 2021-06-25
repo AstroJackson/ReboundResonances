@@ -319,6 +319,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxisAverage"+addOn+".pdf")
     
     plt.clf()
+    num_bins = 30
     plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoStart"+addOn+".pdf")
     
@@ -466,12 +467,18 @@ def remove(AU, sim = sim):
         if np.linalg.norm(np.array(ps[i].xyz)-np.array(ps[0].xyz)) > AU:
             sim.remove(i)
 
-
 # In[20]:
 
-
+##################################################################################
+def batchInfo(*args, **kwargs):
+    """
+    General info relevant to these batch jobs:
+    """
+    timesDict = {"seed":"max/min time needed",0:"4h18m",1:"min:9h",2:"time:3h4m",
+    3:"time:5h4m",4:"time:3h18m",5:"3h42m",6:"4h30m",7:"min:9h",8:"time:4h23m",9:"time:4h32m"}
+##################################################################################
 #numberOfSims = 1
-endTime = 10000 #years of simulation
+endTime = 200 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.time()
 #
@@ -485,9 +492,12 @@ except IndexError:
     print("\n"*3)
     print("#"*40)
     a = 0
+stepFrequency = 10 # how often should a step occur (years)
+steps = int(endTime/stepFrequency) # Will round down to an integer
+print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
-sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
-quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 1000, asteroidCollect = True)
+sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 100)
+quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True)
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
 print("Ending seed {}.\n".format(a))
@@ -511,11 +521,5 @@ masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_asteroidDataAsWell.txt','
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
-saveFigs(seed = a)
-
-##################################################################################
-def printInfo(*args, **kwargs):
-    """
-    General info relevant to these batch jobs:
-    """
-    timesDict = {"seed":"max/min time needed"}
+saveFigs(seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+                   # put the figures in the Tests folder (still within Figures)
