@@ -244,13 +244,16 @@ def averagePercent(filePath):
         percentList.append(dataList[i])
     return avg(percentList)
 
-def saveFigs(addOn = "", seed = 0):
+def saveFigs(addOn = "", seed = 0, **kwargs):
     """
     This saves several types of graphs into a folder corresponsing to the seed.
     Optional ability to add on to the name of a file easily.
     NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
     because for some data types the stepnumber needs to be very high.
     """
+    if kwargs.get("test"):
+        seed = "Tests"
+    
     plt.clf() # clears any graphs
     quickplot(sim)
     plt.savefig("Figures/"+str(seed)+"/quickplot"+addOn+".pdf")
@@ -258,6 +261,10 @@ def saveFigs(addOn = "", seed = 0):
     plt.clf()
     rebound.OrbitPlot(sim,slices=0.3,color=True)
     plt.savefig("Figures/"+str(seed)+"/reboundPlot"+addOn+".pdf")
+    
+    plt.clf()
+    rebound.OrbitPlot(sim, slices = .3, color = True, lw = 1, plotparticles = [1,2])
+    plt.savefig("Figures/"+str(seed)+"/reboundPlotOnlyPlanets"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, eccs)
@@ -302,6 +309,31 @@ def saveFigs(addOn = "", seed = 0):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('sim.N (AU)')
     plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,100)]], linewidth=1)
+    # Does not plot every asteroid
+    plt.title('Asteroid Semi Major Axis Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Semi Major Axis (AU)')
+    plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
+    plt.savefig("Figures/"+str(seed)+"/RoidSMAxis"+addOn+".pdf")
+    
+    plt.clf()
+    plt.plot(times, [avg(asteroidAUList) for asteroidAUList in asteroidAU],linewidth=1)
+    plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Semi Major Axis (AU)')
+    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisAverage"+addOn+".pdf")
+    
+    plt.clf()
+    num_bins = 30
+    plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
+    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoStart"+addOn+".pdf")
+    
+    plt.clf()
+    plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
+    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
 
 # In[3]:#########################################################################################
 

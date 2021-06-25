@@ -181,7 +181,9 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
-    if kwargs.get('first'):
+    import os.path
+    if kwargs.get('first') or not os.path.isfile(filepath): # If file does not exist, create it. If sys.argv[1]==0,
+                                                            #then will also create.
         write_type = "w"
         message += sim+'\n'
         message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
@@ -196,7 +198,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
         message +='\n'
     with open(filepath,write_type) as file:
         file.write(message)
-    if kwargs.get('last'):
+    if kwargs.get('last') or len(masslist_read(filepath))/4 >= kwargs.get("lastN"):
         with open(filepath, "a") as file:
             file.write("\nAverage percent difference: {}"
                        .format(averagePercent(filepath)))
@@ -508,16 +510,20 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
 try:
-	if int(sys.argv[2]): # sys.argv=0 will mean this is the first data point, =1 is last
+	if int(sys.argv[2])>0: #sys.argv[2]>0 could be last data point
 		first = False
 		last = True
-	else: 
+        lastN = sys.argv[2]
+    elif int(sys.argv[2])==-1: # if I ever add a sys.argv[3], this could allow me to define middle data points
+        first = False
+        last = False
+	else:  # sys.argv[2]==0 will mean this is the first data point, 
 		first = True
 		last = False
-except IndexError: # if first or last not specified, it is a middle data point
+except IndexError: # if sys.argv[2] does not exist, it is a middle data point
 	first = False
 	last = False
-masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_asteroidDataAsWell.txt','ttor','a', first = first, last = last)
+masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_asteroidDataAsWell.txt','ttor','a', first = first, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
