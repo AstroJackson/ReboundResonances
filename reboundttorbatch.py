@@ -379,18 +379,6 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     E0 = sim.calculate_energy()
     #quickplot(sim)
     return sim
-
-    #
-    print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(0,0/tau,sim.N,0,round((tiempo.time()-initialtime),1)\
-    ,round((tiempo.time()-initialtime)/60,1)))
-    #
-    
-    #
-    print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(sim.T,sim.T/tau,sim.N,stepnumber,round((tiempo.time()-initialtime),1)\
-    ,round((tiempo.time()-initialtime)/60,1)))
-    #
     
 def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on the first two bodies in a system
     initialtime = tiempo.time()
@@ -499,7 +487,7 @@ except IndexError:
     a = 0
 print("Beginning seed {}.".format(a))
 sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
-quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 1000)
+quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = 1000, asteroidCollect = True)
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
 print("Ending seed {}.\n".format(a))
@@ -519,8 +507,8 @@ try:
 except IndexError: # if first or last not specified, it is a middle data point
 	first = False
 	last = False
-masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_allseeds.txt','ttor','a', first = first, last = last)
+masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_asteroidDataAsWell.txt','ttor','a', first = first, last = last)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
-saveFigs(addOn = "test", seed = a)
+saveFigs(seed = a)

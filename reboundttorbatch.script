@@ -1,17 +1,17 @@
 #!/bin/bash
 
-#SBATCH -J TTOR_10000_Th
+#SBATCH -J TTOR_10000_Th9
 #SBATCH -p general
-#SBATCH -o TTOR_10000_Th_%j.txt
+#SBATCH -o TTOR_10000_Th9_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=24
-#SBATCH --time=05:00:00
+#SBATCH --time=12:00:00
 #SBATCH --mem-per-cpu=100
 
 export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
-python longRun.py
+python reboundttorbatch.py 9 1
 
 date
