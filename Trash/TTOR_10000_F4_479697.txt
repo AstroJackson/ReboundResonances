@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 479697 ON c12 CANCELLED AT 2021-06-26T13:06:18 ***

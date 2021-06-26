@@ -1,0 +1,18 @@
+Steps: 100
+Beginning seed 2.
+| 0 time = 0.0 years | 103 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+Done at 284 seconds!
+| 0 time = 0.0 years | 32 particles | 0 step number |
+| 284.2 second | 4.7 minutes.
+
+Masses 0.0012600000000000007 and 0.0012200000000000006.
+Ending seed 2.
+
+That in total took 284 seconds (4.74 minutes).
+Traceback (most recent call last):
+  File "reboundttorbatch.py", line 542, in <module>
+    if int(sys.argv[2])>0: #sys.argv[2]>0 could be last data point
+IndexError: list index out of range
+Sat Jun 26 13:00:39 EDT 2021

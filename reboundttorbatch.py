@@ -523,7 +523,7 @@ stepFrequency = 100 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
-sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 100)
+sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True) # Can override 'steps' by setting a value directory
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -539,7 +539,7 @@ try:
 except IndexError: # if sys.argv[2] does not exist, it is a middle data point
     sysarg2 = -1
 lastN = 0
-if int(sys.argv[2])>0: #sys.argv[2]>0 could be last data point
+if int(sysarg2)>0: #sys.argv[2]>0 could be last data point
     first = False
     last = True
     lastN = sysarg2
