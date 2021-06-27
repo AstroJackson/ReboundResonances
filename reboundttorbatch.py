@@ -543,10 +543,10 @@ if int(sysarg2)>0: #sys.argv[2]>0 could be last data point
     first = False
     last = True
     lastN = sysarg2
-elif int(sys.argv[2])==-1: #middle data points
+elif int(sysarg2)==-1: #middle data points
     first = False
     last = False
-elif int(sys.argv[2])==0:  # sys.argv[2]==0 will mean this is the first data point, 
+elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point, 
     first = True
     last = False
 
