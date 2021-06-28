@@ -1,0 +1,16 @@
+Steps: 100
+Beginning seed 7.
+| 0 time = 0.0 years | 1003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+Done at 14891 seconds!
+| 0 time = 0.0 years | 205 particles | 0 step number |
+| 14891.3 second | 248.2 minutes.
+
+Masses 0.0033700000000000062 and 0.0026400000000000043.
+Ending seed 7.
+
+That in total took 14891 seconds (248.19 minutes).
+[['inner planet mass', 'outer planet mass', 'seed'], [0.0033700000000000062, 0.0026400000000000043, 21.661721068249275, 7]]
+There are 205 particles remaining.
+Mon Jun 28 12:36:32 EDT 2021

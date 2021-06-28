@@ -439,10 +439,10 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
     #
     for i, t in enumerate(times):
         sim.integrate(t)
-        ####print("| {} time = {} years | {} particles | {} step number |\n\
-####| {} second | {} minutes.\n"\
-        ####.format(t,t/tau,sim.N,i,round((tiempo.monotonic()-initialtime),1)\
-        ####,round((tiempo.monotonic()-initialtime)/60,1)))
+        print("| {} time = {} years | {} particles | {} step number |\n\
+| {} second | {} minutes.\n"\
+        .format(t,t/tau,sim.N,i,round((tiempo.monotonic()-initialtime),1)\
+        ,round((tiempo.monotonic()-initialtime)/60,1)))
         #sim.ri_whfast.recalculate_coordinates_this_timestep = 1
         #sim.integrator_synchronize()
         #diftimes.append(sim.t+dT)
@@ -482,7 +482,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
 #     print("There are {} particles remaining.".format(sim.N))
     #
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(0,0/tau,sim.N,0,round((tiempo.monotonic()-initialtime),1)\
+    .format(sim.t,sim.t/tau,sim.N,stepnumber,round((tiempo.monotonic()-initialtime),1)\
     ,round((tiempo.monotonic()-initialtime)/60,1)))
     #
     quickplot(sim)
@@ -502,7 +502,7 @@ def batchInfo(*args, **kwargs):
     General info relevant to these batch jobs:
     """
     timesDict = {"seed":"max/min time needed",0:"4h18m",1:"min:9h",2:"time:3h4m",
-    3:"time:5h4m",4:"time:3h18m",5:"3h42m",6:"4h30m",7:"min:9h",8:"time:4h23m",9:"time:4h32m"}
+    3:"time:5h4m",4:"time:3h18m",5:"3h42m",6:"4h30m",7:"4h8m,min:9h",8:"time:4h23m",9:"time:4h32m"}
 ##################################################################################
 #numberOfSims = 1
 endTime = 10000 #years of simulation

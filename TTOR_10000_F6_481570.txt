@@ -1,0 +1,16 @@
+Steps: 100
+Beginning seed 6.
+| 0 time = 0.0 years | 1003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+Done at 13750 seconds!
+| 0 time = 0.0 years | 279 particles | 0 step number |
+| 13750.4 second | 229.2 minutes.
+
+Masses 0.0031100000000000056 and 0.0026400000000000043.
+Ending seed 6.
+
+That in total took 13750 seconds (229.18 minutes).
+[['inner planet mass', 'outer planet mass', 'seed'], [0.0031100000000000056, 0.0026400000000000043, 15.112540192926058, 6]]
+There are 279 particles remaining.
+Mon Jun 28 11:15:24 EDT 2021
