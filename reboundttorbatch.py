@@ -318,7 +318,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.savefig("Figures/"+str(seed)+"/RoidEccs"+addOn+".pdf")
     
     plt.clf()
-    plt.plot(times, [avg(EccsList, positive = True) for EccsList in asteroidEccs],linewidth=1)
+    plt.plot(times, [avg(EccsList, nonNegative = True) for EccsList in asteroidEccs],linewidth=1)
     plt.title('Asteroid Eccentricity AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
@@ -327,6 +327,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.clf()
     num_bins = 30
     plt.hist([data for data in asteroidEccs[-1] if data >= 0], num_bins)
+    plt.title("Asteroids Final Eccentricity Histogram")
     plt.savefig("Figures/"+str(seed)+"/RoidEccsHistoEnd"+addOn+".pdf")
     
     plt.clf()
@@ -339,7 +340,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxis"+addOn+".pdf")
     
     plt.clf()
-    plt.plot(times, [avg(asteroidAUList) for asteroidAUList in asteroidAU],linewidth=1)
+    plt.plot(times, [avg(asteroidAUList,positive=True) for asteroidAUList in asteroidAU],linewidth=1)
     plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Semi Major Axis (AU)')
@@ -348,10 +349,12 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.clf()
     num_bins =30
     plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
+    plt.title("Asteroids Beginning Semi Major Axis Histogram")
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoStart"+addOn+".pdf")
     
     plt.clf()
     plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
+    plt.title("Asteroids Ending Semi Major Axis Histogram")
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
     
 ###########################################################################################
@@ -433,6 +436,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
     asteroidAU = np.zeros((len(times),simNi-n-1)) # n is the number of planets, 1 is the number of stars
     asteroidEccs = np.zeros((len(times),simNi-n-1))
     #
+    print(f"Total steps: {stepnumber}")
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
     .format(0,0/tau,sim.N,0,round((tiempo.monotonic()-initialtime),1)\
     ,round((tiempo.monotonic()-initialtime)/60,1)))
@@ -524,7 +528,7 @@ steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
 sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
-quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True) # Can override 'steps' by setting a value directory
+quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
 print("Ending seed {}.\n".format(a))
