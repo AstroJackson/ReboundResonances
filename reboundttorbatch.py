@@ -311,8 +311,8 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
     
     plt.clf()
-    plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
-    plt.title('Asteroid Eccentricity Axis Over Time')
+    plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,10)]], linewidth=1)
+    plt.title('Asteroid Eccentricity Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccs')
     plt.savefig("Figures/"+str(seed)+"/RoidEccs"+addOn+".pdf")
@@ -330,7 +330,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.savefig("Figures/"+str(seed)+"/RoidEccsHistoEnd"+addOn+".pdf")
     
     plt.clf()
-    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
+    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,10)]], linewidth=1)
     # Does not plot every asteroid
     plt.title('Asteroid Semi Major Axis Over Time')
     plt.xlabel('Time (2pi*yr)')
