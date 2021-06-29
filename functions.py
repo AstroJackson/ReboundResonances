@@ -234,10 +234,20 @@ def masslist_read(filePath):
 
 def avg(listt, **kwargs):
     sum = 0
+    length = len(listt)
     if kwargs.get('positive'):
+        for i in listt:
+            if i > 0:
+                sum += i
+            else:
+                length -= 1
+        return sum / length
+    if kwargs.get('nonNegative'):
         for i in listt:
             if i >= 0:
                 sum += i
+            else:
+                length -= 1
         return sum / len(listt)
     for i in listt:
         sum += i
@@ -407,7 +417,15 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
         d = min(d1,d2)
         if d>5e-4:
             sim.add(p)
-
+            
+    # Hash Creation
+    ps = sim.particles
+    ps[0].hash = "star"
+    ps[1].hash = "innerPlanet"
+    ps[2].hash = "outerPlanet"
+    for i in range(3,sim.N): # this sets their hash to their starting particle number
+        ps[i].hash = str(i)
+    
     sim.collision_resolve = my_merge
 
     #sim.move_to_com()
