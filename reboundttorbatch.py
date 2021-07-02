@@ -452,7 +452,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
     global asteroidAU, asteroidEccs, simNi
     simNi = sim.N
     asteroidAU = np.zeros((len(times),simNi-n-1)) # n is the number of planets, 1 is the number of stars
-    asteroidEccs = np.zeros((len(times),simNi-n-1))
+    asteroidEccs = np.negative(np.ones((len(times),simNi-n-1)))
     #
     print(f"Total steps: {stepnumber}")
     print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
