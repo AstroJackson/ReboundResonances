@@ -1,0 +1,321 @@
+Steps: 100
+Beginning seed 9.
+Total steps: 100
+| 0 time = 0.0 years | 1003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+| 0.0 time = 0.0 years | 1003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+| 634.6651825433926 time = 101.01010101010101 years | 855 particles | 1 step number |
+| 878.2 second | 14.6 minutes.
+
+| 1269.3303650867852 time = 202.02020202020202 years | 763 particles | 2 step number |
+| 1924.8 second | 32.1 minutes.
+
+| 1903.9955476301777 time = 303.03030303030306 years | 696 particles | 3 step number |
+| 2733.8 second | 45.6 minutes.
+
+| 2538.6607301735703 time = 404.04040404040404 years | 628 particles | 4 step number |
+| 3442.5 second | 57.4 minutes.
+
+| 3173.325912716963 time = 505.0505050505051 years | 590 particles | 5 step number |
+| 3970.8 second | 66.2 minutes.
+
+| 3807.9910952603555 time = 606.0606060606061 years | 556 particles | 6 step number |
+| 5339.6 second | 89.0 minutes.
+
+| 4442.656277803748 time = 707.070707070707 years | 525 particles | 7 step number |
+| 5874.6 second | 97.9 minutes.
+
+| 5077.321460347141 time = 808.0808080808081 years | 503 particles | 8 step number |
+| 6319.1 second | 105.3 minutes.
+
+| 5711.986642890533 time = 909.0909090909091 years | 481 particles | 9 step number |
+| 6990.6 second | 116.5 minutes.
+
+| 6346.651825433926 time = 1010.1010101010102 years | 452 particles | 10 step number |
+| 8093.8 second | 134.9 minutes.
+
+| 6981.317007977318 time = 1111.111111111111 years | 424 particles | 11 step number |
+| 8842.7 second | 147.4 minutes.
+
+| 7615.982190520711 time = 1212.1212121212122 years | 409 particles | 12 step number |
+| 9360.4 second | 156.0 minutes.
+
+| 8250.647373064103 time = 1313.1313131313132 years | 396 particles | 13 step number |
+| 9535.6 second | 158.9 minutes.
+
+| 8885.312555607496 time = 1414.141414141414 years | 391 particles | 14 step number |
+| 9719.8 second | 162.0 minutes.
+
+| 9519.977738150888 time = 1515.1515151515152 years | 376 particles | 15 step number |
+| 9897.0 second | 165.0 minutes.
+
+| 10154.642920694281 time = 1616.1616161616162 years | 366 particles | 16 step number |
+| 10068.2 second | 167.8 minutes.
+
+| 10789.308103237674 time = 1717.1717171717173 years | 359 particles | 17 step number |
+| 10225.6 second | 170.4 minutes.
+
+| 11423.973285781067 time = 1818.1818181818182 years | 352 particles | 18 step number |
+| 10376.0 second | 172.9 minutes.
+
+| 12058.63846832446 time = 1919.1919191919194 years | 348 particles | 19 step number |
+| 10584.6 second | 176.4 minutes.
+
+| 12693.303650867852 time = 2020.2020202020203 years | 342 particles | 20 step number |
+| 10716.0 second | 178.6 minutes.
+
+| 13327.968833411243 time = 2121.212121212121 years | 337 particles | 21 step number |
+| 10794.2 second | 179.9 minutes.
+
+| 13962.634015954636 time = 2222.222222222222 years | 332 particles | 22 step number |
+| 10923.3 second | 182.1 minutes.
+
+| 14597.299198498029 time = 2323.2323232323233 years | 328 particles | 23 step number |
+| 10998.2 second | 183.3 minutes.
+
+| 15231.964381041422 time = 2424.2424242424245 years | 324 particles | 24 step number |
+| 11074.6 second | 184.6 minutes.
+
+| 15866.629563584815 time = 2525.252525252525 years | 322 particles | 25 step number |
+| 11150.7 second | 185.8 minutes.
+
+| 16501.294746128206 time = 2626.2626262626263 years | 317 particles | 26 step number |
+| 11223.5 second | 187.1 minutes.
+
+| 17135.9599286716 time = 2727.2727272727275 years | 314 particles | 27 step number |
+| 11301.8 second | 188.4 minutes.
+
+| 17770.62511121499 time = 2828.282828282828 years | 311 particles | 28 step number |
+| 11398.8 second | 190.0 minutes.
+
+| 18405.290293758386 time = 2929.29292929293 years | 308 particles | 29 step number |
+| 11481.2 second | 191.4 minutes.
+
+| 19039.955476301777 time = 3030.3030303030305 years | 304 particles | 30 step number |
+| 11546.2 second | 192.4 minutes.
+
+| 19674.62065884517 time = 3131.3131313131316 years | 302 particles | 31 step number |
+| 11617.4 second | 193.6 minutes.
+
+| 20309.285841388562 time = 3232.3232323232323 years | 301 particles | 32 step number |
+| 11694.6 second | 194.9 minutes.
+
+| 20943.951023931953 time = 3333.333333333333 years | 300 particles | 33 step number |
+| 11756.9 second | 195.9 minutes.
+
+| 21578.616206475348 time = 3434.3434343434346 years | 295 particles | 34 step number |
+| 11850.4 second | 197.5 minutes.
+
+| 22213.28138901874 time = 3535.3535353535353 years | 292 particles | 35 step number |
+| 11899.0 second | 198.3 minutes.
+
+| 22847.946571562134 time = 3636.3636363636365 years | 289 particles | 36 step number |
+| 11965.7 second | 199.4 minutes.
+
+| 23482.611754105525 time = 3737.3737373737376 years | 288 particles | 37 step number |
+| 12005.1 second | 200.1 minutes.
+
+| 24117.27693664892 time = 3838.383838383839 years | 286 particles | 38 step number |
+| 12045.7 second | 200.8 minutes.
+
+| 24751.94211919231 time = 3939.3939393939395 years | 285 particles | 39 step number |
+| 12086.6 second | 201.4 minutes.
+
+| 25386.607301735705 time = 4040.4040404040406 years | 282 particles | 40 step number |
+| 12126.7 second | 202.1 minutes.
+
+| 26021.272484279096 time = 4141.414141414141 years | 281 particles | 41 step number |
+| 12163.5 second | 202.7 minutes.
+
+| 26655.937666822487 time = 4242.424242424242 years | 281 particles | 42 step number |
+| 12199.7 second | 203.3 minutes.
+
+| 27290.60284936588 time = 4343.434343434344 years | 278 particles | 43 step number |
+| 12240.2 second | 204.0 minutes.
+
+| 27925.268031909272 time = 4444.444444444444 years | 277 particles | 44 step number |
+| 12278.8 second | 204.6 minutes.
+
+| 28559.933214452667 time = 4545.454545454546 years | 276 particles | 45 step number |
+| 12320.9 second | 205.3 minutes.
+
+| 29194.598396996058 time = 4646.464646464647 years | 275 particles | 46 step number |
+| 12366.3 second | 206.1 minutes.
+
+| 29829.263579539453 time = 4747.474747474748 years | 275 particles | 47 step number |
+| 12412.0 second | 206.9 minutes.
+
+| 30463.928762082844 time = 4848.484848484849 years | 274 particles | 48 step number |
+| 12483.6 second | 208.1 minutes.
+
+| 31098.593944626235 time = 4949.49494949495 years | 272 particles | 49 step number |
+| 12533.3 second | 208.9 minutes.
+
+| 31733.25912716963 time = 5050.50505050505 years | 271 particles | 50 step number |
+| 12597.4 second | 210.0 minutes.
+
+| 32367.92430971302 time = 5151.515151515152 years | 269 particles | 51 step number |
+| 12661.3 second | 211.0 minutes.
+
+| 33002.58949225641 time = 5252.525252525253 years | 268 particles | 52 step number |
+| 12709.3 second | 211.8 minutes.
+
+| 33637.254674799806 time = 5353.535353535353 years | 265 particles | 53 step number |
+| 12749.9 second | 212.5 minutes.
+
+| 34271.9198573432 time = 5454.545454545455 years | 265 particles | 54 step number |
+| 12785.0 second | 213.1 minutes.
+
+| 34906.585039886595 time = 5555.555555555557 years | 265 particles | 55 step number |
+| 12817.4 second | 213.6 minutes.
+
+| 35541.25022242998 time = 5656.565656565656 years | 263 particles | 56 step number |
+| 12858.1 second | 214.3 minutes.
+
+| 36175.91540497338 time = 5757.575757575758 years | 260 particles | 57 step number |
+| 12889.7 second | 214.8 minutes.
+
+| 36810.58058751677 time = 5858.58585858586 years | 257 particles | 58 step number |
+| 12917.5 second | 215.3 minutes.
+
+| 37445.24577006016 time = 5959.595959595959 years | 256 particles | 59 step number |
+| 12946.6 second | 215.8 minutes.
+
+| 38079.91095260355 time = 6060.606060606061 years | 255 particles | 60 step number |
+| 12977.0 second | 216.3 minutes.
+
+| 38714.57613514695 time = 6161.616161616162 years | 254 particles | 61 step number |
+| 13008.7 second | 216.8 minutes.
+
+| 39349.24131769034 time = 6262.626262626263 years | 252 particles | 62 step number |
+| 13041.9 second | 217.4 minutes.
+
+| 39983.90650023373 time = 6363.636363636364 years | 250 particles | 63 step number |
+| 13073.5 second | 217.9 minutes.
+
+| 40618.571682777125 time = 6464.646464646465 years | 249 particles | 64 step number |
+| 13105.1 second | 218.4 minutes.
+
+| 41253.23686532052 time = 6565.656565656566 years | 249 particles | 65 step number |
+| 13141.1 second | 219.0 minutes.
+
+| 41887.90204786391 time = 6666.666666666666 years | 246 particles | 66 step number |
+| 13200.9 second | 220.0 minutes.
+
+| 42522.5672304073 time = 6767.676767676768 years | 243 particles | 67 step number |
+| 13229.5 second | 220.5 minutes.
+
+| 43157.232412950696 time = 6868.686868686869 years | 243 particles | 68 step number |
+| 13256.7 second | 220.9 minutes.
+
+| 43791.89759549409 time = 6969.696969696971 years | 243 particles | 69 step number |
+| 13283.1 second | 221.4 minutes.
+
+| 44426.56277803748 time = 7070.707070707071 years | 242 particles | 70 step number |
+| 13308.3 second | 221.8 minutes.
+
+| 45061.22796058087 time = 7171.717171717172 years | 240 particles | 71 step number |
+| 13332.9 second | 222.2 minutes.
+
+| 45695.89314312427 time = 7272.727272727273 years | 237 particles | 72 step number |
+| 13395.7 second | 223.3 minutes.
+
+| 46330.558325667655 time = 7373.737373737374 years | 237 particles | 73 step number |
+| 13422.1 second | 223.7 minutes.
+
+| 46965.22350821105 time = 7474.747474747475 years | 235 particles | 74 step number |
+| 13449.1 second | 224.2 minutes.
+
+| 47599.888690754444 time = 7575.757575757576 years | 234 particles | 75 step number |
+| 13473.0 second | 224.6 minutes.
+
+| 48234.55387329784 time = 7676.767676767678 years | 234 particles | 76 step number |
+| 13499.2 second | 225.0 minutes.
+
+| 48869.219055841226 time = 7777.777777777777 years | 233 particles | 77 step number |
+| 13535.6 second | 225.6 minutes.
+
+| 49503.88423838462 time = 7878.787878787879 years | 232 particles | 78 step number |
+| 13561.7 second | 226.0 minutes.
+
+| 50138.549420928015 time = 7979.797979797981 years | 231 particles | 79 step number |
+| 13587.1 second | 226.5 minutes.
+
+| 50773.21460347141 time = 8080.808080808081 years | 229 particles | 80 step number |
+| 13610.8 second | 226.8 minutes.
+
+| 51407.8797860148 time = 8181.818181818182 years | 229 particles | 81 step number |
+| 13633.1 second | 227.2 minutes.
+
+| 52042.54496855819 time = 8282.828282828283 years | 226 particles | 82 step number |
+| 13654.8 second | 227.6 minutes.
+
+| 52677.210151101586 time = 8383.838383838385 years | 224 particles | 83 step number |
+| 13676.4 second | 227.9 minutes.
+
+| 53311.87533364497 time = 8484.848484848484 years | 224 particles | 84 step number |
+| 13698.2 second | 228.3 minutes.
+
+| 53946.54051618837 time = 8585.858585858587 years | 223 particles | 85 step number |
+| 13718.5 second | 228.6 minutes.
+
+| 54581.20569873176 time = 8686.868686868687 years | 220 particles | 86 step number |
+| 13739.4 second | 229.0 minutes.
+
+| 55215.87088127516 time = 8787.878787878788 years | 219 particles | 87 step number |
+| 13761.7 second | 229.4 minutes.
+
+| 55850.536063818545 time = 8888.888888888889 years | 219 particles | 88 step number |
+| 13784.0 second | 229.7 minutes.
+
+| 56485.20124636194 time = 8989.898989898991 years | 219 particles | 89 step number |
+| 13806.8 second | 230.1 minutes.
+
+| 57119.866428905334 time = 9090.909090909092 years | 219 particles | 90 step number |
+| 13830.6 second | 230.5 minutes.
+
+| 57754.53161144872 time = 9191.919191919193 years | 217 particles | 91 step number |
+| 13853.9 second | 230.9 minutes.
+
+| 58389.196793992116 time = 9292.929292929293 years | 217 particles | 92 step number |
+| 13877.2 second | 231.3 minutes.
+
+| 59023.86197653551 time = 9393.939393939394 years | 215 particles | 93 step number |
+| 13901.0 second | 231.7 minutes.
+
+| 59658.527159078905 time = 9494.949494949497 years | 213 particles | 94 step number |
+| 13925.1 second | 232.1 minutes.
+
+| 60293.19234162229 time = 9595.959595959595 years | 213 particles | 95 step number |
+| 13948.7 second | 232.5 minutes.
+
+| 60927.85752416569 time = 9696.969696969698 years | 213 particles | 96 step number |
+| 13975.5 second | 232.9 minutes.
+
+| 61562.52270670908 time = 9797.979797979799 years | 212 particles | 97 step number |
+| 14001.4 second | 233.4 minutes.
+
+| 62197.18788925247 time = 9898.9898989899 years | 212 particles | 98 step number |
+| 14028.0 second | 233.8 minutes.
+
+| 62831.853071795864 time = 10000.0 years | 209 particles | 99 step number |
+| 14058.1 second | 234.3 minutes.
+
+Done at 14058 seconds!
+| 62831.853071795864 time = 10000.0 years | 209 particles | 100 step number |
+| 14058.1 second | 234.3 minutes.
+
+Masses 0.0031900000000000058 and 0.0028000000000000047.
+Ending seed 9.
+
+That in total took 14058 seconds (234.3 minutes).
+Traceback (most recent call last):
+  File "reboundttorbatch.py", line 575, in <module>
+    masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_fixed6/29.txt','ttor','a', first = first, lastN = lastN)
+  File "reboundttorbatch.py", line 199, in masslist_txt_append
+    with open(filepath,write_type) as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Masslists/10000yrTTOR_fixed6/29.txt'
+Fri Jul  2 11:41:35 EDT 2021
