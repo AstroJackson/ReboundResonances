@@ -282,6 +282,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
     plt.savefig("Figures/"+str(seed)+"/Eccentricity"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/Eccentricity"+addOn, eccs)
     
     plt.clf()
     plt.plot(times, relative_x_value)
@@ -289,6 +290,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('X Value (AU)')
     plt.savefig("Figures/"+str(seed)+"/relativeXValue"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/relativeXValue"+addOn, relative_x_value)
     
     plt.clf()
     plt.plot(times, masses)
@@ -296,6 +298,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Mass (Solar Masses)')
     plt.savefig("Figures/"+str(seed)+"/masses"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/masses"+addOn, masses)
     
     plt.clf()
     fig, axs = plt.subplots(1, 2)
@@ -312,6 +315,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Distance (AU)')
     plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/inderplanetaryDistance"+addOn, interplanetdistance)
     
     plt.clf()
     plt.plot(times, particleNumber)
@@ -319,16 +323,18 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('sim.N (AU)')
     plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/particleNumber"+addOn, particleNumber)
     
     plt.clf()
-    plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,10)]], linewidth=1)
-    plt.title('Asteroid Eccentricity Over Time')
+    plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
+    plt.title('Asteroid Eccentricity Axis Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccs')
     plt.savefig("Figures/"+str(seed)+"/RoidEccs"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
     
     plt.clf()
-    plt.plot(times, [avg(EccsList, nonNegative = True) for EccsList in asteroidEccs],linewidth=1)
+    plt.plot(times, [avg(EccsList, positive = True) for EccsList in asteroidEccs],linewidth=1)
     plt.title('Asteroid Eccentricity AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
@@ -337,20 +343,20 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.clf()
     num_bins = 30
     plt.hist([data for data in asteroidEccs[-1] if data >= 0], num_bins)
-    plt.title("Asteroids Final Eccentricity Histogram")
     plt.savefig("Figures/"+str(seed)+"/RoidEccsHistoEnd"+addOn+".pdf")
     
     plt.clf()
-    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,10)]], linewidth=1)
+    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
     # Does not plot every asteroid
     plt.title('Asteroid Semi Major Axis Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Semi Major Axis (AU)')
     plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxis"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/asteroidAU"+addOn, asteroidAU)
     
     plt.clf()
-    plt.plot(times, [avg(asteroidAUList,positive=True) for asteroidAUList in asteroidAU],linewidth=1)
+    plt.plot(times, [avg(asteroidAUList) for asteroidAUList in asteroidAU],linewidth=1)
     plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Semi Major Axis (AU)')
@@ -359,12 +365,10 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.clf()
     num_bins =30
     plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
-    plt.title("Asteroids Beginning Semi Major Axis Histogram")
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoStart"+addOn+".pdf")
     
     plt.clf()
     plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
-    plt.title("Asteroids Ending Semi Major Axis Histogram")
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
     
 ###########################################################################################

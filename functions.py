@@ -288,6 +288,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
     plt.savefig("Figures/"+str(seed)+"/Eccentricity"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/Eccentricity"+addOn, eccs)
     
     plt.clf()
     plt.plot(times, relative_x_value)
@@ -295,6 +296,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('X Value (AU)')
     plt.savefig("Figures/"+str(seed)+"/relativeXValue"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/relativeXValue"+addOn, relative_x_value)
     
     plt.clf()
     plt.plot(times, masses)
@@ -302,6 +304,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Mass (Solar Masses)')
     plt.savefig("Figures/"+str(seed)+"/masses"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/masses"+addOn, masses)
     
     plt.clf()
     fig, axs = plt.subplots(1, 2)
@@ -318,6 +321,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Distance (AU)')
     plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/inderplanetaryDistance"+addOn, interplanetdistance)
     
     plt.clf()
     plt.plot(times, particleNumber)
@@ -325,6 +329,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('sim.N (AU)')
     plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/particleNumber"+addOn, particleNumber)
     
     plt.clf()
     plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
@@ -332,6 +337,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccs')
     plt.savefig("Figures/"+str(seed)+"/RoidEccs"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
     
     plt.clf()
     plt.plot(times, [avg(EccsList, positive = True) for EccsList in asteroidEccs],linewidth=1)
@@ -353,6 +359,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.ylabel('Semi Major Axis (AU)')
     plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
     plt.savefig("Figures/"+str(seed)+"/RoidSMAxis"+addOn+".pdf")
+    np.save("Figures/"+str(seed)+"/Arrays/asteroidAU"+addOn, asteroidAU)
     
     plt.clf()
     plt.plot(times, [avg(asteroidAUList) for asteroidAUList in asteroidAU],linewidth=1)
