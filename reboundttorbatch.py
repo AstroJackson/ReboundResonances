@@ -545,7 +545,7 @@ except IndexError:
     print("\n"*3)
     print("#"*40)
     a = 0
-stepFrequency = 100 # how often should a step occur (years)
+stepFrequency = 10 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
@@ -561,9 +561,12 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
 try:
-    sysarg2 = sys.argv[2]
+    sysarg2 = int(sys.argv[2])
 except IndexError: # if sys.argv[2] does not exist, it is a middle data point
     sysarg2 = -1
+except ValueError:
+    print("#"*40+"\nsys.argv[2] is a string. It is likely the filepath.\n"+"#"*40)
+    raise ValueError # I do not want the code to still run
 lastN = 0
 if int(sysarg2)>0: #sys.argv[2]>0 could be last data point
     first = False
@@ -576,7 +579,7 @@ elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point,
     first = True
     last = False
 
-masslist_txt_append(ttor_masses,'Masslists/10000yrTTOR_fixed6/29.txt','ttor','a', first = first, lastN = lastN)
+masslist_txt_append(ttor_masses,'Masslists/npsaveAddition1000July6','ttor','a', first = first, last = last, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
