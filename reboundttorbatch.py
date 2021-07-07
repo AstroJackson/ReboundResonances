@@ -585,9 +585,6 @@ print("There are {} particles remaining.".format(sim.N))
 
 saveFigs(seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
                    # put the figures in the Tests folder (still within Figures)
-
-#    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, \
-  #  interplanetdistance, masses, particleNumber, asteroidAU, asteroidEccs
 np.savez("Figures/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
