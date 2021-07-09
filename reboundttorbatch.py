@@ -513,7 +513,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
                 try:                    
                     asteroidAU[i,index] = ps[str(roidNumber)].a
                     asteroidEccs[i,index] = ps[str(roidNumber)].e
-                except:
+                except rebound.ParticleNotFound:
                     pass
         ####
     finaltime = tiempo.monotonic()
