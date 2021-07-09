@@ -181,7 +181,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
-    import os.path
+    import os
     if kwargs.get('first') or not os.path.isfile(filepath): # If file does not exist, create it. If sys.argv[1]==0,
                                                             #then will also create.
         write_type = "w"
@@ -254,7 +254,7 @@ def averagePercent(filePath):
 
 # In[4]:
 
-def saveFigs(addOn = "", seed = 0, **kwargs):
+def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     """
     This saves several types of graphs into a folder corresponsing to the seed.
     Optional ability to add on to the name of a file easily.
@@ -263,42 +263,56 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     """
     if kwargs.get("test"):
         seed = "Tests"
+    if innerFolder:
+        innerFolder += "/"
+        import os
+        if not os.path.isdir("Figures/"+innerFolder):
+            os.mkdir("Figures/"+innerFolder)
+        if not os.path.isdir("Figures/"+innerFolder+str(seed)):
+            os.mkdir("Figures/"+innerFolder+str(seed))
+        if not os.path.isdir("Figures/"+innerFolder+str(seed)+"/Arrays"):
+            os.mkdir("Figures/"+innerFolder+str(seed)+"/Arrays")
+    
+    np.savez("Figures/"+innerFolder+str(seed)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+    eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
+    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
     
     plt.clf() # clears any graphs
     quickplot(sim)
-    plt.savefig("Figures/"+str(seed)+"/quickplot"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/quickplot"+addOn+".pdf")
     
     plt.clf()
     rebound.OrbitPlot(sim,slices=0.3,color=True)
-    plt.savefig("Figures/"+str(seed)+"/reboundPlot"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/reboundPlot"+addOn+".pdf")
     
     plt.clf()
     rebound.OrbitPlot(sim, slices = .3, color = True, lw = 1, plotparticles = [1,2])
-    plt.savefig("Figures/"+str(seed)+"/reboundPlotOnlyPlanets"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/reboundPlotOnlyPlanets"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, eccs)
     plt.title('Eccentricity Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
-    plt.savefig("Figures/"+str(seed)+"/Eccentricity"+addOn+".pdf")
-    np.save("Figures/"+str(seed)+"/Arrays/Eccentricity"+addOn, eccs)
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/Eccentricity"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(seed)+"/Arrays/Eccentricity"+addOn, eccs)
+    np.save("Figures/"+innerFolder+str(seed)+"/Arrays/times"+addOn, times)
     
     plt.clf()
     plt.plot(times, relative_x_value)
     plt.title('X Value From Star Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('X Value (AU)')
-    plt.savefig("Figures/"+str(seed)+"/relativeXValue"+addOn+".pdf")
-    np.save("Figures/"+str(seed)+"/Arrays/relativeXValue"+addOn, relative_x_value)
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/relativeXValue"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(seed)+"/Arrays/relativeXValue"+addOn, relative_x_value)
     
     plt.clf()
     plt.plot(times, masses)
     plt.title('Mass of Planets Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Mass (Solar Masses)')
-    plt.savefig("Figures/"+str(seed)+"/masses"+addOn+".pdf")
-    np.save("Figures/"+str(seed)+"/Arrays/masses"+addOn, masses)
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/masses"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(seed)+"/Arrays/masses"+addOn, masses)
     
     plt.clf()
     fig, axs = plt.subplots(1, 2)
@@ -307,43 +321,43 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
     axs[0].set_aspect('equal')
     axs[1].set_aspect('equal')
-    plt.savefig("Figures/"+str(seed)+"/scatterPlotPositions"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/scatterPlotPositions"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, interplanetdistance)
     plt.title('Interplanetary Distance Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Distance (AU)')
-    plt.savefig("Figures/"+str(seed)+"/interplanetaryDistance"+addOn+".pdf")
-    np.save("Figures/"+str(seed)+"/Arrays/inderplanetaryDistance"+addOn, interplanetdistance)
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/interplanetaryDistance"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(seed)+"/Arrays/inderplanetaryDistance"+addOn, interplanetdistance)
     
     plt.clf()
     plt.plot(times, particleNumber)
     plt.title('sim.N over time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('sim.N (AU)')
-    plt.savefig("Figures/"+str(seed)+"/particleNumber"+addOn+".pdf")
-    np.save("Figures/"+str(seed)+"/Arrays/particleNumber"+addOn, particleNumber)
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/particleNumber"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(seed)+"/Arrays/particleNumber"+addOn, particleNumber)
     
     plt.clf()
     plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
-    plt.title('Asteroid Eccentricity Axis Over Time')
+    plt.title('Asteroid Eccentricity Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccs')
-    plt.savefig("Figures/"+str(seed)+"/RoidEccs"+addOn+".pdf")
-    np.save("Figures/"+str(seed)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/RoidEccs"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(seed)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
     
     plt.clf()
     plt.plot(times, [avg(EccsList, positive = True) for EccsList in asteroidEccs],linewidth=1)
     plt.title('Asteroid Eccentricity AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
-    plt.savefig("Figures/"+str(seed)+"/RoidEccsAverage"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/RoidEccsAverage"+addOn+".pdf")
     
     plt.clf()
     num_bins = 30
     plt.hist([data for data in asteroidEccs[-1] if data >= 0], num_bins)
-    plt.savefig("Figures/"+str(seed)+"/RoidEccsHistoEnd"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/RoidEccsHistoEnd"+addOn+".pdf")
     
     plt.clf()
     plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
@@ -352,24 +366,24 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Semi Major Axis (AU)')
     plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
-    plt.savefig("Figures/"+str(seed)+"/RoidSMAxis"+addOn+".pdf")
-    np.save("Figures/"+str(seed)+"/Arrays/asteroidAU"+addOn, asteroidAU)
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/RoidSMAxis"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(seed)+"/Arrays/asteroidAU"+addOn, asteroidAU)
     
     plt.clf()
     plt.plot(times, [avg(asteroidAUList) for asteroidAUList in asteroidAU],linewidth=1)
     plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Semi Major Axis (AU)')
-    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisAverage"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/RoidSMAxisAverage"+addOn+".pdf")
     
     plt.clf()
     num_bins =30
     plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
-    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoStart"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/RoidSMAxisHistoStart"+addOn+".pdf")
     
     plt.clf()
     plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
-    plt.savefig("Figures/"+str(seed)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
+    plt.savefig("Figures/"+innerFolder+str(seed)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
     
 ###########################################################################################
 
@@ -400,11 +414,13 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    #46 is my most frequently used seed
+    #auList = np.linspace(.6,2,asteroidnumber) # use this to NOT randomize the starting distance
+    #index = 0
     np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
     while sim.N < (N_pl + sim.N_active):
         #a = rand_powerlaw(0, 0.1, 3) 
         a = rand_uniform(.6,2.9)
+        #a = auList[index]
         #e = rand_rayleigh(0.01) by default is 0
         e=0
         #inc = rand_rayleigh(0.005)
@@ -417,6 +433,7 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
         d = min(d1,d2)
         if d>5e-4:
             sim.add(p)
+            #index += 1
 
     # Hash Creation
     ps = sim.particles
@@ -531,7 +548,7 @@ def batchInfo(*args, **kwargs):
     3:"time:5h4m",4:"time:3h18m",5:"3h42m",6:"4h30m",7:"4h8m,min:9h",8:"time:4h23m",9:"time:4h32m"}
 ##################################################################################
 #numberOfSims = 1
-endTime = 10000 #years of simulation
+endTime = 100 #years of simulation
 ttor_masses = [['inner planet mass', 'outer planet mass','seed']]
 BIGinitial = tiempo.monotonic()
 #
@@ -541,15 +558,15 @@ try:
 except IndexError:
     print("#"*40)
     print("\n"*3)
-    print("Sys.argv had an error! Setting the seed equal to 0!")
+    print("Sys.argv had an error! Setting the seed equal to 15!")
     print("\n"*3)
     print("#"*40)
-    a = 0
+    a = 15
 stepFrequency = 10 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
-sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 1000)
+sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 10)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -579,12 +596,13 @@ elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point,
     first = True
     last = False
 
-masslist_txt_append(ttor_masses,'Masslists/npsaveAddition1000July6','ttor','a', first = first, last = last, lastN = lastN)
+masslist_txt_append(ttor_masses,'Masslists/2000July9','ttor','a', first = first, last = last, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
-saveFigs(seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+saveFigs(innerFolder= "2000asteroids",seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
                    # put the figures in the Tests folder (still within Figures)
-np.savez("Figures/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
-    eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
-    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
+# np.savez("Figures/"+innerFolder+"graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+#     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
+#     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
+
