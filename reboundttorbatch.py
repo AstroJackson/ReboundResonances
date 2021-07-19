@@ -483,9 +483,9 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
     for i, t in enumerate(times):
         sim.integrate(t)
         print("| {} time = {} years | {} particles | {} step number |\n\
-| {} second | {} minutes.\n"\
+| {} second | {} minutes | {} hours.\n"\
         .format(t,t/tau,sim.N,i,round((tiempo.monotonic()-initialtime),1)\
-        ,round((tiempo.monotonic()-initialtime)/60,1)))
+        ,round((tiempo.monotonic()-initialtime)/60,1),round((tiempo.monotonic()-initialtime)/3600,1)))
         #sim.ri_whfast.recalculate_coordinates_this_timestep = 1
         #sim.integrator_synchronize()
         #diftimes.append(sim.t+dT)
@@ -596,7 +596,7 @@ elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point,
     first = True
     last = False
 
-masslist_txt_append(ttor_masses,'Masslists/2000July9','ttor','a', first = first, last = last, lastN = lastN)
+masslist_txt_append(ttor_masses,'Masslists/2000July18','ttor','a', first = first, last = last, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
