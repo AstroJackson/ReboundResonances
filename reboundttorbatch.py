@@ -524,9 +524,9 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
 #     print("The outer planet ended with a mass of {}.".format(ps[2].m))
 #     print("There are {} particles remaining.".format(sim.N))
     #
-    print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
+    print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes | {} hours.\n"\
     .format(sim.t,sim.t/tau,sim.N,stepnumber,round((tiempo.monotonic()-initialtime),1)\
-    ,round((tiempo.monotonic()-initialtime)/60,1)))
+    ,round((tiempo.monotonic()-initialtime)/60,1), round((tiempo.monotonic()-initialtime)/3600,1)))
     #
     quickplot(sim)
     #ding()
@@ -576,7 +576,7 @@ ttor_masses.append(pre_list)
 BIGfinal = tiempo.monotonic()
 #
 totaltime = BIGfinal - BIGinitial
-print("That in total took {} seconds ({} minutes).".format(int(totaltime), round(totaltime/60,2)))
+print("That in total took {} seconds ({} minutes, {} hours).".format(int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 try:
     sysarg2 = int(sys.argv[2])
 except IndexError: # if sys.argv[2] does not exist, it is a middle data point
@@ -596,7 +596,7 @@ elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point,
     first = True
     last = False
 
-masslist_txt_append(ttor_masses,'Masslists/2000July18','ttor','a', first = first, last = last, lastN = lastN)
+masslist_txt_append(ttor_masses,'Masslists/2000July19.txt','ttor','a', first = first, last = last, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
