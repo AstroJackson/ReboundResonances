@@ -414,26 +414,30 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    #auList = np.linspace(.6,2,asteroidnumber) # use this to NOT randomize the starting distance
-    #index = 0
-    np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
+    auList = np.linspace(.6,2,asteroidnumber) # use this to NOT randomize the starting distance
+    index = 0
+    if not seed == 'strict':
+        np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
+    else:
+        np.random.seed(0)
     while sim.N < (N_pl + sim.N_active):
         #a = rand_powerlaw(0, 0.1, 3) 
         a = rand_uniform(.6,2.9)
-        #a = auList[index]
+        if seed == 'strict':
+            a = auList[index]
         #e = rand_rayleigh(0.01) by default is 0
         e=0
         #inc = rand_rayleigh(0.005)
         inc=0
         f = rand_uniform(-np.pi,np.pi)
-        p = rebound.Particle(simulation=sim,primary=sim.particles[0], r=r_pl, a=a, e=e, inc=inc, Omega=0, omega=0, f=f)
+        p = rebound.Particle(simulation=sim,primary=sim.particles[0], r=r_pl, a=a, f=f)
         # Only add planetesimal if it's far away from the planet
         d1 = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[1].xyz))
         d2 = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[2].xyz))
         d = min(d1,d2)
         if d>5e-4:
             sim.add(p)
-            #index += 1
+            index += 1
 
     # Hash Creation
     ps = sim.particles
@@ -562,6 +566,11 @@ except IndexError:
     print("\n"*3)
     print("#"*40)
     a = 15
+except ValueError:
+    if sys.argv[1] != 'strict':
+        raise ValueError("a string was passed in that was not 'strict'")
+    a = sys.argv[1]
+    print("Setting distribution to strict uniform")
 stepFrequency = 10 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
