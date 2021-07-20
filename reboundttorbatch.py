@@ -610,7 +610,7 @@ elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point,
     first = True
     last = False
 
-masslist_txt_append(ttor_masses,'Masslists/2000July19.txt','ttor','a', first = first, last = last, lastN = lastN)
+masslist_txt_append(ttor_masses,'Masslists/2000July20.txt','ttor','a', first = first, last = last, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
