@@ -196,8 +196,13 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
             message += str(j)
             message +='\t'
         message +='\n'
-    with open(filepath,write_type) as file:
-        file.write(message)
+    try:
+        with open(filepath,write_type) as file:
+            file.write(message)
+    except FileNotFoundError:
+        os.chdir("Downloads/Rebound/ReboundResonances")
+        with open(filepath,write_type) as file:
+            file.write(message)
     if kwargs.get('last') and len(masslist_read(filepath))/4 >= kwargs.get("lastN"):
         with open(filepath, "a") as file:
             file.write("\nAverage percent difference: {}"
