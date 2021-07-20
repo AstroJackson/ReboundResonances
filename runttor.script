@@ -1,0 +1,13 @@
+#!/bin/bash
+
+python3 reboundttorbatch.py strict 11 &
+python3 reboundttorbatch.py 0 11 &
+python3 reboundttorbatch.py 1 11 &
+python3 reboundttorbatch.py 2 11 &
+python3 reboundttorbatch.py 3 11 &
+python3 reboundttorbatch.py 4 11 &
+python3 reboundttorbatch.py 5 11 &
+python3 reboundttorbatch.py 6 11 &
+python3 reboundttorbatch.py 7 11 &
+python3 reboundttorbatch.py 8 11 &
+python3 reboundttorbatch.py 9 11

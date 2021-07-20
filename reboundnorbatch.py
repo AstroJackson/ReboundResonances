@@ -419,7 +419,8 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    auList = np.linspace(.6,2,asteroidnumber) # use this to NOT randomize the starting distance
+    innerRad, outerRad = 0.6, 2.9
+    auList = np.linspace(innerRad, outerRad,asteroidnumber) # use this to NOT randomize the starting distance
     index = 0
     if not seed == 'strict':
         np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
@@ -581,7 +582,7 @@ stepFrequency = 10 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
-sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 2000)
+sim = generatettor(simulation = nor, seed =a, asteroidnumber = 2000)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, seed = a) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -611,11 +612,11 @@ elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point,
     first = True
     last = False
 
-masslist_txt_append(ttor_masses,'Masslists/2000July20.txt','ttor','a', first = first, last = last, lastN = lastN)
+masslist_txt_append(ttor_masses,'Masslists/2000July20NOR.txt','ttor','a', first = first, last = last, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
-saveFigs(innerFolder= "2000asteroids",seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+saveFigs(innerFolder= "2000asteroidsNOR",seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
                    # put the figures in the Tests folder (still within Figures)
 # np.savez("Figures/"+innerFolder+"graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
 #     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
