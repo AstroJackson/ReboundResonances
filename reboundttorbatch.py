@@ -419,7 +419,7 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    auList = np.linspace(.6,2,asteroidnumber) # use this to NOT randomize the starting distance
+    auList = np.linspace(.6,2.9,asteroidnumber) # use this to NOT randomize the starting distance
     index = 0
     if not seed == 'strict':
         np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
