@@ -395,8 +395,13 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     
 ###########################################################################################
 
-def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):  
-    sim = simulation()
+def generateSystem(simulation = ttor,seed = None, asteroidnumber = 1000, **kwargs):  
+    if simulation.__name__ == 'simAU':
+        if not kwargs.get("sma"):
+            raise IndexError("Need to pass in a sma kwarg as well.")
+        sim=simulation(kwargs.get("sma"))
+    else:
+        sim = simulation()
     sim.N_active = sim.N
 
     sim.integrator = "ias15"
@@ -584,7 +589,7 @@ stepFrequency = 10 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
-sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 2000)
+sim = generateSystem(simulation = ttor, seed =a, asteroidnumber = 2000)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, seed = a) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
