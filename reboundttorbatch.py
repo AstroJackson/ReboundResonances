@@ -214,7 +214,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
 # In
 def masslist_read(filePath):
     """
-    Inverse of masslist_txt()
+    Inverse of masslist_txt(). Used in masslist_txt_append to determine if the average percent should be calculated.
     """
     with open(filePath,'r') as datafile:
         contents = datafile.read()

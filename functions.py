@@ -53,6 +53,14 @@ def nor(R0 = 5e-4): #no resonance (initially at least)
     sim.add(m=1e-3, a=1, r=R0)  #creates a planet with mass 0.001 at 1 AU
     sim.add(m=1e-3, a=1.8, f=np.pi, r=R0) #use .1 mass to show the planets having a large effect on each other
     return sim
+
+def simAU(AU, R0 = 5e-4): #can set the sma of the second planet easily this way
+    sim = rebound.Simulation()
+    #sim.units = ('yr', 'AU', 'Msun') #sets G=4pi^2 so AU, earth years, solar masses
+    #R0 = 5**(1/3)*0.01
+    sim.add(m=1) #creates a star of mass 1
+    sim.add(m=1e-3, a=1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=1e-3, a=AU, f=np.pi, r=R0) 
     
 def resonance_counter(data, base = 1):
     innerplanetcount = 0
@@ -191,7 +199,11 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
-    if kwargs.get('first'):
+    import os
+    if not os.path.isdir("Figures"):
+        os.chdir("Downloads/Rebound/ReboundResonances")
+    if kwargs.get('first') or not os.path.isfile(filepath): # If file does not exist, create it. If sys.argv[1]==0,
+                                                            #then will also create.                                                          
         write_type = "w"
         message += sim+'\n'
         message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
@@ -203,10 +215,16 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
         for j in data:
             message += str(j)
             message +='\t'
-        message +='\n'
-    with open(filepath,write_type) as file:
-        file.write(message)
-    if kwargs.get('last'):
+        message +='\n'    
+    try:
+        with open(filepath,write_type) as file:
+            file.write(message)
+    except FileNotFoundError:
+        os.chdir("Downloads/Rebound/ReboundResonances")
+        with open(filepath,write_type) as file:
+            file.write(message)
+
+    if kwargs.get('last') and len(masslist_read(filepath))/4 >= kwargs.get("lastN"):
         with open(filepath, "a") as file:
             file.write("\nAverage percent difference: {}"
                        .format(averagePercent(filepath)))
@@ -381,9 +399,13 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
 
 
 def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):  
-    sim = simulation()
+    if simulation.__name__ == 'simAU':
+        if not kwargs.get("sma"):
+            raise IndexError("Need to pass in a sma kwarg as well.")
+        sim=simulation(kwargs.get("sma"))
+    else:
+        sim = simulation()
     sim.N_active = sim.N
-
     sim.integrator = "ias15"
     #sim.integrator = "whfast"
     #sim.ri_whfast.corrector = 0 #zero order corrector for better speed
