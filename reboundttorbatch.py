@@ -182,8 +182,10 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
     import os
+    if not os.path.isdir("Figures"):
+        os.chdir("Downloads/Rebound/ReboundResonances")
     if kwargs.get('first') or not os.path.isfile(filepath): # If file does not exist, create it. If sys.argv[1]==0,
-                                                            #then will also create.
+                                                            #then will also create.                                                          
         write_type = "w"
         message += sim+'\n'
         message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
@@ -195,7 +197,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
         for j in data:
             message += str(j)
             message +='\t'
-        message +='\n'
+        message +='\n'    
     try:
         with open(filepath,write_type) as file:
             file.write(message)
@@ -203,6 +205,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
         os.chdir("Downloads/Rebound/ReboundResonances")
         with open(filepath,write_type) as file:
             file.write(message)
+
     if kwargs.get('last') and len(masslist_read(filepath))/4 >= kwargs.get("lastN"):
         with open(filepath, "a") as file:
             file.write("\nAverage percent difference: {}"
@@ -492,7 +495,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
     #
     for i, t in enumerate(times):
         sim.integrate(t)
-        print("seed: {} | {} time = {} years | {} particles | {} step number |\n\
+        print("ttor seed: {} | {} time = {} years | {} particles | {} step number |\n\
 | {} second | {} minutes | {} hours.\n"\
         .format(seed,t,t/tau,sim.N,i,round((tiempo.monotonic()-initialtime),1)\
         ,round((tiempo.monotonic()-initialtime)/60,1),round((tiempo.monotonic()-initialtime)/3600,1)))
@@ -611,11 +614,11 @@ elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point,
     first = True
     last = False
 
-masslist_txt_append(ttor_masses,'Masslists/2000July20.txt','ttor','a', first = first, last = last, lastN = lastN)
+masslist_txt_append(ttor_masses,'Masslists/2000July21TTOR.txt','ttor','a', first = first, last = last, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
-saveFigs(innerFolder= "2000asteroids",seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+saveFigs(innerFolder= "2000asteroidsJuly21TTOR",seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
                    # put the figures in the Tests folder (still within Figures)
 # np.savez("Figures/"+innerFolder+"graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
 #     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
