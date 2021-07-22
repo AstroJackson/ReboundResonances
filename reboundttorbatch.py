@@ -42,6 +42,14 @@ def nor(R0 = 5e-4): #no resonance (initially at least)
     sim.add(m=1e-3, a=1.8, f=np.pi, r=R0) #use .1 mass to show the planets having a large effect on each other
     return sim
     
+def simAU(AU, R0 = 5e-4): #can set the sma of the second planet easily this way
+    sim = rebound.Simulation()
+    #sim.units = ('yr', 'AU', 'Msun') #sets G=4pi^2 so AU, earth years, solar masses
+    #R0 = 5**(1/3)*0.01
+    sim.add(m=1) #creates a star of mass 1
+    sim.add(m=1e-3, a=1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=1e-3, a=AU, f=np.pi, r=R0) 
+    
 def resonance_counter(data, base = 1):
     innerplanetcount = 0
     outerplanetcount = 0
