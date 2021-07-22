@@ -95,6 +95,24 @@ def my_merge(sim_pointer, collided_particles_index):
     if ps[i1]==0 and ps[j1]==0:
         print("both are asteroids")
         return 0
+    elif ps[i1] > 0.0001 and ps[j1] > 0.0001: # if the two planets collide
+        global planetDestroyed
+        planetDestroyed = True
+        i = i1   
+        j = j1
+        print(""*40+"\n"*3+"The planets collided!"+f"Time: {sim.t}"+"\n"*3+"#"*40)
+        total_mass = ps[i].m + ps[j].m
+        merged_planet = (ps[i] * ps[i].m + ps[j] * ps[j].m)/total_mass # conservation of momentum
+
+        # merged radius assuming a uniform density
+        merged_radius = (ps[i].r**3 + ps[j].r**3)**(1/3)
+
+        ps[i] = merged_planet   # update p1's state vector (mass and radius will need corrections)
+        ps[i].m = total_mass    # update to total mass
+        ps[i].r = merged_radius # update to joined radius
+
+        return 2 # remove particle with index j
+    
     else:
         if ps[i1].m==0: #assigns k as the planet with mass and l as the particle w/o mass
             k=j1
@@ -396,13 +414,18 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     sim = simulation()
     sim.N_active = sim.N
 
-    sim.integrator = "ias15"
+    if kwargs.get("integrator") == "mercurius":
+        sim.integrator = "mercurius"
+        sim.dt = 0.025*2.*np.pi # we're working in units where 1 year = 2*pi
+        sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration 
+    else:
+        sim.integrator = "ias15"
+        sim.ri_ias15.min_dt = 1e-7 # ensure that close encounters do not stall the integration
     #sim.integrator = "whfast"
     #sim.ri_whfast.corrector = 0 #zero order corrector for better speed
     #sim.ri_whfast.safe_mode = 0 #turns off safemode, *substantial* speed boost
     #sim.dt = 0.001*2*np.pi #mutiple by 2pi if in units such that G=1
     sim.testparticle_type = 0
-    #sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration
 
     #collision and boundary options
     sim.collision = "direct"
@@ -577,6 +600,7 @@ except ValueError:
         raise ValueError("a string was passed in that was not 'strict'")
     a = sys.argv[1]
     print("Setting distribution to strict uniform")
+planetDestroyed = False
 stepFrequency = 10 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
@@ -611,11 +635,11 @@ elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point,
     first = True
     last = False
 
-masslist_txt_append(ttor_masses,'Masslists/2000July21TTTR.txt','ttor','a', first = first, last = last, lastN = lastN)
+masslist_txt_append(ttor_masses,'Masslists/2000July22TTTR_strictTest.txt','ttor','a', first = first, last = last, lastN = lastN)
 print(ttor_masses)
 print("There are {} particles remaining.".format(sim.N))
 
-saveFigs(innerFolder= "2000asteroidsJuly21TTTR",seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+saveFigs(innerFolder= "2000asteroidsJuly22TTTR_strictTest",seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
                    # put the figures in the Tests folder (still within Figures)
 # np.savez("Figures/"+innerFolder+"graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
 #     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\

@@ -42,6 +42,14 @@ def nor(R0 = 5e-4): #no resonance (initially at least)
     sim.add(m=1e-3, a=1.8, f=np.pi, r=R0) #use .1 mass to show the planets having a large effect on each other
     return sim
     
+def simAU(AU, R0 = 5e-4): #can set the sma of the second planet easily this way
+    sim = rebound.Simulation()
+    #sim.units = ('yr', 'AU', 'Msun') #sets G=4pi^2 so AU, earth years, solar masses
+    #R0 = 5**(1/3)*0.01
+    sim.add(m=1) #creates a star of mass 1
+    sim.add(m=1e-3, a=1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=1e-3, a=AU, f=np.pi, r=R0) 
+    
 def resonance_counter(data, base = 1):
     innerplanetcount = 0
     outerplanetcount = 0
@@ -214,7 +222,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
 # In
 def masslist_read(filePath):
     """
-    Inverse of masslist_txt()
+    Inverse of masslist_txt(). Used in masslist_txt_append to determine if the average percent should be calculated.
     """
     with open(filePath,'r') as datafile:
         contents = datafile.read()
@@ -395,17 +403,27 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     
 ###########################################################################################
 
-def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):  
-    sim = simulation()
+def generateSystem(simulation = ttor,seed = None, asteroidnumber = 1000, **kwargs):  
+    if simulation.__name__ == 'simAU':
+        if not kwargs.get("sma"):
+            raise IndexError("Need to pass in a sma kwarg as well.")
+        sim=simulation(kwargs.get("sma"))
+    else:
+        sim = simulation()
     sim.N_active = sim.N
 
-    sim.integrator = "ias15"
+    if kwargs.get("integrator") == "mercurius":
+        sim.integrator = "mercurius"
+        sim.dt = 0.025*2.*np.pi # we're working in units where 1 year = 2*pi
+        sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration 
+    else:
+        sim.integrator = "ias15"
+        sim.ri_ias15.min_dt = 1e-7 # ensure that close encounters do not stall the integration
     #sim.integrator = "whfast"
     #sim.ri_whfast.corrector = 0 #zero order corrector for better speed
     #sim.ri_whfast.safe_mode = 0 #turns off safemode, *substantial* speed boost
     #sim.dt = 0.001*2*np.pi #mutiple by 2pi if in units such that G=1
     sim.testparticle_type = 0
-    #sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration
 
     #collision and boundary options
     sim.collision = "direct"
@@ -584,7 +602,7 @@ stepFrequency = 10 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
-sim = generatettor(simulation = ttor, seed =a, asteroidnumber = 2000)
+sim = generateSystem(simulation = ttor, seed =a, asteroidnumber = 2000)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, seed = a) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
