@@ -392,17 +392,22 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     
 ###########################################################################################
 
-def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):  
+def generateSystem(simulation = ttor,seed = None, asteroidnumber = 1000):  
     sim = simulation()
     sim.N_active = sim.N
 
-    sim.integrator = "ias15"
+    if kwargs.get("integrator") == "mercurius":
+        sim.integrator = "mercurius"
+        sim.dt = 0.025*2.*np.pi # we're working in units where 1 year = 2*pi
+        sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration 
+    else:
+        sim.integrator = "ias15"
+        sim.ri_ias15.min_dt = 1e-7 # ensure that close encounters do not stall the integration
     #sim.integrator = "whfast"
     #sim.ri_whfast.corrector = 0 #zero order corrector for better speed
     #sim.ri_whfast.safe_mode = 0 #turns off safemode, *substantial* speed boost
     #sim.dt = 0.001*2*np.pi #mutiple by 2pi if in units such that G=1
     sim.testparticle_type = 0
-    #sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration
 
     #collision and boundary options
     sim.collision = "direct"
@@ -582,7 +587,7 @@ stepFrequency = 10 # how often should a step occur (years)
 steps = int(endTime/stepFrequency) # Will round down to an integer
 print(f"Steps: {steps}")
 print("Beginning seed {}.".format(a))
-sim = generatettor(simulation = nor, seed =a, asteroidnumber = 2000)
+sim = generateSystem(simulation = nor, seed =a, asteroidnumber = 2000)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, seed = a) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
