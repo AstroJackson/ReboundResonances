@@ -103,6 +103,23 @@ def my_merge(sim_pointer, collided_particles_index):
     if ps[i1]==0 and ps[j1]==0:
         print("both are asteroids")
         return 0
+    elif ps[i1].m > 0.0001 and ps[j1].m > 0.0001: # if the two planets collide
+        global planetDestroyed
+        planetDestroyed = True
+        i = i1   
+        j = j1
+        print(""*40+"\n"*3+"The planets collided!"+f"Time: {sim.t}"+"\n"*3+"#"*40)
+        total_mass = ps[i].m + ps[j].m
+        merged_planet = (ps[i] * ps[i].m + ps[j] * ps[k].m)/total_mass # conservation of momentum
+
+        # merged radius assuming a uniform density
+        merged_radius = (ps[i].r**3 + ps[j].r**3)**(1/3)
+
+        ps[i] = merged_planet   # update p1's state vector (mass and radius will need corrections)
+        ps[i].m = total_mass    # update to total mass
+        ps[i].r = merged_radius # update to joined radius
+
+        return 2 # remove particle with index j
     else:
         if ps[i1].m==0: #assigns k as the planet with mass and l as the particle w/o mass
             k=j1

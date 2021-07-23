@@ -95,14 +95,14 @@ def my_merge(sim_pointer, collided_particles_index):
     if ps[i1]==0 and ps[j1]==0:
         print("both are asteroids")
         return 0
-    elif ps[i1] > 0.0001 and ps[j1] > 0.0001: # if the two planets collide
+    elif ps[i1].m > 0.0001 and ps[j1].m > 0.0001: # if the two planets collide
         global planetDestroyed
         planetDestroyed = True
         i = i1   
         j = j1
         print(""*40+"\n"*3+"The planets collided!"+f"Time: {sim.t}"+"\n"*3+"#"*40)
         total_mass = ps[i].m + ps[j].m
-        merged_planet = (ps[i] * ps[i].m + ps[j] * ps[j].m)/total_mass # conservation of momentum
+        merged_planet = (ps[i] * ps[i].m + ps[j] * ps[k].m)/total_mass # conservation of momentum
 
         # merged radius assuming a uniform density
         merged_radius = (ps[i].r**3 + ps[j].r**3)**(1/3)
@@ -410,7 +410,7 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     
 ###########################################################################################
 
-def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):  
+def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000, **kwargs):  
     sim = simulation()
     sim.N_active = sim.N
 
