@@ -398,7 +398,7 @@ def saveFigs(addOn = "", seed = 0, **kwargs):
 # In[3]:#########################################################################################
 
 
-def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):  
+def generateSystem(simulation = ttor,seed = None, asteroidnumber = 1000, **kwargs):  
     if simulation.__name__ == 'simAU':
         if not kwargs.get("sma"):
             raise IndexError("Need to pass in a sma kwarg as well.")
@@ -406,13 +406,19 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     else:
         sim = simulation()
     sim.N_active = sim.N
-    sim.integrator = "ias15"
+
+    if kwargs.get("integrator") == "mercurius":
+        sim.integrator = "mercurius"
+        sim.dt = 0.025*2.*np.pi # we're working in units where 1 year = 2*pi
+        sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration 
+    else:
+        sim.integrator = "ias15"
+        sim.ri_ias15.min_dt = 1e-7 # ensure that close encounters do not stall the integration
     #sim.integrator = "whfast"
     #sim.ri_whfast.corrector = 0 #zero order corrector for better speed
     #sim.ri_whfast.safe_mode = 0 #turns off safemode, *substantial* speed boost
     #sim.dt = 0.001*2*np.pi #mutiple by 2pi if in units such that G=1
     sim.testparticle_type = 0
-    #sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration
 
     #collision and boundary options
     sim.collision = "direct"
@@ -429,24 +435,31 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    #46 is my most frequently used seed
-    np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
+    auList = np.linspace(.6,2.9,asteroidnumber) # use this to NOT randomize the starting distance
+    index = 0
+    if not seed == 'strict':
+        np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
+    else:
+        np.random.seed(0)
     while sim.N < (N_pl + sim.N_active):
         #a = rand_powerlaw(0, 0.1, 3) 
         a = rand_uniform(.6,2.9)
+        if seed == 'strict':
+            a = auList[index]
         #e = rand_rayleigh(0.01) by default is 0
         e=0
         #inc = rand_rayleigh(0.005)
         inc=0
         f = rand_uniform(-np.pi,np.pi)
-        p = rebound.Particle(simulation=sim,primary=sim.particles[0], r=r_pl, a=a, e=e, inc=inc, Omega=0, omega=0, f=f)
+        p = rebound.Particle(simulation=sim,primary=sim.particles[0], r=r_pl, a=a, f=f)
         # Only add planetesimal if it's far away from the planet
         d1 = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[1].xyz))
         d2 = np.linalg.norm(np.array(p.xyz)-np.array(sim.particles[2].xyz))
         d = min(d1,d2)
         if d>5e-4:
             sim.add(p)
-            
+            index += 1
+
     # Hash Creation
     ps = sim.particles
     ps[0].hash = "star"
@@ -454,7 +467,7 @@ def generatettor(simulation = ttor,seed = None, asteroidnumber = 1000):
     ps[2].hash = "outerPlanet"
     for i in range(3,sim.N): # this sets their hash to their starting particle number
         ps[i].hash = str(i)
-    
+
     sim.collision_resolve = my_merge
 
     #sim.move_to_com()
