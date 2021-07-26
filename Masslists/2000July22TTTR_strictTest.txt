@@ -1,0 +1,3 @@
+ttor
+Inner planet mass	Outer planet mass	Percent Difference	Seed
+0.004060000000000001	0.0	100.0	strict	
