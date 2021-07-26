@@ -130,7 +130,7 @@ def my_merge(sim_pointer, collided_particles_index):
         
         #print("merging particle", k,'into particle', l) #use this to know when collisions occur
         
-        #particle_mass = Mtot_disk/N_pl
+        #particle_mass = Mtot_disk/N_pl, planet mass = 1e-3
         particle_mass=1e-5
         particle_radius = 1e-5
         # Merging Logic

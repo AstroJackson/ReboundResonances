@@ -536,7 +536,35 @@ def remove(AU, sim = sim):
         if np.linalg.norm(np.array(ps[i].xyz)-np.array(ps[0].xyz)) > AU:
             sim.remove(i)
 
+######################################################################################################################################################################################
+######################################################################################################################################################################################
+Info=[]
+other = []
+for i in range(1,11):
+    for j in range(i+1,i+11):
+        outerDist = .1*(j/i)**(2/3)
+        if outerDist in other:
+            continue
+        pre = [i,j,.1, outerDist]
+        Info.append(pre)
+        other.append(outerDist)
+linear = list(np.linspace(.1, .5, 100))
+combo = linear + copy
+combo.sort()
 # In[20]:
+data = combo
+path = "parallelization.txt"
+for i in range(10):
+    if not os.path.isfile(path):
+        with open(path, 'w') as file:
+            file.write('-1')
+    with open(path, 'r') as file:
+        #info = file.read()
+        info = int(file.read().split()[-1]) + 1
+    with open(path, 'a') as file:
+        file.write(" "+str(info))
+    print(info, data[info])
+
 
 endTime = 10000 #years of simulation
 simAU_masses = [['inner planet mass', 'outer planet mass','seed']]
