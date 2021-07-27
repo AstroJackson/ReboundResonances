@@ -1,19 +1,58 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
-import rebound, numpy as np, matplotlib as mpl
-mpl.use('Agg') # found here:https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server
-import matplotlib.pyplot as plt, time as tiempo, math, sys
+import rebound
+import numpy as np
+import matplotlib as plt
+import matplotlib.pyplot as plt
+import time as tiempo
+import math
+
+import subprocess 
+def ding(): 
+    """
+    This is sometimes added to the end of code that takes a long time to run,
+    so that I know when it is completed.
+    It requires an mp3 file named "ding.mp3" in the same directory as this file.
+    """
+    subprocess.call(["afplay","ding.mp3"])
 
 sim = rebound.Simulation()
 tau = 2*np.pi
 
 
-# In[3]:
+# In[2]:
 
+
+def ttor(R0 = 5e-4): #two to one resonance
+    sim = rebound.Simulation()
+    #sim.units = ('yr', 'AU', 'Msun') #sets G=4pi^2 so AU, earth years, solar masses
+    #R0 = 5**(1/3)*0.01
+    sim.add(m=1) #creates a star of mass 1
+    sim.add(m=1e-3, a=1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=1e-3, a=2**(2/3), f=np.pi, r=R0) 
+    return sim
+
+def tttr(R0 = 5e-4): #two to three resonance
+    sim = rebound.Simulation()
+    #sim.units = ('yr', 'AU', 'Msun') #sets G=4pi^2 so AU, earth years, solar masses
+    #R0 = 0.01
+    sim.add(m=1) #creates a star of mass 1
+    sim.add(m=1e-3, a=2**(2/3), r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=1e-3, a=3**(2/3), f=np.pi, r=R0) 
+    return sim
+
+def nor(R0 = 5e-4): #no resonance (initially at least)
+    sim = rebound.Simulation()
+    #sim.units = ('yr', 'AU', 'Msun') #sets G=4pi^2 so AU, earth years, solar masses
+    sim.add(m=1) #creates a star of mass 1
+    #R0 = .02
+    sim.add(m=1e-3, a=1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=1e-3, a=1.8, f=np.pi, r=R0) #use .1 mass to show the planets having a large effect on each other
+    return sim
 
 def simAU(AU, R0 = 5e-4): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
@@ -22,6 +61,23 @@ def simAU(AU, R0 = 5e-4): #can set the sma of the second planet easily this way
     sim.add(m=1) #creates a star of mass 1
     sim.add(m=1e-3, a=1, r=R0)  #creates a planet with mass 0.001 at 1 AU
     sim.add(m=1e-3, a=AU, f=np.pi, r=R0) 
+    
+def resonance_counter(data, base = 1):
+    innerplanetcount = 0
+    outerplanetcount = 0
+    for i, x in enumerate(np.delete(data,len(data)-1,0)):
+        if x[0] < 0 and data[i+1][0] > 0:
+            innerplanetcount += 1
+        if x[1] < 0 and data[i+1][1] > 0:
+            outerplanetcount += 1
+    R = innerplanetcount/outerplanetcount
+    print(R)
+    R = R*base
+    if R == int(R):
+        R = int(R)
+    print("The outer planet revolved", outerplanetcount, "times.")
+    print("The inner planet revolved", innerplanetcount, "times.")
+    print("They are in a {}:{} resonance.".format(base, R))
      
 def rand_powerlaw(slope, min_v, max_v): #some distribution functions
     #https://rebound.readthedocs.io/en/latest/ipython/PrimordialEarth.html
@@ -40,7 +96,7 @@ def quickplot(sim): #this uses matplotlib to plot the orbit, instead of rebound
         coords[0][i], coords[1][i] = sim.particles[i].x, sim.particles[i].y
     fig, ax = plt.subplots()
     ax.axis('equal')
-    ax.scatter(coords[0],coords[1],marker=".",linewidth=0)
+    ax.scatter(coords[0],coords[1])
     for i in range(sim.N_active):
         ax.scatter(sim.particles[i].x,sim.particles[i].y); # Planet
         
@@ -57,25 +113,7 @@ def my_merge(sim_pointer, collided_particles_index):
     j1 = collided_particles_index.p2
     
     if ps[i1]==0 and ps[j1]==0:
-        print("both are asteroids")
         return 0
-    elif ps[i1].m > 0.0001 and ps[j1].m > 0.0001: # if the two planets collide
-        global planetDestroyed
-        planetDestroyed = True
-        i = i1   
-        j = j1
-        print(""*40+"\n"*3+"The planets collided!"+f"Time: {sim.t}"+"\n"*3+"#"*40)
-        total_mass = ps[i].m + ps[j].m
-        merged_planet = (ps[i] * ps[i].m + ps[j] * ps[k].m)/total_mass # conservation of momentum
-
-        # merged radius assuming a uniform density
-        merged_radius = (ps[i].r**3 + ps[j].r**3)**(1/3)
-
-        ps[i] = merged_planet   # update p1's state vector (mass and radius will need corrections)
-        ps[i].m = total_mass    # update to total mass
-        ps[i].r = merged_radius # update to joined radius
-
-        return 2 # remove particle with index j
     else:
         if ps[i1].m==0: #assigns k as the planet with mass and l as the particle w/o mass
             k=j1
@@ -99,12 +137,12 @@ def my_merge(sim_pointer, collided_particles_index):
         particle_radius = 1e-5
         # Merging Logic
         total_mass = ps[k].m + particle_mass
-        merged_planet = (ps[k] * ps[k].m + ps[l] * particle_mass)/total_mass # conservation of momentum
+        #merged_planet = (ps[i] * ps[i].m + ps[j] * ps[j].m)/total_mass # conservation of momentum
 
         # merged radius assuming a uniform density
         merged_radius = (ps[k].r**3 + particle_radius**3)**(1/3)
 
-        ps[k] = merged_planet   # update p1's state vector (mass and radius will need corrections)
+        #ps[k] = merged_planet   # update p1's state vector (mass and radius will need corrections)
         ps[k].m = total_mass    # update to total mass
         ps[k].r = merged_radius # update to joined radius
         
@@ -134,7 +172,6 @@ def masslist_txt(masslist,filepath,sim = None, write_type = 'a'):
     message = ''
     message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
     for data in masslistcopy[1:]:
-        data = data.copy() #comment out this line to not have the original list change
         percentdif = abs((data[0]-data[1])/data[0])*100
         roundedpercentdif = round(percentdif,2)
         percentlist.append(percentdif)
@@ -195,7 +232,7 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
 # In
 def masslist_read(filePath):
     """
-    Inverse of masslist_txt(). Used in masslist_txt_append to determine if the average percent should be calculated.
+    Inverse of masslist_txt()
     """
     with open(filePath,'r') as datafile:
         contents = datafile.read()
@@ -240,8 +277,6 @@ def averagePercent(filePath):
     for i in range(2,len(dataList),4):
         percentList.append(dataList[i])
     return avg(percentList)
-
-# In[4]:
 
 def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     """
@@ -337,7 +372,7 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     np.save("Figures/"+innerFolder+str(seed)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
     
     plt.clf()
-    plt.plot(times, [avg(EccsList, positive = True) for EccsList in asteroidEccs],linewidth=1)
+    plt.plot(times, [avg(EccsList, nonNegative = True) for EccsList in asteroidEccs],linewidth=1)
     plt.title('Asteroid Eccentricity AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
@@ -359,7 +394,7 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     np.save("Figures/"+innerFolder+str(seed)+"/Arrays/asteroidAU"+addOn, asteroidAU)
     
     plt.clf()
-    plt.plot(times, [avg(asteroidAUList) for asteroidAUList in asteroidAU],linewidth=1)
+    plt.plot(times, [avg(asteroidAUList, positive = True) for asteroidAUList in asteroidAU],linewidth=1)
     plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Semi Major Axis (AU)')
@@ -373,8 +408,9 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     plt.clf()
     plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
     plt.savefig("Figures/"+innerFolder+str(seed)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
-    
-###########################################################################################
+
+# In[3]:#########################################################################################
+
 
 def generateSystem(simulation = ttor,seed = None, asteroidnumber = 1000, **kwargs):  
     if simulation.__name__ == 'simAU':
@@ -385,13 +421,18 @@ def generateSystem(simulation = ttor,seed = None, asteroidnumber = 1000, **kwarg
         sim = simulation()
     sim.N_active = sim.N
 
-    sim.integrator = "ias15"
+    if kwargs.get("integrator") == "mercurius":
+        sim.integrator = "mercurius"
+        sim.dt = 0.025*2.*np.pi # we're working in units where 1 year = 2*pi
+        sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration 
+    else:
+        sim.integrator = "ias15"
+        sim.ri_ias15.min_dt = 1e-7 # ensure that close encounters do not stall the integration
     #sim.integrator = "whfast"
     #sim.ri_whfast.corrector = 0 #zero order corrector for better speed
     #sim.ri_whfast.safe_mode = 0 #turns off safemode, *substantial* speed boost
     #sim.dt = 0.001*2*np.pi #mutiple by 2pi if in units such that G=1
     sim.testparticle_type = 0
-    #sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration
 
     #collision and boundary options
     sim.collision = "direct"
@@ -448,13 +489,12 @@ def generateSystem(simulation = ttor,seed = None, asteroidnumber = 1000, **kwarg
     #quickplot(sim)
     return sim
     
-def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on the first two bodies in a system
-    initialtime = tiempo.monotonic()
+def quickcollect2(n, Ti, Tf, stepnumber): #collects orbital data on the first two bodies in a system
+    initialtime = tiempo.time()
+    print(sim.N)
 #     n=2 #number of planets
 #     T=80*2*np.pi #years of simulation
-    # Planet variables
-    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, \
-    interplanetdistance, masses, particleNumber
+    global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, interplanetdistance, masses
     times = np.linspace(Ti,Tf,stepnumber)
     #diftimes = list()
     dist = np.zeros((len(times),n)) 
@@ -464,35 +504,15 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
     position1 = np.zeros((len(times),2))
     position2 = np.zeros((len(times),2))
     interplanetdistance = np.zeros((len(times),1))
-    particleNumber = np.zeros((len(times),1))
     masses = np.zeros((len(times),n))
     ps = sim.particles
-    # Asteroid variables:
-    global asteroidAU, asteroidEccs, simNi
-    simNi = sim.N
-    asteroidAU = np.zeros((len(times),simNi-n-1)) # n is the number of planets, 1 is the number of stars
-    asteroidEccs = np.negative(np.ones((len(times),simNi-n-1)))
-    seed = kwargs.get("seed")
-    #
-    print(f"Total steps: {stepnumber}")
-    print("seed: {} | {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
-    .format(seed,0,0/tau,sim.N,0,round((tiempo.monotonic()-initialtime),1)\
-    ,round((tiempo.monotonic()-initialtime)/60,1)))
-    #
     for i, t in enumerate(times):
         sim.integrate(t)
-        print("ttor seed: {} | {} time = {} years | {} particles | {} step number |\n\
-| {} second | {} minutes | {} hours.\n"\
-        .format(seed,t,t/tau,sim.N,i,round((tiempo.monotonic()-initialtime),1)\
-        ,round((tiempo.monotonic()-initialtime)/60,1),round((tiempo.monotonic()-initialtime)/3600,1)))
-        #sim.ri_whfast.recalculate_coordinates_this_timestep = 1
-        #sim.integrator_synchronize()
-        #diftimes.append(sim.t+dT)
-        #if i== int(stepnumber/2):
-            #print("1/2 done at {} seconds.".format(int(tiempo.time() - initialtime)))
+        print("| {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
+            .format(t,t/tau,sim.N,i,round((tiempo.time()-initialtime),1)\
+                ,round((tiempo.time()-initialtime)/60,1)))
         ps = sim.particles
         interplanetdistance[i] = np.linalg.norm(np.array(ps[2].xyz)-np.array(ps[1].xyz))
-        particleNumber[i] = sim.N
         position1[i] = [ps[1].x,ps[1].y]
         position2[i] = [ps[2].x,ps[2].y]
         for planet in range(n):
@@ -502,31 +522,16 @@ def quickcollect2(n, Ti, Tf, stepnumber, **kwargs): #collects orbital data on th
             relative_y_value[i,planet] = ps[planetdif].y - ps[0].y
             eccs[i,planet] = ps[planetdif].e
             masses[i,planet] = ps[planetdif].m
+            #
         position1[i] = [relative_x_value[i,0],relative_y_value[i,0]]
         position2[i] = [relative_x_value[i,1],relative_y_value[i,1]]
-        #### Data collection from asteroids:
-        if kwargs.get("asteroidCollect"):
-            for roidNumber in range(3,simNi):
-                #print("index:{}, roidNumber: {}".format(index,roidNumber))
-                index = roidNumber - n -1
-                try:                    
-                    asteroidAU[i,index] = ps[str(roidNumber)].a
-                    asteroidEccs[i,index] = ps[str(roidNumber)].e
-                except rebound.ParticleNotFound:
-                    pass
-        ####
-    finaltime = tiempo.monotonic()
+    finaltime = tiempo.time()
 #     print('done')
     #print("{} done at {} seconds!".format((a+1)/10,int(finaltime-initialtime)))
     print("Done at {} seconds!".format((int(finaltime-initialtime))))
 #     print("The inner planet ended with a mass of {}.".format(ps[1].m))
 #     print("The outer planet ended with a mass of {}.".format(ps[2].m))
 #     print("There are {} particles remaining.".format(sim.N))
-    #
-    print("seed: {} | {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes | {} hours.\n"\
-    .format(seed,sim.t,sim.t/tau,sim.N,stepnumber,round((tiempo.monotonic()-initialtime),1)\
-    ,round((tiempo.monotonic()-initialtime)/60,1), round((tiempo.monotonic()-initialtime)/3600,1)))
-    #
     quickplot(sim)
     #ding()
     
@@ -536,95 +541,87 @@ def remove(AU, sim = sim):
         if np.linalg.norm(np.array(ps[i].xyz)-np.array(ps[0].xyz)) > AU:
             sim.remove(i)
 
-######################################################################################################################################################################################
-######################################################################################################################################################################################
-Info=[]
-other = []
-for i in range(1,11):
-    for j in range(i+1,i+11):
-        outerDist = .1*(j/i)**(2/3)
-        if outerDist in other:
-            continue
-        pre = [i,j,.1, outerDist]
-        Info.append(pre)
-        other.append(outerDist)
-linear = list(np.linspace(.1, .5, 100))
-combo = linear + copy
-combo.sort()
-# In[20]:
-data = combo
-path = "parallelization.txt"
-if not os.path.isfile(path):
-    with open(path, 'w') as file:
-        file.write('-1')
-with open(path, 'r') as file:
-    #info = file.read()
-    info = int(file.read().split()[-1]) + 1
-with open(path, 'a') as file:
-    file.write(" "+str(info))
-print(info, data[info])
 
+# In[ ]:
 
-endTime = 10000 #years of simulation
-simAU_masses = [['inner planet mass', 'outer planet mass','seed']]
-BIGinitial = tiempo.monotonic()
+def ttvAverageApprox(data, times):
+    """
+    Transit timing variation. Detects the time at which the planet crosses the
+    positive x-axis. 
+    Uses the average of the points between the detected zeros.
+    """
+    global innertimes, outertimes
+    innertimes = []
+    outertimes = []
+    for i, x in enumerate(np.delete(data,len(data)-1,0)):
+        # Deleting the last row is one way to avoid an index error
+        if x[0] < 0 and data[i+1][0] > 0: #for inner planet
+            averageT = (times[i]+times[i+1])/2
+            innertimes.append(averageT)
+        if x[1] < 0 and data[i+1][1] > 0: #for outer planet
+            averageT = (times[i]+times[i+1])/2
+            outertimes.append(averageT)
+            
+    # The following measures the time difference between each succesive transit.
+    global innertimesdif, outertimesdif
+    innertimesdif = []
+    for i in range(1,len(innertimes)):
+        dif = innertimes[i]-innertimes[i-1]
+        innertimesdif.append(dif)
+    outertimesdif = []
+    for i in range(1,len(outertimes)):
+        dif = outertimes[i]-outertimes[i-1]
+        outertimesdif.append(dif)
+        
+    # Graphs the difference with respect to the simulation time in which it occured.
+    fig, axs = plt.subplots(2,1)
+    fig.suptitle('TTV')
+    axs[0].plot(innertimes[:len(innertimes)-1], innertimesdif)
+    axs[1].plot(outertimes[:len(outertimes)-1], outertimesdif)
+    plt.xlabel('Time')
+    plt.ylabel('Time between full revolution\n<Outer and Inner>')
+    
+def ttvLinearApprox(data, times):
+    """
+    Transit timing variation. Detects the time at which the planet crosses the
+    positive x-axis. 
+    Uses the linear approximation of the two points surrounding the zero to approximate.
+    (Newton's method)
+    This method is a vast improvement to the average technique.
+    """
+    global innertimes, outertimes
+    innertimes = []
+    outertimes = []
+    for i, x in enumerate(np.delete(data,len(data)-1,0)):
+        # Deleting the last row is one way to avoid an index error
+        if x[0] < 0 and data[i+1][0] > 0: #for inner planet
+            slope = (data[i+1][0]-data[i][0])/(times[i+1]-times[i])
+            linearApprox = times[i+1]-data[i+1][0]/slope
+            #(times[i]+times[i+1])/2
+            innertimes.append(linearApprox)
+        if x[1] < 0 and data[i+1][1] > 0: #for outer planet
+            #averageT = (times[i]+times[i+1])/2
+            slope = (data[i+1][1]-data[i][1])/(times[i+1]-times[i])
+            linearApprox = times[i+1]-data[i+1][1]/slope
+            outertimes.append(linearApprox)
+            
+    # The following measures the time difference between each succesive transit.
+    global innertimesdif, outertimesdif
+    innertimesdif = []
+    for i in range(1,len(innertimes)):
+        dif = innertimes[i]-innertimes[i-1]
+        innertimesdif.append(dif)
+    outertimesdif = []
+    for i in range(1,len(outertimes)):
+        dif = outertimes[i]-outertimes[i-1]
+        outertimesdif.append(dif)
+        
+    # Graphs the difference with respect to the simulation time in which it occured.
+    fig, axs = plt.subplots(2,1)
+    fig.suptitle('TTV')
+    axs[0].plot(innertimes[:len(innertimes)-1], innertimesdif)
+    axs[1].plot(outertimes[:len(outertimes)-1], outertimesdif)
+    plt.xlabel('Time')
+    plt.ylabel('Time between full revolution\n<Outer and Inner>')
+
 #
-#for a in range(numberOfSims):
-try:
-    a = int(sys.argv[1])
-except IndexError:
-    print("#"*40)
-    print("\n"*3)
-    print("Sys.argv had an error! Setting the seed equal to 15!")
-    print("\n"*3)
-    print("#"*40)
-    a = 15
-except ValueError:
-    if sys.argv[1] != 'strict':
-        raise ValueError("a string was passed in that was not 'strict'")
-    a = sys.argv[1]
-    print("Setting distribution to strict uniform")
-stepFrequency = 10 # how often should a step occur (years)
-steps = int(endTime/stepFrequency) # Will round down to an integer
-print(f"Steps: {steps}")
-print("Beginning seed {}.".format(a))
-sim = generateSystem(simulation = ttor, seed =a, asteroidnumber = 2000)
-quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, seed = a) # Can override 'steps' by setting a value directly
-ps = sim.particles
-print("Masses {} and {}.".format(ps[1].m,ps[2].m))
-print("Ending seed {}.\n".format(a))
-pre_list = [ps[1].m, ps[2].m,a]
-simAU_masses.append(pre_list)
-BIGfinal = tiempo.monotonic()
-#
-totaltime = BIGfinal - BIGinitial
-print("That in total took {} seconds ({} minutes, {} hours).".format(int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
-try:
-    sysarg2 = int(sys.argv[2])
-except IndexError: # if sys.argv[2] does not exist, it is a middle data point
-    sysarg2 = -1
-except ValueError:
-    print("#"*40+"\nsys.argv[2] is a string. It is likely the filepath.\n"+"#"*40)
-    raise ValueError # I do not want the code to still run
-lastN = 0
-if int(sysarg2)>0: #sys.argv[2]>0 could be last data point
-    first = False
-    last = True
-    lastN = sysarg2
-elif int(sysarg2)==-1: #middle data points
-    first = False
-    last = False
-elif int(sysarg2)==0:  # sys.argv[2]==0 will mean this is the first data point, 
-    first = True
-    last = False
-
-masslist_txt_append(simAU_masses,'Masslists/2000July21TTOR.txt','ttor','a', first = first, last = last, lastN = lastN)
-print(simAU_masses)
-print("There are {} particles remaining.".format(sim.N))
-innerFolder = '2000asteroidsSimAU'
-saveFigs(innerFolder= "2000asteroidsJuly21TTOR",seed = a) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
-                   # put the figures in the Tests folder (still within Figures)
-# np.savez("Figures/"+innerFolder+"graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
-#     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
-#     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
-

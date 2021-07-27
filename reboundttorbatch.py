@@ -373,7 +373,7 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     np.save("Figures/"+innerFolder+str(seed)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
     
     plt.clf()
-    plt.plot(times, [avg(EccsList, positive = True) for EccsList in asteroidEccs],linewidth=1)
+    plt.plot(times, [avg(EccsList, nonNegative = True) for EccsList in asteroidEccs],linewidth=1)
     plt.title('Asteroid Eccentricity AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Eccentricity')
@@ -395,7 +395,7 @@ def saveFigs(innerFolder = "", addOn = "", seed = 0, **kwargs):
     np.save("Figures/"+innerFolder+str(seed)+"/Arrays/asteroidAU"+addOn, asteroidAU)
     
     plt.clf()
-    plt.plot(times, [avg(asteroidAUList) for asteroidAUList in asteroidAU],linewidth=1)
+    plt.plot(times, [avg(asteroidAUList, positive = True) for asteroidAUList in asteroidAU],linewidth=1)
     plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
     plt.xlabel('Time (2pi*yr)')
     plt.ylabel('Semi Major Axis (AU)')
@@ -427,7 +427,7 @@ def generateSystem(simulation = ttor,seed = None, asteroidnumber = 1000, **kwarg
     #sim.ri_whfast.safe_mode = 0 #turns off safemode, *substantial* speed boost
     #sim.dt = 0.001*2*np.pi #mutiple by 2pi if in units such that G=1
     sim.testparticle_type = 0
-    #sim.ri_ias15.min_dt = 1e-6 # ensure that close encounters do not stall the integration
+    sim.ri_ias15.min_dt = 1e-7 # ensure that close encounters do not stall the integration
 
     #collision and boundary options
     sim.collision = "direct"
