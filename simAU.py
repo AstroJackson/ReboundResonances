@@ -554,16 +554,15 @@ combo.sort()
 # In[20]:
 data = combo
 path = "parallelization.txt"
-for i in range(10):
-    if not os.path.isfile(path):
-        with open(path, 'w') as file:
-            file.write('-1')
-    with open(path, 'r') as file:
-        #info = file.read()
-        info = int(file.read().split()[-1]) + 1
-    with open(path, 'a') as file:
-        file.write(" "+str(info))
-    print(info, data[info])
+if not os.path.isfile(path):
+    with open(path, 'w') as file:
+        file.write('-1')
+with open(path, 'r') as file:
+    #info = file.read()
+    info = int(file.read().split()[-1]) + 1
+with open(path, 'a') as file:
+    file.write(" "+str(info))
+print(info, data[info])
 
 
 endTime = 10000 #years of simulation
