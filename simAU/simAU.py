@@ -65,7 +65,8 @@ def my_merge(sim_pointer, collided_particles_index):
         return 0
     elif ps[i1].m >= startingMass and ps[j1].m >= startingMass: # if the two planets collide
         global planetDestroyed
-        raise CustomException("The planets collided!")
+        print(f"TIME:{sim.t}")
+        #raise CustomException("The planets collided!")
         planetDestroyed = True
         i = i1   
         j = j1
@@ -79,7 +80,7 @@ def my_merge(sim_pointer, collided_particles_index):
         ps[i] = merged_planet   # update p1's state vector (mass and radius will need corrections)
         ps[i].m = total_mass    # update to total mass
         ps[i].r = merged_radius # update to joined radius
-
+        #raise CustomException("The planets collided!")
         return 2 # remove particle with index j
     else:
         if ps[i1].m==0: #assigns k as the planet with mass and l as the particle w/o mass
@@ -563,7 +564,7 @@ revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beg
 endTime = revTime * revolutionsOfInnerPlanet
 simAU_masses = [['inner planet mass', 'outer planet mass','distance']]
 BIGinitial = tiempo.monotonic()
-stepRevFreq = .1 # how often a step should occur in units of revolutions of the inner planet
+stepRevFreq = 10 # how often a step should occur in units of revolutions of the inner planet
 stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 #steps = int(endTime/stepFrequency) # Will round down to an integer
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
