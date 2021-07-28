@@ -14,7 +14,7 @@
 
 for i in {1..162..1} #162 times, not 163
 do
-	python3 simAU1.py &
+	python3 simAU1.py $i &
 	sleep .2
 done
 python3 simAU1.py #163rd time does not include a '&' nor a 'sleep' command
