@@ -17,13 +17,14 @@ class CustomException(Exception):
     def __init__(self, *args: object) -> None:
         super().__init__(*args)
 
+jupiterMass = 1e-3
+earthMass = 3e-6
+startingMass = jupiterMass
 def simAU(distance, R0 = 5e-4): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
-    #sim.units = ('yr', 'AU', 'Msun') #sets G=4pi^2 so AU, earth years, solar masses
-    #R0 = 5**(1/3)*0.01
     sim.add(m=1) #creates a star of mass 1
-    sim.add(m=1e-3, a=.11, r=R0)  #creates a planet with mass 0.001 at 1 AU
-    sim.add(m=1e-3, a=distance, f=np.pi, r=R0) 
+    sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=startingMass, a=distance, f=np.pi, r=R0) 
     return sim
      
 def rand_powerlaw(slope, min_v, max_v): #some distribution functions
@@ -62,12 +63,14 @@ def my_merge(sim_pointer, collided_particles_index):
     if ps[i1]==0 and ps[j1]==0:
         print("both are asteroids")
         return 0
-    elif ps[i1].m > 0.0001 and ps[j1].m > 0.0001: # if the two planets collide
+    elif ps[i1].m >= startingMass and ps[j1].m >= startingMass: # if the two planets collide
         global planetDestroyed
+        print(f"TIME:{sim.t}")
+        #raise CustomException("The planets collided!")
         planetDestroyed = True
         i = i1   
         j = j1
-        print(""*40+"\n"*3+"The planets collided!"+f"Time: {sim.t}"+"\n"*3+"#"*40)
+        print("#"*40+"\n"*3+"The planets collided!"+f"Time: {sim.t}"+"\n"*3+"#"*40)
         total_mass = ps[i].m + ps[j].m
         merged_planet = (ps[i] * ps[i].m + ps[j] * ps[j].m)/total_mass # conservation of momentum
 
@@ -77,7 +80,7 @@ def my_merge(sim_pointer, collided_particles_index):
         ps[i] = merged_planet   # update p1's state vector (mass and radius will need corrections)
         ps[i].m = total_mass    # update to total mass
         ps[i].r = merged_radius # update to joined radius
-
+        #raise CustomException("The planets collided!")
         return 2 # remove particle with index j
     else:
         if ps[i1].m==0: #assigns k as the planet with mass and l as the particle w/o mass
@@ -98,7 +101,8 @@ def my_merge(sim_pointer, collided_particles_index):
         #print("merging particle", k,'into particle', l) #use this to know when collisions occur
         
         #particle_mass = Mtot_disk/N_pl
-        particle_mass=1e-5
+        #particle_mass=1e-5
+        particle_mass = startingMass/100
         particle_radius = 1e-5
         # Merging Logic
         total_mass = ps[k].m + particle_mass
@@ -165,14 +169,13 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
-    import os
     if not os.path.isdir("Figures"):
         os.chdir("Downloads/Rebound/ReboundResonances/simAU")
     if kwargs.get('first') or not os.path.isfile(filepath): # If file does not exist, create it. If sys.argv[1]==0,
                                                             #then will also create.                                                          
         write_type = "w"
         message += sim+'\n'
-        message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
+        message+="Inner planet mass\tOuter planet mass\tPercent Difference\tDistance\n"
     for data in masslistcopy[1:]:
         #data = data.copy() #comment out this line to not have the original list change
         percentdif = abs((data[0]-data[1])/data[0])*100
@@ -182,13 +185,8 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
             message += str(j)
             message +='\t'
         message +='\n'    
-    try:
-        with open(filepath,write_type) as file:
-            file.write(message)
-    except FileNotFoundError:
-        os.chdir("Downloads/Rebound/ReboundResonances")
-        with open(filepath,write_type) as file:
-            file.write(message)
+    with open(filepath,write_type) as file:
+        file.write(message)
 
     if kwargs.get('last') and len(masslist_read(filepath))/4 >= kwargs.get("lastN"):
         with open(filepath, "a") as file:
@@ -535,6 +533,8 @@ def remove(AU, sim = sim):
 
 ######################################################################################################################################################################################
 ######################################################################################################################################################################################
+# The following implements a list of distances that produce known resoances
+# combined with an interwoven linear spacing
 Info=[]
 other = []
 for i in range(1,11):
@@ -548,7 +548,6 @@ for i in range(1,11):
 copy = other.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
-# In[20]:
 data = combo
 path = "parallelization.txt"
 if not os.path.isfile(path):
@@ -561,19 +560,19 @@ with open(path, 'a') as file:
     file.write(" "+str(info))
 print(info, data[info])
 distance = data[info]
-revolutionsOfInnerPlanet = 5
+revolutionsOfInnerPlanet = 10000
 #endTime = 10000 #years of simulation
-revTime = 0.1**1.5 # time for one revolution of the inner planet
+revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
 simAU_masses = [['inner planet mass', 'outer planet mass','distance']]
 BIGinitial = tiempo.monotonic()
-stepRevFreq = .1 # how often a step should occur in units of revolutions of the inner planet
+stepRevFreq = 10 # how often a step should occur in units of revolutions of the inner planet
 stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 #steps = int(endTime/stepFrequency) # Will round down to an integer
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
-sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 10, sma = distance)
+sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2000, sma = distance)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, distance = distance) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -585,7 +584,7 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-#masslist_txt_append(simAU_masses,'Masslists/2000July21TTOR.txt','ttor','a', lastN = lastN)
+masslist_txt_append(simAU_masses,'Masslists/2000SimAUJuly27.txt','ttor','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
 saveFigs(innerFolder= "2000asteroidsSimAUJuly27", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
