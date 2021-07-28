@@ -548,19 +548,10 @@ for i in range(1,11):
 copy = other.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
-data = combo
-path = "parallelization.txt"
-if not os.path.isfile(path):
-    with open(path, 'w') as file:
-        file.write('-1')
-with open(path, 'r') as file:
-    #info = file.read()
-    info = int(file.read().split()[-1]) + 1
-with open(path, 'a') as file:
-    file.write(" "+str(info))
-print(info, data[info])
-distance = data[info]
-revolutionsOfInnerPlanet = 10000
+info = int(sys.argv[1])
+print(info, combo[info])
+distance = combo[info] # this selects the distance
+revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
 revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet

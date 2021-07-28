@@ -13,11 +13,11 @@
 
 export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
 
-for i in {1..162..1} #162 times, not 163
+for i in {0..161..1} #162 times, not 163
 do
-	python3 simAU.py &
-	sleep .2
+	python3 simAU.py $i &
+	#sleep .2
 done
-python3 simAU.py #163rd time does not include a '&' nor a 'sleep' command
+python3 simAU.py 162 #163rd time does not include a '&' nor a 'sleep' command
 
 date
