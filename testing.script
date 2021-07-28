@@ -1,8 +1,12 @@
 #!/bin/bash
 
-for i in {0,10,2}
+for i in {0..10..2}
 do
-	python3 longRun.py
+	if [ $i -lt 5 ]
+	then
+		python3 longRun.py
+		echo $i
+	fi
 done
 
 date

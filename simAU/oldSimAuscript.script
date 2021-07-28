@@ -1,0 +1,327 @@
+#!/bin/bash
+
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py &
+SLEEP .2
+python3 simAU.py
