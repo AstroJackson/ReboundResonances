@@ -17,13 +17,14 @@ class CustomException(Exception):
     def __init__(self, *args: object) -> None:
         super().__init__(*args)
 
+jupiterMass = 1e-3
+earthMass = 3e-6
+startingMass = jupiterMass
 def simAU(distance, R0 = 5e-4): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
-    #sim.units = ('yr', 'AU', 'Msun') #sets G=4pi^2 so AU, earth years, solar masses
-    #R0 = 5**(1/3)*0.01
     sim.add(m=1) #creates a star of mass 1
-    sim.add(m=1e-3, a=.11, r=R0)  #creates a planet with mass 0.001 at 1 AU
-    sim.add(m=1e-3, a=distance, f=np.pi, r=R0) 
+    sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=startingMass, a=distance, f=np.pi, r=R0) 
     return sim
      
 def rand_powerlaw(slope, min_v, max_v): #some distribution functions
@@ -62,12 +63,13 @@ def my_merge(sim_pointer, collided_particles_index):
     if ps[i1]==0 and ps[j1]==0:
         print("both are asteroids")
         return 0
-    elif ps[i1].m > 0.0001 and ps[j1].m > 0.0001: # if the two planets collide
+    elif ps[i1].m >= startingMass and ps[j1].m >= startingMass: # if the two planets collide
         global planetDestroyed
+        raise CustomException("The planets collided!")
         planetDestroyed = True
         i = i1   
         j = j1
-        print(""*40+"\n"*3+"The planets collided!"+f"Time: {sim.t}"+"\n"*3+"#"*40)
+        print("#"*40+"\n"*3+"The planets collided!"+f"Time: {sim.t}"+"\n"*3+"#"*40)
         total_mass = ps[i].m + ps[j].m
         merged_planet = (ps[i] * ps[i].m + ps[j] * ps[j].m)/total_mass # conservation of momentum
 
@@ -98,7 +100,8 @@ def my_merge(sim_pointer, collided_particles_index):
         #print("merging particle", k,'into particle', l) #use this to know when collisions occur
         
         #particle_mass = Mtot_disk/N_pl
-        particle_mass=1e-5
+        #particle_mass=1e-5
+        particle_mass = startingMass/100
         particle_radius = 1e-5
         # Merging Logic
         total_mass = ps[k].m + particle_mass
@@ -165,14 +168,13 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
-    import os
     if not os.path.isdir("Figures"):
         os.chdir("Downloads/Rebound/ReboundResonances/simAU")
     if kwargs.get('first') or not os.path.isfile(filepath): # If file does not exist, create it. If sys.argv[1]==0,
                                                             #then will also create.                                                          
         write_type = "w"
         message += sim+'\n'
-        message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
+        message+="Inner planet mass\tOuter planet mass\tPercent Difference\tDistance\n"
     for data in masslistcopy[1:]:
         #data = data.copy() #comment out this line to not have the original list change
         percentdif = abs((data[0]-data[1])/data[0])*100
@@ -182,13 +184,8 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
             message += str(j)
             message +='\t'
         message +='\n'    
-    try:
-        with open(filepath,write_type) as file:
-            file.write(message)
-    except FileNotFoundError:
-        os.chdir("Downloads/Rebound/ReboundResonances")
-        with open(filepath,write_type) as file:
-            file.write(message)
+    with open(filepath,write_type) as file:
+        file.write(message)
 
     if kwargs.get('last') and len(masslist_read(filepath))/4 >= kwargs.get("lastN"):
         with open(filepath, "a") as file:
@@ -266,8 +263,8 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
            os.mkdir("Figures/"+innerFolder+str(distance)+"/Arrays")
   
    np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
-   eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
-   particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
+   eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance,\
+   particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, simAU_masses=simAU_masses)
   
    plt.clf() # clears any graphs
    quickplot(sim)
@@ -304,7 +301,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
    plt.xlabel('Time (2pi*yr)')
    plt.ylabel('Mass (Solar Masses)')
    plt.savefig("Figures/"+innerFolder+str(distance)+"/masses"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/masses"+addOn, masses)
+   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/masses"+addOn, simAU_masses)
   
    plt.clf()
    fig, axs = plt.subplots(1, 2)
@@ -548,7 +545,6 @@ for i in range(1,11):
 copy = other.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
-# In[20]:
 data = combo
 path = "parallelization.txt"
 if not os.path.isfile(path):
@@ -585,7 +581,7 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-#masslist_txt_append(simAU_masses,'Masslists/2000July21TTOR.txt','ttor','a', lastN = lastN)
+masslist_txt_append(simAU_masses,'Masslists/2000July21TTOR.txt','ttor','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
 saveFigs(innerFolder= "2000asteroidsSimAUJuly27", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
