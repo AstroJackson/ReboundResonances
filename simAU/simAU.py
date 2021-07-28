@@ -263,8 +263,8 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
            os.mkdir("Figures/"+innerFolder+str(distance)+"/Arrays")
   
    np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
-   eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance,\
-   particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, simAU_masses=simAU_masses)
+   eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
+   particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
   
    plt.clf() # clears any graphs
    quickplot(sim)
@@ -301,7 +301,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
    plt.xlabel('Time (2pi*yr)')
    plt.ylabel('Mass (Solar Masses)')
    plt.savefig("Figures/"+innerFolder+str(distance)+"/masses"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/masses"+addOn, simAU_masses)
+   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/masses"+addOn, masses)
   
    plt.clf()
    fig, axs = plt.subplots(1, 2)
