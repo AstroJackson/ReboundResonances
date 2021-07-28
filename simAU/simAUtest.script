@@ -12,9 +12,9 @@
 #SBATCH --mem=1G
 
 
-for i in {1..162..1} #162 times, not 163
+for i in {0..161..1} #162 times, not 163
 do
-	python3 simAU1.py &
-	sleep .2
+	python3 simAU1.py $i &
+	#sleep .2
 done
-python3 simAU1.py #163rd time does not include a '&' nor a 'sleep' command
+python3 simAU1.py 162 #163rd time does not include a '&' nor a 'sleep' command
