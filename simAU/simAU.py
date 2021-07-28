@@ -557,9 +557,9 @@ with open(path, 'a') as file:
     file.write(" "+str(info))
 print(info, data[info])
 distance = data[info]
-revolutionsOfInnerPlanet = 5
+revolutionsOfInnerPlanet = 10000
 #endTime = 10000 #years of simulation
-revTime = 0.1**1.5 # time for one revolution of the inner planet
+revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
 simAU_masses = [['inner planet mass', 'outer planet mass','distance']]
 BIGinitial = tiempo.monotonic()
@@ -569,7 +569,7 @@ stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
-sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 10, sma = distance)
+sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2000, sma = distance)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, distance = distance) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -581,7 +581,7 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-masslist_txt_append(simAU_masses,'Masslists/2000July21TTOR.txt','ttor','a')
+masslist_txt_append(simAU_masses,'Masslists/2000SimAuJuly27.txt','ttor','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
 saveFigs(innerFolder= "2000asteroidsSimAUJuly27", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will

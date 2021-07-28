@@ -1,5 +1,18 @@
 #!/bin/bash
 
+#SBATCH -J SIMAU_July27
+#SBATCH -p general
+#SBATCH -o SIMAU_July27_%j.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=taylor11@iu.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=24
+#SBATCH --time=96:00:00
+#SBATCH --mem=64G
+
+export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
+
 python3 simAU.py &
 SLEEP .2
 python3 simAU.py &
@@ -325,3 +338,5 @@ SLEEP .2
 python3 simAU.py &
 SLEEP .2
 python3 simAU.py
+
+date
