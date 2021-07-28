@@ -550,7 +550,6 @@ combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
 # In[20]:
 data = combo
-data = [.11,.15,.17] #
 path = "parallelization.txt"
 if not os.path.isfile(path):
     with open(path, 'w') as file:
@@ -564,11 +563,14 @@ print(info, data[info])
 distance = data[info]
 revolutionsOfInnerPlanet = 5
 #endTime = 10000 #years of simulation
-endTime = .1**1.5 * revolutionsOfInnerPlanet
+revTime = 0.1**1.5 # time for one revolution of the inner planet
+endTime = revTime * revolutionsOfInnerPlanet
 simAU_masses = [['inner planet mass', 'outer planet mass','distance']]
 BIGinitial = tiempo.monotonic()
-stepFrequency = .05 # how often should a step occur (years)
-steps = int(endTime/stepFrequency) # Will round down to an integer
+stepRevFreq = .1 # how often a step should occur in units of revolutions of the inner planet
+stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
+#steps = int(endTime/stepFrequency) # Will round down to an integer
+steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
 sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 10, sma = distance)
