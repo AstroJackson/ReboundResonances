@@ -17,10 +17,11 @@ class CustomException(Exception):
     def __init__(self, *args: object) -> None:
         super().__init__(*args)
 
-jupiterMass = 1e-3
-earthMass = 3e-6
+jupiterMass, jupiterRadius = 1e-3, 4.7e-4
+earthMass, earthRadius = 3e-6, 4.3e-5
 startingMass = jupiterMass
-def simAU(distance, R0 = 5e-4): #can set the sma of the second planet easily this way
+startingRadius = jupiterRadius
+def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
     sim.add(m=1) #creates a star of mass 1
     sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with mass 0.001 at 1 AU
