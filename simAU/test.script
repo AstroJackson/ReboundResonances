@@ -1,22 +1,22 @@
 #!/bin/bash
 
-#SBATCH -J 7/29SIMAU
+#SBATCH -J TEST
 #SBATCH -p general
-#SBATCH -o 7/29_SIMAU_%j.txt
+#SBATCH -o TEST_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=24
-#SBATCH --time=96:00:00
-#SBATCH --mem=128G
+#SBATCH --time=00:05:00
+#SBATCH --mem=50M
 
+export OMP_NUM_THREADS=2
 export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
 
 for i in {0..161..1} #162 times, not 163
 do
-	python3 simAU.py $i &
+	python3 testtt.py &
 done
-python3 simAU.py 162 #163rd time does not include a '&' nor a 'sleep' command
 
 date

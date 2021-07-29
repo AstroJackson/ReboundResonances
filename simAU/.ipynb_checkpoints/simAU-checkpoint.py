@@ -548,19 +548,10 @@ for i in range(1,11):
 copy = other.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
-data = combo
-path = "parallelization.txt"
-if not os.path.isfile(path):
-    with open(path, 'w') as file:
-        file.write('-1')
-with open(path, 'r') as file:
-    #info = file.read()
-    info = int(file.read().split()[-1]) + 1
-with open(path, 'a') as file:
-    file.write(" "+str(info))
-print(info, data[info])
-distance = data[info]
-revolutionsOfInnerPlanet = 10000
+info = int(sys.argv[1])
+print(info, combo[info])
+distance = combo[info] # this selects the distance
+revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
 revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
@@ -584,10 +575,10 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-masslist_txt_append(simAU_masses,'Masslists/2000SimAUJuly27.txt','ttor','a')
+masslist_txt_append(simAU_masses,'Masslists/2000SimAUJuly29.txt','ttor','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= "2000asteroidsSimAUJuly27", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+saveFigs(innerFolder= "2000asteroidsSimAUJuly29", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
                    # put the figures in the Tests folder (still within Figures)
 # np.savez("Figures/"+innerFolder+"graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
 #     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
