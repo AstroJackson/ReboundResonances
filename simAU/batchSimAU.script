@@ -9,7 +9,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=24
 #SBATCH --time=96:00:00
-#SBATCH --mem=64G
+#SBATCH --mem=128G
 
 export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
 
