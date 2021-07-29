@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt, time as tiempo, math, sys, os
 
 sim = rebound.Simulation()
 tau = 2*np.pi
-
+planetDestroyed = False
 
 # In[3]:
 class CustomException(Exception):
@@ -475,6 +475,8 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
     ,round((tiempo.monotonic()-initialtime)/60,1)))
     #
     for i, t in enumerate(times):
+        if planetDestroyed:
+            break # not interested in what happens in systems where the planets collide
         sim.integrate(t)
         print("simAU distance: {} | {} time = {} years | {} particles | {} step number |\n\
 | {} second | {} minutes | {} hours.\n"\
@@ -575,7 +577,7 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-masslist_txt_append(simAU_masses,'Masslists/2000SimAUJuly29.txt','ttor','a')
+masslist_txt_append(simAU_masses,'Masslists/2000SimAUJuly29.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
 saveFigs(innerFolder= "2000asteroidsSimAUJuly29", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will

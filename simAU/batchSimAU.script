@@ -18,5 +18,6 @@ do
 	python3 simAU.py $i &
 done
 python3 simAU.py 162 #163rd time does not include a '&' nor a 'sleep' command
+python3 massListSorter.py Masslists/2000SimAUJuly29 # this will execute after the above commands
 
 date

@@ -14,6 +14,7 @@
 
 for i in {0..161} #162 times, not 163
 do
-	python3 simAU1.py $i
+	python3 simAU1.py $i &
 done
 python3 simAU1.py 162 #163rd time does not include a '&' nor a 'sleep' command
+python3 massListSorter.py Masslists/test1

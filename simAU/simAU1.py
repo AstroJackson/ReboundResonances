@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt, time as tiempo, math, sys, os
 
 sim = rebound.Simulation()
 tau = 2*np.pi
-
+planetDestroyed = False
 
 # In[3]:
 class CustomException(Exception):
@@ -66,7 +66,6 @@ def my_merge(sim_pointer, collided_particles_index):
     elif ps[i1].m >= startingMass and ps[j1].m >= startingMass: # if the two planets collide
         global planetDestroyed
         print(f"TIME:{sim.t}")
-        #raise CustomException("The planets collided!")
         planetDestroyed = True
         i = i1   
         j = j1
@@ -80,7 +79,6 @@ def my_merge(sim_pointer, collided_particles_index):
         ps[i] = merged_planet   # update p1's state vector (mass and radius will need corrections)
         ps[i].m = total_mass    # update to total mass
         ps[i].r = merged_radius # update to joined radius
-        #raise CustomException("The planets collided!")
         return 2 # remove particle with index j
     else:
         if ps[i1].m==0: #assigns k as the planet with mass and l as the particle w/o mass
@@ -241,6 +239,31 @@ def averagePercent(filePath):
     for i in range(2,len(dataList),4):
         percentList.append(dataList[i])
     return avg(percentList)
+
+def massListSorter(path):
+    allData = []
+    with open(path+".txt") as file:
+        for i, line in enumerate(file):
+            if i <= 1:
+                continue
+            splitted = line.split()
+            splitted[-1] = float(splitted[-1])
+            allData.append(splitted)
+    lastEntry = [data[3] for data in allData]
+    placement = [combo.index(i) for i in lastEntry]
+    fullySorted = [0 for i in range(len(combo))]
+    #fullySorted = [allData[i] for i in placement]
+    for i, value in enumerate(placement): fullySorted[value] = allData[i]
+    with open(path+"SORTED.txt", 'w') as file:
+        file.write("simAU\n"+"Inner Planet Mass\tOuter Planet Mass\tPercent Difference\tDistance\n")
+        for i in fullySorted: 
+            for j in i: 
+                write = str(j)
+                if j in outerDistances:
+                    index = outerDistances.index(j)
+                    write += "* ({}:{})".format(Info[index][0],Info[index][1])
+                file.write(write+'\t')
+            file.write('\n')
 
 # In[4]:
 
@@ -475,6 +498,8 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
     ,round((tiempo.monotonic()-initialtime)/60,1)))
     #
     for i, t in enumerate(times):
+        if planetDestroyed:
+            break # not interested in what happens in systems where the planets collide
         sim.integrate(t)
         print("simAU distance: {} | {} time = {} years | {} particles | {} step number |\n\
 | {} second | {} minutes | {} hours.\n"\
@@ -534,16 +559,16 @@ def remove(AU, sim = sim):
 ######################################################################################################################################################################################
 ######################################################################################################################################################################################
 Info=[]
-other = []
+outerDistances = []
 for i in range(1,11):
     for j in range(i+1,i+11):
         outerDist = .1*(j/i)**(2/3)
-        if outerDist in other:
+        if outerDist in outerDistances:
             continue
         pre = [i,j,.1, outerDist]
         Info.append(pre)
-        other.append(outerDist)
-copy = other.copy()
+        outerDistances.append(outerDist)
+copy = outerDistances.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
 info = int(sys.argv[1])
@@ -573,7 +598,7 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-masslist_txt_append(simAU_masses,'Masslists/test1.txt','ttor','a')
+masslist_txt_append(simAU_masses,'Masslists/test1.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
 saveFigs(innerFolder= "test1", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
