@@ -10,17 +10,18 @@ import matplotlib.pyplot as plt, time as tiempo, math, sys, os
 
 sim = rebound.Simulation()
 tau = 2*np.pi
-
+planetDestroyed = False
 
 # In[3]:
 class CustomException(Exception):
     def __init__(self, *args: object) -> None:
         super().__init__(*args)
 
-jupiterMass = 1e-3
-earthMass = 3e-6
+jupiterMass, jupiterRadius = 1e-3, 4.7e-4
+earthMass, earthRadius = 3e-6, 4.3e-5
 startingMass = jupiterMass
-def simAU(distance, R0 = 5e-4): #can set the sma of the second planet easily this way
+startingRadius = jupiterRadius
+def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
     sim.add(m=1) #creates a star of mass 1
     sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with mass 0.001 at 1 AU
@@ -223,6 +224,8 @@ def avg(listt, **kwargs):
                 sum += i
             else:
                 length -= 1
+        if length == 0:
+            return 0
         return sum / length
     if kwargs.get('nonNegative'):
         for i in listt:
@@ -230,7 +233,9 @@ def avg(listt, **kwargs):
                 sum += i
             else:
                 length -= 1
-        return sum / len(listt)
+        if length == 0:
+            return 0
+        return sum / length
     for i in listt:
         sum += i
     return sum / len(listt)
@@ -475,6 +480,8 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
     ,round((tiempo.monotonic()-initialtime)/60,1)))
     #
     for i, t in enumerate(times):
+        if planetDestroyed:
+            break # not interested in what happens in systems where the planets collide
         sim.integrate(t)
         print("simAU distance: {} | {} time = {} years | {} particles | {} step number |\n\
 | {} second | {} minutes | {} hours.\n"\
@@ -575,10 +582,10 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-masslist_txt_append(simAU_masses,'Masslists/2000SimAUJuly29.txt','ttor','a')
+masslist_txt_append(simAU_masses,'Masslists/2000SimAUJuly30.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= "2000asteroidsSimAUJuly29", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+saveFigs(innerFolder= "2000asteroidsSimAUJuly30", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
                    # put the figures in the Tests folder (still within Figures)
 # np.savez("Figures/"+innerFolder+"graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
 #     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\

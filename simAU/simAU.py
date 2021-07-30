@@ -224,6 +224,8 @@ def avg(listt, **kwargs):
                 sum += i
             else:
                 length -= 1
+        if length == 0:
+            return 0
         return sum / length
     if kwargs.get('nonNegative'):
         for i in listt:
@@ -231,7 +233,9 @@ def avg(listt, **kwargs):
                 sum += i
             else:
                 length -= 1
-        return sum / len(listt)
+        if length == 0:
+            return 0
+        return sum / length
     for i in listt:
         sum += i
     return sum / len(listt)

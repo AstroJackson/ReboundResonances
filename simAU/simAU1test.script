@@ -1,22 +1,22 @@
 #!/bin/bash
 
-#SBATCH -J SIMAU_July27TEST
+#SBATCH -J SIMAU_July30TEST
 #SBATCH -p general
-#SBATCH -o SIMAU_July27TEST_%j.txt
+#SBATCH -o SIMAU_July30TEST_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=1
-#SBATCH --time=00:10:00
-#SBATCH --mem=5G
+#SBATCH --cpus-per-task=24
+#SBATCH --time=00:30:00
+#SBATCH --mem=15G
 
 
-for i in {0..10} #162 times, not 163
+for i in {0..161}
 do
-	python3 simAU1.py $i &
+	python3 simAU24.py $i &
 done
-python3 simAU1.py 162 #163rd time does not include an '&' nor a 'sleep' command
-python3 massListSorter.py Masslists/test1
+python3 simAU24.py 162
+python3 massListSorter.py Masslists/test24
 
 date
