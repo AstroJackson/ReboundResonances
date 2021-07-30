@@ -250,137 +250,137 @@ def averagePercent(filePath):
 # In[4]:
 
 def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
-   """
-   This saves several types of graphs into a folder corresponsing to the seed.
-   Optional ability to add on to the name of a file easily.
-   NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
-   because for some data types the stepnumber needs to be very high.
-   """
-   if kwargs.get("test") or distance == None:
-       distance = "Tests"
-   if innerFolder:
-       innerFolder += "/"
-       import os
-       if not os.path.isdir("Figures/"+innerFolder):
-           os.mkdir("Figures/"+innerFolder)
-       if not os.path.isdir("Figures/"+innerFolder+str(distance)):
-           os.mkdir("Figures/"+innerFolder+str(distance))
-       if not os.path.isdir("Figures/"+innerFolder+str(distance)+"/Arrays"):
-           os.mkdir("Figures/"+innerFolder+str(distance)+"/Arrays")
-  
-   np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
-   eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
-   particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
-  
-   plt.clf() # clears any graphs
-   quickplot(sim)
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/quickplot"+addOn+".pdf")
-  
-   plt.clf()
-   rebound.OrbitPlot(sim,slices=0.3,color=True)
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/reboundPlot"+addOn+".pdf")
-  
-   plt.clf()
-   rebound.OrbitPlot(sim, slices = .3, color = True, lw = 1, plotparticles = [1,2])
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/reboundPlotOnlyPlanets"+addOn+".pdf")
-  
-   plt.clf()
-   plt.plot(times, eccs)
-   plt.title('Eccentricity Over Time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('Eccentricity')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/Eccentricity"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/Eccentricity"+addOn, eccs)
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/times"+addOn, times)
-  
-   plt.clf()
-   plt.plot(times, relative_x_value)
-   plt.title('X Value From Star Over Time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('X Value (AU)')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/relativeXValue"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/relativeXValue"+addOn, relative_x_value)
-  
-   plt.clf()
-   plt.plot(times, masses)
-   plt.title('Mass of Planets Over Time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('Mass (Solar Masses)')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/masses"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/masses"+addOn, masses)
-  
-   plt.clf()
-   fig, axs = plt.subplots(1, 2)
-   fig.suptitle('Planet Positions')
-   axs[0].plot(list(position1[:,0]), list(position1[:,1]),'o')
-   axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
-   axs[0].set_aspect('equal')
-   axs[1].set_aspect('equal')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/scatterPlotPositions"+addOn+".pdf")
-  
-   plt.clf()
-   plt.plot(times, interplanetdistance)
-   plt.title('Interplanetary Distance Over Time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('Distance (AU)')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/interplanetaryDistance"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/inderplanetaryDistance"+addOn, interplanetdistance)
-  
-   plt.clf()
-   plt.plot(times, particleNumber)
-   plt.title('sim.N over time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('sim.N (AU)')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/particleNumber"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/particleNumber"+addOn, particleNumber)
-  
-   plt.clf()
-   plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
-   plt.title('Asteroid Eccentricity Over Time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('Eccs')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccs"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
-  
-   plt.clf()
-   plt.plot(times, [avg(EccsList, nonNegative = True) for EccsList in asteroidEccs],linewidth=1)
-   plt.title('Asteroid Eccentricity AVERAGE Over Time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('Eccentricity')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccsAverage"+addOn+".pdf")
-  
-   plt.clf()
-   num_bins = 30
-   plt.hist([data for data in asteroidEccs[-1] if data >= 0], num_bins)
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccsHistoEnd"+addOn+".pdf")
-  
-   plt.clf()
-   plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
-   # Does not plot every asteroid
-   plt.title('Asteroid Semi Major Axis Over Time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('Semi Major Axis (AU)')
-   plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxis"+addOn+".pdf")
-   np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidAU"+addOn, asteroidAU)
-  
-   plt.clf()
-   plt.plot(times, [avg(asteroidAUList, positive = True) for asteroidAUList in asteroidAU],linewidth=1)
-   plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
-   plt.xlabel('Time (2pi*yr)')
-   plt.ylabel('Semi Major Axis (AU)')
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisAverage"+addOn+".pdf")
-  
-   plt.clf()
-   num_bins =30
-   plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoStart"+addOn+".pdf")
-  
-   plt.clf()
-   plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
-   plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
-    
-###########################################################################################
+    """
+    This saves several types of graphs into a folder corresponsing to the seed.
+    Optional ability to add on to the name of a file easily.
+    NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
+    because for some data types the stepnumber needs to be very high.
+    """
+    if kwargs.get("test") or distance == None:
+        distance = "Tests"
+    if innerFolder:
+        innerFolder += "/"
+        import os
+        if not os.path.isdir("Figures/"+innerFolder):
+            os.mkdir("Figures/"+innerFolder)
+        if not os.path.isdir("Figures/"+innerFolder+str(distance)):
+            os.mkdir("Figures/"+innerFolder+str(distance))
+        if not os.path.isdir("Figures/"+innerFolder+str(distance)+"/Arrays"):
+            os.mkdir("Figures/"+innerFolder+str(distance)+"/Arrays")
+
+    np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+    eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
+    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
+
+    plt.clf() # clears any graphs
+    quickplot(sim)
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/quickplot"+addOn+".pdf")
+
+    plt.clf()
+    rebound.OrbitPlot(sim,slices=0.3,color=True)
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/reboundPlot"+addOn+".pdf")
+
+    plt.clf()
+    rebound.OrbitPlot(sim, slices = .3, color = True, lw = 1, plotparticles = [1,2])
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/reboundPlotOnlyPlanets"+addOn+".pdf")
+
+    plt.clf()
+    plt.plot(times, eccs)
+    plt.title('Eccentricity Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Eccentricity')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/Eccentricity"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(distance)+"/Arrays/Eccentricity"+addOn, eccs)
+    np.save("Figures/"+innerFolder+str(distance)+"/Arrays/times"+addOn, times)
+
+    plt.clf()
+    plt.plot(times, relative_x_value)
+    plt.title('X Value From Star Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('X Value (AU)')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/relativeXValue"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(distance)+"/Arrays/relativeXValue"+addOn, relative_x_value)
+
+    plt.clf()
+    plt.plot(times, masses)
+    plt.title('Mass of Planets Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Mass (Solar Masses)')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/masses"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(distance)+"/Arrays/masses"+addOn, masses)
+
+    plt.clf()
+    fig, axs = plt.subplots(1, 2)
+    fig.suptitle('Planet Positions')
+    axs[0].plot(list(position1[:,0]), list(position1[:,1]),'o')
+    axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
+    axs[0].set_aspect('equal')
+    axs[1].set_aspect('equal')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/scatterPlotPositions"+addOn+".pdf")
+
+    plt.clf()
+    plt.plot(times, interplanetdistance)
+    plt.title('Interplanetary Distance Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Distance (AU)')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/interplanetaryDistance"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(distance)+"/Arrays/inderplanetaryDistance"+addOn, interplanetdistance)
+
+    plt.clf()
+    plt.plot(times, particleNumber)
+    plt.title('sim.N over time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('sim.N (AU)')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/particleNumber"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(distance)+"/Arrays/particleNumber"+addOn, particleNumber)
+
+    plt.clf()
+    plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
+    plt.title('Asteroid Eccentricity Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Eccs')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccs"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
+
+    plt.clf()
+    plt.plot(times, [avg(EccsList, nonNegative = True) for EccsList in asteroidEccs],linewidth=1)
+    plt.title('Asteroid Eccentricity AVERAGE Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Eccentricity')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccsAverage"+addOn+".pdf")
+
+    plt.clf()
+    num_bins = 30
+    plt.hist([data for data in asteroidEccs[-1] if data >= 0], num_bins)
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccsHistoEnd"+addOn+".pdf")
+
+    plt.clf()
+    plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
+    # Does not plot every asteroid
+    plt.title('Asteroid Semi Major Axis Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Semi Major Axis (AU)')
+    plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxis"+addOn+".pdf")
+    np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidAU"+addOn, asteroidAU)
+
+    plt.clf()
+    plt.plot(times, [avg(asteroidAUList, positive = True) for asteroidAUList in asteroidAU],linewidth=1)
+    plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
+    plt.xlabel('Time (2pi*yr)')
+    plt.ylabel('Semi Major Axis (AU)')
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisAverage"+addOn+".pdf")
+
+    plt.clf()
+    num_bins =30
+    plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoStart"+addOn+".pdf")
+
+    plt.clf()
+    plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
+
+    ###########################################################################################
 
 def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):  
     sim = simulation(sma)
