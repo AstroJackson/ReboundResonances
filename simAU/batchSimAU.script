@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH -J 7/29SIMAU
+#SBATCH -J SimAU_July30
 #SBATCH -p general
-#SBATCH -o 7/29_SIMAU_%j.txt
+#SBATCH -o SimAU_July30_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
@@ -13,11 +13,11 @@
 
 export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
 
-for i in {0..161..1} #162 times, not 163
+for i in {0..161..1}
 do
 	python3 simAU.py $i &
 done
-python3 simAU.py 162 #163rd time does not include a '&' nor a 'sleep' command
-python3 massListSorter.py Masslists/2000SimAUJuly30 # this will execute after the above commands
+python3 simAU.py 162
+python3 massListSorter.py Masslists/2000SimAUJuly30
 
 date

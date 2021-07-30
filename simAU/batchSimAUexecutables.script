@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in {0..161..1}
+do
+	python3 simAU.py $i &
+done
+python3 simAU.py 162
+python3 massListSorter.py Masslists/2000SimAUJuly30

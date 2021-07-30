@@ -1,0 +1,380 @@
+123 0.36262626262626263
+Steps: 50
+Beginning distance 0.36262626262626263.
+Total steps: 50
+distance: 0.36262626262626263 | 0 time = 0.0 years | 13 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.36262626262626263 | 0.0 time = 0.0 years | 13 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.020274669930196127 time = 0.0032268139389473264 years | 13 particles | 1 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.040549339860392254 time = 0.006453627877894653 years | 13 particles | 2 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.060824009790588385 time = 0.00968044181684198 years | 13 particles | 3 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.08109867972078451 time = 0.012907255755789306 years | 13 particles | 4 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.10137334965098063 time = 0.01613406969473663 years | 13 particles | 5 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.12164801958117677 time = 0.01936088363368396 years | 13 particles | 6 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.14192268951137288 time = 0.022587697572631283 years | 13 particles | 7 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.16219735944156902 time = 0.02581451151157861 years | 13 particles | 8 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.18247202937176515 time = 0.02904132545052594 years | 13 particles | 9 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.20274669930196126 time = 0.03226813938947326 years | 13 particles | 10 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.2230213692321574 time = 0.03549495332842059 years | 13 particles | 11 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.24329603916235354 time = 0.03872176726736792 years | 13 particles | 12 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.26357070909254965 time = 0.04194858120631524 years | 13 particles | 13 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.28384537902274576 time = 0.045175395145262566 years | 13 particles | 14 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.3041200489529419 time = 0.0484022090842099 years | 13 particles | 15 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.32439471888313803 time = 0.05162902302315722 years | 13 particles | 16 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.34466938881333414 time = 0.05485583696210455 years | 13 particles | 17 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.3649440587435303 time = 0.05808265090105188 years | 13 particles | 18 step number |
+| 2.1 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.3852187286737264 time = 0.0613094648399992 years | 13 particles | 19 step number |
+| 2.1 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.40549339860392253 time = 0.06453627877894652 years | 13 particles | 20 step number |
+| 2.1 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.4257680685341187 time = 0.06776309271789385 years | 13 particles | 21 step number |
+| 2.1 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.4460427384643148 time = 0.07098990665684118 years | 13 particles | 22 step number |
+| 2.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.4663174083945109 time = 0.0742167205957885 years | 13 particles | 23 step number |
+| 2.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.4865920783247071 time = 0.07744353453473583 years | 13 particles | 24 step number |
+| 2.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.5068667482549032 time = 0.08067034847368316 years | 13 particles | 25 step number |
+| 2.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.5271414181850993 time = 0.08389716241263048 years | 13 particles | 26 step number |
+| 2.9 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.5474160881152954 time = 0.0871239763515778 years | 13 particles | 27 step number |
+| 2.9 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.5676907580454915 time = 0.09035079029052513 years | 13 particles | 28 step number |
+| 2.9 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.5879654279756877 time = 0.09357760422947248 years | 13 particles | 29 step number |
+| 2.9 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.6082400979058838 time = 0.0968044181684198 years | 13 particles | 30 step number |
+| 2.9 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.62851476783608 time = 0.10003123210736711 years | 13 particles | 31 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.6487894377662761 time = 0.10325804604631444 years | 13 particles | 32 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.6690641076964722 time = 0.10648485998526176 years | 13 particles | 33 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.6893387776266683 time = 0.1097116739242091 years | 13 particles | 34 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.7096134475568644 time = 0.11293848786315641 years | 13 particles | 35 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.7298881174870606 time = 0.11616530180210376 years | 13 particles | 36 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.7501627874172567 time = 0.11939211574105107 years | 13 particles | 37 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.7704374573474528 time = 0.1226189296799984 years | 13 particles | 38 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.790712127277649 time = 0.12584574361894574 years | 13 particles | 39 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.8109867972078451 time = 0.12907255755789304 years | 13 particles | 40 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.8312614671380412 time = 0.13229937149684037 years | 13 particles | 41 step number |
+| 4.6 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.8515361370682374 time = 0.1355261854357877 years | 13 particles | 42 step number |
+| 4.6 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.8718108069984335 time = 0.13875299937473504 years | 13 particles | 43 step number |
+| 4.6 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.8920854769286296 time = 0.14197981331368237 years | 13 particles | 44 step number |
+| 4.6 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.9123601468588257 time = 0.14520662725262967 years | 13 particles | 45 step number |
+| 5.2 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.9326348167890218 time = 0.148433441191577 years | 13 particles | 46 step number |
+| 5.2 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.9529094867192179 time = 0.15166025513052434 years | 13 particles | 47 step number |
+| 5.2 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.9731841566494142 time = 0.15488706906947167 years | 13 particles | 48 step number |
+| 5.2 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.36262626262626263 | 0.9934588265796103 time = 0.158113883008419 years | 13 particles | 49 step number |
+| 5.2 second | 0.1 minutes | 0.0 hours.
+
+Done at 5 seconds!
+Distance (done): 0.36262626262626263 | 0.9934588265796103 time = 0.158113883008419 years | 13 particles | 50 step number |
+| 5.6 second | 0.1 minutes | 0.0 hours.
+
+Masses 0.001 and 0.001.
+Ending distance 0.36262626262626263.
+
+Distance 0.36262626262626263 in total took 9 seconds (0.17 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [0.001, 0.001, 0.0, 0.36262626262626263]]
+There are 13 particles remaining.
+108 0.3101010101010101
+Steps: 50
+Beginning distance 0.3101010101010101.
+Total steps: 50
+distance: 0.3101010101010101 | 0 time = 0.0 years | 13 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.3101010101010101 | 0.0 time = 0.0 years | 13 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.020274669930196127 time = 0.0032268139389473264 years | 13 particles | 1 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.040549339860392254 time = 0.006453627877894653 years | 13 particles | 2 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.060824009790588385 time = 0.00968044181684198 years | 13 particles | 3 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.08109867972078451 time = 0.012907255755789306 years | 13 particles | 4 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.10137334965098063 time = 0.01613406969473663 years | 13 particles | 5 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.12164801958117677 time = 0.01936088363368396 years | 13 particles | 6 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.14192268951137288 time = 0.022587697572631283 years | 13 particles | 7 step number |
+| 0.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.16219735944156902 time = 0.02581451151157861 years | 13 particles | 8 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.18247202937176515 time = 0.02904132545052594 years | 13 particles | 9 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.20274669930196126 time = 0.03226813938947326 years | 13 particles | 10 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.2230213692321574 time = 0.03549495332842059 years | 13 particles | 11 step number |
+| 1.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.24329603916235354 time = 0.03872176726736792 years | 13 particles | 12 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.26357070909254965 time = 0.04194858120631524 years | 13 particles | 13 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.28384537902274576 time = 0.045175395145262566 years | 13 particles | 14 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.3041200489529419 time = 0.0484022090842099 years | 13 particles | 15 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.32439471888313803 time = 0.05162902302315722 years | 13 particles | 16 step number |
+| 1.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.34466938881333414 time = 0.05485583696210455 years | 13 particles | 17 step number |
+| 2.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.3649440587435303 time = 0.05808265090105188 years | 13 particles | 18 step number |
+| 2.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.3852187286737264 time = 0.0613094648399992 years | 13 particles | 19 step number |
+| 2.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.40549339860392253 time = 0.06453627877894652 years | 13 particles | 20 step number |
+| 2.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.4257680685341187 time = 0.06776309271789385 years | 13 particles | 21 step number |
+| 2.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.4460427384643148 time = 0.07098990665684118 years | 13 particles | 22 step number |
+| 2.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.4663174083945109 time = 0.0742167205957885 years | 13 particles | 23 step number |
+| 2.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.4865920783247071 time = 0.07744353453473583 years | 13 particles | 24 step number |
+| 2.5 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.5068667482549032 time = 0.08067034847368316 years | 13 particles | 25 step number |
+| 3.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.5271414181850993 time = 0.08389716241263048 years | 13 particles | 26 step number |
+| 3.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.5474160881152954 time = 0.0871239763515778 years | 13 particles | 27 step number |
+| 3.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.5676907580454915 time = 0.09035079029052513 years | 13 particles | 28 step number |
+| 3.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.5879654279756877 time = 0.09357760422947248 years | 13 particles | 29 step number |
+| 3.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.6082400979058838 time = 0.0968044181684198 years | 13 particles | 30 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.62851476783608 time = 0.10003123210736711 years | 13 particles | 31 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.6487894377662761 time = 0.10325804604631444 years | 13 particles | 32 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.6690641076964722 time = 0.10648485998526176 years | 13 particles | 33 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.6893387776266683 time = 0.1097116739242091 years | 13 particles | 34 step number |
+| 3.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.7096134475568644 time = 0.11293848786315641 years | 13 particles | 35 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.7298881174870606 time = 0.11616530180210376 years | 13 particles | 36 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.7501627874172567 time = 0.11939211574105107 years | 13 particles | 37 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.7704374573474528 time = 0.1226189296799984 years | 13 particles | 38 step number |
+| 4.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.790712127277649 time = 0.12584574361894574 years | 13 particles | 39 step number |
+| 4.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.8109867972078451 time = 0.12907255755789304 years | 13 particles | 40 step number |
+| 4.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.8312614671380412 time = 0.13229937149684037 years | 13 particles | 41 step number |
+| 4.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.8515361370682374 time = 0.1355261854357877 years | 13 particles | 42 step number |
+| 4.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.8718108069984335 time = 0.13875299937473504 years | 13 particles | 43 step number |
+| 4.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.8920854769286296 time = 0.14197981331368237 years | 13 particles | 44 step number |
+| 5.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.9123601468588257 time = 0.14520662725262967 years | 13 particles | 45 step number |
+| 5.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.9326348167890218 time = 0.148433441191577 years | 13 particles | 46 step number |
+| 5.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.9529094867192179 time = 0.15166025513052434 years | 13 particles | 47 step number |
+| 5.0 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.9731841566494142 time = 0.15488706906947167 years | 13 particles | 48 step number |
+| 5.5 second | 0.1 minutes | 0.0 hours.
+
+simAU distance: 0.3101010101010101 | 0.9934588265796103 time = 0.158113883008419 years | 13 particles | 49 step number |
+| 5.5 second | 0.1 minutes | 0.0 hours.
+
+Done at 5 seconds!
+Distance (done): 0.3101010101010101 | 0.9934588265796103 time = 0.158113883008419 years | 13 particles | 50 step number |
+| 5.5 second | 0.1 minutes | 0.0 hours.
+
+Masses 0.001 and 0.001.
+Ending distance 0.3101010101010101.
+
+Distance 0.3101010101010101 in total took 8 seconds (0.15 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [0.001, 0.001, 0.0, 0.3101010101010101]]
+There are 13 particles remaining.
+Traceback (most recent call last):
+  File "simAU1.py", line 604, in <module>
+    saveFigs(innerFolder= "test1", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+  File "simAU1.py", line 299, in saveFigs
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/reboundPlot"+addOn+".pdf")
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/pyplot.py", line 689, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/figure.py", line 2094, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 2075, in print_figure
+    **kwargs)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 2568, in print_pdf
+    file.finalize()
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 571, in finalize
+    self.writeFonts()
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 714, in writeFonts
+    fonts[Fx] = self.embedTTF(realpath, chars[1])
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 1179, in embedTTF
+    return embedTTFType3(font, characters, descriptor)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 973, in embedTTFType3
+    os.fsencode(filename), glyph_ids)
+RuntimeError: TrueType font may be corrupt (reason 1)
+Traceback (most recent call last):
+  File "simAU1.py", line 604, in <module>
+    saveFigs(innerFolder= "test1", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+  File "simAU1.py", line 299, in saveFigs
+    plt.savefig("Figures/"+innerFolder+str(distance)+"/reboundPlot"+addOn+".pdf")
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/pyplot.py", line 689, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/figure.py", line 2094, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 2075, in print_figure
+    **kwargs)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 2568, in print_pdf
+    file.finalize()
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 571, in finalize
+    self.writeFonts()
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 714, in writeFonts
+    fonts[Fx] = self.embedTTF(realpath, chars[1])
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 1179, in embedTTF
+    return embedTTFType3(font, characters, descriptor)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py", line 973, in embedTTFType3
+    os.fsencode(filename), glyph_ids)
+RuntimeError: TrueType font may be corrupt (reason 1)
+slurmstepd: error: *** JOB 570963 ON c6 CANCELLED AT 2021-07-30T16:11:48 DUE TO TIME LIMIT ***
+slurmstepd: error: Detected 870673 oom-kill event(s) in StepId=570963.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

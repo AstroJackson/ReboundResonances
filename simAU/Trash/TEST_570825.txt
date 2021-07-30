@@ -1,0 +1,133 @@
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5603 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5604 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5606 Killed                  python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5607 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5609 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5611 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5612 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5613 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5614 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5615 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5617 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5619 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5623 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5624 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5625 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5626 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5627 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5628 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5630 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5631 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5633 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5634 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5637 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5638 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5639 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5641 Killed                  python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5642 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5643 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5644 Killed                  python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5645 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5646 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5648 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5650 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5652 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5653 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5656 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5657 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5658 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5659 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5660 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5661 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5662 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5663 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5664 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5687 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5692 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5696 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5699 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5704 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5706 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5709 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5710 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5711 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5712 Segmentation fault      python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5737 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 20:  5738 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+/var/spool/slurm/d/job570825/slurm_script: line 18: /N/soft/rhel7/anaconda/python3.7/2019.03/bin/python3: Argument list too long
+Fri Jul 30 15:23:25 EDT 2021
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5610 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5616 Killed                  python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5618 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5620 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5621 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5629 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5640 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5647 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5705 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5713 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5716 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5717 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5719 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5720 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5722 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5726 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5731 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5741 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5752 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 21:  5759 Bus error               python3 testtt.py
+/var/spool/slurm/d/job570825/slurm_script: line 22:  5760 Bus error               python3 testtt.py
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+slurmstepd: error: Detected 338 oom-kill event(s) in StepId=570825.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

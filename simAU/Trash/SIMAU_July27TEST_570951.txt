@@ -1,0 +1,68 @@
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8441 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8442 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8453 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8458 Killed                  python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8468 Killed                  python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8493 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8508 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8528 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8533 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8540 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8559 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8565 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8567 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8571 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8576 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8578 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8579 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8586 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8588 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8596 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 19:  8601 Killed                  python3 simAU1.py 162
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8444 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8446 Killed                  python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8447 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8451 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8459 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8462 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8464 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8465 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8467 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8469 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8471 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8473 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8478 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8479 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8491 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8495 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8498 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8515 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8518 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8523 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8524 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8526 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8538 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8539 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8541 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8546 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8549 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8550 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8554 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8557 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8560 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8562 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8573 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8582 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8589 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8593 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8597 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8598 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8600 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 20:  8618 Bus error               python3 massListSorter.py Masslists/test1
+Fri Jul 30 15:43:13 EDT 2021
+/var/spool/slurm/d/job570951/slurm_script: line 22:  8452 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 22:  8517 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 22:  8553 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 22:  8564 Bus error               python3 simAU1.py $i
+/var/spool/slurm/d/job570951/slurm_script: line 22:  8587 Bus error               python3 simAU1.py $i
+slurmstepd: error: Detected 21 oom-kill event(s) in StepId=570951.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

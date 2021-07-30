@@ -1,0 +1,180 @@
+#!/bin/bash
+
+#SBATCH -J SIMAU_July27TEST
+#SBATCH -p general
+#SBATCH -o SIMAU_July27TEST_%j.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=taylor11@iu.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=12
+#SBATCH --time=00:30:00
+#SBATCH --mem=15G
+
+python3 simAU1.py 0 &
+python3 simAU1.py 1 &
+python3 simAU1.py 2 &
+python3 simAU1.py 3 &
+python3 simAU1.py 4 &
+python3 simAU1.py 5 &
+python3 simAU1.py 6 &
+python3 simAU1.py 7 &
+python3 simAU1.py 8 &
+python3 simAU1.py 9 &
+python3 simAU1.py 10 &
+python3 simAU1.py 11 &
+python3 simAU1.py 12 &
+python3 simAU1.py 13 &
+python3 simAU1.py 14 &
+python3 simAU1.py 15 &
+python3 simAU1.py 16 &
+python3 simAU1.py 17 &
+python3 simAU1.py 18 &
+python3 simAU1.py 19 &
+python3 simAU1.py 20 &
+python3 simAU1.py 21 &
+python3 simAU1.py 22 &
+python3 simAU1.py 23 &
+python3 simAU1.py 24 &
+python3 simAU1.py 25 &
+python3 simAU1.py 26 &
+python3 simAU1.py 27 &
+python3 simAU1.py 28 &
+python3 simAU1.py 29 &
+python3 simAU1.py 30 &
+python3 simAU1.py 31 &
+python3 simAU1.py 32 &
+python3 simAU1.py 33 &
+python3 simAU1.py 34 &
+python3 simAU1.py 35 &
+python3 simAU1.py 36 &
+python3 simAU1.py 37 &
+python3 simAU1.py 38 &
+python3 simAU1.py 39 &
+python3 simAU1.py 40 &
+python3 simAU1.py 41 &
+python3 simAU1.py 42 &
+python3 simAU1.py 43 &
+python3 simAU1.py 44 &
+python3 simAU1.py 45 &
+python3 simAU1.py 46 &
+python3 simAU1.py 47 &
+python3 simAU1.py 48 &
+python3 simAU1.py 49 &
+python3 simAU1.py 50 &
+python3 simAU1.py 51 &
+python3 simAU1.py 52 &
+python3 simAU1.py 53 &
+python3 simAU1.py 54 &
+python3 simAU1.py 55 &
+python3 simAU1.py 56 &
+python3 simAU1.py 57 &
+python3 simAU1.py 58 &
+python3 simAU1.py 59 &
+python3 simAU1.py 60 &
+python3 simAU1.py 61 &
+python3 simAU1.py 62 &
+python3 simAU1.py 63 &
+python3 simAU1.py 64 &
+python3 simAU1.py 65 &
+python3 simAU1.py 66 &
+python3 simAU1.py 67 &
+python3 simAU1.py 68 &
+python3 simAU1.py 69 &
+python3 simAU1.py 70 &
+python3 simAU1.py 71 &
+python3 simAU1.py 72 &
+python3 simAU1.py 73 &
+python3 simAU1.py 74 &
+python3 simAU1.py 75 &
+python3 simAU1.py 76 &
+python3 simAU1.py 77 &
+python3 simAU1.py 78 &
+python3 simAU1.py 79 &
+python3 simAU1.py 80 &
+python3 simAU1.py 81 &
+python3 simAU1.py 82 &
+python3 simAU1.py 83 &
+python3 simAU1.py 84 &
+python3 simAU1.py 85 &
+python3 simAU1.py 86 &
+python3 simAU1.py 87 &
+python3 simAU1.py 88 &
+python3 simAU1.py 89 &
+python3 simAU1.py 90 &
+python3 simAU1.py 91 &
+python3 simAU1.py 92 &
+python3 simAU1.py 93 &
+python3 simAU1.py 94 &
+python3 simAU1.py 95 &
+python3 simAU1.py 96 &
+python3 simAU1.py 97 &
+python3 simAU1.py 98 &
+python3 simAU1.py 99 &
+python3 simAU1.py 100 &
+python3 simAU1.py 101 &
+python3 simAU1.py 102 &
+python3 simAU1.py 103 &
+python3 simAU1.py 104 &
+python3 simAU1.py 105 &
+python3 simAU1.py 106 &
+python3 simAU1.py 107 &
+python3 simAU1.py 108 &
+python3 simAU1.py 109 &
+python3 simAU1.py 110 &
+python3 simAU1.py 111 &
+python3 simAU1.py 112 &
+python3 simAU1.py 113 &
+python3 simAU1.py 114 &
+python3 simAU1.py 115 &
+python3 simAU1.py 116 &
+python3 simAU1.py 117 &
+python3 simAU1.py 118 &
+python3 simAU1.py 119 &
+python3 simAU1.py 120 &
+python3 simAU1.py 121 &
+python3 simAU1.py 122 &
+python3 simAU1.py 123 &
+python3 simAU1.py 124 &
+python3 simAU1.py 125 &
+python3 simAU1.py 126 &
+python3 simAU1.py 127 &
+python3 simAU1.py 128 &
+python3 simAU1.py 129 &
+python3 simAU1.py 130 &
+python3 simAU1.py 131 &
+python3 simAU1.py 132 &
+python3 simAU1.py 133 &
+python3 simAU1.py 134 &
+python3 simAU1.py 135 &
+python3 simAU1.py 136 &
+python3 simAU1.py 137 &
+python3 simAU1.py 138 &
+python3 simAU1.py 139 &
+python3 simAU1.py 140 &
+python3 simAU1.py 141 &
+python3 simAU1.py 142 &
+python3 simAU1.py 143 &
+python3 simAU1.py 144 &
+python3 simAU1.py 145 &
+python3 simAU1.py 146 &
+python3 simAU1.py 147 &
+python3 simAU1.py 148 &
+python3 simAU1.py 149 &
+python3 simAU1.py 150 &
+python3 simAU1.py 151 &
+python3 simAU1.py 152 &
+python3 simAU1.py 153 &
+python3 simAU1.py 154 &
+python3 simAU1.py 155 &
+python3 simAU1.py 156 &
+python3 simAU1.py 157 &
+python3 simAU1.py 158 &
+python3 simAU1.py 159 &
+python3 simAU1.py 160 &
+python3 simAU1.py 161 &
+python3 simAU1.py 162
+
+python3 massListSorter.py Masslists/test1
+
+date
