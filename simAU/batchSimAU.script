@@ -13,7 +13,7 @@
 
 export XDG_RUNTIME_DIR=/N/slate/taylor11/xdg_dir
 
-for i in {0..161..1}
+for i in {0..161}
 do
 	python3 simAU.py $i &
 done

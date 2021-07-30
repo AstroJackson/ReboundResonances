@@ -258,16 +258,32 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
     """
     if kwargs.get("test") or distance == None:
         distance = "Tests"
+#     def folderChecker():
+#         if innerFolder:
+#             innerFolder += "/"
+#             import os
+#             if not os.path.isdir("Figures/"+innerFolder):
+#                 os.mkdir("Figures/"+innerFolder)
+#             if not os.path.isdir("Figures/"+innerFolder+str(distance)):
+#                 os.mkdir("Figures/"+innerFolder+str(distance))
+#             if not os.path.isdir("Figures/"+innerFolder+str(distance)+"/Arrays"):
+#                 os.mkdir("Figures/"+innerFolder+str(distance)+"/Arrays")
+#     def recursiveFolderChecker():
+#         try:
+#             folderChecker()
+#         except FileExistsError:
+#             tiempo.sleep(2)
+#             recursiveFolderChecker()
+#     recursiveFolderChecker()
     if innerFolder:
         innerFolder += "/"
-        import os
         if not os.path.isdir("Figures/"+innerFolder):
             os.mkdir("Figures/"+innerFolder)
         if not os.path.isdir("Figures/"+innerFolder+str(distance)):
             os.mkdir("Figures/"+innerFolder+str(distance))
         if not os.path.isdir("Figures/"+innerFolder+str(distance)+"/Arrays"):
             os.mkdir("Figures/"+innerFolder+str(distance)+"/Arrays")
-
+    
     np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
