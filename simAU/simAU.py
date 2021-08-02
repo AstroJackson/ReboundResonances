@@ -425,7 +425,8 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    auList = np.linspace(.6,2.9,asteroidnumber) # use this to NOT randomize the starting distance
+    innerRad, outerRad = .1, 1
+    auList = np.linspace(innerRad, outerRad, asteroidnumber) # use this to NOT randomize the starting distance
     index = 0
     if not seed == 'strict':
         np.random.seed(seed) # by setting a seed we will reproduce the same simulation every time
@@ -433,7 +434,7 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
         np.random.seed(0)
     while sim.N < (N_pl + sim.N_active):
         #a = rand_powerlaw(0, 0.1, 3) 
-        a = rand_uniform(.6,2.9)
+        a = rand_uniform(innerRad, outerRad)
         if seed == 'strict':
             a = auList[index]
         #e = rand_rayleigh(0.01) by default is 0

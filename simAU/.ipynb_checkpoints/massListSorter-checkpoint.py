@@ -42,4 +42,4 @@ copy = outerDistances.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
 
-massListSorter("Masslists/test12")
+massListSorter(sys.argv[1])
