@@ -75,7 +75,7 @@ gmail_password = 'PythonPassword1234!'
 
 sent_from = gmail_user
 to = ['jacksonisboss1@gmail.com']
-subject = 'Simulation Started/Done!'
+subject = f'Simulation {status}!'
 body = f"{status} at {datetime.now().strftime('%m/%d/%Y %H:%M:%S')}\n{extra}"
 
 email_text = """\

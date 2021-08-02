@@ -1,0 +1,807 @@
+Script started on 2021-08-02 17:01:58-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+(base) ]0;taylor11@bl-astro-sunny: ~/Downloads/ReboundResonances/simAU[01;32mtaylor11@bl-astro-sunny[00m:[01;34m~/Downloads/ReboundResonances/simAU[00m$ chmod +x ./b ashSimAU.script 
+(base) ]0;taylor11@bl-astro-sunny: ~/Downloads/ReboundResonances/simAU[01;32mtaylor11@bl-astro-sunny[00m:[01;34m~/Downloads/ReboundResonances/simAU[00m$ ./bashSimAU.script 
+Email sent successfully!
+0 0.1
+Steps: 1000
+Beginning distance 0.1.
+Total steps: 1000
+distance: 0.1 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+1 0.10404040404040404
+Steps: 1000
+Beginning distance 0.10404040404040404.
+Total steps: 1000
+distance: 0.10404040404040404 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10404040404040404 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+2 0.10656022367666107
+Steps: 1000
+Beginning distance 0.10656022367666107.
+Total steps: 1000
+distance: 0.10656022367666107 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10656022367666107 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+3 0.10727659828951441
+Steps: 1000
+Beginning distance 0.10727659828951441.
+Total steps: 1000
+distance: 0.10727659828951441 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10727659828951441 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+4 0.10808080808080808
+Steps: 1000
+Beginning distance 0.10808080808080808.
+Total steps: 1000
+distance: 0.10808080808080808 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10808080808080808 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+5 0.10816871777305564
+Steps: 1000
+Beginning distance 0.10816871777305564.
+Total steps: 1000
+distance: 0.10816871777305564 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10816871777305564 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+6 0.10931035330127936
+Steps: 1000
+Beginning distance 0.10931035330127936.
+Total steps: 1000
+distance: 0.10931035330127936 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10931035330127936 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+7 0.11082332935251626
+Steps: 1000
+Beginning distance 0.11082332935251626.
+Total steps: 1000
+distance: 0.11082332935251626 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11082332935251626 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+8 0.11212121212121212
+Steps: 1000
+Beginning distance 0.11212121212121212.
+Total steps: 1000
+distance: 0.11212121212121212 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11212121212121212 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+9 0.11292432346572341
+Steps: 1000
+Beginning distance 0.11292432346572341.
+Total steps: 1000
+distance: 0.11292432346572341 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11292432346572341 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+10 0.11431418309001973
+Steps: 1000
+Beginning distance 0.11431418309001973.
+Total steps: 1000
+distance: 0.11431418309001973 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11431418309001973 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+11 0.1160397208403195
+Steps: 1000
+Beginning distance 0.1160397208403195.
+Total steps: 1000
+distance: 0.1160397208403195 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1160397208403195 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+12 0.11616161616161616
+Steps: 1000
+Beginning distance 0.11616161616161616.
+Total steps: 1000
+distance: 0.11616161616161616 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11616161616161616 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+13 0.1182396075591909
+Steps: 1000
+Beginning distance 0.1182396075591909.
+Total steps: 1000
+distance: 0.1182396075591909 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1182396075591909 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+14 0.11911384251964328
+Steps: 1000
+Beginning distance 0.11911384251964328.
+Total steps: 1000
+distance: 0.11911384251964328 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11911384251964328 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+15 0.1202020202020202
+Steps: 1000
+Beginning distance 0.1202020202020202.
+Total steps: 1000
+distance: 0.1202020202020202 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1202020202020202 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+16 0.12114137285547598
+Steps: 1000
+Beginning distance 0.12114137285547598.
+Total steps: 1000
+distance: 0.12114137285547598 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12114137285547598 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+17 0.12365218608121753
+Steps: 1000
+Beginning distance 0.12365218608121753.
+Total steps: 1000
+distance: 0.12365218608121753 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12365218608121753 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+18 0.12424242424242425
+Steps: 1000
+Beginning distance 0.12424242424242425.
+Total steps: 1000
+distance: 0.12424242424242425 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12424242424242425 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+19 0.12514649491351945
+Steps: 1000
+Beginning distance 0.12514649491351945.
+Total steps: 1000
+distance: 0.12514649491351945 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12514649491351945 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+20 0.12684342882037156
+Steps: 1000
+Beginning distance 0.12684342882037156.
+Total steps: 1000
+distance: 0.12684342882037156 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12684342882037156 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+21 0.12778127834700254
+Steps: 1000
+Beginning distance 0.12778127834700254.
+Total steps: 1000
+distance: 0.12778127834700254 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12778127834700254 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+22 0.12828282828282828
+Steps: 1000
+Beginning distance 0.12828282828282828.
+23 0.13103706971044482
+Steps: 1000
+Beginning distance 0.13103706971044482.
+Total steps: 1000
+distance: 0.12828282828282828 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12828282828282828 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.13103706971044482 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.13103706971044482 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+24 0.13232323232323234
+Steps: 1000
+Beginning distance 0.13232323232323234.
+Total steps: 1000
+distance: 0.13232323232323234 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.13232323232323234 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+25 0.13425290262178388
+Steps: 1000
+Beginning distance 0.13425290262178388.
+26 0.13516464147013427
+Steps: 1000
+Beginning distance 0.13516464147013427.
+Total steps: 1000
+distance: 0.13425290262178388 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.13425290262178388 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.13516464147013427 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.13516464147013427 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+27 0.13636363636363635
+Steps: 1000
+Beginning distance 0.13636363636363635.
+28 0.13679807573413577
+Steps: 1000
+Beginning distance 0.13679807573413577.
+Total steps: 1000
+distance: 0.13636363636363635 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.13636363636363635 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+29 0.13821937034197182
+Steps: 1000
+Beginning distance 0.13821937034197182.
+Total steps: 1000
+distance: 0.13679807573413577 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.13679807573413577 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.13821937034197182 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.13821937034197182 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+30 0.14040404040404042
+Steps: 1000
+Beginning distance 0.14040404040404042.
+31 0.14057211088362487
+Steps: 1000
+Beginning distance 0.14057211088362487.
+Total steps: 1000
+distance: 0.14040404040404042 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.14040404040404042 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+32 0.14244021294130646
+Steps: 1000
+Beginning distance 0.14244021294130646.
+Total steps: 1000
+distance: 0.14057211088362487 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.14057211088362487 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+33 0.143237083856131
+Steps: 1000
+Beginning distance 0.143237083856131.
+Total steps: 1000
+distance: 0.14244021294130646 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.14244021294130646 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.143237083856131 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.143237083856131 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+34 0.14444444444444446
+Steps: 1000
+Beginning distance 0.14444444444444446.
+Total steps: 1000
+distance: 0.14444444444444446 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.14444444444444446 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+35 0.14521964333909262
+Steps: 1000
+Beginning distance 0.14521964333909262.
+Total steps: 1000
+distance: 0.14521964333909262 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.14521964333909262 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+36 0.1467523221730945
+Steps: 1000
+Beginning distance 0.1467523221730945.
+37 0.1479727244598282
+Steps: 1000
+Beginning distance 0.1479727244598282.
+38 0.1484848484848485
+Steps: 1000
+Beginning distance 0.1484848484848485.
+Total steps: 1000
+distance: 0.1479727244598282 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1479727244598282 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.1467523221730945 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.1467523221730945 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.1484848484848485 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1484848484848485 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+39 0.1497939557845947
+Steps: 1000
+Beginning distance 0.1497939557845947.
+Total steps: 1000
+distance: 0.1497939557845947 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.1497939557845947 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+41 0.15205504988933502
+Steps: 1000
+Beginning distance 0.15205504988933502.
+40 0.15108808205161317
+Steps: 1000
+Beginning distance 0.15108808205161317.
+Total steps: 1000
+distance: 0.15205504988933502 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.15205504988933502 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+42 0.15252525252525254
+Steps: 1000
+Beginning distance 0.15252525252525254.
+Total steps: 1000
+distance: 0.15108808205161317 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.15108808205161317 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+43 0.15280501503977428
+Steps: 1000
+Beginning distance 0.15280501503977428.
+Total steps: 1000
+distance: 0.15252525252525254 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.15252525252525254 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+44 0.15340366443789158
+Steps: 1000
+Beginning distance 0.15340366443789158.
+Total steps: 1000
+distance: 0.15280501503977428 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.15280501503977428 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+45 0.15656565656565657
+Steps: 1000
+Beginning distance 0.15656565656565657.
+Total steps: 1000
+distance: 0.15656565656565657 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.15656565656565657 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.15340366443789158 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.15340366443789158 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+46 0.15874010519681994
+Steps: 1000
+Beginning distance 0.15874010519681994.
+47 0.1606060606060606
+Steps: 1000
+Beginning distance 0.1606060606060606.
+Total steps: 1000
+distance: 0.15874010519681994 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.15874010519681994 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+48 0.16456623286043165
+Steps: 1000
+Beginning distance 0.16456623286043165.
+Total steps: 1000
+distance: 0.1606060606060606 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.1606060606060606 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+49 0.16464646464646465
+Steps: 1000
+Beginning distance 0.16464646464646465.
+50 0.16528722546144864
+Steps: 1000
+Beginning distance 0.16528722546144864.
+Total steps: 1000
+distance: 0.16456623286043165 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.16456623286043165 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.16464646464646465 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.16464646464646465 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.16528722546144864 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.16528722546144864 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+51 0.1662119122464687
+Steps: 1000
+Beginning distance 0.1662119122464687.
+52 0.16744084278445925
+Steps: 1000
+Beginning distance 0.16744084278445925.
+53 0.1686868686868687
+Steps: 1000
+Beginning distance 0.1686868686868687.
+Total steps: 1000
+distance: 0.1662119122464687 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.1662119122464687 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.16744084278445925 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.16744084278445925 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+54 0.16915381116229844
+Steps: 1000
+Beginning distance 0.16915381116229844.
+55 0.17170713638299978
+Steps: 1000
+Beginning distance 0.17170713638299978.
+Total steps: 1000
+distance: 0.1686868686868687 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.1686868686868687 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+56 0.17272727272727273
+Steps: 1000
+Beginning distance 0.17272727272727273.
+Total steps: 1000
+distance: 0.16915381116229844 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.16915381116229844 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+57 0.17351936982146643
+Steps: 1000
+Beginning distance 0.17351936982146643.
+Total steps: 1000
+distance: 0.17170713638299978 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.17170713638299978 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.17272727272727273 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.17272727272727273 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+58 0.17592106959680257
+Steps: 1000
+Beginning distance 0.17592106959680257.
+Total steps: 1000
+distance: 0.17351936982146643 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.17351936982146643 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+59 0.17676767676767677
+Steps: 1000
+Beginning distance 0.17676767676767677.
+Total steps: 1000
+distance: 0.17592106959680257 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.17592106959680257 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+60 0.17925618986228659
+Steps: 1000
+Beginning distance 0.17925618986228659.
+Total steps: 1000
+61 0.1806760501137917
+Steps: 1000
+Beginning distance 0.1806760501137917.
+distance: 0.17676767676767677 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.17676767676767677 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+63 0.18420157493201933
+Steps: 1000
+Beginning distance 0.18420157493201933.
+Total steps: 1000
+distance: 0.17925618986228659 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.17925618986228659 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+62 0.1808080808080808
+Steps: 1000
+Beginning distance 0.1808080808080808.
+Total steps: 1000
+distance: 0.1806760501137917 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.1806760501137917 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+64 0.18484848484848487
+Steps: 1000
+Beginning distance 0.18484848484848487.
+Total steps: 1000
+distance: 0.1808080808080808 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.1808080808080808 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.18420157493201933 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.18420157493201933 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+65 0.18888888888888888
+Steps: 1000
+Beginning distance 0.18888888888888888.
+Total steps: 1000
+distance: 0.18484848484848487 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.2 second | 0.0 minutes.
+
+simAU distance: 0.18484848484848487 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+66 0.18908143891965618
+Steps: 1000
+Beginning distance 0.18908143891965618.
+68 0.19292929292929295
+Steps: 1000
+Beginning distance 0.19292929292929295.
+67 0.19229994270765446
+Steps: 1000
+Beginning distance 0.19229994270765446.
+Total steps: 1000
+distance: 0.18888888888888888 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.18888888888888888 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.19292929292929295 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.19292929292929295 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.18908143891965618 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.18908143891965618 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.19229994270765446 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.19229994270765446 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+71 0.19865767767585374
+Steps: 1000
+Beginning distance 0.19865767767585374.
+69 0.19628561026349226
+Steps: 1000
+Beginning distance 0.19628561026349226.
+70 0.19696969696969696
+Steps: 1000
+Beginning distance 0.19696969696969696.
+Total steps: 1000
+distance: 0.19628561026349226 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.2 second | 0.0 minutes.
+
+simAU distance: 0.19628561026349226 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.19865767767585374 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.19865767767585374 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+72 0.20101010101010103
+Steps: 1000
+Beginning distance 0.20101010101010103.
+73 0.20505050505050504
+Steps: 1000
+Beginning distance 0.20505050505050504.
+Total steps: 1000
+distance: 0.19696969696969696 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.19696969696969696 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+74 0.20800838230519042
+Steps: 1000
+Beginning distance 0.20800838230519042.
+Total steps: 1000
+distance: 0.20101010101010103 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.20101010101010103 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+75 0.2090909090909091
+Steps: 1000
+Beginning distance 0.2090909090909091.
+Total steps: 1000
+distance: 0.20505050505050504 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.2 second | 0.0 minutes.
+
+simAU distance: 0.20505050505050504 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+77 0.21717171717171718
+Steps: 1000
+Beginning distance 0.21717171717171718.
+76 0.21313131313131314
+Steps: 1000
+Beginning distance 0.21313131313131314.
+Total steps: 1000
+79 0.22121212121212122
+distance: 0.20800838230519042 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+Steps: 1000
+Beginning distance 0.22121212121212122.
+simAU distance: 0.20800838230519042 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+78 0.2194095738832282
+Steps: 1000
+Beginning distance 0.2194095738832282.
+Total steps: 1000
+distance: 0.2194095738832282 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.2194095738832282 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.2090909090909091 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.2090909090909091 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.21717171717171718 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.21717171717171718 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.21313131313131314 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.21313131313131314 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+Total steps: 1000
+distance: 0.22121212121212122 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes.
+
+simAU distance: 0.22121212121212122 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.1 second | 0.0 minutes | 0.0 hours.
+
+80 0.22314431669405652
+Steps: 1000
+Beginning distance 0.22314
