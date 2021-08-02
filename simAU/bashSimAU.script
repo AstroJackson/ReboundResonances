@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for i in {0..161}
+do
+	python3 simAU.py $i &
+done
+python3 simAU.py 162
+python3 massListSorter.py Masslists/JupiterSimAUaug2
+
+date

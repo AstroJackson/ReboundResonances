@@ -1,4 +1,5 @@
-import numpy as np, sys
+import numpy as np, sys, smtplib, os
+from datetime import datetime
 
 def massListSorter(path):
     allData = []
@@ -41,5 +42,56 @@ for i in range(1,11):
 copy = outerDistances.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
+try:
+     sys.argv[2]
+     First = False
+except IndexError:
+    First = True
 
-massListSorter(sys.argv[1])
+if not First:
+    #massListSorter(sys.argv[2])
+    status = 'Ended'
+    now = datetime.now()
+    timerNumber = sys.argv[1] # if sys.argv[1] is the masslist file path, then sys.argv[2] is the timer number
+    with open(f"timer{timerNumber}.txt") as file:
+        day, hour, minute, second = [float(i) for i in file.read().split()]
+    if day == now.day:
+        timeHours = (now.day - day)/24 + now.hour - hour + (now.minute - minute)/60 + (now.second- second)/3600
+        hours, tempHours = int(timeHours), timeHours - int(timeHours)
+        minutes, tempMinutes = int((tempHours) * 60), tempHours * 60 - int((tempHours) * 60)
+        seconds = int(round((tempMinutes)*60, 0))
+    extra = "Time taken: {:0>2}:{:0>2}:{:0>2}".format(hours, minutes, seconds)
+    os.remove(f"timer{timerNumber}.txt")
+else:
+    status = 'Started'
+    now = datetime.now()
+    timerNumber = sys.argv[1]
+    with open(f"timer{timerNumber}.txt", 'w') as file:
+        file.write(f"{now.day} {now.hour} {now.minute} {now.second}")
+    extra = ""
+
+gmail_user = 'jtpythontestemail@gmail.com'
+gmail_password = 'PythonPassword1234!'
+
+sent_from = gmail_user
+to = ['jacksonisboss1@gmail.com']
+subject = 'Simulation Started/Done!'
+body = f"{status} at {datetime.now().strftime('%m/%d/%Y %H:%M:%S')}\n{extra}"
+
+email_text = """\
+From: %s
+To: %s
+Subject: %s
+
+%s
+""" % (sent_from, ", ".join(to), subject, body)
+
+try:
+    smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    smtp_server.ehlo()
+    smtp_server.login(gmail_user, gmail_password)
+    smtp_server.sendmail(sent_from, to, email_text)
+    smtp_server.close()
+    print ("Email sent successfully!")
+except Exception as ex:
+    print ("Something went wrong….",ex)

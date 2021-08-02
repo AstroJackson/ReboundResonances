@@ -12,6 +12,9 @@ sim = rebound.Simulation()
 tau = 2*np.pi
 planetDestroyed = False
 
+with open("startedFiles.txt", "a") as file:
+    file.write(sys.argv[1]+"\n")
+
 # In[3]:
 class CustomException(Exception):
     def __init__(self, *args: object) -> None:
@@ -272,7 +275,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
 #         try:
 #             folderChecker()
 #         except FileExistsError:
-#             tiempo.sleep(2)
+#             tiempo.sleep(np.random.uniform()*3)
 #             recursiveFolderChecker()
 #     recursiveFolderChecker()
     if innerFolder:
@@ -599,10 +602,10 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-masslist_txt_append(simAU_masses,'Masslists/2000SimAUJuly30.txt','simAU','a')
+masslist_txt_append(simAU_masses,'Masslists/JupiterSimAUaug2.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= "2000asteroidsSimAUJuly30", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
+saveFigs(innerFolder= "JupiterSimAUaug2", distance = distance) # the folder witin the figures folder is set with the seed kwarg. Setting seed = "Tests" will
                    # put the figures in the Tests folder (still within Figures)
 # np.savez("Figures/"+innerFolder+"graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
 #     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
