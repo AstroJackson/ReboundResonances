@@ -24,7 +24,11 @@ class CustomException(Exception):
 jupiterMass, jupiterRadius = 1e-3, 4.7e-4
 earthMass, earthRadius = 3e-6, 4.3e-5
 startingMass = jupiterMass
-startingRadius = jupiterRadius
+if startingMass >= jupiterMass: # some research shows that Jupiter's radius would not increase with an increase in mass
+    startingRadius = jupiterRadius
+if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass:
+    startingRadius = earthRadius * (((startingMass/earthMass)/2.69)**(1/.93))
+
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
     sim.add(m=1) #creates a star of mass 1
@@ -429,7 +433,7 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    innerRad, outerRad = .1, 1
+    innerRad, outerRad = .02, distance * 3
     auList = np.linspace(innerRad, outerRad, asteroidnumber) # use this to NOT randomize the starting distance
     index = 0
     if not seed == 'strict':

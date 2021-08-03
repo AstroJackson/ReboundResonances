@@ -429,7 +429,7 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    innerRad, outerRad = .1, 1
+    innerRad, outerRad = .02, distance * 3
     auList = np.linspace(innerRad, outerRad, asteroidnumber) # use this to NOT randomize the starting distance
     index = 0
     if not seed == 'strict':
