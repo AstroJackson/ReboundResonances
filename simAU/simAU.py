@@ -7,6 +7,7 @@
 import rebound, numpy as np, matplotlib as mpl
 mpl.use('Agg') # found here:https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server
 import matplotlib.pyplot as plt, time as tiempo, math, sys, os
+#os.system("taskset -p 0xff %d" % os.getpid()) # run on all cores
 
 sim = rebound.Simulation()
 tau = 2*np.pi
@@ -392,11 +393,11 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
 
     plt.clf()
     num_bins =30
-    plt.hist([data for data in asteroidAU[0] if data > 0 and data < 5], num_bins)
+    plt.hist([data for data in asteroidAU[0] if data > 0], num_bins)
     plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoStart"+addOn+".pdf")
 
     plt.clf()
-    plt.hist([data for data in asteroidAU[-1] if data > 0 and data < 5], num_bins)
+    plt.hist([data for data in asteroidAU[-1] if data > 0], num_bins)
     plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
 
     ###########################################################################################
