@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#SBATCH -J SimAU_aug4_69_91
+#SBATCH -p general
+#SBATCH -o SimAU_aug4_69_91_%j.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=taylor11@iu.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=24
+#SBATCH --time=96:00:00
+#SBATCH --mem=128G
+
+python3 massListSorter.py 13
+sleep 5
+for i in {69..90}
+do
+	python3 simAUBatch.py $i &
+	sleep 2
+done
+sleep 5
+python3 simAUBatch.py 91
+sleep 5
+python3 massListSorter.py 13 Masslists/JupiterSimAUaug4Batch
+
+date
