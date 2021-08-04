@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in t
+do
+	./tes$i.script
+done
