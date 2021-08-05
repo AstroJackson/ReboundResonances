@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH -J SimAU_aug4_115_137
+#SBATCH -J SimAU_aug5_115-137
 #SBATCH -p general
-#SBATCH -o SimAU_aug4_115_137_%j.txt
+#SBATCH -o SimAU_aug5_115-137_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
@@ -11,16 +11,17 @@
 #SBATCH --time=96:00:00
 #SBATCH --mem=128G
 
-python3 massListSorter.py 15
+python3 massListSorter.py 105reds
 sleep 5
 for i in {115..136}
 do
-	python3 simAUBatch.py $i &
-	sleep 2
+    python3 simAUBatch.py $i &
+    sleep 2
 done
 sleep 5
 python3 simAUBatch.py 137
 sleep 5
-python3 massListSorter.py 15 Masslists/JupiterSimAUaug4Batch
+wait
+python3 massListSorter.py 105reds Masslists/JupiterSimAUaug5Batch
 
 date

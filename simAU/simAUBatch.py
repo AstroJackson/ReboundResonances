@@ -3,10 +3,11 @@
 
 # In[2]:
 
-
 import rebound, numpy as np, matplotlib as mpl
 mpl.use('Agg') # found here:https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server
 import matplotlib.pyplot as plt, time as tiempo, math, sys, os
+from datetime import datetime
+
 #os.system("taskset -p 0xff %d" % os.getpid()) # run on all cores
 
 sim = rebound.Simulation()
@@ -603,7 +604,9 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-masslist_txt_append(simAU_masses,'Masslists/JupiterSimAUaug4Batch.txt','simAU','a')
+months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
+now = datetime.now()
+masslist_txt_append(simAU_masses,'Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= "JupiterSimAUaug4Batch", distance = distance)
+saveFigs(innerFolder= "JupiterSimAU{months[now.month-1]}{now.day}Batch", distance = distance)
