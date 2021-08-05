@@ -1,9 +1,16 @@
 #!/bin/bash
 
-python3 massListSorter.py 20
+python3 massListSorter.py 21
 sleep 5
-python3 simAUmoony.py 35
+for i in 5 10 15 20
+do
+	python3 simAUmoony.py $i &
+	sleep 1
+done
 sleep 5
-python3 massListSorter.py 20 Masslists/JupiterSimAUaug3
+echo all started
+sleep 5
+wait
+python3 massListSorter.py 21 Masslists/JupiterSimAUaug4moony
 
 date

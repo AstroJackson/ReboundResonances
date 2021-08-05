@@ -43,31 +43,34 @@ copy = outerDistances.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
 try:
-     sys.argv[2]
-     First = False
+    sys.argv[2]
+    First = False
 except IndexError:
     First = True
 
 if not First:
-    #massListSorter(sys.argv[2])
+    massListSorter(sys.argv[2])
     status = 'Ended'
     now = datetime.now()
     timerNumber = sys.argv[1] # if sys.argv[1] is the masslist file path, then sys.argv[2] is the timer number
     with open(f"timer{timerNumber}.txt") as file:
-        day, hour, minute, second = [float(i) for i in file.read().split()]
-    if day == now.day:
-        timeHours = (now.day - day)/24 + now.hour - hour + (now.minute - minute)/60 + (now.second- second)/3600
+        month, day, hour, minute, second = [float(i) for i in file.read().split()]
+    if month == now.month:
+        timeHours = (now.day - day) * 24 + now.hour - hour + (now.minute - minute)/60 + (now.second- second)/3600
         hours, tempHours = int(timeHours), timeHours - int(timeHours)
         minutes, tempMinutes = int((tempHours) * 60), tempHours * 60 - int((tempHours) * 60)
         seconds = int(round((tempMinutes)*60, 0))
-    extra = "Time taken: {:0>2}:{:0>2}:{:0>2}".format(hours, minutes, seconds)
+        extra = "Time taken: {:0>2}:{:0>2}:{:0>2}".format(hours, minutes, seconds)
+    else:
+        extra = "Time taken: different month"
     os.remove(f"timer{timerNumber}.txt")
+
 else:
     status = 'Started'
     now = datetime.now()
     timerNumber = sys.argv[1]
     with open(f"timer{timerNumber}.txt", 'w') as file:
-        file.write(f"{now.day} {now.hour} {now.minute} {now.second}")
+        file.write(f"{now.month} {now.day} {now.hour} {now.minute} {now.second}")
     extra = ""
 
 gmail_user = 'jtpythontestemail@gmail.com'
