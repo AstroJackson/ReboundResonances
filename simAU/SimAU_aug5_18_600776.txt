@@ -1,2 +1,0 @@
-Email sent successfully!
-slurmstepd: error: *** JOB 600776 ON c25 CANCELLED AT 2021-08-05T18:43:02 ***
