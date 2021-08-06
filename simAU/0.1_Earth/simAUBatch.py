@@ -10,9 +10,11 @@ from datetime import datetime
 
 #os.system("taskset -p 0xff %d" % os.getpid()) # run on all cores
 
+months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 parser = argparse.ArgumentParser()
 parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.")
-parser.add_argument("--date", help = "The date the batch job was submitted. Use fomratting used in batch files.")
+parser.add_argument("--date", help = "The date the batch job was submitted. Use fomratting used in batch files.",\
+     choices = [f"{mo}{da}" for mo in months for da in range(1,32)])
 CLargs = parser.parse_args() # Command line arguments
 
 sim = rebound.Simulation()
@@ -31,7 +33,7 @@ if startingMass >= jupiterMass: # some research shows that Jupiter's radius woul
     startingRadius = jupiterRadius
 if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass:
     startingRadius = earthRadius * (((startingMass/earthMass)/2.69)**(1/.93))
-    
+
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
     sim.add(m=1) #creates a star of mass 1
@@ -586,7 +588,7 @@ combo.sort()
 info = int(CLargs.comboIndex)
 print(info, combo[info])
 distance = combo[info] # this selects the distance
-revolutionsOfInnerPlanet = 20 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
+revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
 revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
@@ -598,7 +600,7 @@ stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
-sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 3, sma = distance)
+sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2000, sma = distance)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, distance = distance) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -610,7 +612,6 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 now = datetime.now()
 masslist_txt_append(simAU_masses,f'Masslists/JupiterSimAU{CLargs.date}Batch.txt','simAU','a')
 print(simAU_masses)
