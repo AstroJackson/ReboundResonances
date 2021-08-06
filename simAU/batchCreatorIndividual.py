@@ -23,7 +23,7 @@ def batchCreatorIndividual(path = "Batches"):
 \n\
 \npython3 massListSorter.py {i}\
 \nsleep 5\
-\npython3 simAUBatch.py {j}\
+\npython3 simAUBatch.py --comboIndex {j} --date {months[now.month-1]}{now.day}\
 \nsleep 5\
 \nwait\
 \npython3 massListSorter.py {i} Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch\

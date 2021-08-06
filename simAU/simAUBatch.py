@@ -5,10 +5,15 @@
 
 import rebound, numpy as np, matplotlib as mpl
 mpl.use('Agg') # found here:https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server
-import matplotlib.pyplot as plt, time as tiempo, math, sys, os
+import matplotlib.pyplot as plt, time as tiempo, math, sys, os, argparse
 from datetime import datetime
 
 #os.system("taskset -p 0xff %d" % os.getpid()) # run on all cores
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.")
+parser.add_argument("--date", help = "The date the batch job was submitted. Use fomratting used in batch files.")
+CLargs = parser.parse_args() # Command line arguments
 
 sim = rebound.Simulation()
 tau = 2*np.pi
@@ -577,10 +582,10 @@ for i in range(1,11):
 copy = other.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
-info = int(sys.argv[1])
+info = int(CLargs.comboIndex)
 print(info, combo[info])
 distance = combo[info] # this selects the distance
-revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
+revolutionsOfInnerPlanet = 20 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
 revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
@@ -592,7 +597,7 @@ stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
-sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2000, sma = distance)
+sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 3, sma = distance)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, distance = distance) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -606,7 +611,7 @@ print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(dist
 #lastN = len(combo)
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 now = datetime.now()
-masslist_txt_append(simAU_masses,f'Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch.txt','simAU','a')
+masslist_txt_append(simAU_masses,f'Masslists/JupiterSimAU{CLargs.date}Batch.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= f"JupiterSimAU{months[now.month-1]}{now.day}Batch", distance = distance)
+saveFigs(innerFolder= f"JupiterSimAU{CLargs.date}Batch", distance = distance)
