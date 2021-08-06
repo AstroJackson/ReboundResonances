@@ -19,9 +19,6 @@ sim = rebound.Simulation()
 tau = 2*np.pi
 planetDestroyed = False
 
-with open("startedFiles.txt", "a") as file:
-    file.write(sys.argv[1]+"\n")
-
 # In[3]:
 class CustomException(Exception):
     def __init__(self, *args: object) -> None:
