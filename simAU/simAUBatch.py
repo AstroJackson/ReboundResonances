@@ -413,7 +413,7 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
     #sim.ri_whfast.safe_mode = 0 #turns off safemode, *substantial* speed boost
     #sim.dt = 0.001*2*np.pi #mutiple by 2pi if in units such that G=1
     sim.testparticle_type = 0
-    sim.ri_ias15.min_dt = 1e-7 # ensure that close encounters do not stall the integration
+    sim.ri_ias15.min_dt = 1e-8 # ensure that close encounters do not stall the integration
 
     #collision and boundary options
     sim.collision = "direct"
@@ -606,7 +606,7 @@ print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(dist
 #lastN = len(combo)
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 now = datetime.now()
-masslist_txt_append(simAU_masses,'Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch.txt','simAU','a')
+masslist_txt_append(simAU_masses,f'Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= "JupiterSimAU{months[now.month-1]}{now.day}Batch", distance = distance)
+saveFigs(innerFolder= f"JupiterSimAU{months[now.month-1]}{now.day}Batch", distance = distance)

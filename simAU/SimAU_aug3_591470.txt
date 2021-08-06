@@ -318,3 +318,4 @@ Ending distance 0.16915381116229844.
 Distance 0.16915381116229844 in total took 5620 seconds (93.68 minutes, 1.56 hours).
 [['inner planet mass', 'outer planet mass', 'distance'], [0.004069999999999999, 0.0, 100.0, 0.16915381116229844]]
 There are 1795 particles remaining.
+slurmstepd: error: *** JOB 591470 ON c48 CANCELLED AT 2021-08-05T18:43:02 ***
