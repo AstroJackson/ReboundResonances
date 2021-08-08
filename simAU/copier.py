@@ -13,4 +13,4 @@ def copier(fileName, folderList =[]):
         with open(f"{folder}/{fileName}", "w") as file:
             file.write(contents)
 
-copier(sysArgs[1], sysArgs.get(2))
+copier(fileName = sysArgs[1], folderList = sysArgs.get(2))

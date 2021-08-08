@@ -1,18 +1,19 @@
-import sys
+import sys, os
 from datetime import datetime
 
 def batchCreatorIndividual(path = "Batches"):
     now = datetime.now()
     months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
+    direc = os.getcwd().split("/")[-1]
     for i, j in enumerate(range(163)):
         i += 200
         i = str(i)
         i += "reds"
         message = f"#!/bin/bash\
 \n\
-\n#SBATCH -J SimAU_{months[now.month-1]}{now.day}_{j}\
+\n#SBATCH -J SimAU_{direc}_{months[now.month-1]}{now.day}_{j}\
 \n#SBATCH -p general\
-\n#SBATCH -o SimAU_{months[now.month-1]}{now.day}_{j}_%j.txt\
+\n#SBATCH -o SimAU_{direc}_{months[now.month-1]}{now.day}_{j}_%j.txt\
 \n#SBATCH --mail-type=ALL\
 \n#SBATCH --mail-user=taylor11@iu.edu\
 \n#SBATCH --nodes=1\
