@@ -1,9 +1,10 @@
-import sys
+import sys, os
 from datetime import datetime
 
 def batchCreator(path = ""):
     now = datetime.now()
     months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
+    direc = os.getcwd().split("/")[-1]
     for i, name in enumerate(["0-22", "23-45", "46-68", "69-91", "92-114", "115-137", "138-160", "161-162"]):
         dashIndex = name.index('-')
         nameMinus = name[:dashIndex]+ ".." + str((int(name[dashIndex+1:])-1))
@@ -12,9 +13,9 @@ def batchCreator(path = ""):
         i += "reds"
         message = f"#!/bin/bash\
 \n\
-\n#SBATCH -J SimAU_{months[now.month-1]}{now.day}_{name}\
+\n#SBATCH -J SimAU_{direc}_{months[now.month-1]}{now.day}_{name}\
 \n#SBATCH -p general\
-\n#SBATCH -o SimAU_{months[now.month-1]}{now.day}_{name}_%j.txt\
+\n#SBATCH -o SimAU_{direc}_{months[now.month-1]}{now.day}_{name}_%j.txt\
 \n#SBATCH --mail-type=ALL\
 \n#SBATCH --mail-user=taylor11@iu.edu\
 \n#SBATCH --nodes=1\

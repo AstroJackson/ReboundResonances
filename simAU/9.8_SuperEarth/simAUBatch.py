@@ -28,11 +28,14 @@ class CustomException(Exception):
 
 jupiterMass, jupiterRadius = 1e-3, 4.7e-4
 earthMass, earthRadius = 3e-6, 4.3e-5
-startingMass = jupiterMass
+earthDensityProportion = earthMass / earthRadius**3
+startingMass = 9.8 * earthMass
 if startingMass >= jupiterMass: # some research shows that Jupiter's radius would not increase with an increase in mass
     startingRadius = jupiterRadius
 if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass:
     startingRadius = earthRadius * (((startingMass/earthMass)/2.69)**(1/.93))
+if startingMass < 3.9:
+    startingRadius = (startingMass/earthDensityProportion)**(1/3)
 
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
@@ -587,6 +590,7 @@ combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
 info = int(CLargs.comboIndex)
 print(info, combo[info])
+print(f"Starting mass: {startingMass}. Starting Radius: {startingRadius}.")
 distance = combo[info] # this selects the distance
 revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
