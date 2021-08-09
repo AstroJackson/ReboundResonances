@@ -32,9 +32,9 @@ earthDensityProportion = earthMass / earthRadius**3
 startingMass = .1 * earthMass
 if startingMass >= jupiterMass: # some research shows that Jupiter's radius would not increase with an increase in mass
     startingRadius = jupiterRadius
-if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass:
+if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass: # Uses mass-radius relation from  https://arxiv.org/pdf/1312.0936.pdf
     startingRadius = earthRadius * (((startingMass/earthMass)/2.69)**(1/.93))
-if startingMass < 3.9:
+if startingMass < 3.9: # Same density as the Earth
     startingRadius = (startingMass/earthDensityProportion)**(1/3)
 
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way

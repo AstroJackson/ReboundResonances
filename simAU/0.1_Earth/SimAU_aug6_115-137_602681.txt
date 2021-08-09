@@ -1,2 +1,0 @@
-python3: can't open file 'massListSorter.py': [Errno 2] No such file or directory
-slurmstepd: error: *** JOB 602681 ON c48 CANCELLED AT 2021-08-08T19:37:24 ***
