@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#SBATCH -J SimAU_Half_Earth_aug8_138-160
+#SBATCH -p general
+#SBATCH -o SimAU_Half_Earth_aug8_138-160_%j.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=taylor11@iu.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=24
+#SBATCH --time=36:00:00
+#SBATCH --mem=128G
+
+python3 massListSorter.py 106reds
+sleep 5
+for i in {138..159}
+do
+    python3 simAUBatch.py --comboIndex $i --date aug8 &
+    sleep 2
+done
+sleep 5
+python3 simAUBatch.py --comboIndex 160 --date aug8
+sleep 5
+wait
+python3 massListSorter.py 106reds Masslists/JupiterSimAUaug8Batch
+
+date

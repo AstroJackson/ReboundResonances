@@ -1,0 +1,9 @@
+#!/bin/bash
+
+python3 batchCreator.py
+sleep 2
+for i in 0-22 23-45 46-68 69-91 92-114 115-137 138-160 161-162
+do
+	sbatch batchSimAU$i.script
+	sleep .1
+done

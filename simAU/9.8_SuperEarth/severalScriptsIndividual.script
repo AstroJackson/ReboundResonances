@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in {0..162}
+do
+	sbatch zbatchSimAU$i.script
+	sleep .1
+done
