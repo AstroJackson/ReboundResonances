@@ -3,18 +3,23 @@
 
 # In[2]:
 
-
 import rebound, numpy as np, matplotlib as mpl
 mpl.use('Agg') # found here:https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server
-import matplotlib.pyplot as plt, time as tiempo, math, sys, os
+import matplotlib.pyplot as plt, time as tiempo, math, sys, os, argparse
+from datetime import datetime
+
 #os.system("taskset -p 0xff %d" % os.getpid()) # run on all cores
+
+months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
+parser = argparse.ArgumentParser()
+parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.")
+parser.add_argument("--date", help = "The date the batch job was submitted. Use fomratting used in batch files.",\
+     choices = [f"{mo}{da}" for mo in months for da in range(1,32)])
+CLargs = parser.parse_args() # Command line arguments
 
 sim = rebound.Simulation()
 tau = 2*np.pi
 planetDestroyed = False
-
-with open("startedFiles.txt", "a") as file:
-    file.write(sys.argv[1]+"\n")
 
 # In[3]:
 class CustomException(Exception):
@@ -23,8 +28,19 @@ class CustomException(Exception):
 
 jupiterMass, jupiterRadius = 1e-3, 4.7e-4
 earthMass, earthRadius = 3e-6, 4.3e-5
-startingMass = jupiterMass
-startingRadius = jupiterRadius
+earthDensityProportion = earthMass / earthRadius**3
+presentDirectory = os.getcwd().split("/")[-1]
+massDict = {"0.1_Earth": .1 * earthMass, "4_SuperEarth": 4 * earthMass, "9.8_SuperEarth": 9.8 * earthMass,
+            "Earth": earthMass, "Half_Earth": .5 * earthMass, "Jupiter": jupiterMass}
+
+startingMass = massDict[presentDirectory]
+if startingMass >= jupiterMass: # some research shows that Jupiter's radius would not increase with an increase in mass
+    startingRadius = jupiterRadius
+if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass: # Uses mass-radius relation from  https://arxiv.org/pdf/1312.0936.pdf
+    startingRadius = earthRadius * (((startingMass/earthMass)/2.69)**(1/.93))
+if startingMass < 3.9:
+    startingRadius = (startingMass/earthDensityProportion)**(1/3)
+
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
     sim.add(m=1) #creates a star of mass 1
@@ -412,7 +428,7 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
     #sim.ri_whfast.safe_mode = 0 #turns off safemode, *substantial* speed boost
     #sim.dt = 0.001*2*np.pi #mutiple by 2pi if in units such that G=1
     sim.testparticle_type = 0
-    sim.ri_ias15.min_dt = 1e-7 # ensure that close encounters do not stall the integration
+    sim.ri_ias15.min_dt = 1e-8 # ensure that close encounters do not stall the integration
 
     #collision and boundary options
     sim.collision = "direct"
@@ -576,8 +592,9 @@ for i in range(1,11):
 copy = other.copy()
 combo = list(np.linspace(.1, .5, 100)) + copy
 combo.sort()
-info = int(sys.argv[1])
+info = int(CLargs.comboIndex)
 print(info, combo[info])
+print(f"Starting mass: {startingMass}. Starting Radius: {startingRadius}.")
 distance = combo[info] # this selects the distance
 revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
@@ -603,7 +620,8 @@ BIGfinal = tiempo.monotonic()
 totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
-masslist_txt_append(simAU_masses,'Masslists/JupiterSimAUaug4Batch.txt','simAU','a')
+now = datetime.now()
+masslist_txt_append(simAU_masses,f'Masslists/JupiterSimAU{CLargs.date}Batch.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= "JupiterSimAUaug4Batch", distance = distance)
+saveFigs(innerFolder= f"JupiterSimAU{CLargs.date}Batch", distance = distance)

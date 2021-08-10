@@ -29,16 +29,12 @@ class CustomException(Exception):
 jupiterMass, jupiterRadius = 1e-3, 4.7e-4
 earthMass, earthRadius = 3e-6, 4.3e-5
 earthDensityProportion = earthMass / earthRadius**3
-presentDirectory = os.getcwd().split("/")[-1]
-massDict = {"0.1_Earth": .1 * earthMass, "4_SuperEarth": 4 * earthMass, "9.8_SuperEarth": 9.8 * earthMass,
-            "Earth": earthMass, "Half_Earth": .5 * earthMass, "Jupiter": jupiterMass}
-
-startingMass = massDict[presentDirectory]
+startingMass = .1 * earthMass
 if startingMass >= jupiterMass: # some research shows that Jupiter's radius would not increase with an increase in mass
     startingRadius = jupiterRadius
 if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass: # Uses mass-radius relation from  https://arxiv.org/pdf/1312.0936.pdf
     startingRadius = earthRadius * (((startingMass/earthMass)/2.69)**(1/.93))
-if startingMass < 3.9:
+if startingMass < 3.9: # Same density as the Earth
     startingRadius = (startingMass/earthDensityProportion)**(1/3)
 
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
