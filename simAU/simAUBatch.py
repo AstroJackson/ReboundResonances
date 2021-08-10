@@ -606,7 +606,7 @@ print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(dist
 #lastN = len(combo)
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 now = datetime.now()
-masslist_txt_append(simAU_masses,'Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch.txt','simAU','a')
+masslist_txt_append(simAU_masses,f'Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= "JupiterSimAU{months[now.month-1]}{now.day}Batch", distance = distance)
+saveFigs(innerFolder= f"JupiterSimAU{months[now.month-1]}{now.day}Batch", distance = distance)
