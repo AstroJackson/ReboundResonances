@@ -190,8 +190,8 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
     
     masslistcopy = masslist.copy() # Don't want to edit the original data
     message = ''
-    if not os.path.isdir("Figures"):
-        os.chdir("Downloads/Rebound/ReboundResonances/simAU")
+    if not os.path.isdir("Masslists"):
+        os.mkdir("Masslists")
     if kwargs.get('first') or not os.path.isfile(filepath): # If file does not exist, create it. If sys.argv[1]==0,
                                                             #then will also create.                                                          
         write_type = "w"
