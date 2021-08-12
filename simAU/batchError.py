@@ -33,10 +33,15 @@ def batchErrorList(path):
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 default = ["0.1_Earth", "4_SuperEarth", "9.8_SuperEarth", "Earth", "Half_Earth", "Jupiter"]
 
+date = ""
 folders = [i for i in sys.argv]
-if len(folders) == 1: 
+if len(folders) == 2:
+    if sys.argv[1] in [f"{mo}{da}" for mo in months for da in range(1,32)]:
+        date = sys.argv[1]
+        folders = default
+if len(folders) == 1 or folders == default: 
     folders = default
-    date = input("date >>>")
+    if not date: date = input("date >>>")
     if date not in [f"{mo}{da}" for mo in months for da in range(1,32)]: raise CustomException("Date entered was not in the correct format.")
 else: 
     folders = folders[1:]
@@ -44,12 +49,12 @@ else:
 
 message = ""
 for folder in folders:
-    message = ""
+    message = "#!/bin/bash\n\n"
     if folders == default: errorList =  batchErrorList(f"{folder}/Masslists/{folder}{date}Batch.txt")
     else: errorList = batchErrorList(folder)
     print(f"{folder}: {errorList}")
     for dist in errorList:
-        message += f"{dist} "
+        message += f"sbatch ./zbatch{date}_{dist}.script\nsleep .3\n"
         timerNumber = np.random.random() * np.random.random() * 100 * 100 # highly unlikely two different distances will yield the same time number
         if folders == default:
             batchScript = f"#!/bin/bash\
@@ -73,5 +78,10 @@ for folder in folders:
 \npython3 massListSorter.py {timerNumber} Masslists/{folder}{date}Batch\
 \n\
 \ndate"
+        with open(f"{folder}/zbatch{date}_{dist}.script", "w") as file:
+            file.write(batchScript)
+    with open(f"{folder}/zzerrorScripts{date}.script", "w") as file:
+        file.write(f"{message}\ndate")
+
 
 

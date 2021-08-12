@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo enter the date
+read -p 'date:' date 
+
+echo date was $date
+echo first $1 # argument from terminal
+
+date

@@ -1,0 +1,6 @@
+sbatch Jupiter/zbatchjan1_0.12684342882037156.script
+sbatch Jupiter/zbatchjan1_0.20101010101010103.script
+sbatch Jupiter/zbatchjan1_0.2090909090909091.script
+sbatch Jupiter/zbatchjan1_0.22314431669405652.script
+sbatch Jupiter/zbatchjan1_0.3424242424242424.script
+sbatch Jupiter/zbatchjan1_0.4878787878787879.script

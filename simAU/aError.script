@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo Enter the date
+read -p 'date:' date
+echo Date entered: $date
+python3 batchError.py $date
+sleep 1
+wait
+sleep 1
+for i in 0.1_Earth 4_SuperEarth 9.8_SuperEarth Earth Half_Earth Jupiter
+do
+	cd $i
+	./zzerrorScripts$date.script
+	cd ..
+done
+
+date
