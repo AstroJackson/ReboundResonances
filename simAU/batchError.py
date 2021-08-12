@@ -1,5 +1,8 @@
 import numpy as np, sys, os
 
+class CustomException(Exception):
+    pass
+
 Info=[]
 outerDistances = []
 for i in range(1,11):
@@ -27,18 +30,47 @@ def batchErrorList(path):
             not_in.append(dist)
     return not_in
 
+months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 default = ["0.1_Earth", "4_SuperEarth", "9.8_SuperEarth", "Earth", "Half_Earth", "Jupiter"]
 
 folders = [i for i in sys.argv]
 if len(folders) == 1: 
     folders = default
+    date = input("date >>>")
+    if date not in [f"{mo}{da}" for mo in months for da in range(1,32)]: raise CustomException("Date entered was not in the correct format.")
 else: 
     folders = folders[1:]
-date = input("date >>>")
+    date = ""
 
+message = ""
 for folder in folders:
-    message = f"{folder}:"
-    for i in batchErrorList(f"{folder}/Masslists/{folder}{date}Batch.txt"):
-        message += f" {i}"
-    message += "\n"
+    message = ""
+    if folders == default: errorList =  batchErrorList(f"{folder}/Masslists/{folder}{date}Batch.txt")
+    else: errorList = batchErrorList(folder)
+    print(f"{folder}: {errorList}")
+    for dist in errorList:
+        message += f"{dist} "
+        if folders == default:
+            batchScript = f"#!/bin/bash\
+\n\
+\n#SBATCH -J SimAU_{folder}_{date}_{dist}\
+\n#SBATCH -p general\
+\n#SBATCH -o SimAU_{folder}_{date}_{dist}_%j.txt\
+\n#SBATCH --mail-type=ALL\
+\n#SBATCH --mail-user=taylor11@iu.edu\
+\n#SBATCH --nodes=1\
+\n#SBATCH --ntasks-per-node=1\
+\n#SBATCH --cpus-per-task=3\
+\n#SBATCH --time=36:00:00\
+\n#SBATCH --mem=64G\
+\n\
+\npython3 massListSorter.py {i}\
+\nsleep 5\
+\npython3 simAUBatch.py --comboIndex {j} --date {months[now.month-1]}{now.day}\
+\nsleep 5\
+\nwait\
+\npython3 massListSorter.py {i} Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch\
+\n\
+\ndate"
+
 
