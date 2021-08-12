@@ -13,7 +13,7 @@ from datetime import datetime
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 parser = argparse.ArgumentParser()
 parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.")
-parser.add_argument("--date", help = "The date the batch job was submitted. Use formatting used in batch files.",\
+parser.add_argument("--date", help = "The date the batch job was submitted. Use fomratting used in batch files.",\
      choices = [f"{mo}{da}" for mo in months for da in range(1,32)])
 CLargs = parser.parse_args() # Command line arguments
 
@@ -46,7 +46,7 @@ def leaveGithub(top: str = "Rebound", end: str = "simAU") -> None:
         os.chdir("..")
         if os.getcwd() == '/': 
             raise CustomException("The top directory does not exist above the beggining directory.")
-    if not os.path.isdir(end): # this guarantees the 'end' directory is cd'ed to.
+    if not os.path.isdir(end):
         final = ""
         for i, direc in enumerate(end.split('/')):
             try:
@@ -597,7 +597,7 @@ info = int(CLargs.comboIndex)
 print(info, combo[info])
 print(f"Starting mass: {startingMass}. Starting Radius: {startingRadius}.")
 distance = combo[info] # this selects the distance
-revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
+revolutionsOfInnerPlanet = 20 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
 revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
@@ -609,7 +609,7 @@ stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
-sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2000, sma = distance)
+sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2, sma = distance)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, distance = distance) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))

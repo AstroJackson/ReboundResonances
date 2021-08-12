@@ -50,6 +50,7 @@ for folder in folders:
     print(f"{folder}: {errorList}")
     for dist in errorList:
         message += f"{dist} "
+        timerNumber = np.random.random() * np.random.random() * 100 * 100 # highly unlikely two different distances will yield the same time number
         if folders == default:
             batchScript = f"#!/bin/bash\
 \n\
@@ -64,12 +65,12 @@ for folder in folders:
 \n#SBATCH --time=36:00:00\
 \n#SBATCH --mem=64G\
 \n\
-\npython3 massListSorter.py {i}\
+\npython3 massListSorter.py {timerNumber}\
 \nsleep 5\
-\npython3 simAUBatch.py --comboIndex {j} --date {months[now.month-1]}{now.day}\
+\npython3 simAUBatch.py --comboIndex {combo.index(float(dist))} --date {date}\
 \nsleep 5\
 \nwait\
-\npython3 massListSorter.py {i} Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch\
+\npython3 massListSorter.py {timerNumber} Masslists/{folder}{date}Batch\
 \n\
 \ndate"
 
