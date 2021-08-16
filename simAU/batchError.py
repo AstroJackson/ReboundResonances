@@ -81,12 +81,4 @@ for folder in folders:
         with open(f"{folder}/zbatch{date}_{dist}.script", "w") as file:
             file.write(batchScript)
     with open(f"{folder}/zzerrorScripts{date}.script", "w") as file:
-<<<<<<< HEAD
-        file.write(f"{message}\ndate")
-
-
-
-
-=======
-        file.write(f"{message}\ndate")
->>>>>>> ddb56ad3e8e7bbe77db8a6c4e7d41cbdabd880a8
+		file.write(f"{message}\ndate")
