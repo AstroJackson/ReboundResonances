@@ -13,7 +13,7 @@ from datetime import datetime
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 parser = argparse.ArgumentParser()
 parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.")
-parser.add_argument("--date", help = "The date the batch job was submitted. Use fomratting used in batch files.",\
+parser.add_argument("--date", help = "The date the batch job was submitted. Use formatting used in batch files.",\
      choices = [f"{mo}{da}" for mo in months for da in range(1,32)])
 CLargs = parser.parse_args() # Command line arguments
 
@@ -46,7 +46,7 @@ def leaveGithub(top: str = "Rebound", end: str = "simAU") -> None:
         os.chdir("..")
         if os.getcwd() == '/': 
             raise CustomException("The top directory does not exist above the beggining directory.")
-    if not os.path.isdir(end):
+    if not os.path.isdir(end): # this guarantees the 'end' directory is cd'ed to.
         final = ""
         for i, direc in enumerate(end.split('/')):
             try:
@@ -622,7 +622,7 @@ totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
 now = datetime.now()
-masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"simAU/{presentDirectory}")
+masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"simAU/{presentDirectory}")
+saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")

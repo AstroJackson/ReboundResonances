@@ -13,7 +13,7 @@ from datetime import datetime
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 parser = argparse.ArgumentParser()
 parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.")
-parser.add_argument("--date", help = "The date the batch job was submitted. Use fomratting used in batch files.",\
+parser.add_argument("--date", help = "The date the batch job was submitted. Use formatting used in batch files.",\
      choices = [f"{mo}{da}" for mo in months for da in range(1,32)])
 CLargs = parser.parse_args() # Command line arguments
 
@@ -40,6 +40,21 @@ if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass: # Uses m
     startingRadius = earthRadius * (((startingMass/earthMass)/2.69)**(1/.93))
 if startingMass < 3.9:
     startingRadius = (startingMass/earthDensityProportion)**(1/3)
+
+def leaveGithub(top: str = "Rebound", end: str = "simAU") -> None:
+    while os.getcwd().split("/")[-1] != top: #while the pwd is not the topmost desired directory
+        os.chdir("..")
+        if os.getcwd() == '/': 
+            raise CustomException("The top directory does not exist above the beggining directory.")
+    if not os.path.isdir(end): # this guarantees the 'end' directory is cd'ed to.
+        final = ""
+        for i, direc in enumerate(end.split('/')):
+            try:
+                final += f"{direc}/"
+                os.mkdir(final)
+            except FileExistsError:
+                continue
+    os.chdir(end)
 
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
@@ -144,39 +159,8 @@ def my_merge(sim_pointer, collided_particles_index):
             return 1 #destroys p1, which is the particle w/o mass
         else:
             return 2 #destroys p2, which is the particle w/o mass
-     
-    
-def masslist_txt(masslist,filepath,sim = None, write_type = 'a'):
-    """
-    Saves the masslists into a formatted txt file.
-    """
-    
-    def avg(lst):
-        sum = 0
-        for i in lst:
-            sum += i
-        return sum / len(lst)
 
-    masslistcopy = masslist.copy() # Don't want to edit the original data
-    percentlist = list()
-    message = ''
-    message+="Inner planet mass\tOuter planet mass\tPercent Difference\tSeed\n"
-    for data in masslistcopy[1:]:
-        data = data.copy() #comment out this line to not have the original list change
-        percentdif = abs((data[0]-data[1])/data[0])*100
-        roundedpercentdif = round(percentdif,2)
-        percentlist.append(percentdif)
-        data.insert(2,percentdif)
-        for j in data:
-            message += str(j)
-            message +='\t'
-        message +='\n'   
-    message+= "\nAverage percent difference= {}.\n\n".format(avg(percentlist))
-    with open(filepath,write_type) as file:
-        file.write(sim+'\n')
-        file.write(message)
-
-def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs):
+def masslist_txt_append(masslist, filepath,sim = None, write_type = 'a', **kwargs):
     """
     Saves the masslists into a formatted txt file. This is similar to masslist_txt except 
     it lends itself better to appending. It is meant for simulations ran entirely separately.
@@ -214,6 +198,14 @@ def masslist_txt_append(masslist, filepath,sim = None,write_type = 'a', **kwargs
             file.write("\nAverage percent difference: {}"
                        .format(averagePercent(filepath)))
             file.write("\n"+"#"*40)
+
+    if kwargs.get("leaveGithub"):
+        beginning = os.getcwd()
+        leaveGithub(top = kwargs.get("leaveGithub"), end = kwargs.get("leaveEnd")) # I want to save to both the repo and the non-repo Masslists directory
+        masslist_txt_append(masslist, filepath, sim, write_type, leaveGithub = False) # Using all the same parameters except setting recursion to False.
+        os.chdir(beginning) # Return to where it started
+
+
 # In
 def masslist_read(filePath):
     """
@@ -276,12 +268,13 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
     NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
     because for some data types the stepnumber needs to be very high.
     """
+    beginning = os.getcwd()
+
     if kwargs.get("test") or distance == None:
         distance = "Tests"
 #     def folderChecker():
 #         if innerFolder:
 #             innerFolder += "/"
-#             import os
 #             if not os.path.isdir("Figures/"+innerFolder):
 #                 os.mkdir("Figures/"+innerFolder)
 #             if not os.path.isdir("Figures/"+innerFolder+str(distance)):
@@ -295,8 +288,13 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
 #             tiempo.sleep(np.random.uniform()*3)
 #             recursiveFolderChecker()
 #     recursiveFolderChecker()
+    if kwargs.get("leaveGithub"):
+        leaveGithub(top = kwargs.get("leaveGithub"), end = kwargs.get("leaveEnd")) # Leave the github repo and go to its twin outside of the repo. This way I do not have to push gigabytes of graphs to github.
+
     if innerFolder:
         innerFolder += "/"
+        if not os.path.isdir("Figures"):
+            os.mkdir("Figures")
         if not os.path.isdir("Figures/"+innerFolder):
             os.mkdir("Figures/"+innerFolder)
         if not os.path.isdir("Figures/"+innerFolder+str(distance)):
@@ -416,6 +414,9 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
     plt.hist([data for data in asteroidAU[-1] if data > 0], num_bins)
     plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
 
+    os.chdir(beginning) # Return back to original directory
+    print(f"Final directory is {os.getcwd()}.")
+
     ###########################################################################################
 
 def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):  
@@ -445,7 +446,7 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
     r_pl = 2e-9 
 
     #seed = 0
-    innerRad, outerRad = .02, distance * 3
+    innerRad, outerRad = .02, 1 #distance * 3
     auList = np.linspace(innerRad, outerRad, asteroidnumber) # use this to NOT randomize the starting distance
     index = 0
     if not seed == 'strict':
@@ -596,7 +597,7 @@ info = int(CLargs.comboIndex)
 print(info, combo[info])
 print(f"Starting mass: {startingMass}. Starting Radius: {startingRadius}.")
 distance = combo[info] # this selects the distance
-revolutionsOfInnerPlanet = 20 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
+revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
 revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
@@ -608,7 +609,7 @@ stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
-sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2, sma = distance)
+sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2000, sma = distance)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, distance = distance) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -621,7 +622,7 @@ totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
 now = datetime.now()
-masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a')
+masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance)
+saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
