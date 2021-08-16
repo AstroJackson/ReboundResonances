@@ -2,6 +2,7 @@ import sys, os
 from datetime import datetime
 
 def batchCreator(path = ""):
+    presentDirectory = os.getcwd().split("/")[-1]
     now = datetime.now()
     months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
     direc = os.getcwd().split("/")[-1]
@@ -35,7 +36,7 @@ def batchCreator(path = ""):
 \npython3 simAUBatch.py --comboIndex {name[dashIndex+1:-1]+name[-1]} --date {months[now.month-1]}{now.day}\
 \nsleep 5\
 \nwait\
-\npython3 massListSorter.py {i} Masslists/JupiterSimAU{months[now.month-1]}{now.day}Batch\
+\npython3 massListSorter.py {i} Masslists/{presentDirectory}{months[now.month-1]}{now.day}Batch\
 \n\
 \ndate"
         if path: path += "/"
