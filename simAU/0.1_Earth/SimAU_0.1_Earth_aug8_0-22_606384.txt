@@ -1,0 +1,560 @@
+Email sent successfully!
+0 0.1
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.1.
+Total steps: 2
+distance: 0.1 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.1 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.1 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.1.
+
+Distance 0.1 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.1]]
+There are 5 particles remaining.
+1 0.10404040404040404
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.10404040404040404.
+Total steps: 2
+distance: 0.10404040404040404 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10404040404040404 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.10404040404040404 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.10404040404040404 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.10404040404040404.
+
+Distance 0.10404040404040404 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.10404040404040404]]
+There are 5 particles remaining.
+2 0.10656022367666107
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.10656022367666107.
+Total steps: 2
+distance: 0.10656022367666107 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10656022367666107 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.10656022367666107 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.10656022367666107 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.10656022367666107.
+
+Distance 0.10656022367666107 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.10656022367666107]]
+There are 5 particles remaining.
+3 0.10727659828951441
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.10727659828951441.
+Total steps: 2
+distance: 0.10727659828951441 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10727659828951441 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.10727659828951441 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.10727659828951441 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.10727659828951441.
+
+Distance 0.10727659828951441 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.10727659828951441]]
+There are 5 particles remaining.
+4 0.10808080808080808
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.10808080808080808.
+Total steps: 2
+distance: 0.10808080808080808 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10808080808080808 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.10808080808080808 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.10808080808080808 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.10808080808080808.
+
+Distance 0.10808080808080808 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.10808080808080808]]
+There are 5 particles remaining.
+5 0.10816871777305564
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.10816871777305564.
+Total steps: 2
+distance: 0.10816871777305564 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10816871777305564 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.10816871777305564 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.10816871777305564 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.10816871777305564.
+
+Distance 0.10816871777305564 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.10816871777305564]]
+There are 5 particles remaining.
+6 0.10931035330127936
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.10931035330127936.
+Total steps: 2
+distance: 0.10931035330127936 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10931035330127936 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.10931035330127936 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.10931035330127936 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.10931035330127936.
+
+Distance 0.10931035330127936 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.10931035330127936]]
+There are 5 particles remaining.
+7 0.11082332935251626
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.11082332935251626.
+Total steps: 2
+distance: 0.11082332935251626 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11082332935251626 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.11082332935251626 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.3 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.11082332935251626 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.3 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.11082332935251626.
+
+Distance 0.11082332935251626 in total took 0 seconds (0.01 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.11082332935251626]]
+There are 5 particles remaining.
+8 0.11212121212121212
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.11212121212121212.
+Total steps: 2
+distance: 0.11212121212121212 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11212121212121212 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.11212121212121212 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.11212121212121212 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.11212121212121212.
+
+Distance 0.11212121212121212 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.11212121212121212]]
+There are 5 particles remaining.
+9 0.11292432346572341
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.11292432346572341.
+Total steps: 2
+distance: 0.11292432346572341 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11292432346572341 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.11292432346572341 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.3 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.11292432346572341 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.3 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.11292432346572341.
+
+Distance 0.11292432346572341 in total took 0 seconds (0.01 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.11292432346572341]]
+There are 5 particles remaining.
+10 0.11431418309001973
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.11431418309001973.
+Total steps: 2
+distance: 0.11431418309001973 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11431418309001973 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.11431418309001973 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.11431418309001973 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.11431418309001973.
+
+Distance 0.11431418309001973 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.11431418309001973]]
+There are 5 particles remaining.
+11 0.1160397208403195
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.1160397208403195.
+Total steps: 2
+distance: 0.1160397208403195 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1160397208403195 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.1160397208403195 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.1160397208403195 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.1160397208403195.
+
+Distance 0.1160397208403195 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.1160397208403195]]
+There are 5 particles remaining.
+12 0.11616161616161616
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.11616161616161616.
+Total steps: 2
+distance: 0.11616161616161616 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11616161616161616 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.11616161616161616 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.11616161616161616 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.11616161616161616.
+
+Distance 0.11616161616161616 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.11616161616161616]]
+There are 5 particles remaining.
+13 0.1182396075591909
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.1182396075591909.
+Total steps: 2
+distance: 0.1182396075591909 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1182396075591909 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.1182396075591909 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.1182396075591909 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.1182396075591909.
+
+Distance 0.1182396075591909 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.1182396075591909]]
+There are 5 particles remaining.
+14 0.11911384251964328
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.11911384251964328.
+Total steps: 2
+distance: 0.11911384251964328 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11911384251964328 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.11911384251964328 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.11911384251964328 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.11911384251964328.
+
+Distance 0.11911384251964328 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.11911384251964328]]
+There are 5 particles remaining.
+15 0.1202020202020202
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.1202020202020202.
+Total steps: 2
+distance: 0.1202020202020202 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.1202020202020202 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.1202020202020202 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.1202020202020202 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.1202020202020202.
+
+Distance 0.1202020202020202 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.1202020202020202]]
+There are 5 particles remaining.
+16 0.12114137285547598
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.12114137285547598.
+Total steps: 2
+distance: 0.12114137285547598 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12114137285547598 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.12114137285547598 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.3 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.12114137285547598 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.3 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.12114137285547598.
+
+Distance 0.12114137285547598 in total took 0 seconds (0.01 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.12114137285547598]]
+There are 5 particles remaining.
+17 0.12365218608121753
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.12365218608121753.
+Total steps: 2
+distance: 0.12365218608121753 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12365218608121753 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.12365218608121753 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.12365218608121753 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.12365218608121753.
+
+Distance 0.12365218608121753 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.12365218608121753]]
+There are 5 particles remaining.
+18 0.12424242424242425
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.12424242424242425.
+Total steps: 2
+distance: 0.12424242424242425 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12424242424242425 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.12424242424242425 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.12424242424242425 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.12424242424242425.
+
+Distance 0.12424242424242425 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.12424242424242425]]
+There are 5 particles remaining.
+19 0.12514649491351945
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.12514649491351945.
+Total steps: 2
+distance: 0.12514649491351945 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12514649491351945 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.12514649491351945 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.12514649491351945 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.12514649491351945.
+
+Distance 0.12514649491351945 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.12514649491351945]]
+There are 5 particles remaining.
+20 0.12684342882037156
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.12684342882037156.
+Total steps: 2
+distance: 0.12684342882037156 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12684342882037156 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.12684342882037156 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.12684342882037156 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.12684342882037156.
+
+Distance 0.12684342882037156 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.12684342882037156]]
+There are 5 particles remaining.
+21 0.12778127834700254
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.12778127834700254.
+Total steps: 2
+distance: 0.12778127834700254 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12778127834700254 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.12778127834700254 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.12778127834700254 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.12778127834700254.
+
+Distance 0.12778127834700254 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.12778127834700254]]
+There are 5 particles remaining.
+22 0.12828282828282828
+Starting mass: 3.0000000000000004e-07. Starting Radius: 1.9958831984534964e-05.
+Steps: 2
+Beginning distance 0.12828282828282828.
+Total steps: 2
+distance: 0.12828282828282828 | 0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.12828282828282828 | 0.0 time = 0.0 years | 5 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.12828282828282828 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 1 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Done at 0 seconds!
+Distance (done): 0.12828282828282828 | 3.973835306318441 time = 0.632455532033676 years | 5 particles | 2 step number |
+| 0.2 second | 0.0 minutes | 0.0 hours.
+
+Masses 3.0000000000000004e-07 and 3.0000000000000004e-07.
+Ending distance 0.12828282828282828.
+
+Distance 0.12828282828282828 in total took 0 seconds (0.0 minutes, 0.0 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [3.0000000000000004e-07, 3.0000000000000004e-07, 0.0, 0.12828282828282828]]
+There are 5 particles remaining.
+Traceback (most recent call last):
+  File "massListSorter.py", line 52, in <module>
+    massListSorter(sys.argv[2])
+  File "massListSorter.py", line 6, in massListSorter
+    with open(path+".txt") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Masslists/JupiterSimAUaug8Batch.txt'
+Sat Aug 14 21:06:32 EDT 2021

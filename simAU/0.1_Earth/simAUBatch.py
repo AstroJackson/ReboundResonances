@@ -596,7 +596,7 @@ info = int(CLargs.comboIndex)
 print(info, combo[info])
 print(f"Starting mass: {startingMass}. Starting Radius: {startingRadius}.")
 distance = combo[info] # this selects the distance
-revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
+revolutionsOfInnerPlanet = 20 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
 revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
@@ -608,7 +608,7 @@ stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
-sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2000, sma = distance)
+sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2, sma = distance)
 quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, distance = distance) # Can override 'steps' by setting a value directly
 ps = sim.particles
 print("Masses {} and {}.".format(ps[1].m,ps[2].m))
@@ -621,7 +621,7 @@ totaltime = BIGfinal - BIGinitial
 print("Distance {} in total took {} seconds ({} minutes, {} hours).".format(distance,int(totaltime), round(totaltime/60,2), round(totaltime/3600,2)))
 #lastN = len(combo)
 now = datetime.now()
-masslist_txt_append(simAU_masses,f'Masslists/JupiterSimAU{CLargs.date}Batch.txt','simAU','a')
+masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a')
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
-saveFigs(innerFolder= f"JupiterSimAU{CLargs.date}Batch", distance = distance)
+saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance)

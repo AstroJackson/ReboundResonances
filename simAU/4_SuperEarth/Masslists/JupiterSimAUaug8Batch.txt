@@ -1,4 +1,0 @@
-simAU
-Inner planet mass	Outer planet mass	Percent Difference	Distance
-2.7840000000000008e-05	0.0			100.0			0.10656022367666107	
-3.432e-05		0.0			100.0			0.1	

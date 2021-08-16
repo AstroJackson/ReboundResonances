@@ -52,7 +52,7 @@ if not First:
     massListSorter(sys.argv[2])
     status = 'Ended'
     now = datetime.now()
-    timerNumber = sys.argv[1] # if sys.argv[1] is the masslist file path, then sys.argv[2] is the timer number
+    timerNumber = sys.argv[1] # if sys.argv[1] is the masslist file path, then sys.argv[1] is the timer number
     with open(f"timer{timerNumber}.txt") as file:
         month, day, hour, minute, second = [float(i) for i in file.read().split()]
     if month == now.month:
