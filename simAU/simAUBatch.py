@@ -11,7 +11,7 @@ from datetime import datetime
 #os.system("taskset -p 0xff %d" % os.getpid()) # run on all cores
 
 """
-What the following does is to make inputing command line arguments (CLargs) not only easier, but also restricts them to certain values.
+The following makes inputing command line arguments (CLargs) not only easier, but also restricts them to certain values.
 """
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 parser = argparse.ArgumentParser()
@@ -22,7 +22,7 @@ CLargs = parser.parse_args() # Command line arguments
 
 sim = rebound.Simulation()
 tau = 2*np.pi
-planetDestroyed = False
+planetDestroyed = False # The planets start intact
 
 # In[3]:
 class CustomException(Exception):
@@ -616,7 +616,7 @@ def remove(AU, sim = sim):
 
 ######################################################################################################################################################################################
 ######################################################################################################################################################################################
-# The following implements a list of distances that produce known resoances
+# The following implements a list of distances that produce known resonaces
 # combined with an interwoven linear spacing
 Info=[]
 other = []

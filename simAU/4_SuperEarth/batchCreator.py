@@ -3,6 +3,8 @@ from datetime import datetime
 
 def batchCreator(path = ""):
     presentDirectory = os.getcwd().split("/")[-1]
+    maxHours = 36
+    if presentDirectory == "Jupiter": maxHours = 48
     now = datetime.now()
     months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
     direc = os.getcwd().split("/")[-1]
@@ -22,7 +24,7 @@ def batchCreator(path = ""):
 \n#SBATCH --nodes=1\
 \n#SBATCH --ntasks-per-node=1\
 \n#SBATCH --cpus-per-task=24\
-\n#SBATCH --time=36:00:00\
+\n#SBATCH --time={maxHours}:00:00\
 \n#SBATCH --mem=128G\
 \n\
 \npython3 massListSorter.py {i}\
