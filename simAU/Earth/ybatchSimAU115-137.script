@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH -J SimAU_Earth_aug8_115-137
+#SBATCH -J SimAU_Earth_aug17_115-137
 #SBATCH -p general
-#SBATCH -o SimAU_Earth_aug8_115-137_%j.txt
+#SBATCH -o SimAU_Earth_aug17_115-137_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
@@ -15,13 +15,13 @@ python3 massListSorter.py 105reds
 sleep 5
 for i in {115..136}
 do
-    python3 simAUBatch.py --comboIndex $i --date aug8 &
+    python3 simAUBatch.py --comboIndex $i --date aug17 &
     sleep 2
 done
 sleep 5
-python3 simAUBatch.py --comboIndex 137 --date aug8
+python3 simAUBatch.py --comboIndex 137 --date aug17
 sleep 5
 wait
-python3 massListSorter.py 105reds Masslists/JupiterSimAUaug8Batch
+python3 massListSorter.py 105reds Masslists/Earthaug17Batch
 
 date
