@@ -10,9 +10,12 @@ from datetime import datetime
 
 #os.system("taskset -p 0xff %d" % os.getpid()) # run on all cores
 
+"""
+What the following does is to make inputing command line arguments (CLargs) not only easier, but also restricts them to certain values.
+"""
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 parser = argparse.ArgumentParser()
-parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.")
+parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.", choices = [i for i in range(163)])
 parser.add_argument("--date", help = "The date the batch job was submitted. Use formatting used in batch files.",\
      choices = [f"{mo}{da}" for mo in months for da in range(1,32)])
 CLargs = parser.parse_args() # Command line arguments
@@ -26,14 +29,14 @@ class CustomException(Exception):
     def __init__(self, *args: object) -> None:
         super().__init__(*args)
 
-jupiterMass, jupiterRadius = 1e-3, 4.7e-4
+jupiterMass, jupiterRadius = 1e-3, 4.7e-4 # Setting up some constants
 earthMass, earthRadius = 3e-6, 4.3e-5
 earthDensityProportion = earthMass / earthRadius**3
 presentDirectory = os.getcwd().split("/")[-1]
 massDict = {"0.1_Earth": .1 * earthMass, "4_SuperEarth": 4 * earthMass, "9.8_SuperEarth": 9.8 * earthMass,
             "Earth": earthMass, "Half_Earth": .5 * earthMass, "Jupiter": jupiterMass}
 
-startingMass = massDict[presentDirectory]
+startingMass = massDict[presentDirectory] # Setting up which radius to assign based on the mass
 if startingMass >= jupiterMass: # some research shows that Jupiter's radius would not increase with an increase in mass
     startingRadius = jupiterRadius
 if startingMass >= 3.9 * earthMass and startingMass <= 9.8 * earthMass: # Uses mass-radius relation from  https://arxiv.org/pdf/1312.0936.pdf
@@ -42,6 +45,11 @@ if startingMass < 3.9:
     startingRadius = (startingMass/earthDensityProportion)**(1/3)
 
 def leaveGithub(top: str = "Rebound", end: str = "simAU") -> None:
+    """
+    This function goes up in directories until the pwd is 'top', then it navigates down to 'end.' 
+    This is mostly designed for the 'saveFigs' function in order to save figures to a folder outside
+    of the github repo. I want to keep my github repo well under 1 GB.
+    """
     while os.getcwd().split("/")[-1] != top: #while the pwd is not the topmost desired directory
         os.chdir("..")
         if os.getcwd() == '/': 
@@ -74,9 +82,14 @@ def rand_uniform(minimum, maximum):
 def rand_rayleigh(sigma):
     return sigma*np.sqrt(-2*np.log(np.random.uniform()))
 
-def quickplot(sim): #this uses matplotlib to plot the orbit, instead of rebound
+def quickplot(sim, AU = 0): 
+    """
+    Uses matplotlib to plot the orbit, instead of rebound. Setting AU to a value other than 0 allows this function
+    to only plot objects closer than AU from the star.
+    """
     coords = np.zeros((2,sim.N))
     for i in range(sim.N):
+        if AU and np.linalg.norm(np.array(ps[i].xyz)-np.array(ps[0].xyz)) > AU: continue # Does not plot distance objects if AU != 0.
         coords[0][i], coords[1][i] = sim.particles[i].x, sim.particles[i].y
     fig, ax = plt.subplots()
     ax.axis('equal')
@@ -85,6 +98,11 @@ def quickplot(sim): #this uses matplotlib to plot the orbit, instead of rebound
         ax.scatter(sim.particles[i].x,sim.particles[i].y); # Planet
         
 def my_merge(sim_pointer, collided_particles_index):
+    """
+    My merge logic. Assigns a hundredth of the planet's starting mass as the mass the planet gains as a result
+    of the collision. If the planets collide, sets the planetDestroyed flag to True to indicate to quickCollect that
+    it should cease integration.
+    """
     
     #https://rebound.readthedocs.io/en/latest/ipython/User_Defined_Collision_Resolve.html
     #or
@@ -228,9 +246,12 @@ def masslist_read(filePath):
 #masslist_read('test.txt')
 
 def avg(listt, **kwargs):
+    """
+    Average function for different conditions.
+    """
     sum = 0
     length = len(listt)
-    if kwargs.get('positive'):
+    if kwargs.get('positive'): # Does not include values that are NOT positive into the average
         for i in listt:
             if i > 0:
                 sum += i
@@ -239,7 +260,7 @@ def avg(listt, **kwargs):
         if length == 0:
             return 0
         return sum / length
-    if kwargs.get('nonNegative'):
+    if kwargs.get('nonNegative'): # Does not include values that are NOT non-negative into the average
         for i in listt:
             if i >= 0:
                 sum += i
@@ -248,11 +269,11 @@ def avg(listt, **kwargs):
         if length == 0:
             return 0
         return sum / length
-    for i in listt:
+    for i in listt: # Normal average
         sum += i
     return sum / len(listt)
 
-def averagePercent(filePath):
+def averagePercent(filePath): # reads average percent from a filepath
     dataList = masslist_read(filePath)
     percentList = []
     for i in range(2,len(dataList),4):
@@ -265,7 +286,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
     """
     This saves several types of graphs into a folder corresponsing to the seed.
     Optional ability to add on to the name of a file easily.
-    NOTE: Depending on the stepnumber, some of these graphs may contain useless data,
+    NOTE: Depending on the stepnumber, some of these graphs may contain trivial data,
     because for some data types the stepnumber needs to be very high.
     """
     beginning = os.getcwd()
@@ -289,7 +310,8 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
 #             recursiveFolderChecker()
 #     recursiveFolderChecker()
     if kwargs.get("leaveGithub"):
-        leaveGithub(top = kwargs.get("leaveGithub"), end = kwargs.get("leaveEnd")) # Leave the github repo and go to its twin outside of the repo. This way I do not have to push gigabytes of graphs to github.
+        leaveGithub(top = kwargs.get("leaveGithub"), end = kwargs.get("leaveEnd")) # Leave the github repo and go to its twin outside of the repo.
+        #This way I do not have to push gigabytes of graphs to github.
 
     if innerFolder:
         innerFolder += "/"
@@ -304,7 +326,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
     
     np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
-    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs)
+    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
 
     plt.clf() # clears any graphs
     quickplot(sim)
@@ -420,6 +442,12 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
     ###########################################################################################
 
 def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):  
+    """
+    Generates a system of two planets using the simAU definition to begin with, by default. 
+    Populates the system with a given number of asteroids, using a linear spacing for their starting sma.
+    Assigns hashes accordingly.
+    """
+
     sim = simulation(sma)
     sim.N_active = sim.N
 
@@ -487,7 +515,10 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
     #quickplot(sim)
     return sim
     
-def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwargs): #collects orbital data on the first two bodies in a system
+def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwargs): 
+    """
+    Collects orbital data on the first two bodies in a system and the asteroids as well if asteroidCollect is set to True.
+    """
     initialtime = tiempo.monotonic()
 #     n=2 #number of planets
 #     T=80*2*np.pi #years of simulation
@@ -507,10 +538,12 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
     masses = np.zeros((len(times),n))
     ps = sim.particles
     # Asteroid variables:
-    global asteroidAU, asteroidEccs, simNi
+    global asteroidAU, asteroidEccs, simNi, asteroidX, asteroidY
     simNi = sim.N
     asteroidAU = np.zeros((len(times),simNi-n-1)) # n is the number of planets, 1 is the number of stars
     asteroidEccs = np.negative(np.ones((len(times),simNi-n-1)))
+    asteroidX = np.zeros((len(times),simNi-n-1))
+    asteroidY = np.zeros((len(times),simNi-n-1))
     #
     print(f"Total steps: {stepnumber}")
     print("distance: {} | {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
@@ -550,10 +583,12 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
                 #print("index:{}, roidNumber: {}".format(index,roidNumber))
                 index = roidNumber - n -1
                 try:                    
-                    asteroidAU[i,index] = ps[str(roidNumber)].a
+                    asteroidAU[i,index] = ps[str(roidNumber)].a # Using a string so that the hash will be used
                     asteroidEccs[i,index] = ps[str(roidNumber)].e
+                    asteroidX[i, index] = ps[str(roidNumber)].x
+                    asteroidY[i, index] = ps[str(roidNumber)].y
                 except rebound.ParticleNotFound:
-                    pass
+                    continue # The asteroid has been destroyed, move onto the next one.
         ####
     finaltime = tiempo.monotonic()
 #     print('done')
@@ -571,6 +606,9 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
     #ding()
     
 def remove(AU, sim = sim):
+    """
+    Removes particles from the system if they are AU away from the star.
+    """
     for i in reversed(range(sim.N)):
         ps = sim.particles
         if np.linalg.norm(np.array(ps[i].xyz)-np.array(ps[0].xyz)) > AU:
