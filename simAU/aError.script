@@ -10,6 +10,7 @@ sleep 1
 for i in 0.1_Earth 4_SuperEarth 9.8_SuperEarth Earth Half_Earth Jupiter
 do
 	cd $i
+	chmod +x zzerrorScripts$date.script
 	./zzerrorScripts$date.script
 	cd ..
 done

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH -J SimAU_Jupiter_aug8_0.143237083856131
+#SBATCH -p general
+#SBATCH -o SimAU_Jupiter_aug8_0.143237083856131_%j.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=taylor11@iu.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
+#SBATCH --time=3-00:00:00
+#SBATCH --mem=64G
+
+python3 massListSorter.py 764.4055724872276
+sleep 5
+python3 simAUBatchaug8.py --comboIndex 33 --date aug8
+sleep 5
+wait
+python3 massListSorter.py 764.4055724872276 Masslists/Jupiteraug8Batch
+
+date

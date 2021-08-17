@@ -15,13 +15,13 @@ python3 massListSorter.py 101reds
 sleep 5
 for i in {23..44}
 do
-    python3 simAUBatch.py --comboIndex $i --date aug8 &
+    python3 simAUBatchaug8.py --comboIndex $i --date aug8 &
     sleep 2
 done
 sleep 5
-python3 simAUBatch.py --comboIndex 45 --date aug8
+python3 simAUBatchaug8.py --comboIndex 45 --date aug8
 sleep 5
 wait
-python3 massListSorter.py 101reds Masslists/JupiterSimAUaug8Batch
+python3 massListSorter.py 101reds Masslists/0.1_Earthaug8BatchERROR
 
 date

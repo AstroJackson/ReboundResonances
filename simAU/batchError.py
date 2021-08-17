@@ -54,7 +54,7 @@ for folder in folders:
     else: errorList = batchErrorList(folder)
     print(f"{folder}: {errorList}")
     for dist in errorList:
-        message += f"sbatch ./zbatch{date}_{dist}.script\nsleep .3\n"
+        message += f"sbatch zbatch{date}_{dist}.script\nsleep .3\n"
         timerNumber = np.random.random() * np.random.random() * 100 * 100 # highly unlikely two different distances will yield the same time number
         if folders == default:
             batchScript = f"#!/bin/bash\
@@ -66,8 +66,8 @@ for folder in folders:
 \n#SBATCH --mail-user=taylor11@iu.edu\
 \n#SBATCH --nodes=1\
 \n#SBATCH --ntasks-per-node=1\
-\n#SBATCH --cpus-per-task=3\
-\n#SBATCH --time=48:00:00\
+\n#SBATCH --cpus-per-task=2\
+\n#SBATCH --time=3-00:00:00\
 \n#SBATCH --mem=64G\
 \n\
 \npython3 massListSorter.py {timerNumber}\
@@ -81,4 +81,4 @@ for folder in folders:
         with open(f"{folder}/zbatch{date}_{dist}.script", "w") as file:
             file.write(batchScript)
     with open(f"{folder}/zzerrorScripts{date}.script", "w") as file:
-		file.write(f"{message}\ndate")
+        file.write(f"{message}\ndate")

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sbatch zbatchaug8_0.1202020202020202.script
+sleep .3
+
+date
