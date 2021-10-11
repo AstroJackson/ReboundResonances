@@ -1,0 +1,50 @@
+Email sent successfully!
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Half_Earthsept13Batch/0.42727272727272725'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Half_Earthsept13Batch/0.48383838383838385'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Half_Earthsept13Batch/0.4191919191919192'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Half_Earthsept13Batch/0.4555555555555556'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Half_Earthsept13Batch/0.4636363636363636'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Half_Earthsept13Batch/0.4676767676767677'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Fri Sep 24 23:24:39 EDT 2021

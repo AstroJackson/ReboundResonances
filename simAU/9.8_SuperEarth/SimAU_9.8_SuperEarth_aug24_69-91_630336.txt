@@ -1,0 +1,74 @@
+Email sent successfully!
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 212, in masslist_txt_append
+    file.write(message)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 212, in masslist_txt_append
+    file.write(message)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 212, in masslist_txt_append
+    file.write(message)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 212, in masslist_txt_append
+    file.write(message)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 212, in masslist_txt_append
+    file.write(message)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 212, in masslist_txt_append
+    file.write(message)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Thu Sep  2 09:49:26 EDT 2021

@@ -15,7 +15,7 @@ The following makes inputing command line arguments (CLargs) not only easier, bu
 """
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 parser = argparse.ArgumentParser()
-parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.", choices = [i for i in range(163)])
+parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.", choices = [str(i) for i in range(163)])
 parser.add_argument("--date", help = "The date the batch job was submitted. Use formatting used in batch files.",\
      choices = [f"{mo}{da}" for mo in months for da in range(1,32)])
 CLargs = parser.parse_args() # Command line arguments
@@ -315,16 +315,22 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
 
     if innerFolder:
         innerFolder += "/"
-        if not os.path.isdir("Figures"):
-            os.mkdir("Figures")
-        if not os.path.isdir("Figures/"+innerFolder):
-            os.mkdir("Figures/"+innerFolder)
-        if not os.path.isdir("Figures/"+innerFolder+str(distance)):
-            os.mkdir("Figures/"+innerFolder+str(distance))
-        if not os.path.isdir("Figures/"+innerFolder+str(distance)+"/Arrays"):
-            os.mkdir("Figures/"+innerFolder+str(distance)+"/Arrays")
+        for path in ["Arrays/", "Figures/"]:
+            if not os.path.isdir(path):
+                os.mkdir(path)
+            if not os.path.isdir(path+innerFolder):
+                os.mkdir(path+innerFolder)
+            if not os.path.isdir(path+innerFolder+str(distance)):
+                os.mkdir(path+innerFolder+str(distance))
+            if not os.path.isdir(path+innerFolder+str(distance)+"/Arrays"):
+                os.mkdir(path+innerFolder+str(distance)+"/Arrays")
     
     np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+    eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
+    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
+    
+    if kwargs.get("just_arrays"):
+        np.savez("Arrays/"+"graph_data_arrays"+str(dist), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
 

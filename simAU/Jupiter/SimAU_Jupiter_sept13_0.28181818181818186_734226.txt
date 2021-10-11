@@ -1,0 +1,4 @@
+Email sent successfully!
+python3: can't open file 'simAUBatchsept13.py': [Errno 2] No such file or directory
+Email sent successfully!
+Tue Sep 28 21:58:31 EDT 2021

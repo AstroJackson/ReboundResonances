@@ -1,27 +1,27 @@
 #!/bin/bash
 
-#SBATCH -J SimAU_4_SuperEarth_aug17_161-162
+#SBATCH -J SimAU_4_SuperEarth_sept13_161-162
 #SBATCH -p general
-#SBATCH -o SimAU_4_SuperEarth_aug17_161-162_%j.txt
+#SBATCH -o SimAU_4_SuperEarth_sept13_161-162_%j.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=taylor11@iu.edu
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=24
-#SBATCH --time=36:00:00
+#SBATCH --time=40:00:00
 #SBATCH --mem=128G
 
 python3 massListSorter.py 107reds
 sleep 5
 for i in {161..161}
 do
-    python3 simAUBatch.py --comboIndex $i --date aug17 &
+    python3 simAUBatch.py --comboIndex $i --date sept13 &
     sleep 2
 done
 sleep 5
-python3 simAUBatch.py --comboIndex 162 --date aug17
+python3 simAUBatch.py --comboIndex 162 --date sept13
 sleep 5
 wait
-python3 massListSorter.py 107reds Masslists/4_SuperEarthaug17Batch
+python3 massListSorter.py 107reds Masslists/4_SuperEarthsept13Batch
 
 date

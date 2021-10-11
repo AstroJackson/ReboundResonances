@@ -1,0 +1,20 @@
+Email sent successfully!
+/N/u/taylor11/Carbonate/.local/lib/python3.7/site-packages/rebound/simulation.py:719: RuntimeWarning: At least 10 predictor corrector loops in IAS15 did not converge. This is typically an indication of the timestep being too large.
+  warnings.warn(msg[1:], RuntimeWarning)
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Jupitersept13Batch/0.14057211088362487'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Jupitersept13Batch/0.15108808205161317'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+slurmstepd: error: *** JOB 671869 ON c16 CANCELLED AT 2021-09-26T17:35:31 DUE TO TIME LIMIT ***

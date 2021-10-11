@@ -67,7 +67,7 @@ for folder in folders:
 \n#SBATCH --nodes=1\
 \n#SBATCH --ntasks-per-node=1\
 \n#SBATCH --cpus-per-task=2\
-\n#SBATCH --time=3-00:00:00\
+\n#SBATCH --time=4-00:00:00\
 \n#SBATCH --mem=64G\
 \n\
 \npython3 massListSorter.py {timerNumber}\

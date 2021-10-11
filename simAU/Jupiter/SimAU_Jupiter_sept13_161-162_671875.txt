@@ -1,0 +1,10 @@
+Email sent successfully!
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 323, in saveFigs
+    os.mkdir("Figures/"+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Figures/Jupitersept13Batch/0.5'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+slurmstepd: error: *** JOB 671875 ON c9 CANCELLED AT 2021-09-26T21:39:56 DUE TO TIME LIMIT ***

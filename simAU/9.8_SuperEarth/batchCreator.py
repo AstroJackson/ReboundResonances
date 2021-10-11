@@ -3,8 +3,8 @@ from datetime import datetime
 
 def batchCreator(path = ""):
     presentDirectory = os.getcwd().split("/")[-1]
-    maxHours = 36
-    if presentDirectory == "Jupiter": maxHours = 48
+    maxHours = 40
+    if presentDirectory == "Jupiter": maxHours = 56
     now = datetime.now()
     months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
     direc = os.getcwd().split("/")[-1]

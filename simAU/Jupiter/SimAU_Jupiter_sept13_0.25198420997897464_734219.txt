@@ -1,0 +1,7 @@
+Email sent successfully!
+python3: can't open file 'simAUBatchsept13.py': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "massListSorter.py", line 56, in <module>
+    with open(f"timer{timerNumber}.txt") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'timer1991.7851193329075.txt'
+Tue Sep 28 21:54:56 EDT 2021

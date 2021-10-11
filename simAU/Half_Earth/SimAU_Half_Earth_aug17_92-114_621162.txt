@@ -1,0 +1,59 @@
+Email sent successfully!
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 212, in masslist_txt_append
+    file.write(message)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 212, in masslist_txt_append
+    file.write(message)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 329, in saveFigs
+    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/numpy/lib/npyio.py", line 619, in savez
+    _savez(file, args, kwds, False)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/numpy/lib/npyio.py", line 728, in _savez
+    pickle_kwargs=pickle_kwargs)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/zipfile.py", line 1136, in close
+    self._fileobj.seek(self._zinfo.header_offset)
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Exception ignored in: <function ZipFile.__del__ at 0x7eff34197bf8>
+Traceback (most recent call last):
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/zipfile.py", line 1789, in __del__
+    self.close()
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/zipfile.py", line 1798, in close
+    raise ValueError("Can't close the ZIP file while there is "
+ValueError: Can't close the ZIP file while there is an open writing handle on it. Close the writing handle before closing the zip.
+Traceback (most recent call last):
+  File "simAUBatch.py", line 666, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 329, in saveFigs
+    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/numpy/lib/npyio.py", line 619, in savez
+    _savez(file, args, kwds, False)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/site-packages/numpy/lib/npyio.py", line 728, in _savez
+    pickle_kwargs=pickle_kwargs)
+  File "/N/soft/rhel7/anaconda/python3.7/2019.03/lib/python3.7/zipfile.py", line 1136, in close
+    self._fileobj.seek(self._zinfo.header_offset)
+OSError: [Errno 122] Disk quota exceeded
+date: write error

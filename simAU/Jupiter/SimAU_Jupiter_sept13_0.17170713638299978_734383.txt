@@ -1,0 +1,2 @@
+Email sent successfully!
+slurmstepd: error: *** JOB 734383 ON c39 CANCELLED AT 2021-10-03T14:59:43 ***

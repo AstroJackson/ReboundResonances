@@ -15,7 +15,7 @@ The following makes inputing command line arguments (CLargs) not only easier, bu
 """
 months = ["jan", "feb", "march", "april", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
 parser = argparse.ArgumentParser()
-parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.", choices = [i for i in range(163)])
+parser.add_argument("--comboIndex", help = "Index of the 'combo' list to use.", choices = [str(i) for i in range(163)])
 parser.add_argument("--date", help = "The date the batch job was submitted. Use formatting used in batch files.",\
      choices = [f"{mo}{da}" for mo in months for da in range(1,32)])
 CLargs = parser.parse_args() # Command line arguments

@@ -1,0 +1,82 @@
+Email sent successfully!
+2 0.10656022367666107
+Starting mass: 2.9400000000000003e-05. Starting Radius: 9.201892332859689e-05.
+Steps: 1000
+Beginning distance 0.10656022367666107.
+Total steps: 1000
+distance: 0.10656022367666107 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10656022367666107 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+TIME:1.1449481718901318
+########################################
+
+
+The planets collided!Time: 1.1449481718901318
+
+
+########################################
+simAU distance: 0.10656022367666107 | 1.9889065597189395 time = 0.3165443103271652 years | 1999 particles | 1 step number |
+| 94.9 second | 1.6 minutes | 0.0 hours.
+
+Done at 95 seconds!
+Distance (done): 0.10656022367666107 | 1.9889065597189395 time = 0.3165443103271652 years | 1999 particles | 1000 step number |
+| 95.2 second | 1.6 minutes | 0.0 hours.
+
+Masses 5.968200000000001e-05 and 0.0.
+Ending distance 0.10656022367666107.
+
+Distance 0.10656022367666107 in total took 95 seconds (1.59 minutes, 0.03 hours).
+Traceback (most recent call last):
+  File "simAUBatch.py", line 663, in <module>
+    masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batch.txt','simAU','a', leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatch.py", line 222, in masslist_txt_append
+    leaveGithub(top = kwargs.get("leaveGithub"), end = kwargs.get("leaveEnd")) # I want to save to both the repo and the non-repo Masslists directory
+  File "simAUBatch.py", line 62, in leaveGithub
+    os.mkdir(final)
+OSError: [Errno 122] Disk quota exceeded: 'aug24/9.8_SuperEarth/'
+4 0.10808080808080808
+Starting mass: 2.9400000000000003e-05. Starting Radius: 9.201892332859689e-05.
+Steps: 1000
+Beginning distance 0.10808080808080808.
+Total steps: 1000
+distance: 0.10808080808080808 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10808080808080808 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.10808080808080808 | 1.9889065597189395 time = 0.3165443103271652 years | 2002 particles | 1 step number |
+| 94.3 second | 1.6 minutes | 0.0 hours.
+
+simAU distance: 0.10808080808080808 | 3.977813119437879 time = 0.6330886206543304 years | 2000 particles | 2 step number |
+| 185.0 second | 3.1 minutes | 0.1 hours.
+
+simAU distance: 0.10808080808080808 | 5.966719679156818 time = 0.9496329309814955 years | 1999 particles | 3 step number |
+| 272.6 second | 4.5 minutes | 0.1 hours.
+
+simAU distance: 0.10808080808080808 | 7.955626238875758 time = 1.2661772413086607 years | 1998 particles | 4 step number |
+| 364.1 second | 6.1 minutes | 0.1 hours.
+
+TIME:9.707549958597406
+########################################
+
+
+The planets collided!Time: 9.707549958597406
+
+
+########################################
+simAU distance: 0.10808080808080808 | 9.944532798594697 time = 1.5827215516358257 years | 1996 particles | 5 step number |
+| 452.4 second | 7.5 minutes | 0.1 hours.
+
+Done at 452 seconds!
+Distance (done): 0.10808080808080808 | 9.944532798594697 time = 1.5827215516358257 years | 1996 particles | 1000 step number |
+| 452.7 second | 7.5 minutes | 0.1 hours.
+
+Masses 6.056400000000001e-05 and 0.0.
+Ending distance 0.10808080808080808.
+
+Distance 0.10808080808080808 in total took 453 seconds (7.55 minutes, 0.13 hours).
+Wed Sep  1 03:01:24 EDT 2021
