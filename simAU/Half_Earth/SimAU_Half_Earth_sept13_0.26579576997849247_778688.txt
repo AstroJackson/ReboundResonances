@@ -1,0 +1,8 @@
+Email sent successfully!
+Traceback (most recent call last):
+  File "massListSorter.py", line 52, in <module>
+    massListSorter(sys.argv[2])
+  File "massListSorter.py", line 11, in massListSorter
+    splitted[-1] = float(splitted[-1])
+IndexError: list index out of range
+Sat Oct 23 06:11:05 EDT 2021

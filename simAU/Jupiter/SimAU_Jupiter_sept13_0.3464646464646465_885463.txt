@@ -1,0 +1,3022 @@
+Email sent successfully!
+119 0.3464646464646465
+Starting mass: 0.001. Starting Radius: 0.00029814534797077306.
+Steps: 1000
+Beginning distance 0.3464646464646465.
+Total steps: 1000
+distance: 0.3464646464646465 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.3464646464646465 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.3464646464646465 | 1.9889065597189395 time = 0.3165443103271652 years | 1982 particles | 1 step number |
+| 171.3 second | 2.9 minutes | 0.0 hours.
+
+simAU distance: 0.3464646464646465 | 3.977813119437879 time = 0.6330886206543304 years | 1964 particles | 2 step number |
+| 339.4 second | 5.7 minutes | 0.1 hours.
+
+simAU distance: 0.3464646464646465 | 5.966719679156818 time = 0.9496329309814955 years | 1948 particles | 3 step number |
+| 490.7 second | 8.2 minutes | 0.1 hours.
+
+simAU distance: 0.3464646464646465 | 7.955626238875758 time = 1.2661772413086607 years | 1939 particles | 4 step number |
+| 614.5 second | 10.2 minutes | 0.2 hours.
+
+simAU distance: 0.3464646464646465 | 9.944532798594697 time = 1.5827215516358257 years | 1926 particles | 5 step number |
+| 754.5 second | 12.6 minutes | 0.2 hours.
+
+simAU distance: 0.3464646464646465 | 11.933439358313636 time = 1.899265861962991 years | 1916 particles | 6 step number |
+| 895.8 second | 14.9 minutes | 0.2 hours.
+
+simAU distance: 0.3464646464646465 | 13.922345918032576 time = 2.215810172290156 years | 1905 particles | 7 step number |
+| 1014.5 second | 16.9 minutes | 0.3 hours.
+
+simAU distance: 0.3464646464646465 | 15.911252477751516 time = 2.5323544826173214 years | 1899 particles | 8 step number |
+| 1138.4 second | 19.0 minutes | 0.3 hours.
+
+simAU distance: 0.3464646464646465 | 17.900159037470456 time = 2.8488987929444867 years | 1894 particles | 9 step number |
+| 1253.9 second | 20.9 minutes | 0.3 hours.
+
+simAU distance: 0.3464646464646465 | 19.889065597189393 time = 3.1654431032716515 years | 1878 particles | 10 step number |
+| 1374.6 second | 22.9 minutes | 0.4 hours.
+
+simAU distance: 0.3464646464646465 | 21.877972156908335 time = 3.4819874135988167 years | 1872 particles | 11 step number |
+| 1490.8 second | 24.8 minutes | 0.4 hours.
+
+simAU distance: 0.3464646464646465 | 23.866878716627273 time = 3.798531723925982 years | 1870 particles | 12 step number |
+| 1599.4 second | 26.7 minutes | 0.4 hours.
+
+simAU distance: 0.3464646464646465 | 25.855785276346214 time = 4.115076034253147 years | 1866 particles | 13 step number |
+| 1706.8 second | 28.4 minutes | 0.5 hours.
+
+simAU distance: 0.3464646464646465 | 27.844691836065152 time = 4.431620344580312 years | 1862 particles | 14 step number |
+| 1814.1 second | 30.2 minutes | 0.5 hours.
+
+simAU distance: 0.3464646464646465 | 29.833598395784094 time = 4.748164654907478 years | 1859 particles | 15 step number |
+| 1917.8 second | 32.0 minutes | 0.5 hours.
+
+simAU distance: 0.3464646464646465 | 31.82250495550303 time = 5.064708965234643 years | 1842 particles | 16 step number |
+| 2057.2 second | 34.3 minutes | 0.6 hours.
+
+simAU distance: 0.3464646464646465 | 33.81141151522197 time = 5.381253275561807 years | 1824 particles | 17 step number |
+| 2210.3 second | 36.8 minutes | 0.6 hours.
+
+simAU distance: 0.3464646464646465 | 35.80031807494091 time = 5.697797585888973 years | 1808 particles | 18 step number |
+| 2360.1 second | 39.3 minutes | 0.7 hours.
+
+simAU distance: 0.3464646464646465 | 37.78922463465985 time = 6.014341896216139 years | 1800 particles | 19 step number |
+| 2503.0 second | 41.7 minutes | 0.7 hours.
+
+simAU distance: 0.3464646464646465 | 39.77813119437879 time = 6.330886206543303 years | 1788 particles | 20 step number |
+| 2679.7 second | 44.7 minutes | 0.7 hours.
+
+simAU distance: 0.3464646464646465 | 41.76703775409773 time = 6.647430516870468 years | 1776 particles | 21 step number |
+| 2855.8 second | 47.6 minutes | 0.8 hours.
+
+simAU distance: 0.3464646464646465 | 43.75594431381667 time = 6.963974827197633 years | 1773 particles | 22 step number |
+| 3029.0 second | 50.5 minutes | 0.8 hours.
+
+simAU distance: 0.3464646464646465 | 45.74485087353561 time = 7.2805191375247995 years | 1764 particles | 23 step number |
+| 3215.2 second | 53.6 minutes | 0.9 hours.
+
+simAU distance: 0.3464646464646465 | 47.733757433254546 time = 7.597063447851964 years | 1756 particles | 24 step number |
+| 3406.3 second | 56.8 minutes | 0.9 hours.
+
+simAU distance: 0.3464646464646465 | 49.72266399297349 time = 7.913607758179129 years | 1748 particles | 25 step number |
+| 3615.3 second | 60.3 minutes | 1.0 hours.
+
+simAU distance: 0.3464646464646465 | 51.71157055269243 time = 8.230152068506294 years | 1741 particles | 26 step number |
+| 3829.3 second | 63.8 minutes | 1.1 hours.
+
+simAU distance: 0.3464646464646465 | 53.70047711241136 time = 8.54669637883346 years | 1736 particles | 27 step number |
+| 4029.9 second | 67.2 minutes | 1.1 hours.
+
+simAU distance: 0.3464646464646465 | 55.689383672130305 time = 8.863240689160625 years | 1729 particles | 28 step number |
+| 4237.7 second | 70.6 minutes | 1.2 hours.
+
+simAU distance: 0.3464646464646465 | 57.678290231849246 time = 9.17978499948779 years | 1723 particles | 29 step number |
+| 4425.9 second | 73.8 minutes | 1.2 hours.
+
+simAU distance: 0.3464646464646465 | 59.66719679156819 time = 9.496329309814955 years | 1722 particles | 30 step number |
+| 4614.0 second | 76.9 minutes | 1.3 hours.
+
+simAU distance: 0.3464646464646465 | 61.65610335128712 time = 9.812873620142119 years | 1719 particles | 31 step number |
+| 4827.4 second | 80.5 minutes | 1.3 hours.
+
+simAU distance: 0.3464646464646465 | 63.64500991100606 time = 10.129417930469286 years | 1716 particles | 32 step number |
+| 5010.7 second | 83.5 minutes | 1.4 hours.
+
+simAU distance: 0.3464646464646465 | 65.633916470725 time = 10.44596224079645 years | 1715 particles | 33 step number |
+| 5187.5 second | 86.5 minutes | 1.4 hours.
+
+simAU distance: 0.3464646464646465 | 67.62282303044394 time = 10.762506551123614 years | 1709 particles | 34 step number |
+| 5389.9 second | 89.8 minutes | 1.5 hours.
+
+simAU distance: 0.3464646464646465 | 69.61172959016288 time = 11.07905086145078 years | 1706 particles | 35 step number |
+| 5584.7 second | 93.1 minutes | 1.6 hours.
+
+simAU distance: 0.3464646464646465 | 71.60063614988182 time = 11.395595171777947 years | 1705 particles | 36 step number |
+| 5794.4 second | 96.6 minutes | 1.6 hours.
+
+simAU distance: 0.3464646464646465 | 73.58954270960076 time = 11.712139482105112 years | 1697 particles | 37 step number |
+| 6024.6 second | 100.4 minutes | 1.7 hours.
+
+simAU distance: 0.3464646464646465 | 75.5784492693197 time = 12.028683792432277 years | 1692 particles | 38 step number |
+| 6230.8 second | 103.8 minutes | 1.7 hours.
+
+simAU distance: 0.3464646464646465 | 77.56735582903865 time = 12.345228102759442 years | 1690 particles | 39 step number |
+| 6454.7 second | 107.6 minutes | 1.8 hours.
+
+simAU distance: 0.3464646464646465 | 79.55626238875757 time = 12.661772413086606 years | 1688 particles | 40 step number |
+| 6676.6 second | 111.3 minutes | 1.9 hours.
+
+simAU distance: 0.3464646464646465 | 81.54516894847652 time = 12.978316723413771 years | 1686 particles | 41 step number |
+| 6895.3 second | 114.9 minutes | 1.9 hours.
+
+simAU distance: 0.3464646464646465 | 83.53407550819546 time = 13.294861033740936 years | 1680 particles | 42 step number |
+| 7112.7 second | 118.5 minutes | 2.0 hours.
+
+simAU distance: 0.3464646464646465 | 85.5229820679144 time = 13.611405344068102 years | 1676 particles | 43 step number |
+| 7351.0 second | 122.5 minutes | 2.0 hours.
+
+simAU distance: 0.3464646464646465 | 87.51188862763334 time = 13.927949654395267 years | 1672 particles | 44 step number |
+| 7537.2 second | 125.6 minutes | 2.1 hours.
+
+simAU distance: 0.3464646464646465 | 89.50079518735228 time = 14.244493964722432 years | 1668 particles | 45 step number |
+| 7708.6 second | 128.5 minutes | 2.1 hours.
+
+simAU distance: 0.3464646464646465 | 91.48970174707122 time = 14.561038275049599 years | 1662 particles | 46 step number |
+| 7862.1 second | 131.0 minutes | 2.2 hours.
+
+simAU distance: 0.3464646464646465 | 93.47860830679015 time = 14.87758258537676 years | 1660 particles | 47 step number |
+| 8015.4 second | 133.6 minutes | 2.2 hours.
+
+simAU distance: 0.3464646464646465 | 95.46751486650909 time = 15.194126895703928 years | 1657 particles | 48 step number |
+| 8170.6 second | 136.2 minutes | 2.3 hours.
+
+simAU distance: 0.3464646464646465 | 97.45642142622803 time = 15.510671206031093 years | 1656 particles | 49 step number |
+| 8341.8 second | 139.0 minutes | 2.3 hours.
+
+simAU distance: 0.3464646464646465 | 99.44532798594697 time = 15.827215516358258 years | 1655 particles | 50 step number |
+| 8505.0 second | 141.8 minutes | 2.4 hours.
+
+simAU distance: 0.3464646464646465 | 101.43423454566592 time = 16.143759826685425 years | 1651 particles | 51 step number |
+| 8669.9 second | 144.5 minutes | 2.4 hours.
+
+simAU distance: 0.3464646464646465 | 103.42314110538486 time = 16.46030413701259 years | 1647 particles | 52 step number |
+| 8816.3 second | 146.9 minutes | 2.4 hours.
+
+simAU distance: 0.3464646464646465 | 105.4120476651038 time = 16.776848447339756 years | 1645 particles | 53 step number |
+| 8956.1 second | 149.3 minutes | 2.5 hours.
+
+simAU distance: 0.3464646464646465 | 107.40095422482273 time = 17.09339275766692 years | 1644 particles | 54 step number |
+| 9119.3 second | 152.0 minutes | 2.5 hours.
+
+simAU distance: 0.3464646464646465 | 109.38986078454167 time = 17.409937067994083 years | 1640 particles | 55 step number |
+| 9290.2 second | 154.8 minutes | 2.6 hours.
+
+simAU distance: 0.3464646464646465 | 111.37876734426061 time = 17.72648137832125 years | 1638 particles | 56 step number |
+| 9509.4 second | 158.5 minutes | 2.6 hours.
+
+simAU distance: 0.3464646464646465 | 113.36767390397955 time = 18.043025688648413 years | 1635 particles | 57 step number |
+| 9733.1 second | 162.2 minutes | 2.7 hours.
+
+simAU distance: 0.3464646464646465 | 115.35658046369849 time = 18.35956999897558 years | 1633 particles | 58 step number |
+| 9926.8 second | 165.4 minutes | 2.8 hours.
+
+simAU distance: 0.3464646464646465 | 117.34548702341743 time = 18.676114309302744 years | 1633 particles | 59 step number |
+| 10107.4 second | 168.5 minutes | 2.8 hours.
+
+simAU distance: 0.3464646464646465 | 119.33439358313638 time = 18.99265861962991 years | 1628 particles | 60 step number |
+| 10295.8 second | 171.6 minutes | 2.9 hours.
+
+simAU distance: 0.3464646464646465 | 121.3233001428553 time = 19.309202929957074 years | 1627 particles | 61 step number |
+| 10468.7 second | 174.5 minutes | 2.9 hours.
+
+simAU distance: 0.3464646464646465 | 123.31220670257424 time = 19.625747240284237 years | 1625 particles | 62 step number |
+| 10620.6 second | 177.0 minutes | 3.0 hours.
+
+simAU distance: 0.3464646464646465 | 125.30111326229319 time = 19.942291550611404 years | 1619 particles | 63 step number |
+| 10789.0 second | 179.8 minutes | 3.0 hours.
+
+simAU distance: 0.3464646464646465 | 127.29001982201213 time = 20.25883586093857 years | 1618 particles | 64 step number |
+| 10955.5 second | 182.6 minutes | 3.0 hours.
+
+simAU distance: 0.3464646464646465 | 129.27892638173105 time = 20.575380171265735 years | 1617 particles | 65 step number |
+| 11127.8 second | 185.5 minutes | 3.1 hours.
+
+simAU distance: 0.3464646464646465 | 131.26783294145 time = 20.8919244815929 years | 1614 particles | 66 step number |
+| 11270.2 second | 187.8 minutes | 3.1 hours.
+
+simAU distance: 0.3464646464646465 | 133.25673950116894 time = 21.208468791920065 years | 1612 particles | 67 step number |
+| 11434.4 second | 190.6 minutes | 3.2 hours.
+
+simAU distance: 0.3464646464646465 | 135.24564606088788 time = 21.52501310224723 years | 1607 particles | 68 step number |
+| 11604.8 second | 193.4 minutes | 3.2 hours.
+
+simAU distance: 0.3464646464646465 | 137.23455262060682 time = 21.841557412574396 years | 1606 particles | 69 step number |
+| 11757.2 second | 196.0 minutes | 3.3 hours.
+
+simAU distance: 0.3464646464646465 | 139.22345918032576 time = 22.15810172290156 years | 1605 particles | 70 step number |
+| 11920.6 second | 198.7 minutes | 3.3 hours.
+
+simAU distance: 0.3464646464646465 | 141.2123657400447 time = 22.474646033228726 years | 1602 particles | 71 step number |
+| 12083.6 second | 201.4 minutes | 3.4 hours.
+
+simAU distance: 0.3464646464646465 | 143.20127229976364 time = 22.791190343555893 years | 1601 particles | 72 step number |
+| 12243.3 second | 204.1 minutes | 3.4 hours.
+
+simAU distance: 0.3464646464646465 | 145.1901788594826 time = 23.107734653883057 years | 1595 particles | 73 step number |
+| 12402.3 second | 206.7 minutes | 3.4 hours.
+
+simAU distance: 0.3464646464646465 | 147.17908541920153 time = 23.424278964210224 years | 1594 particles | 74 step number |
+| 12553.2 second | 209.2 minutes | 3.5 hours.
+
+simAU distance: 0.3464646464646465 | 149.16799197892047 time = 23.740823274537387 years | 1592 particles | 75 step number |
+| 12700.3 second | 211.7 minutes | 3.5 hours.
+
+simAU distance: 0.3464646464646465 | 151.1568985386394 time = 24.057367584864554 years | 1591 particles | 76 step number |
+| 12858.4 second | 214.3 minutes | 3.6 hours.
+
+simAU distance: 0.3464646464646465 | 153.14580509835835 time = 24.373911895191718 years | 1589 particles | 77 step number |
+| 13013.9 second | 216.9 minutes | 3.6 hours.
+
+simAU distance: 0.3464646464646465 | 155.1347116580773 time = 24.690456205518885 years | 1585 particles | 78 step number |
+| 13163.6 second | 219.4 minutes | 3.7 hours.
+
+simAU distance: 0.3464646464646465 | 157.1236182177962 time = 25.007000515846045 years | 1583 particles | 79 step number |
+| 13316.7 second | 221.9 minutes | 3.7 hours.
+
+simAU distance: 0.3464646464646465 | 159.11252477751515 time = 25.32354482617321 years | 1582 particles | 80 step number |
+| 13486.8 second | 224.8 minutes | 3.7 hours.
+
+simAU distance: 0.3464646464646465 | 161.1014313372341 time = 25.640089136500375 years | 1581 particles | 81 step number |
+| 13655.4 second | 227.6 minutes | 3.8 hours.
+
+simAU distance: 0.3464646464646465 | 163.09033789695303 time = 25.956633446827542 years | 1577 particles | 82 step number |
+| 13830.5 second | 230.5 minutes | 3.8 hours.
+
+simAU distance: 0.3464646464646465 | 165.07924445667197 time = 26.273177757154706 years | 1572 particles | 83 step number |
+| 14011.9 second | 233.5 minutes | 3.9 hours.
+
+simAU distance: 0.3464646464646465 | 167.0681510163909 time = 26.589722067481873 years | 1572 particles | 84 step number |
+| 14209.5 second | 236.8 minutes | 3.9 hours.
+
+simAU distance: 0.3464646464646465 | 169.05705757610986 time = 26.90626637780904 years | 1571 particles | 85 step number |
+| 14358.8 second | 239.3 minutes | 4.0 hours.
+
+simAU distance: 0.3464646464646465 | 171.0459641358288 time = 27.222810688136203 years | 1569 particles | 86 step number |
+| 14506.7 second | 241.8 minutes | 4.0 hours.
+
+simAU distance: 0.3464646464646465 | 173.03487069554774 time = 27.53935499846337 years | 1565 particles | 87 step number |
+| 14657.8 second | 244.3 minutes | 4.1 hours.
+
+simAU distance: 0.3464646464646465 | 175.02377725526668 time = 27.855899308790534 years | 1562 particles | 88 step number |
+| 14813.0 second | 246.9 minutes | 4.1 hours.
+
+simAU distance: 0.3464646464646465 | 177.01268381498562 time = 28.1724436191177 years | 1559 particles | 89 step number |
+| 14969.9 second | 249.5 minutes | 4.2 hours.
+
+simAU distance: 0.3464646464646465 | 179.00159037470456 time = 28.488987929444864 years | 1556 particles | 90 step number |
+| 15121.1 second | 252.0 minutes | 4.2 hours.
+
+simAU distance: 0.3464646464646465 | 180.9904969344235 time = 28.80553223977203 years | 1554 particles | 91 step number |
+| 15271.5 second | 254.5 minutes | 4.2 hours.
+
+simAU distance: 0.3464646464646465 | 182.97940349414245 time = 29.122076550099198 years | 1552 particles | 92 step number |
+| 15426.3 second | 257.1 minutes | 4.3 hours.
+
+simAU distance: 0.3464646464646465 | 184.96831005386136 time = 29.438620860426358 years | 1550 particles | 93 step number |
+| 15575.7 second | 259.6 minutes | 4.3 hours.
+
+simAU distance: 0.3464646464646465 | 186.9572166135803 time = 29.75516517075352 years | 1547 particles | 94 step number |
+| 15721.9 second | 262.0 minutes | 4.4 hours.
+
+simAU distance: 0.3464646464646465 | 188.94612317329924 time = 30.07170948108069 years | 1545 particles | 95 step number |
+| 15867.7 second | 264.5 minutes | 4.4 hours.
+
+simAU distance: 0.3464646464646465 | 190.93502973301818 time = 30.388253791407855 years | 1542 particles | 96 step number |
+| 16017.7 second | 267.0 minutes | 4.4 hours.
+
+simAU distance: 0.3464646464646465 | 192.92393629273712 time = 30.70479810173502 years | 1537 particles | 97 step number |
+| 16183.4 second | 269.7 minutes | 4.5 hours.
+
+simAU distance: 0.3464646464646465 | 194.91284285245607 time = 31.021342412062186 years | 1535 particles | 98 step number |
+| 16343.2 second | 272.4 minutes | 4.5 hours.
+
+simAU distance: 0.3464646464646465 | 196.901749412175 time = 31.33788672238935 years | 1529 particles | 99 step number |
+| 16493.6 second | 274.9 minutes | 4.6 hours.
+
+simAU distance: 0.3464646464646465 | 198.89065597189395 time = 31.654431032716516 years | 1525 particles | 100 step number |
+| 16640.9 second | 277.3 minutes | 4.6 hours.
+
+simAU distance: 0.3464646464646465 | 200.8795625316129 time = 31.97097534304368 years | 1524 particles | 101 step number |
+| 16776.8 second | 279.6 minutes | 4.7 hours.
+
+simAU distance: 0.3464646464646465 | 202.86846909133183 time = 32.28751965337085 years | 1521 particles | 102 step number |
+| 16907.5 second | 281.8 minutes | 4.7 hours.
+
+simAU distance: 0.3464646464646465 | 204.85737565105077 time = 32.60406396369801 years | 1518 particles | 103 step number |
+| 17050.9 second | 284.2 minutes | 4.7 hours.
+
+simAU distance: 0.3464646464646465 | 206.84628221076971 time = 32.92060827402518 years | 1517 particles | 104 step number |
+| 17190.0 second | 286.5 minutes | 4.8 hours.
+
+simAU distance: 0.3464646464646465 | 208.83518877048866 time = 33.237152584352344 years | 1515 particles | 105 step number |
+| 17312.6 second | 288.5 minutes | 4.8 hours.
+
+simAU distance: 0.3464646464646465 | 210.8240953302076 time = 33.55369689467951 years | 1514 particles | 106 step number |
+| 17433.9 second | 290.6 minutes | 4.8 hours.
+
+simAU distance: 0.3464646464646465 | 212.8130018899265 time = 33.87024120500667 years | 1513 particles | 107 step number |
+| 17550.8 second | 292.5 minutes | 4.9 hours.
+
+simAU distance: 0.3464646464646465 | 214.80190844964545 time = 34.18678551533384 years | 1512 particles | 108 step number |
+| 17669.3 second | 294.5 minutes | 4.9 hours.
+
+simAU distance: 0.3464646464646465 | 216.7908150093644 time = 34.503329825661 years | 1511 particles | 109 step number |
+| 17778.4 second | 296.3 minutes | 4.9 hours.
+
+simAU distance: 0.3464646464646465 | 218.77972156908334 time = 34.819874135988165 years | 1509 particles | 110 step number |
+| 17893.2 second | 298.2 minutes | 5.0 hours.
+
+simAU distance: 0.3464646464646465 | 220.76862812880228 time = 35.13641844631533 years | 1507 particles | 111 step number |
+| 18001.4 second | 300.0 minutes | 5.0 hours.
+
+simAU distance: 0.3464646464646465 | 222.75753468852122 time = 35.4529627566425 years | 1504 particles | 112 step number |
+| 18105.1 second | 301.8 minutes | 5.0 hours.
+
+simAU distance: 0.3464646464646465 | 224.74644124824016 time = 35.76950706696966 years | 1504 particles | 113 step number |
+| 18213.6 second | 303.6 minutes | 5.1 hours.
+
+simAU distance: 0.3464646464646465 | 226.7353478079591 time = 36.086051377296826 years | 1504 particles | 114 step number |
+| 18328.6 second | 305.5 minutes | 5.1 hours.
+
+simAU distance: 0.3464646464646465 | 228.72425436767804 time = 36.40259568762399 years | 1504 particles | 115 step number |
+| 18441.1 second | 307.4 minutes | 5.1 hours.
+
+simAU distance: 0.3464646464646465 | 230.71316092739698 time = 36.71913999795116 years | 1503 particles | 116 step number |
+| 18566.7 second | 309.4 minutes | 5.2 hours.
+
+simAU distance: 0.3464646464646465 | 232.70206748711593 time = 37.03568430827833 years | 1502 particles | 117 step number |
+| 18698.1 second | 311.6 minutes | 5.2 hours.
+
+simAU distance: 0.3464646464646465 | 234.69097404683487 time = 37.35222861860549 years | 1501 particles | 118 step number |
+| 18832.6 second | 313.9 minutes | 5.2 hours.
+
+simAU distance: 0.3464646464646465 | 236.6798806065538 time = 37.668772928932654 years | 1498 particles | 119 step number |
+| 18971.0 second | 316.2 minutes | 5.3 hours.
+
+simAU distance: 0.3464646464646465 | 238.66878716627275 time = 37.98531723925982 years | 1496 particles | 120 step number |
+| 19121.2 second | 318.7 minutes | 5.3 hours.
+
+simAU distance: 0.3464646464646465 | 240.65769372599166 time = 38.30186154958698 years | 1495 particles | 121 step number |
+| 19287.3 second | 321.5 minutes | 5.4 hours.
+
+simAU distance: 0.3464646464646465 | 242.6466002857106 time = 38.61840585991415 years | 1493 particles | 122 step number |
+| 19461.2 second | 324.4 minutes | 5.4 hours.
+
+simAU distance: 0.3464646464646465 | 244.63550684542955 time = 38.934950170241315 years | 1488 particles | 123 step number |
+| 19651.8 second | 327.5 minutes | 5.5 hours.
+
+simAU distance: 0.3464646464646465 | 246.6244134051485 time = 39.251494480568475 years | 1486 particles | 124 step number |
+| 19847.1 second | 330.8 minutes | 5.5 hours.
+
+simAU distance: 0.3464646464646465 | 248.61331996486743 time = 39.56803879089564 years | 1484 particles | 125 step number |
+| 20045.0 second | 334.1 minutes | 5.6 hours.
+
+simAU distance: 0.3464646464646465 | 250.60222652458637 time = 39.88458310122281 years | 1483 particles | 126 step number |
+| 20247.4 second | 337.5 minutes | 5.6 hours.
+
+simAU distance: 0.3464646464646465 | 252.5911330843053 time = 40.201127411549976 years | 1479 particles | 127 step number |
+| 20461.6 second | 341.0 minutes | 5.7 hours.
+
+simAU distance: 0.3464646464646465 | 254.58003964402425 time = 40.51767172187714 years | 1478 particles | 128 step number |
+| 20691.8 second | 344.9 minutes | 5.7 hours.
+
+simAU distance: 0.3464646464646465 | 256.56894620374317 time = 40.8342160322043 years | 1477 particles | 129 step number |
+| 20936.4 second | 348.9 minutes | 5.8 hours.
+
+simAU distance: 0.3464646464646465 | 258.5578527634621 time = 41.15076034253147 years | 1477 particles | 130 step number |
+| 21196.6 second | 353.3 minutes | 5.9 hours.
+
+simAU distance: 0.3464646464646465 | 260.54675932318105 time = 41.46730465285863 years | 1477 particles | 131 step number |
+| 21471.3 second | 357.9 minutes | 6.0 hours.
+
+simAU distance: 0.3464646464646465 | 262.5356658829 time = 41.7838489631858 years | 1476 particles | 132 step number |
+| 21759.7 second | 362.7 minutes | 6.0 hours.
+
+simAU distance: 0.3464646464646465 | 264.52457244261893 time = 42.100393273512964 years | 1473 particles | 133 step number |
+| 22069.2 second | 367.8 minutes | 6.1 hours.
+
+simAU distance: 0.3464646464646465 | 266.5134790023379 time = 42.41693758384013 years | 1472 particles | 134 step number |
+| 22370.5 second | 372.8 minutes | 6.2 hours.
+
+simAU distance: 0.3464646464646465 | 268.5023855620568 time = 42.73348189416729 years | 1472 particles | 135 step number |
+| 22685.8 second | 378.1 minutes | 6.3 hours.
+
+simAU distance: 0.3464646464646465 | 270.49129212177576 time = 43.05002620449446 years | 1471 particles | 136 step number |
+| 22999.8 second | 383.3 minutes | 6.4 hours.
+
+simAU distance: 0.3464646464646465 | 272.4801986814947 time = 43.366570514821625 years | 1467 particles | 137 step number |
+| 23297.9 second | 388.3 minutes | 6.5 hours.
+
+simAU distance: 0.3464646464646465 | 274.46910524121364 time = 43.68311482514879 years | 1462 particles | 138 step number |
+| 23497.6 second | 391.6 minutes | 6.5 hours.
+
+simAU distance: 0.3464646464646465 | 276.4580118009326 time = 43.99965913547596 years | 1462 particles | 139 step number |
+| 23707.9 second | 395.1 minutes | 6.6 hours.
+
+simAU distance: 0.3464646464646465 | 278.4469183606515 time = 44.31620344580312 years | 1461 particles | 140 step number |
+| 23918.1 second | 398.6 minutes | 6.6 hours.
+
+simAU distance: 0.3464646464646465 | 280.43582492037046 time = 44.632747756130286 years | 1461 particles | 141 step number |
+| 24130.5 second | 402.2 minutes | 6.7 hours.
+
+simAU distance: 0.3464646464646465 | 282.4247314800894 time = 44.94929206645745 years | 1461 particles | 142 step number |
+| 24344.2 second | 405.7 minutes | 6.8 hours.
+
+simAU distance: 0.3464646464646465 | 284.41363803980835 time = 45.26583637678462 years | 1461 particles | 143 step number |
+| 24560.3 second | 409.3 minutes | 6.8 hours.
+
+simAU distance: 0.3464646464646465 | 286.4025445995273 time = 45.58238068711179 years | 1461 particles | 144 step number |
+| 24781.6 second | 413.0 minutes | 6.9 hours.
+
+simAU distance: 0.3464646464646465 | 288.39145115924623 time = 45.89892499743895 years | 1461 particles | 145 step number |
+| 25011.0 second | 416.8 minutes | 6.9 hours.
+
+simAU distance: 0.3464646464646465 | 290.3803577189652 time = 46.215469307766114 years | 1459 particles | 146 step number |
+| 25244.4 second | 420.7 minutes | 7.0 hours.
+
+simAU distance: 0.3464646464646465 | 292.3692642786841 time = 46.53201361809328 years | 1458 particles | 147 step number |
+| 25487.3 second | 424.8 minutes | 7.1 hours.
+
+simAU distance: 0.3464646464646465 | 294.35817083840305 time = 46.84855792842045 years | 1458 particles | 148 step number |
+| 25743.4 second | 429.1 minutes | 7.2 hours.
+
+simAU distance: 0.3464646464646465 | 296.347077398122 time = 47.16510223874761 years | 1458 particles | 149 step number |
+| 26013.1 second | 433.6 minutes | 7.2 hours.
+
+simAU distance: 0.3464646464646465 | 298.33598395784094 time = 47.481646549074775 years | 1457 particles | 150 step number |
+| 26283.1 second | 438.1 minutes | 7.3 hours.
+
+simAU distance: 0.3464646464646465 | 300.3248905175599 time = 47.79819085940194 years | 1456 particles | 151 step number |
+| 26550.0 second | 442.5 minutes | 7.4 hours.
+
+simAU distance: 0.3464646464646465 | 302.3137970772788 time = 48.11473516972911 years | 1455 particles | 152 step number |
+| 26829.1 second | 447.2 minutes | 7.5 hours.
+
+simAU distance: 0.3464646464646465 | 304.30270363699776 time = 48.431279480056276 years | 1454 particles | 153 step number |
+| 27104.1 second | 451.7 minutes | 7.5 hours.
+
+simAU distance: 0.3464646464646465 | 306.2916101967167 time = 48.747823790383435 years | 1453 particles | 154 step number |
+| 27391.9 second | 456.5 minutes | 7.6 hours.
+
+simAU distance: 0.3464646464646465 | 308.28051675643565 time = 49.0643681007106 years | 1451 particles | 155 step number |
+| 27676.8 second | 461.3 minutes | 7.7 hours.
+
+simAU distance: 0.3464646464646465 | 310.2694233161546 time = 49.38091241103777 years | 1447 particles | 156 step number |
+| 27986.5 second | 466.4 minutes | 7.8 hours.
+
+simAU distance: 0.3464646464646465 | 312.25832987587347 time = 49.69745672136492 years | 1445 particles | 157 step number |
+| 28313.5 second | 471.9 minutes | 7.9 hours.
+
+simAU distance: 0.3464646464646465 | 314.2472364355924 time = 50.01400103169209 years | 1445 particles | 158 step number |
+| 28678.9 second | 478.0 minutes | 8.0 hours.
+
+simAU distance: 0.3464646464646465 | 316.23614299531135 time = 50.330545342019256 years | 1445 particles | 159 step number |
+| 29015.1 second | 483.6 minutes | 8.1 hours.
+
+simAU distance: 0.3464646464646465 | 318.2250495550303 time = 50.64708965234642 years | 1445 particles | 160 step number |
+| 29371.5 second | 489.5 minutes | 8.2 hours.
+
+simAU distance: 0.3464646464646465 | 320.21395611474924 time = 50.96363396267359 years | 1445 particles | 161 step number |
+| 29735.4 second | 495.6 minutes | 8.3 hours.
+
+simAU distance: 0.3464646464646465 | 322.2028626744682 time = 51.28017827300075 years | 1443 particles | 162 step number |
+| 30145.6 second | 502.4 minutes | 8.4 hours.
+
+simAU distance: 0.3464646464646465 | 324.1917692341871 time = 51.59672258332792 years | 1443 particles | 163 step number |
+| 30570.7 second | 509.5 minutes | 8.5 hours.
+
+simAU distance: 0.3464646464646465 | 326.18067579390606 time = 51.913266893655084 years | 1441 particles | 164 step number |
+| 31019.6 second | 517.0 minutes | 8.6 hours.
+
+simAU distance: 0.3464646464646465 | 328.169582353625 time = 52.22981120398225 years | 1441 particles | 165 step number |
+| 31448.2 second | 524.1 minutes | 8.7 hours.
+
+simAU distance: 0.3464646464646465 | 330.15848891334394 time = 52.54635551430941 years | 1440 particles | 166 step number |
+| 31877.9 second | 531.3 minutes | 8.9 hours.
+
+simAU distance: 0.3464646464646465 | 332.1473954730629 time = 52.86289982463658 years | 1439 particles | 167 step number |
+| 32342.9 second | 539.0 minutes | 9.0 hours.
+
+simAU distance: 0.3464646464646465 | 334.1363020327818 time = 53.179444134963745 years | 1439 particles | 168 step number |
+| 32801.6 second | 546.7 minutes | 9.1 hours.
+
+simAU distance: 0.3464646464646465 | 336.12520859250077 time = 53.49598844529091 years | 1438 particles | 169 step number |
+| 33266.9 second | 554.4 minutes | 9.2 hours.
+
+simAU distance: 0.3464646464646465 | 338.1141151522197 time = 53.81253275561808 years | 1437 particles | 170 step number |
+| 33754.6 second | 562.6 minutes | 9.4 hours.
+
+simAU distance: 0.3464646464646465 | 340.10302171193865 time = 54.12907706594524 years | 1437 particles | 171 step number |
+| 34237.1 second | 570.6 minutes | 9.5 hours.
+
+simAU distance: 0.3464646464646465 | 342.0919282716576 time = 54.445621376272406 years | 1437 particles | 172 step number |
+| 34702.3 second | 578.4 minutes | 9.6 hours.
+
+simAU distance: 0.3464646464646465 | 344.08083483137654 time = 54.76216568659957 years | 1436 particles | 173 step number |
+| 35237.2 second | 587.3 minutes | 9.8 hours.
+
+simAU distance: 0.3464646464646465 | 346.0697413910955 time = 55.07870999692674 years | 1432 particles | 174 step number |
+| 35865.3 second | 597.8 minutes | 10.0 hours.
+
+simAU distance: 0.3464646464646465 | 348.0586479508144 time = 55.39525430725391 years | 1432 particles | 175 step number |
+| 36511.2 second | 608.5 minutes | 10.1 hours.
+
+simAU distance: 0.3464646464646465 | 350.04755451053336 time = 55.71179861758107 years | 1429 particles | 176 step number |
+| 37019.6 second | 617.0 minutes | 10.3 hours.
+
+simAU distance: 0.3464646464646465 | 352.0364610702523 time = 56.028342927908234 years | 1428 particles | 177 step number |
+| 37427.6 second | 623.8 minutes | 10.4 hours.
+
+simAU distance: 0.3464646464646465 | 354.02536762997124 time = 56.3448872382354 years | 1424 particles | 178 step number |
+| 37727.9 second | 628.8 minutes | 10.5 hours.
+
+simAU distance: 0.3464646464646465 | 356.0142741896902 time = 56.66143154856257 years | 1422 particles | 179 step number |
+| 37935.6 second | 632.3 minutes | 10.5 hours.
+
+simAU distance: 0.3464646464646465 | 358.0031807494091 time = 56.97797585888973 years | 1422 particles | 180 step number |
+| 38105.2 second | 635.1 minutes | 10.6 hours.
+
+simAU distance: 0.3464646464646465 | 359.99208730912807 time = 57.294520169216895 years | 1421 particles | 181 step number |
+| 38271.9 second | 637.9 minutes | 10.6 hours.
+
+simAU distance: 0.3464646464646465 | 361.980993868847 time = 57.61106447954406 years | 1420 particles | 182 step number |
+| 38432.4 second | 640.5 minutes | 10.7 hours.
+
+simAU distance: 0.3464646464646465 | 363.96990042856595 time = 57.92760878987123 years | 1418 particles | 183 step number |
+| 38601.0 second | 643.4 minutes | 10.7 hours.
+
+simAU distance: 0.3464646464646465 | 365.9588069882849 time = 58.244153100198396 years | 1418 particles | 184 step number |
+| 38767.5 second | 646.1 minutes | 10.8 hours.
+
+simAU distance: 0.3464646464646465 | 367.9477135480038 time = 58.56069741052555 years | 1417 particles | 185 step number |
+| 38933.1 second | 648.9 minutes | 10.8 hours.
+
+simAU distance: 0.3464646464646465 | 369.9366201077227 time = 58.877241720852716 years | 1415 particles | 186 step number |
+| 39110.9 second | 651.8 minutes | 10.9 hours.
+
+simAU distance: 0.3464646464646465 | 371.92552666744166 time = 59.19378603117988 years | 1413 particles | 187 step number |
+| 39294.7 second | 654.9 minutes | 10.9 hours.
+
+simAU distance: 0.3464646464646465 | 373.9144332271606 time = 59.51033034150704 years | 1412 particles | 188 step number |
+| 39484.3 second | 658.1 minutes | 11.0 hours.
+
+simAU distance: 0.3464646464646465 | 375.90333978687954 time = 59.82687465183421 years | 1411 particles | 189 step number |
+| 39679.5 second | 661.3 minutes | 11.0 hours.
+
+simAU distance: 0.3464646464646465 | 377.8922463465985 time = 60.14341896216138 years | 1411 particles | 190 step number |
+| 39877.7 second | 664.6 minutes | 11.1 hours.
+
+simAU distance: 0.3464646464646465 | 379.8811529063174 time = 60.459963272488544 years | 1409 particles | 191 step number |
+| 40070.6 second | 667.8 minutes | 11.1 hours.
+
+simAU distance: 0.3464646464646465 | 381.87005946603637 time = 60.77650758281571 years | 1408 particles | 192 step number |
+| 40263.4 second | 671.1 minutes | 11.2 hours.
+
+simAU distance: 0.3464646464646465 | 383.8589660257553 time = 61.09305189314287 years | 1408 particles | 193 step number |
+| 40456.4 second | 674.3 minutes | 11.2 hours.
+
+simAU distance: 0.3464646464646465 | 385.84787258547425 time = 61.40959620347004 years | 1408 particles | 194 step number |
+| 40659.8 second | 677.7 minutes | 11.3 hours.
+
+simAU distance: 0.3464646464646465 | 387.8367791451932 time = 61.726140513797205 years | 1406 particles | 195 step number |
+| 40860.9 second | 681.0 minutes | 11.4 hours.
+
+simAU distance: 0.3464646464646465 | 389.82568570491213 time = 62.04268482412437 years | 1405 particles | 196 step number |
+| 41067.4 second | 684.5 minutes | 11.4 hours.
+
+simAU distance: 0.3464646464646465 | 391.8145922646311 time = 62.35922913445154 years | 1403 particles | 197 step number |
+| 41278.9 second | 688.0 minutes | 11.5 hours.
+
+simAU distance: 0.3464646464646465 | 393.80349882435 time = 62.6757734447787 years | 1401 particles | 198 step number |
+| 41491.7 second | 691.5 minutes | 11.5 hours.
+
+simAU distance: 0.3464646464646465 | 395.79240538406896 time = 62.992317755105866 years | 1401 particles | 199 step number |
+| 41706.5 second | 695.1 minutes | 11.6 hours.
+
+simAU distance: 0.3464646464646465 | 397.7813119437879 time = 63.30886206543303 years | 1400 particles | 200 step number |
+| 41927.0 second | 698.8 minutes | 11.6 hours.
+
+simAU distance: 0.3464646464646465 | 399.77021850350684 time = 63.6254063757602 years | 1399 particles | 201 step number |
+| 42148.2 second | 702.5 minutes | 11.7 hours.
+
+simAU distance: 0.3464646464646465 | 401.7591250632258 time = 63.94195068608736 years | 1398 particles | 202 step number |
+| 42370.4 second | 706.2 minutes | 11.8 hours.
+
+simAU distance: 0.3464646464646465 | 403.7480316229447 time = 64.25849499641453 years | 1398 particles | 203 step number |
+| 42596.4 second | 709.9 minutes | 11.8 hours.
+
+simAU distance: 0.3464646464646465 | 405.73693818266366 time = 64.5750393067417 years | 1398 particles | 204 step number |
+| 42827.6 second | 713.8 minutes | 11.9 hours.
+
+simAU distance: 0.3464646464646465 | 407.7258447423826 time = 64.89158361706886 years | 1398 particles | 205 step number |
+| 43068.3 second | 717.8 minutes | 12.0 hours.
+
+simAU distance: 0.3464646464646465 | 409.71475130210155 time = 65.20812792739602 years | 1398 particles | 206 step number |
+| 43316.0 second | 721.9 minutes | 12.0 hours.
+
+simAU distance: 0.3464646464646465 | 411.7036578618205 time = 65.5246722377232 years | 1398 particles | 207 step number |
+| 43567.6 second | 726.1 minutes | 12.1 hours.
+
+simAU distance: 0.3464646464646465 | 413.69256442153943 time = 65.84121654805035 years | 1397 particles | 208 step number |
+| 43833.1 second | 730.6 minutes | 12.2 hours.
+
+simAU distance: 0.3464646464646465 | 415.68147098125837 time = 66.15776085837751 years | 1395 particles | 209 step number |
+| 44099.6 second | 735.0 minutes | 12.2 hours.
+
+simAU distance: 0.3464646464646465 | 417.6703775409773 time = 66.47430516870469 years | 1395 particles | 210 step number |
+| 44380.2 second | 739.7 minutes | 12.3 hours.
+
+simAU distance: 0.3464646464646465 | 419.65928410069625 time = 66.79084947903185 years | 1395 particles | 211 step number |
+| 44663.3 second | 744.4 minutes | 12.4 hours.
+
+simAU distance: 0.3464646464646465 | 421.6481906604152 time = 67.10739378935902 years | 1395 particles | 212 step number |
+| 44959.4 second | 749.3 minutes | 12.5 hours.
+
+simAU distance: 0.3464646464646465 | 423.63709722013414 time = 67.42393809968618 years | 1395 particles | 213 step number |
+| 45266.5 second | 754.4 minutes | 12.6 hours.
+
+simAU distance: 0.3464646464646465 | 425.626003779853 time = 67.74048241001334 years | 1395 particles | 214 step number |
+| 45575.3 second | 759.6 minutes | 12.7 hours.
+
+simAU distance: 0.3464646464646465 | 427.61491033957196 time = 68.0570267203405 years | 1393 particles | 215 step number |
+| 45913.5 second | 765.2 minutes | 12.8 hours.
+
+simAU distance: 0.3464646464646465 | 429.6038168992909 time = 68.37357103066768 years | 1393 particles | 216 step number |
+| 46251.2 second | 770.9 minutes | 12.8 hours.
+
+simAU distance: 0.3464646464646465 | 431.59272345900985 time = 68.69011534099484 years | 1391 particles | 217 step number |
+| 46632.2 second | 777.2 minutes | 13.0 hours.
+
+simAU distance: 0.3464646464646465 | 433.5816300187288 time = 69.006659651322 years | 1390 particles | 218 step number |
+| 47030.9 second | 783.8 minutes | 13.1 hours.
+
+simAU distance: 0.3464646464646465 | 435.57053657844773 time = 69.32320396164917 years | 1389 particles | 219 step number |
+| 47429.1 second | 790.5 minutes | 13.2 hours.
+
+simAU distance: 0.3464646464646465 | 437.55944313816667 time = 69.63974827197633 years | 1389 particles | 220 step number |
+| 47832.8 second | 797.2 minutes | 13.3 hours.
+
+simAU distance: 0.3464646464646465 | 439.5483496978856 time = 69.9562925823035 years | 1388 particles | 221 step number |
+| 48342.0 second | 805.7 minutes | 13.4 hours.
+
+simAU distance: 0.3464646464646465 | 441.53725625760455 time = 70.27283689263066 years | 1388 particles | 222 step number |
+| 48867.4 second | 814.5 minutes | 13.6 hours.
+
+simAU distance: 0.3464646464646465 | 443.5261628173235 time = 70.58938120295782 years | 1387 particles | 223 step number |
+| 49369.3 second | 822.8 minutes | 13.7 hours.
+
+simAU distance: 0.3464646464646465 | 445.51506937704244 time = 70.905925513285 years | 1387 particles | 224 step number |
+| 50038.5 second | 834.0 minutes | 13.9 hours.
+
+simAU distance: 0.3464646464646465 | 447.5039759367614 time = 71.22246982361216 years | 1387 particles | 225 step number |
+| 50868.0 second | 847.8 minutes | 14.1 hours.
+
+simAU distance: 0.3464646464646465 | 449.4928824964803 time = 71.53901413393932 years | 1384 particles | 226 step number |
+| 51746.3 second | 862.4 minutes | 14.4 hours.
+
+simAU distance: 0.3464646464646465 | 451.48178905619926 time = 71.85555844426649 years | 1383 particles | 227 step number |
+| 52619.8 second | 877.0 minutes | 14.6 hours.
+
+simAU distance: 0.3464646464646465 | 453.4706956159182 time = 72.17210275459365 years | 1383 particles | 228 step number |
+| 53506.0 second | 891.8 minutes | 14.9 hours.
+
+simAU distance: 0.3464646464646465 | 455.45960217563714 time = 72.48864706492083 years | 1383 particles | 229 step number |
+| 54394.8 second | 906.6 minutes | 15.1 hours.
+
+simAU distance: 0.3464646464646465 | 457.4485087353561 time = 72.80519137524799 years | 1383 particles | 230 step number |
+| 55292.6 second | 921.5 minutes | 15.4 hours.
+
+simAU distance: 0.3464646464646465 | 459.437415295075 time = 73.12173568557515 years | 1382 particles | 231 step number |
+| 56201.6 second | 936.7 minutes | 15.6 hours.
+
+simAU distance: 0.3464646464646465 | 461.42632185479397 time = 73.43827999590232 years | 1381 particles | 232 step number |
+| 57121.9 second | 952.0 minutes | 15.9 hours.
+
+simAU distance: 0.3464646464646465 | 463.4152284145129 time = 73.75482430622948 years | 1380 particles | 233 step number |
+| 58020.4 second | 967.0 minutes | 16.1 hours.
+
+simAU distance: 0.3464646464646465 | 465.40413497423185 time = 74.07136861655665 years | 1379 particles | 234 step number |
+| 58917.9 second | 982.0 minutes | 16.4 hours.
+
+simAU distance: 0.3464646464646465 | 467.3930415339508 time = 74.38791292688381 years | 1379 particles | 235 step number |
+| 59805.2 second | 996.8 minutes | 16.6 hours.
+
+simAU distance: 0.3464646464646465 | 469.38194809366973 time = 74.70445723721097 years | 1379 particles | 236 step number |
+| 60681.0 second | 1011.4 minutes | 16.9 hours.
+
+simAU distance: 0.3464646464646465 | 471.3708546533887 time = 75.02100154753815 years | 1378 particles | 237 step number |
+| 61532.9 second | 1025.5 minutes | 17.1 hours.
+
+simAU distance: 0.3464646464646465 | 473.3597612131076 time = 75.33754585786531 years | 1377 particles | 238 step number |
+| 62382.9 second | 1039.7 minutes | 17.3 hours.
+
+simAU distance: 0.3464646464646465 | 475.34866777282656 time = 75.65409016819248 years | 1376 particles | 239 step number |
+| 63238.1 second | 1054.0 minutes | 17.6 hours.
+
+simAU distance: 0.3464646464646465 | 477.3375743325455 time = 75.97063447851964 years | 1373 particles | 240 step number |
+| 64101.4 second | 1068.4 minutes | 17.8 hours.
+
+simAU distance: 0.3464646464646465 | 479.32648089226444 time = 76.2871787888468 years | 1373 particles | 241 step number |
+| 64971.2 second | 1082.9 minutes | 18.0 hours.
+
+simAU distance: 0.3464646464646465 | 481.3153874519833 time = 76.60372309917396 years | 1373 particles | 242 step number |
+| 65841.6 second | 1097.4 minutes | 18.3 hours.
+
+simAU distance: 0.3464646464646465 | 483.30429401170227 time = 76.92026740950114 years | 1371 particles | 243 step number |
+| 66714.8 second | 1111.9 minutes | 18.5 hours.
+
+simAU distance: 0.3464646464646465 | 485.2932005714212 time = 77.2368117198283 years | 1370 particles | 244 step number |
+| 67592.3 second | 1126.5 minutes | 18.8 hours.
+
+simAU distance: 0.3464646464646465 | 487.28210713114015 time = 77.55335603015546 years | 1369 particles | 245 step number |
+| 68469.4 second | 1141.2 minutes | 19.0 hours.
+
+simAU distance: 0.3464646464646465 | 489.2710136908591 time = 77.86990034048263 years | 1368 particles | 246 step number |
+| 69361.1 second | 1156.0 minutes | 19.3 hours.
+
+simAU distance: 0.3464646464646465 | 491.25992025057803 time = 78.18644465080979 years | 1367 particles | 247 step number |
+| 70259.2 second | 1171.0 minutes | 19.5 hours.
+
+simAU distance: 0.3464646464646465 | 493.248826810297 time = 78.50298896113695 years | 1366 particles | 248 step number |
+| 71158.3 second | 1186.0 minutes | 19.8 hours.
+
+simAU distance: 0.3464646464646465 | 495.2377333700159 time = 78.81953327146412 years | 1365 particles | 249 step number |
+| 72081.3 second | 1201.4 minutes | 20.0 hours.
+
+simAU distance: 0.3464646464646465 | 497.22663992973486 time = 79.13607758179128 years | 1365 particles | 250 step number |
+| 73014.2 second | 1216.9 minutes | 20.3 hours.
+
+simAU distance: 0.3464646464646465 | 499.2155464894538 time = 79.45262189211846 years | 1365 particles | 251 step number |
+| 73939.4 second | 1232.3 minutes | 20.5 hours.
+
+simAU distance: 0.3464646464646465 | 501.20445304917274 time = 79.76916620244562 years | 1365 particles | 252 step number |
+| 74888.0 second | 1248.1 minutes | 20.8 hours.
+
+simAU distance: 0.3464646464646465 | 503.1933596088917 time = 80.08571051277278 years | 1364 particles | 253 step number |
+| 75834.8 second | 1263.9 minutes | 21.1 hours.
+
+simAU distance: 0.3464646464646465 | 505.1822661686106 time = 80.40225482309995 years | 1364 particles | 254 step number |
+| 76780.1 second | 1279.7 minutes | 21.3 hours.
+
+simAU distance: 0.3464646464646465 | 507.17117272832957 time = 80.71879913342711 years | 1363 particles | 255 step number |
+| 77688.7 second | 1294.8 minutes | 21.6 hours.
+
+simAU distance: 0.3464646464646465 | 509.1600792880485 time = 81.03534344375429 years | 1363 particles | 256 step number |
+| 78594.6 second | 1309.9 minutes | 21.8 hours.
+
+simAU distance: 0.3464646464646465 | 511.14898584776745 time = 81.35188775408145 years | 1363 particles | 257 step number |
+| 79465.5 second | 1324.4 minutes | 22.1 hours.
+
+simAU distance: 0.3464646464646465 | 513.1378924074863 time = 81.6684320644086 years | 1363 particles | 258 step number |
+| 80345.5 second | 1339.1 minutes | 22.3 hours.
+
+simAU distance: 0.3464646464646465 | 515.1267989672053 time = 81.98497637473578 years | 1361 particles | 259 step number |
+| 81250.1 second | 1354.2 minutes | 22.6 hours.
+
+simAU distance: 0.3464646464646465 | 517.1157055269242 time = 82.30152068506294 years | 1361 particles | 260 step number |
+| 82133.1 second | 1368.9 minutes | 22.8 hours.
+
+simAU distance: 0.3464646464646465 | 519.1046120866432 time = 82.61806499539011 years | 1361 particles | 261 step number |
+| 82990.1 second | 1383.2 minutes | 23.1 hours.
+
+simAU distance: 0.3464646464646465 | 521.0935186463621 time = 82.93460930571726 years | 1360 particles | 262 step number |
+| 83852.3 second | 1397.5 minutes | 23.3 hours.
+
+simAU distance: 0.3464646464646465 | 523.0824252060811 time = 83.25115361604443 years | 1358 particles | 263 step number |
+| 84747.9 second | 1412.5 minutes | 23.5 hours.
+
+simAU distance: 0.3464646464646465 | 525.0713317658 time = 83.5676979263716 years | 1358 particles | 264 step number |
+| 85697.2 second | 1428.3 minutes | 23.8 hours.
+
+simAU distance: 0.3464646464646465 | 527.060238325519 time = 83.88424223669877 years | 1358 particles | 265 step number |
+| 86642.6 second | 1444.0 minutes | 24.1 hours.
+
+simAU distance: 0.3464646464646465 | 529.0491448852379 time = 84.20078654702593 years | 1358 particles | 266 step number |
+| 87635.9 second | 1460.6 minutes | 24.3 hours.
+
+simAU distance: 0.3464646464646465 | 531.0380514449569 time = 84.5173308573531 years | 1358 particles | 267 step number |
+| 88636.2 second | 1477.3 minutes | 24.6 hours.
+
+simAU distance: 0.3464646464646465 | 533.0269580046757 time = 84.83387516768026 years | 1357 particles | 268 step number |
+| 89622.5 second | 1493.7 minutes | 24.9 hours.
+
+simAU distance: 0.3464646464646465 | 535.0158645643947 time = 85.15041947800744 years | 1356 particles | 269 step number |
+| 90613.4 second | 1510.2 minutes | 25.2 hours.
+
+simAU distance: 0.3464646464646465 | 537.0047711241136 time = 85.46696378833458 years | 1356 particles | 270 step number |
+| 91466.8 second | 1524.4 minutes | 25.4 hours.
+
+simAU distance: 0.3464646464646465 | 538.9936776838326 time = 85.78350809866176 years | 1354 particles | 271 step number |
+| 92271.9 second | 1537.9 minutes | 25.6 hours.
+
+simAU distance: 0.3464646464646465 | 540.9825842435515 time = 86.10005240898892 years | 1352 particles | 272 step number |
+| 93075.9 second | 1551.3 minutes | 25.9 hours.
+
+simAU distance: 0.3464646464646465 | 542.9714908032705 time = 86.41659671931609 years | 1351 particles | 273 step number |
+| 93898.5 second | 1565.0 minutes | 26.1 hours.
+
+simAU distance: 0.3464646464646465 | 544.9603973629894 time = 86.73314102964325 years | 1350 particles | 274 step number |
+| 94718.0 second | 1578.6 minutes | 26.3 hours.
+
+simAU distance: 0.3464646464646465 | 546.9493039227084 time = 87.04968533997042 years | 1349 particles | 275 step number |
+| 95522.8 second | 1592.0 minutes | 26.5 hours.
+
+simAU distance: 0.3464646464646465 | 548.9382104824273 time = 87.36622965029758 years | 1349 particles | 276 step number |
+| 96274.7 second | 1604.6 minutes | 26.7 hours.
+
+simAU distance: 0.3464646464646465 | 550.9271170421463 time = 87.68277396062476 years | 1348 particles | 277 step number |
+| 96976.8 second | 1616.3 minutes | 26.9 hours.
+
+simAU distance: 0.3464646464646465 | 552.9160236018652 time = 87.99931827095192 years | 1347 particles | 278 step number |
+| 97657.0 second | 1627.6 minutes | 27.1 hours.
+
+simAU distance: 0.3464646464646465 | 554.9049301615842 time = 88.31586258127909 years | 1346 particles | 279 step number |
+| 98340.6 second | 1639.0 minutes | 27.3 hours.
+
+simAU distance: 0.3464646464646465 | 556.893836721303 time = 88.63240689160624 years | 1346 particles | 280 step number |
+| 99027.0 second | 1650.5 minutes | 27.5 hours.
+
+simAU distance: 0.3464646464646465 | 558.882743281022 time = 88.94895120193341 years | 1345 particles | 281 step number |
+| 99708.8 second | 1661.8 minutes | 27.7 hours.
+
+simAU distance: 0.3464646464646465 | 560.8716498407409 time = 89.26549551226057 years | 1345 particles | 282 step number |
+| 100388.4 second | 1673.1 minutes | 27.9 hours.
+
+simAU distance: 0.3464646464646465 | 562.8605564004599 time = 89.58203982258775 years | 1345 particles | 283 step number |
+| 101091.0 second | 1684.8 minutes | 28.1 hours.
+
+simAU distance: 0.3464646464646465 | 564.8494629601788 time = 89.8985841329149 years | 1344 particles | 284 step number |
+| 101797.1 second | 1696.6 minutes | 28.3 hours.
+
+simAU distance: 0.3464646464646465 | 566.8383695198977 time = 90.21512844324207 years | 1344 particles | 285 step number |
+| 102531.4 second | 1708.9 minutes | 28.5 hours.
+
+simAU distance: 0.3464646464646465 | 568.8272760796167 time = 90.53167275356924 years | 1343 particles | 286 step number |
+| 103278.1 second | 1721.3 minutes | 28.7 hours.
+
+simAU distance: 0.3464646464646465 | 570.8161826393356 time = 90.84821706389639 years | 1343 particles | 287 step number |
+| 104019.5 second | 1733.7 minutes | 28.9 hours.
+
+simAU distance: 0.3464646464646465 | 572.8050891990546 time = 91.16476137422357 years | 1343 particles | 288 step number |
+| 104746.7 second | 1745.8 minutes | 29.1 hours.
+
+simAU distance: 0.3464646464646465 | 574.7939957587735 time = 91.48130568455072 years | 1343 particles | 289 step number |
+| 105466.6 second | 1757.8 minutes | 29.3 hours.
+
+simAU distance: 0.3464646464646465 | 576.7829023184925 time = 91.7978499948779 years | 1343 particles | 290 step number |
+| 106201.7 second | 1770.0 minutes | 29.5 hours.
+
+simAU distance: 0.3464646464646465 | 578.7718088782113 time = 92.11439430520505 years | 1343 particles | 291 step number |
+| 106920.2 second | 1782.0 minutes | 29.7 hours.
+
+simAU distance: 0.3464646464646465 | 580.7607154379303 time = 92.43093861553223 years | 1343 particles | 292 step number |
+| 107656.0 second | 1794.3 minutes | 29.9 hours.
+
+simAU distance: 0.3464646464646465 | 582.7496219976492 time = 92.74748292585939 years | 1342 particles | 293 step number |
+| 108364.0 second | 1806.1 minutes | 30.1 hours.
+
+simAU distance: 0.3464646464646465 | 584.7385285573682 time = 93.06402723618656 years | 1342 particles | 294 step number |
+| 109074.0 second | 1817.9 minutes | 30.3 hours.
+
+simAU distance: 0.3464646464646465 | 586.7274351170871 time = 93.38057154651372 years | 1340 particles | 295 step number |
+| 109764.0 second | 1829.4 minutes | 30.5 hours.
+
+simAU distance: 0.3464646464646465 | 588.7163416768061 time = 93.6971158568409 years | 1340 particles | 296 step number |
+| 110428.5 second | 1840.5 minutes | 30.7 hours.
+
+simAU distance: 0.3464646464646465 | 590.705248236525 time = 94.01366016716804 years | 1340 particles | 297 step number |
+| 111077.9 second | 1851.3 minutes | 30.9 hours.
+
+simAU distance: 0.3464646464646465 | 592.694154796244 time = 94.33020447749522 years | 1340 particles | 298 step number |
+| 111673.5 second | 1861.2 minutes | 31.0 hours.
+
+simAU distance: 0.3464646464646465 | 594.6830613559629 time = 94.64674878782237 years | 1336 particles | 299 step number |
+| 112261.1 second | 1871.0 minutes | 31.2 hours.
+
+simAU distance: 0.3464646464646465 | 596.6719679156819 time = 94.96329309814955 years | 1335 particles | 300 step number |
+| 112828.8 second | 1880.5 minutes | 31.3 hours.
+
+simAU distance: 0.3464646464646465 | 598.6608744754008 time = 95.27983740847671 years | 1334 particles | 301 step number |
+| 113371.4 second | 1889.5 minutes | 31.5 hours.
+
+simAU distance: 0.3464646464646465 | 600.6497810351198 time = 95.59638171880388 years | 1333 particles | 302 step number |
+| 113925.6 second | 1898.8 minutes | 31.6 hours.
+
+simAU distance: 0.3464646464646465 | 602.6386875948386 time = 95.91292602913104 years | 1331 particles | 303 step number |
+| 114476.3 second | 1907.9 minutes | 31.8 hours.
+
+simAU distance: 0.3464646464646465 | 604.6275941545576 time = 96.22947033945822 years | 1330 particles | 304 step number |
+| 115038.2 second | 1917.3 minutes | 32.0 hours.
+
+simAU distance: 0.3464646464646465 | 606.6165007142765 time = 96.54601464978538 years | 1329 particles | 305 step number |
+| 115595.6 second | 1926.6 minutes | 32.1 hours.
+
+simAU distance: 0.3464646464646465 | 608.6054072739955 time = 96.86255896011255 years | 1329 particles | 306 step number |
+| 116157.7 second | 1936.0 minutes | 32.3 hours.
+
+simAU distance: 0.3464646464646465 | 610.5943138337144 time = 97.1791032704397 years | 1327 particles | 307 step number |
+| 116710.1 second | 1945.2 minutes | 32.4 hours.
+
+simAU distance: 0.3464646464646465 | 612.5832203934334 time = 97.49564758076687 years | 1326 particles | 308 step number |
+| 117259.7 second | 1954.3 minutes | 32.6 hours.
+
+simAU distance: 0.3464646464646465 | 614.5721269531523 time = 97.81219189109403 years | 1325 particles | 309 step number |
+| 117808.5 second | 1963.5 minutes | 32.7 hours.
+
+simAU distance: 0.3464646464646465 | 616.5610335128713 time = 98.1287362014212 years | 1322 particles | 310 step number |
+| 118341.1 second | 1972.4 minutes | 32.9 hours.
+
+simAU distance: 0.3464646464646465 | 618.5499400725902 time = 98.44528051174836 years | 1322 particles | 311 step number |
+| 118876.0 second | 1981.3 minutes | 33.0 hours.
+
+simAU distance: 0.3464646464646465 | 620.5388466323092 time = 98.76182482207554 years | 1321 particles | 312 step number |
+| 119391.2 second | 1989.9 minutes | 33.2 hours.
+
+simAU distance: 0.3464646464646465 | 622.5277531920281 time = 99.0783691324027 years | 1319 particles | 313 step number |
+| 119935.9 second | 1998.9 minutes | 33.3 hours.
+
+simAU distance: 0.3464646464646465 | 624.5166597517469 time = 99.39491344272984 years | 1318 particles | 314 step number |
+| 120492.8 second | 2008.2 minutes | 33.5 hours.
+
+simAU distance: 0.3464646464646465 | 626.5055663114659 time = 99.71145775305702 years | 1317 particles | 315 step number |
+| 121008.1 second | 2016.8 minutes | 33.6 hours.
+
+simAU distance: 0.3464646464646465 | 628.4944728711848 time = 100.02800206338418 years | 1317 particles | 316 step number |
+| 121571.5 second | 2026.2 minutes | 33.8 hours.
+
+simAU distance: 0.3464646464646465 | 630.4833794309038 time = 100.34454637371135 years | 1316 particles | 317 step number |
+| 122187.0 second | 2036.4 minutes | 33.9 hours.
+
+simAU distance: 0.3464646464646465 | 632.4722859906227 time = 100.66109068403851 years | 1316 particles | 318 step number |
+| 122786.5 second | 2046.4 minutes | 34.1 hours.
+
+simAU distance: 0.3464646464646465 | 634.4611925503417 time = 100.97763499436569 years | 1316 particles | 319 step number |
+| 123303.1 second | 2055.1 minutes | 34.3 hours.
+
+simAU distance: 0.3464646464646465 | 636.4500991100606 time = 101.29417930469285 years | 1316 particles | 320 step number |
+| 123729.0 second | 2062.2 minutes | 34.4 hours.
+
+simAU distance: 0.3464646464646465 | 638.4390056697796 time = 101.61072361502002 years | 1316 particles | 321 step number |
+| 124142.7 second | 2069.0 minutes | 34.5 hours.
+
+simAU distance: 0.3464646464646465 | 640.4279122294985 time = 101.92726792534718 years | 1316 particles | 322 step number |
+| 124553.3 second | 2075.9 minutes | 34.6 hours.
+
+simAU distance: 0.3464646464646465 | 642.4168187892175 time = 102.24381223567435 years | 1316 particles | 323 step number |
+| 124961.3 second | 2082.7 minutes | 34.7 hours.
+
+simAU distance: 0.3464646464646465 | 644.4057253489364 time = 102.5603565460015 years | 1316 particles | 324 step number |
+| 125371.0 second | 2089.5 minutes | 34.8 hours.
+
+simAU distance: 0.3464646464646465 | 646.3946319086554 time = 102.87690085632867 years | 1315 particles | 325 step number |
+| 125772.9 second | 2096.2 minutes | 34.9 hours.
+
+simAU distance: 0.3464646464646465 | 648.3835384683742 time = 103.19344516665583 years | 1313 particles | 326 step number |
+| 126180.6 second | 2103.0 minutes | 35.1 hours.
+
+simAU distance: 0.3464646464646465 | 650.3724450280932 time = 103.50998947698301 years | 1312 particles | 327 step number |
+| 126586.2 second | 2109.8 minutes | 35.2 hours.
+
+simAU distance: 0.3464646464646465 | 652.3613515878121 time = 103.82653378731017 years | 1311 particles | 328 step number |
+| 126989.1 second | 2116.5 minutes | 35.3 hours.
+
+simAU distance: 0.3464646464646465 | 654.3502581475311 time = 104.14307809763734 years | 1310 particles | 329 step number |
+| 127382.6 second | 2123.0 minutes | 35.4 hours.
+
+simAU distance: 0.3464646464646465 | 656.33916470725 time = 104.4596224079645 years | 1310 particles | 330 step number |
+| 127781.7 second | 2129.7 minutes | 35.5 hours.
+
+simAU distance: 0.3464646464646465 | 658.328071266969 time = 104.77616671829168 years | 1310 particles | 331 step number |
+| 128181.0 second | 2136.3 minutes | 35.6 hours.
+
+simAU distance: 0.3464646464646465 | 660.3169778266879 time = 105.09271102861882 years | 1310 particles | 332 step number |
+| 128568.3 second | 2142.8 minutes | 35.7 hours.
+
+simAU distance: 0.3464646464646465 | 662.3058843864069 time = 105.40925533894601 years | 1310 particles | 333 step number |
+| 128960.5 second | 2149.3 minutes | 35.8 hours.
+
+simAU distance: 0.3464646464646465 | 664.2947909461258 time = 105.72579964927316 years | 1310 particles | 334 step number |
+| 129350.4 second | 2155.8 minutes | 35.9 hours.
+
+simAU distance: 0.3464646464646465 | 666.2836975058448 time = 106.04234395960033 years | 1310 particles | 335 step number |
+| 129733.6 second | 2162.2 minutes | 36.0 hours.
+
+simAU distance: 0.3464646464646465 | 668.2726040655637 time = 106.35888826992749 years | 1308 particles | 336 step number |
+| 130111.8 second | 2168.5 minutes | 36.1 hours.
+
+simAU distance: 0.3464646464646465 | 670.2615106252827 time = 106.67543258025466 years | 1307 particles | 337 step number |
+| 130494.6 second | 2174.9 minutes | 36.2 hours.
+
+simAU distance: 0.3464646464646465 | 672.2504171850015 time = 106.99197689058182 years | 1306 particles | 338 step number |
+| 130882.5 second | 2181.4 minutes | 36.4 hours.
+
+simAU distance: 0.3464646464646465 | 674.2393237447205 time = 107.308521200909 years | 1305 particles | 339 step number |
+| 131248.9 second | 2187.5 minutes | 36.5 hours.
+
+simAU distance: 0.3464646464646465 | 676.2282303044394 time = 107.62506551123616 years | 1305 particles | 340 step number |
+| 131610.6 second | 2193.5 minutes | 36.6 hours.
+
+simAU distance: 0.3464646464646465 | 678.2171368641584 time = 107.94160982156333 years | 1305 particles | 341 step number |
+| 131979.8 second | 2199.7 minutes | 36.7 hours.
+
+simAU distance: 0.3464646464646465 | 680.2060434238773 time = 108.25815413189048 years | 1303 particles | 342 step number |
+| 132352.3 second | 2205.9 minutes | 36.8 hours.
+
+simAU distance: 0.3464646464646465 | 682.1949499835962 time = 108.57469844221764 years | 1303 particles | 343 step number |
+| 132741.8 second | 2212.4 minutes | 36.9 hours.
+
+simAU distance: 0.3464646464646465 | 684.1838565433152 time = 108.89124275254481 years | 1302 particles | 344 step number |
+| 133138.3 second | 2219.0 minutes | 37.0 hours.
+
+simAU distance: 0.3464646464646465 | 686.1727631030341 time = 109.20778706287197 years | 1302 particles | 345 step number |
+| 133557.2 second | 2226.0 minutes | 37.1 hours.
+
+simAU distance: 0.3464646464646465 | 688.1616696627531 time = 109.52433137319915 years | 1302 particles | 346 step number |
+| 133990.3 second | 2233.2 minutes | 37.2 hours.
+
+simAU distance: 0.3464646464646465 | 690.150576222472 time = 109.8408756835263 years | 1302 particles | 347 step number |
+| 134438.0 second | 2240.6 minutes | 37.3 hours.
+
+simAU distance: 0.3464646464646465 | 692.139482782191 time = 110.15741999385348 years | 1302 particles | 348 step number |
+| 134895.7 second | 2248.3 minutes | 37.5 hours.
+
+simAU distance: 0.3464646464646465 | 694.1283893419098 time = 110.47396430418064 years | 1302 particles | 349 step number |
+| 135367.7 second | 2256.1 minutes | 37.6 hours.
+
+simAU distance: 0.3464646464646465 | 696.1172959016288 time = 110.79050861450781 years | 1301 particles | 350 step number |
+| 135825.6 second | 2263.8 minutes | 37.7 hours.
+
+simAU distance: 0.3464646464646465 | 698.1062024613477 time = 111.10705292483496 years | 1298 particles | 351 step number |
+| 136286.8 second | 2271.4 minutes | 37.9 hours.
+
+simAU distance: 0.3464646464646465 | 700.0951090210667 time = 111.42359723516213 years | 1297 particles | 352 step number |
+| 136747.3 second | 2279.1 minutes | 38.0 hours.
+
+simAU distance: 0.3464646464646465 | 702.0840155807856 time = 111.7401415454893 years | 1297 particles | 353 step number |
+| 137223.2 second | 2287.1 minutes | 38.1 hours.
+
+simAU distance: 0.3464646464646465 | 704.0729221405046 time = 112.05668585581647 years | 1297 particles | 354 step number |
+| 137715.3 second | 2295.3 minutes | 38.3 hours.
+
+simAU distance: 0.3464646464646465 | 706.0618287002235 time = 112.37323016614363 years | 1297 particles | 355 step number |
+| 138209.6 second | 2303.5 minutes | 38.4 hours.
+
+simAU distance: 0.3464646464646465 | 708.0507352599425 time = 112.6897744764708 years | 1297 particles | 356 step number |
+| 138725.3 second | 2312.1 minutes | 38.5 hours.
+
+simAU distance: 0.3464646464646465 | 710.0396418196614 time = 113.00631878679796 years | 1295 particles | 357 step number |
+| 139232.2 second | 2320.5 minutes | 38.7 hours.
+
+simAU distance: 0.3464646464646465 | 712.0285483793804 time = 113.32286309712514 years | 1295 particles | 358 step number |
+| 139769.9 second | 2329.5 minutes | 38.8 hours.
+
+simAU distance: 0.3464646464646465 | 714.0174549390993 time = 113.63940740745228 years | 1293 particles | 359 step number |
+| 140332.9 second | 2338.9 minutes | 39.0 hours.
+
+simAU distance: 0.3464646464646465 | 716.0063614988183 time = 113.95595171777946 years | 1292 particles | 360 step number |
+| 140962.1 second | 2349.4 minutes | 39.2 hours.
+
+simAU distance: 0.3464646464646465 | 717.9952680585371 time = 114.27249602810662 years | 1292 particles | 361 step number |
+| 141666.1 second | 2361.1 minutes | 39.4 hours.
+
+simAU distance: 0.3464646464646465 | 719.9841746182561 time = 114.58904033843379 years | 1292 particles | 362 step number |
+| 142382.1 second | 2373.0 minutes | 39.6 hours.
+
+simAU distance: 0.3464646464646465 | 721.973081177975 time = 114.90558464876095 years | 1291 particles | 363 step number |
+| 143118.0 second | 2385.3 minutes | 39.8 hours.
+
+simAU distance: 0.3464646464646465 | 723.961987737694 time = 115.22212895908812 years | 1291 particles | 364 step number |
+| 143832.2 second | 2397.2 minutes | 40.0 hours.
+
+simAU distance: 0.3464646464646465 | 725.9508942974129 time = 115.53867326941528 years | 1291 particles | 365 step number |
+| 144555.0 second | 2409.3 minutes | 40.2 hours.
+
+simAU distance: 0.3464646464646465 | 727.9398008571319 time = 115.85521757974246 years | 1291 particles | 366 step number |
+| 145351.1 second | 2422.5 minutes | 40.4 hours.
+
+simAU distance: 0.3464646464646465 | 729.9287074168508 time = 116.17176189006962 years | 1291 particles | 367 step number |
+| 146179.2 second | 2436.3 minutes | 40.6 hours.
+
+simAU distance: 0.3464646464646465 | 731.9176139765698 time = 116.48830620039679 years | 1290 particles | 368 step number |
+| 146982.5 second | 2449.7 minutes | 40.8 hours.
+
+simAU distance: 0.3464646464646465 | 733.9065205362887 time = 116.80485051072394 years | 1289 particles | 369 step number |
+| 147768.7 second | 2462.8 minutes | 41.0 hours.
+
+simAU distance: 0.3464646464646465 | 735.8954270960076 time = 117.1213948210511 years | 1289 particles | 370 step number |
+| 148665.2 second | 2477.8 minutes | 41.3 hours.
+
+simAU distance: 0.3464646464646465 | 737.8843336557266 time = 117.43793913137827 years | 1289 particles | 371 step number |
+| 149525.7 second | 2492.1 minutes | 41.5 hours.
+
+simAU distance: 0.3464646464646465 | 739.8732402154454 time = 117.75448344170543 years | 1289 particles | 372 step number |
+| 150402.6 second | 2506.7 minutes | 41.8 hours.
+
+simAU distance: 0.3464646464646465 | 741.8621467751644 time = 118.0710277520326 years | 1289 particles | 373 step number |
+| 151262.6 second | 2521.0 minutes | 42.0 hours.
+
+simAU distance: 0.3464646464646465 | 743.8510533348833 time = 118.38757206235977 years | 1288 particles | 374 step number |
+| 152100.1 second | 2535.0 minutes | 42.3 hours.
+
+simAU distance: 0.3464646464646465 | 745.8399598946023 time = 118.70411637268694 years | 1287 particles | 375 step number |
+| 153038.8 second | 2550.6 minutes | 42.5 hours.
+
+simAU distance: 0.3464646464646465 | 747.8288664543212 time = 119.02066068301409 years | 1287 particles | 376 step number |
+| 153967.5 second | 2566.1 minutes | 42.8 hours.
+
+simAU distance: 0.3464646464646465 | 749.8177730140402 time = 119.33720499334126 years | 1286 particles | 377 step number |
+| 154865.5 second | 2581.1 minutes | 43.0 hours.
+
+simAU distance: 0.3464646464646465 | 751.8066795737591 time = 119.65374930366842 years | 1286 particles | 378 step number |
+| 155781.0 second | 2596.3 minutes | 43.3 hours.
+
+simAU distance: 0.3464646464646465 | 753.7955861334781 time = 119.9702936139956 years | 1286 particles | 379 step number |
+| 156654.0 second | 2610.9 minutes | 43.5 hours.
+
+simAU distance: 0.3464646464646465 | 755.784492693197 time = 120.28683792432275 years | 1285 particles | 380 step number |
+| 157386.3 second | 2623.1 minutes | 43.7 hours.
+
+simAU distance: 0.3464646464646465 | 757.773399252916 time = 120.60338223464993 years | 1285 particles | 381 step number |
+| 157845.6 second | 2630.8 minutes | 43.8 hours.
+
+simAU distance: 0.3464646464646465 | 759.7623058126348 time = 120.91992654497709 years | 1284 particles | 382 step number |
+| 158293.9 second | 2638.2 minutes | 44.0 hours.
+
+simAU distance: 0.3464646464646465 | 761.7512123723538 time = 121.23647085530426 years | 1284 particles | 383 step number |
+| 158715.0 second | 2645.3 minutes | 44.1 hours.
+
+simAU distance: 0.3464646464646465 | 763.7401189320727 time = 121.55301516563142 years | 1284 particles | 384 step number |
+| 159127.9 second | 2652.1 minutes | 44.2 hours.
+
+simAU distance: 0.3464646464646465 | 765.7290254917917 time = 121.8695594759586 years | 1284 particles | 385 step number |
+| 159535.2 second | 2658.9 minutes | 44.3 hours.
+
+simAU distance: 0.3464646464646465 | 767.7179320515106 time = 122.18610378628574 years | 1282 particles | 386 step number |
+| 159929.9 second | 2665.5 minutes | 44.4 hours.
+
+simAU distance: 0.3464646464646465 | 769.7068386112296 time = 122.50264809661292 years | 1282 particles | 387 step number |
+| 160322.3 second | 2672.0 minutes | 44.5 hours.
+
+simAU distance: 0.3464646464646465 | 771.6957451709485 time = 122.81919240694008 years | 1282 particles | 388 step number |
+| 160733.6 second | 2678.9 minutes | 44.6 hours.
+
+simAU distance: 0.3464646464646465 | 773.6846517306675 time = 123.13573671726725 years | 1282 particles | 389 step number |
+| 161125.2 second | 2685.4 minutes | 44.8 hours.
+
+simAU distance: 0.3464646464646465 | 775.6735582903864 time = 123.45228102759441 years | 1282 particles | 390 step number |
+| 161496.0 second | 2691.6 minutes | 44.9 hours.
+
+simAU distance: 0.3464646464646465 | 777.6624648501054 time = 123.76882533792158 years | 1281 particles | 391 step number |
+| 161857.2 second | 2697.6 minutes | 45.0 hours.
+
+simAU distance: 0.3464646464646465 | 779.6513714098243 time = 124.08536964824874 years | 1281 particles | 392 step number |
+| 162219.5 second | 2703.7 minutes | 45.1 hours.
+
+simAU distance: 0.3464646464646465 | 781.6402779695433 time = 124.40191395857592 years | 1281 particles | 393 step number |
+| 162575.5 second | 2709.6 minutes | 45.2 hours.
+
+simAU distance: 0.3464646464646465 | 783.6291845292621 time = 124.71845826890308 years | 1281 particles | 394 step number |
+| 162933.9 second | 2715.6 minutes | 45.3 hours.
+
+simAU distance: 0.3464646464646465 | 785.6180910889811 time = 125.03500257923025 years | 1280 particles | 395 step number |
+| 163297.2 second | 2721.6 minutes | 45.4 hours.
+
+simAU distance: 0.3464646464646465 | 787.6069976487 time = 125.3515468895574 years | 1279 particles | 396 step number |
+| 163647.3 second | 2727.5 minutes | 45.5 hours.
+
+simAU distance: 0.3464646464646465 | 789.595904208419 time = 125.66809119988457 years | 1278 particles | 397 step number |
+| 164008.9 second | 2733.5 minutes | 45.6 hours.
+
+simAU distance: 0.3464646464646465 | 791.5848107681379 time = 125.98463551021173 years | 1277 particles | 398 step number |
+| 164371.4 second | 2739.5 minutes | 45.7 hours.
+
+simAU distance: 0.3464646464646465 | 793.5737173278568 time = 126.30117982053889 years | 1276 particles | 399 step number |
+| 164764.2 second | 2746.1 minutes | 45.8 hours.
+
+simAU distance: 0.3464646464646465 | 795.5626238875758 time = 126.61772413086607 years | 1274 particles | 400 step number |
+| 165151.2 second | 2752.5 minutes | 45.9 hours.
+
+simAU distance: 0.3464646464646465 | 797.5515304472947 time = 126.93426844119323 years | 1273 particles | 401 step number |
+| 165529.4 second | 2758.8 minutes | 46.0 hours.
+
+simAU distance: 0.3464646464646465 | 799.5404370070137 time = 127.2508127515204 years | 1273 particles | 402 step number |
+| 165912.5 second | 2765.2 minutes | 46.1 hours.
+
+simAU distance: 0.3464646464646465 | 801.5293435667326 time = 127.56735706184755 years | 1273 particles | 403 step number |
+| 166307.5 second | 2771.8 minutes | 46.2 hours.
+
+simAU distance: 0.3464646464646465 | 803.5182501264516 time = 127.88390137217472 years | 1273 particles | 404 step number |
+| 166704.9 second | 2778.4 minutes | 46.3 hours.
+
+simAU distance: 0.3464646464646465 | 805.5071566861704 time = 128.20044568250188 years | 1273 particles | 405 step number |
+| 167114.7 second | 2785.2 minutes | 46.4 hours.
+
+simAU distance: 0.3464646464646465 | 807.4960632458894 time = 128.51698999282905 years | 1273 particles | 406 step number |
+| 167507.5 second | 2791.8 minutes | 46.5 hours.
+
+simAU distance: 0.3464646464646465 | 809.4849698056083 time = 128.8335343031562 years | 1273 particles | 407 step number |
+| 167909.5 second | 2798.5 minutes | 46.6 hours.
+
+simAU distance: 0.3464646464646465 | 811.4738763653273 time = 129.1500786134834 years | 1273 particles | 408 step number |
+| 168319.6 second | 2805.3 minutes | 46.8 hours.
+
+simAU distance: 0.3464646464646465 | 813.4627829250462 time = 129.46662292381055 years | 1273 particles | 409 step number |
+| 168743.8 second | 2812.4 minutes | 46.9 hours.
+
+simAU distance: 0.3464646464646465 | 815.4516894847652 time = 129.78316723413772 years | 1272 particles | 410 step number |
+| 169240.8 second | 2820.7 minutes | 47.0 hours.
+
+simAU distance: 0.3464646464646465 | 817.4405960444841 time = 130.09971154446487 years | 1271 particles | 411 step number |
+| 169874.0 second | 2831.2 minutes | 47.2 hours.
+
+simAU distance: 0.3464646464646465 | 819.4295026042031 time = 130.41625585479204 years | 1271 particles | 412 step number |
+| 170554.7 second | 2842.6 minutes | 47.4 hours.
+
+simAU distance: 0.3464646464646465 | 821.418409163922 time = 130.73280016511922 years | 1270 particles | 413 step number |
+| 171315.0 second | 2855.3 minutes | 47.6 hours.
+
+simAU distance: 0.3464646464646465 | 823.407315723641 time = 131.0493444754464 years | 1270 particles | 414 step number |
+| 172082.9 second | 2868.0 minutes | 47.8 hours.
+
+simAU distance: 0.3464646464646465 | 825.3962222833599 time = 131.36588878577354 years | 1269 particles | 415 step number |
+| 172851.9 second | 2880.9 minutes | 48.0 hours.
+
+simAU distance: 0.3464646464646465 | 827.3851288430789 time = 131.6824330961007 years | 1268 particles | 416 step number |
+| 173537.8 second | 2892.3 minutes | 48.2 hours.
+
+simAU distance: 0.3464646464646465 | 829.3740354027977 time = 131.99897740642785 years | 1265 particles | 417 step number |
+| 173882.1 second | 2898.0 minutes | 48.3 hours.
+
+simAU distance: 0.3464646464646465 | 831.3629419625167 time = 132.31552171675503 years | 1265 particles | 418 step number |
+| 174198.6 second | 2903.3 minutes | 48.4 hours.
+
+simAU distance: 0.3464646464646465 | 833.3518485222356 time = 132.6320660270822 years | 1265 particles | 419 step number |
+| 174504.7 second | 2908.4 minutes | 48.5 hours.
+
+simAU distance: 0.3464646464646465 | 835.3407550819546 time = 132.94861033740938 years | 1265 particles | 420 step number |
+| 174823.5 second | 2913.7 minutes | 48.6 hours.
+
+simAU distance: 0.3464646464646465 | 837.3296616416735 time = 133.26515464773652 years | 1264 particles | 421 step number |
+| 175149.5 second | 2919.2 minutes | 48.7 hours.
+
+simAU distance: 0.3464646464646465 | 839.3185682013925 time = 133.5816989580637 years | 1264 particles | 422 step number |
+| 175492.9 second | 2924.9 minutes | 48.7 hours.
+
+simAU distance: 0.3464646464646465 | 841.3074747611114 time = 133.89824326839087 years | 1264 particles | 423 step number |
+| 175882.4 second | 2931.4 minutes | 48.9 hours.
+
+simAU distance: 0.3464646464646465 | 843.2963813208304 time = 134.21478757871805 years | 1264 particles | 424 step number |
+| 176344.2 second | 2939.1 minutes | 49.0 hours.
+
+simAU distance: 0.3464646464646465 | 845.2852878805493 time = 134.5313318890452 years | 1263 particles | 425 step number |
+| 176972.5 second | 2949.5 minutes | 49.2 hours.
+
+simAU distance: 0.3464646464646465 | 847.2741944402683 time = 134.84787619937237 years | 1263 particles | 426 step number |
+| 177400.4 second | 2956.7 minutes | 49.3 hours.
+
+simAU distance: 0.3464646464646465 | 849.2631009999872 time = 135.1644205096995 years | 1263 particles | 427 step number |
+| 177842.2 second | 2964.0 minutes | 49.4 hours.
+
+simAU distance: 0.3464646464646465 | 851.252007559706 time = 135.48096482002668 years | 1263 particles | 428 step number |
+| 178326.8 second | 2972.1 minutes | 49.5 hours.
+
+simAU distance: 0.3464646464646465 | 853.240914119425 time = 135.79750913035386 years | 1263 particles | 429 step number |
+| 178979.2 second | 2983.0 minutes | 49.7 hours.
+
+simAU distance: 0.3464646464646465 | 855.2298206791439 time = 136.114053440681 years | 1263 particles | 430 step number |
+| 179716.7 second | 2995.3 minutes | 49.9 hours.
+
+simAU distance: 0.3464646464646465 | 857.2187272388629 time = 136.43059775100818 years | 1262 particles | 431 step number |
+| 180513.0 second | 3008.5 minutes | 50.1 hours.
+
+simAU distance: 0.3464646464646465 | 859.2076337985818 time = 136.74714206133535 years | 1262 particles | 432 step number |
+| 181281.7 second | 3021.4 minutes | 50.4 hours.
+
+simAU distance: 0.3464646464646465 | 861.1965403583008 time = 137.06368637166253 years | 1262 particles | 433 step number |
+| 182217.3 second | 3037.0 minutes | 50.6 hours.
+
+simAU distance: 0.3464646464646465 | 863.1854469180197 time = 137.38023068198967 years | 1261 particles | 434 step number |
+| 183191.0 second | 3053.2 minutes | 50.9 hours.
+
+simAU distance: 0.3464646464646465 | 865.1743534777387 time = 137.69677499231685 years | 1260 particles | 435 step number |
+| 184153.8 second | 3069.2 minutes | 51.2 hours.
+
+simAU distance: 0.3464646464646465 | 867.1632600374576 time = 138.013319302644 years | 1259 particles | 436 step number |
+| 185068.1 second | 3084.5 minutes | 51.4 hours.
+
+simAU distance: 0.3464646464646465 | 869.1521665971766 time = 138.32986361297117 years | 1259 particles | 437 step number |
+| 185975.9 second | 3099.6 minutes | 51.7 hours.
+
+simAU distance: 0.3464646464646465 | 871.1410731568955 time = 138.64640792329834 years | 1259 particles | 438 step number |
+| 186833.0 second | 3113.9 minutes | 51.9 hours.
+
+simAU distance: 0.3464646464646465 | 873.1299797166145 time = 138.96295223362551 years | 1259 particles | 439 step number |
+| 187623.2 second | 3127.1 minutes | 52.1 hours.
+
+simAU distance: 0.3464646464646465 | 875.1188862763333 time = 139.27949654395266 years | 1259 particles | 440 step number |
+| 188418.4 second | 3140.3 minutes | 52.3 hours.
+
+simAU distance: 0.3464646464646465 | 877.1077928360523 time = 139.59604085427983 years | 1258 particles | 441 step number |
+| 189211.1 second | 3153.5 minutes | 52.6 hours.
+
+simAU distance: 0.3464646464646465 | 879.0966993957712 time = 139.912585164607 years | 1258 particles | 442 step number |
+| 189993.1 second | 3166.6 minutes | 52.8 hours.
+
+simAU distance: 0.3464646464646465 | 881.0856059554902 time = 140.22912947493418 years | 1257 particles | 443 step number |
+| 190784.7 second | 3179.7 minutes | 53.0 hours.
+
+simAU distance: 0.3464646464646465 | 883.0745125152091 time = 140.54567378526133 years | 1256 particles | 444 step number |
+| 191546.6 second | 3192.4 minutes | 53.2 hours.
+
+simAU distance: 0.3464646464646465 | 885.0634190749281 time = 140.8622180955885 years | 1256 particles | 445 step number |
+| 192304.9 second | 3205.1 minutes | 53.4 hours.
+
+simAU distance: 0.3464646464646465 | 887.052325634647 time = 141.17876240591565 years | 1256 particles | 446 step number |
+| 193061.8 second | 3217.7 minutes | 53.6 hours.
+
+simAU distance: 0.3464646464646465 | 889.041232194366 time = 141.49530671624282 years | 1255 particles | 447 step number |
+| 193786.8 second | 3229.8 minutes | 53.8 hours.
+
+simAU distance: 0.3464646464646465 | 891.0301387540849 time = 141.81185102657 years | 1255 particles | 448 step number |
+| 194486.3 second | 3241.4 minutes | 54.0 hours.
+
+simAU distance: 0.3464646464646465 | 893.0190453138039 time = 142.12839533689717 years | 1254 particles | 449 step number |
+| 195123.6 second | 3252.1 minutes | 54.2 hours.
+
+simAU distance: 0.3464646464646465 | 895.0079518735228 time = 142.44493964722432 years | 1254 particles | 450 step number |
+| 195742.4 second | 3262.4 minutes | 54.4 hours.
+
+simAU distance: 0.3464646464646465 | 896.9968584332418 time = 142.7614839575515 years | 1253 particles | 451 step number |
+| 196257.4 second | 3271.0 minutes | 54.5 hours.
+
+simAU distance: 0.3464646464646465 | 898.9857649929606 time = 143.07802826787864 years | 1253 particles | 452 step number |
+| 196744.6 second | 3279.1 minutes | 54.7 hours.
+
+simAU distance: 0.3464646464646465 | 900.9746715526796 time = 143.39457257820584 years | 1251 particles | 453 step number |
+| 197185.6 second | 3286.4 minutes | 54.8 hours.
+
+simAU distance: 0.3464646464646465 | 902.9635781123985 time = 143.71111688853298 years | 1251 particles | 454 step number |
+| 197569.0 second | 3292.8 minutes | 54.9 hours.
+
+simAU distance: 0.3464646464646465 | 904.9524846721175 time = 144.02766119886016 years | 1251 particles | 455 step number |
+| 197972.6 second | 3299.5 minutes | 55.0 hours.
+
+simAU distance: 0.3464646464646465 | 906.9413912318364 time = 144.3442055091873 years | 1251 particles | 456 step number |
+| 198370.1 second | 3306.2 minutes | 55.1 hours.
+
+simAU distance: 0.3464646464646465 | 908.9302977915553 time = 144.66074981951448 years | 1250 particles | 457 step number |
+| 198747.8 second | 3312.5 minutes | 55.2 hours.
+
+simAU distance: 0.3464646464646465 | 910.9192043512743 time = 144.97729412984165 years | 1250 particles | 458 step number |
+| 199144.1 second | 3319.1 minutes | 55.3 hours.
+
+simAU distance: 0.3464646464646465 | 912.9081109109932 time = 145.2938384401688 years | 1250 particles | 459 step number |
+| 199538.8 second | 3325.6 minutes | 55.4 hours.
+
+simAU distance: 0.3464646464646465 | 914.8970174707122 time = 145.61038275049597 years | 1249 particles | 460 step number |
+| 199906.7 second | 3331.8 minutes | 55.5 hours.
+
+simAU distance: 0.3464646464646465 | 916.885924030431 time = 145.92692706082312 years | 1249 particles | 461 step number |
+| 200287.5 second | 3338.1 minutes | 55.6 hours.
+
+simAU distance: 0.3464646464646465 | 918.87483059015 time = 146.2434713711503 years | 1249 particles | 462 step number |
+| 200672.6 second | 3344.5 minutes | 55.7 hours.
+
+simAU distance: 0.3464646464646465 | 920.8637371498689 time = 146.56001568147747 years | 1249 particles | 463 step number |
+| 201036.2 second | 3350.6 minutes | 55.8 hours.
+
+simAU distance: 0.3464646464646465 | 922.8526437095879 time = 146.87655999180464 years | 1248 particles | 464 step number |
+| 201403.8 second | 3356.7 minutes | 55.9 hours.
+
+simAU distance: 0.3464646464646465 | 924.8415502693068 time = 147.1931043021318 years | 1248 particles | 465 step number |
+| 201782.3 second | 3363.0 minutes | 56.1 hours.
+
+simAU distance: 0.3464646464646465 | 926.8304568290258 time = 147.50964861245896 years | 1247 particles | 466 step number |
+| 202151.3 second | 3369.2 minutes | 56.2 hours.
+
+simAU distance: 0.3464646464646465 | 928.8193633887447 time = 147.82619292278613 years | 1247 particles | 467 step number |
+| 202514.2 second | 3375.2 minutes | 56.3 hours.
+
+simAU distance: 0.3464646464646465 | 930.8082699484637 time = 148.1427372331133 years | 1246 particles | 468 step number |
+| 202883.7 second | 3381.4 minutes | 56.4 hours.
+
+simAU distance: 0.3464646464646465 | 932.7971765081826 time = 148.45928154344045 years | 1246 particles | 469 step number |
+| 203297.7 second | 3388.3 minutes | 56.5 hours.
+
+simAU distance: 0.3464646464646465 | 934.7860830679016 time = 148.77582585376763 years | 1246 particles | 470 step number |
+| 203743.0 second | 3395.7 minutes | 56.6 hours.
+
+simAU distance: 0.3464646464646465 | 936.7749896276205 time = 149.09237016409477 years | 1246 particles | 471 step number |
+| 204223.5 second | 3403.7 minutes | 56.7 hours.
+
+simAU distance: 0.3464646464646465 | 938.7638961873395 time = 149.40891447442195 years | 1246 particles | 472 step number |
+| 204666.3 second | 3411.1 minutes | 56.9 hours.
+
+simAU distance: 0.3464646464646465 | 940.7528027470584 time = 149.72545878474912 years | 1246 particles | 473 step number |
+| 205151.0 second | 3419.2 minutes | 57.0 hours.
+
+simAU distance: 0.3464646464646465 | 942.7417093067774 time = 150.0420030950763 years | 1246 particles | 474 step number |
+| 205691.8 second | 3428.2 minutes | 57.1 hours.
+
+simAU distance: 0.3464646464646465 | 944.7306158664962 time = 150.35854740540344 years | 1246 particles | 475 step number |
+| 206266.3 second | 3437.8 minutes | 57.3 hours.
+
+simAU distance: 0.3464646464646465 | 946.7195224262152 time = 150.67509171573062 years | 1246 particles | 476 step number |
+| 206896.4 second | 3448.3 minutes | 57.5 hours.
+
+simAU distance: 0.3464646464646465 | 948.7084289859341 time = 150.9916360260578 years | 1246 particles | 477 step number |
+| 207511.0 second | 3458.5 minutes | 57.6 hours.
+
+simAU distance: 0.3464646464646465 | 950.6973355456531 time = 151.30818033638496 years | 1246 particles | 478 step number |
+| 208106.5 second | 3468.4 minutes | 57.8 hours.
+
+simAU distance: 0.3464646464646465 | 952.686242105372 time = 151.6247246467121 years | 1245 particles | 479 step number |
+| 208691.1 second | 3478.2 minutes | 58.0 hours.
+
+simAU distance: 0.3464646464646465 | 954.675148665091 time = 151.94126895703928 years | 1243 particles | 480 step number |
+| 209284.8 second | 3488.1 minutes | 58.1 hours.
+
+simAU distance: 0.3464646464646465 | 956.6640552248099 time = 152.25781326736643 years | 1243 particles | 481 step number |
+| 209892.4 second | 3498.2 minutes | 58.3 hours.
+
+simAU distance: 0.3464646464646465 | 958.6529617845289 time = 152.5743575776936 years | 1243 particles | 482 step number |
+| 210513.3 second | 3508.6 minutes | 58.5 hours.
+
+simAU distance: 0.3464646464646465 | 960.6418683442478 time = 152.89090188802078 years | 1242 particles | 483 step number |
+| 211130.7 second | 3518.8 minutes | 58.6 hours.
+
+simAU distance: 0.3464646464646465 | 962.6307749039667 time = 153.20744619834792 years | 1242 particles | 484 step number |
+| 211746.1 second | 3529.1 minutes | 58.8 hours.
+
+simAU distance: 0.3464646464646465 | 964.6196814636857 time = 153.5239905086751 years | 1242 particles | 485 step number |
+| 212381.6 second | 3539.7 minutes | 59.0 hours.
+
+simAU distance: 0.3464646464646465 | 966.6085880234045 time = 153.84053481900227 years | 1241 particles | 486 step number |
+| 213070.7 second | 3551.2 minutes | 59.2 hours.
+
+simAU distance: 0.3464646464646465 | 968.5974945831235 time = 154.15707912932945 years | 1241 particles | 487 step number |
+| 213734.3 second | 3562.2 minutes | 59.4 hours.
+
+simAU distance: 0.3464646464646465 | 970.5864011428424 time = 154.4736234396566 years | 1240 particles | 488 step number |
+| 214416.6 second | 3573.6 minutes | 59.6 hours.
+
+simAU distance: 0.3464646464646465 | 972.5753077025614 time = 154.79016774998377 years | 1239 particles | 489 step number |
+| 215121.6 second | 3585.4 minutes | 59.8 hours.
+
+simAU distance: 0.3464646464646465 | 974.5642142622803 time = 155.1067120603109 years | 1238 particles | 490 step number |
+| 215879.0 second | 3598.0 minutes | 60.0 hours.
+
+simAU distance: 0.3464646464646465 | 976.5531208219993 time = 155.4232563706381 years | 1237 particles | 491 step number |
+| 216709.2 second | 3611.8 minutes | 60.2 hours.
+
+simAU distance: 0.3464646464646465 | 978.5420273817182 time = 155.73980068096526 years | 1236 particles | 492 step number |
+| 217723.8 second | 3628.7 minutes | 60.5 hours.
+
+simAU distance: 0.3464646464646465 | 980.5309339414372 time = 156.05634499129243 years | 1236 particles | 493 step number |
+| 218807.4 second | 3646.8 minutes | 60.8 hours.
+
+simAU distance: 0.3464646464646465 | 982.5198405011561 time = 156.37288930161958 years | 1236 particles | 494 step number |
+| 219898.0 second | 3665.0 minutes | 61.1 hours.
+
+simAU distance: 0.3464646464646465 | 984.5087470608751 time = 156.68943361194675 years | 1235 particles | 495 step number |
+| 221027.8 second | 3683.8 minutes | 61.4 hours.
+
+simAU distance: 0.3464646464646465 | 986.497653620594 time = 157.0059779222739 years | 1235 particles | 496 step number |
+| 222311.2 second | 3705.2 minutes | 61.8 hours.
+
+simAU distance: 0.3464646464646465 | 988.486560180313 time = 157.32252223260107 years | 1235 particles | 497 step number |
+| 223733.8 second | 3728.9 minutes | 62.1 hours.
+
+simAU distance: 0.3464646464646465 | 990.4754667400318 time = 157.63906654292825 years | 1235 particles | 498 step number |
+| 225215.3 second | 3753.6 minutes | 62.6 hours.
+
+simAU distance: 0.3464646464646465 | 992.4643732997508 time = 157.95561085325542 years | 1235 particles | 499 step number |
+| 226701.4 second | 3778.4 minutes | 63.0 hours.
+
+simAU distance: 0.3464646464646465 | 994.4532798594697 time = 158.27215516358257 years | 1235 particles | 500 step number |
+| 228265.4 second | 3804.4 minutes | 63.4 hours.
+
+simAU distance: 0.3464646464646465 | 996.4421864191887 time = 158.58869947390974 years | 1234 particles | 501 step number |
+| 229823.2 second | 3830.4 minutes | 63.8 hours.
+
+simAU distance: 0.3464646464646465 | 998.4310929789076 time = 158.90524378423692 years | 1234 particles | 502 step number |
+| 231326.5 second | 3855.4 minutes | 64.3 hours.
+
+simAU distance: 0.3464646464646465 | 1000.4199995386266 time = 159.2217880945641 years | 1234 particles | 503 step number |
+| 232694.9 second | 3878.2 minutes | 64.6 hours.
+
+simAU distance: 0.3464646464646465 | 1002.4089060983455 time = 159.53833240489124 years | 1234 particles | 504 step number |
+| 233796.3 second | 3896.6 minutes | 64.9 hours.
+
+simAU distance: 0.3464646464646465 | 1004.3978126580645 time = 159.8548767152184 years | 1232 particles | 505 step number |
+| 234882.5 second | 3914.7 minutes | 65.2 hours.
+
+simAU distance: 0.3464646464646465 | 1006.3867192177834 time = 160.17142102554556 years | 1232 particles | 506 step number |
+| 235971.2 second | 3932.9 minutes | 65.5 hours.
+
+simAU distance: 0.3464646464646465 | 1008.3756257775024 time = 160.48796533587273 years | 1232 particles | 507 step number |
+| 237152.8 second | 3952.5 minutes | 65.9 hours.
+
+simAU distance: 0.3464646464646465 | 1010.3645323372212 time = 160.8045096461999 years | 1231 particles | 508 step number |
+| 238530.9 second | 3975.5 minutes | 66.3 hours.
+
+simAU distance: 0.3464646464646465 | 1012.3534388969402 time = 161.12105395652708 years | 1228 particles | 509 step number |
+| 239932.4 second | 3998.9 minutes | 66.6 hours.
+
+simAU distance: 0.3464646464646465 | 1014.3423454566591 time = 161.43759826685422 years | 1227 particles | 510 step number |
+| 241296.1 second | 4021.6 minutes | 67.0 hours.
+
+simAU distance: 0.3464646464646465 | 1016.3312520163781 time = 161.7541425771814 years | 1226 particles | 511 step number |
+| 242486.3 second | 4041.4 minutes | 67.4 hours.
+
+simAU distance: 0.3464646464646465 | 1018.320158576097 time = 162.07068688750857 years | 1224 particles | 512 step number |
+| 243489.8 second | 4058.2 minutes | 67.6 hours.
+
+simAU distance: 0.3464646464646465 | 1020.3090651358159 time = 162.38723119783572 years | 1222 particles | 513 step number |
+| 244562.8 second | 4076.0 minutes | 67.9 hours.
+
+simAU distance: 0.3464646464646465 | 1022.2979716955349 time = 162.7037755081629 years | 1222 particles | 514 step number |
+| 245675.5 second | 4094.6 minutes | 68.2 hours.
+
+simAU distance: 0.3464646464646465 | 1024.286878255254 time = 163.02031981849007 years | 1222 particles | 515 step number |
+| 246682.2 second | 4111.4 minutes | 68.5 hours.
+
+simAU distance: 0.3464646464646465 | 1026.2757848149727 time = 163.3368641288172 years | 1221 particles | 516 step number |
+| 247530.0 second | 4125.5 minutes | 68.8 hours.
+
+simAU distance: 0.3464646464646465 | 1028.2646913746917 time = 163.65340843914439 years | 1220 particles | 517 step number |
+| 248338.5 second | 4139.0 minutes | 69.0 hours.
+
+simAU distance: 0.3464646464646465 | 1030.2535979344107 time = 163.96995274947156 years | 1220 particles | 518 step number |
+| 249189.9 second | 4153.2 minutes | 69.2 hours.
+
+simAU distance: 0.3464646464646465 | 1032.2425044941297 time = 164.28649705979873 years | 1220 particles | 519 step number |
+| 250064.6 second | 4167.7 minutes | 69.5 hours.
+
+simAU distance: 0.3464646464646465 | 1034.2314110538484 time = 164.60304137012588 years | 1220 particles | 520 step number |
+| 250952.2 second | 4182.5 minutes | 69.7 hours.
+
+simAU distance: 0.3464646464646465 | 1036.2203176135674 time = 164.91958568045305 years | 1220 particles | 521 step number |
+| 251841.6 second | 4197.4 minutes | 70.0 hours.
+
+simAU distance: 0.3464646464646465 | 1038.2092241732864 time = 165.23612999078023 years | 1220 particles | 522 step number |
+| 252726.1 second | 4212.1 minutes | 70.2 hours.
+
+simAU distance: 0.3464646464646465 | 1040.1981307330054 time = 165.5526743011074 years | 1220 particles | 523 step number |
+| 253661.3 second | 4227.7 minutes | 70.5 hours.
+
+simAU distance: 0.3464646464646465 | 1042.1870372927242 time = 165.86921861143452 years | 1220 particles | 524 step number |
+| 254598.2 second | 4243.3 minutes | 70.7 hours.
+
+simAU distance: 0.3464646464646465 | 1044.1759438524432 time = 166.1857629217617 years | 1220 particles | 525 step number |
+| 255581.1 second | 4259.7 minutes | 71.0 hours.
+
+simAU distance: 0.3464646464646465 | 1046.1648504121622 time = 166.50230723208887 years | 1219 particles | 526 step number |
+| 256540.4 second | 4275.7 minutes | 71.3 hours.
+
+simAU distance: 0.3464646464646465 | 1048.1537569718812 time = 166.81885154241604 years | 1219 particles | 527 step number |
+| 257502.1 second | 4291.7 minutes | 71.5 hours.
+
+simAU distance: 0.3464646464646465 | 1050.1426635316 time = 167.1353958527432 years | 1219 particles | 528 step number |
+| 258493.9 second | 4308.2 minutes | 71.8 hours.
+
+simAU distance: 0.3464646464646465 | 1052.131570091319 time = 167.45194016307036 years | 1219 particles | 529 step number |
+| 259509.6 second | 4325.2 minutes | 72.1 hours.
+
+simAU distance: 0.3464646464646465 | 1054.120476651038 time = 167.76848447339754 years | 1219 particles | 530 step number |
+| 260480.6 second | 4341.3 minutes | 72.4 hours.
+
+simAU distance: 0.3464646464646465 | 1056.109383210757 time = 168.0850287837247 years | 1219 particles | 531 step number |
+| 261478.3 second | 4358.0 minutes | 72.6 hours.
+
+simAU distance: 0.3464646464646465 | 1058.0982897704757 time = 168.40157309405186 years | 1219 particles | 532 step number |
+| 262495.1 second | 4374.9 minutes | 72.9 hours.
+
+simAU distance: 0.3464646464646465 | 1060.0871963301947 time = 168.71811740437903 years | 1219 particles | 533 step number |
+| 263490.9 second | 4391.5 minutes | 73.2 hours.
+
+simAU distance: 0.3464646464646465 | 1062.0761028899137 time = 169.0346617147062 years | 1219 particles | 534 step number |
+| 264478.9 second | 4408.0 minutes | 73.5 hours.
+
+simAU distance: 0.3464646464646465 | 1064.0650094496327 time = 169.35120602503338 years | 1218 particles | 535 step number |
+| 265418.5 second | 4423.6 minutes | 73.7 hours.
+
+simAU distance: 0.3464646464646465 | 1066.0539160093515 time = 169.66775033536052 years | 1218 particles | 536 step number |
+| 266326.9 second | 4438.8 minutes | 74.0 hours.
+
+simAU distance: 0.3464646464646465 | 1068.0428225690705 time = 169.9842946456877 years | 1218 particles | 537 step number |
+| 266946.1 second | 4449.1 minutes | 74.2 hours.
+
+simAU distance: 0.3464646464646465 | 1070.0317291287895 time = 170.30083895601487 years | 1218 particles | 538 step number |
+| 267483.9 second | 4458.1 minutes | 74.3 hours.
+
+simAU distance: 0.3464646464646465 | 1072.0206356885085 time = 170.61738326634205 years | 1217 particles | 539 step number |
+| 268001.9 second | 4466.7 minutes | 74.4 hours.
+
+simAU distance: 0.3464646464646465 | 1074.0095422482273 time = 170.93392757666916 years | 1217 particles | 540 step number |
+| 268472.5 second | 4474.5 minutes | 74.6 hours.
+
+simAU distance: 0.3464646464646465 | 1075.9984488079463 time = 171.25047188699634 years | 1217 particles | 541 step number |
+| 268928.9 second | 4482.1 minutes | 74.7 hours.
+
+simAU distance: 0.3464646464646465 | 1077.9873553676653 time = 171.5670161973235 years | 1217 particles | 542 step number |
+| 269324.4 second | 4488.7 minutes | 74.8 hours.
+
+simAU distance: 0.3464646464646465 | 1079.976261927384 time = 171.88356050765066 years | 1217 particles | 543 step number |
+| 269699.1 second | 4495.0 minutes | 74.9 hours.
+
+simAU distance: 0.3464646464646465 | 1081.965168487103 time = 172.20010481797783 years | 1217 particles | 544 step number |
+| 270066.9 second | 4501.1 minutes | 75.0 hours.
+
+simAU distance: 0.3464646464646465 | 1083.954075046822 time = 172.516649128305 years | 1217 particles | 545 step number |
+| 270418.0 second | 4507.0 minutes | 75.1 hours.
+
+simAU distance: 0.3464646464646465 | 1085.942981606541 time = 172.83319343863218 years | 1217 particles | 546 step number |
+| 270759.9 second | 4512.7 minutes | 75.2 hours.
+
+simAU distance: 0.3464646464646465 | 1087.9318881662598 time = 173.14973774895932 years | 1217 particles | 547 step number |
+| 271093.0 second | 4518.2 minutes | 75.3 hours.
+
+simAU distance: 0.3464646464646465 | 1089.9207947259788 time = 173.4662820592865 years | 1217 particles | 548 step number |
+| 271418.2 second | 4523.6 minutes | 75.4 hours.
+
+simAU distance: 0.3464646464646465 | 1091.9097012856978 time = 173.78282636961367 years | 1217 particles | 549 step number |
+| 271732.0 second | 4528.9 minutes | 75.5 hours.
+
+simAU distance: 0.3464646464646465 | 1093.8986078454168 time = 174.09937067994085 years | 1217 particles | 550 step number |
+| 272040.2 second | 4534.0 minutes | 75.6 hours.
+
+simAU distance: 0.3464646464646465 | 1095.8875144051356 time = 174.415914990268 years | 1217 particles | 551 step number |
+| 272345.1 second | 4539.1 minutes | 75.7 hours.
+
+simAU distance: 0.3464646464646465 | 1097.8764209648546 time = 174.73245930059517 years | 1217 particles | 552 step number |
+| 272647.4 second | 4544.1 minutes | 75.7 hours.
+
+simAU distance: 0.3464646464646465 | 1099.8653275245736 time = 175.04900361092234 years | 1217 particles | 553 step number |
+| 272937.4 second | 4549.0 minutes | 75.8 hours.
+
+simAU distance: 0.3464646464646465 | 1101.8542340842926 time = 175.36554792124952 years | 1217 particles | 554 step number |
+| 273223.4 second | 4553.7 minutes | 75.9 hours.
+
+simAU distance: 0.3464646464646465 | 1103.8431406440113 time = 175.68209223157666 years | 1217 particles | 555 step number |
+| 273495.5 second | 4558.3 minutes | 76.0 hours.
+
+simAU distance: 0.3464646464646465 | 1105.8320472037303 time = 175.99863654190383 years | 1217 particles | 556 step number |
+| 273760.1 second | 4562.7 minutes | 76.0 hours.
+
+simAU distance: 0.3464646464646465 | 1107.8209537634493 time = 176.315180852231 years | 1217 particles | 557 step number |
+| 274019.0 second | 4567.0 minutes | 76.1 hours.
+
+simAU distance: 0.3464646464646465 | 1109.8098603231683 time = 176.63172516255818 years | 1217 particles | 558 step number |
+| 274273.5 second | 4571.2 minutes | 76.2 hours.
+
+simAU distance: 0.3464646464646465 | 1111.798766882887 time = 176.9482694728853 years | 1217 particles | 559 step number |
+| 274518.7 second | 4575.3 minutes | 76.3 hours.
+
+simAU distance: 0.3464646464646465 | 1113.787673442606 time = 177.26481378321247 years | 1217 particles | 560 step number |
+| 274762.6 second | 4579.4 minutes | 76.3 hours.
+
+simAU distance: 0.3464646464646465 | 1115.776580002325 time = 177.58135809353965 years | 1217 particles | 561 step number |
+| 275007.3 second | 4583.5 minutes | 76.4 hours.
+
+simAU distance: 0.3464646464646465 | 1117.765486562044 time = 177.89790240386682 years | 1217 particles | 562 step number |
+| 275243.2 second | 4587.4 minutes | 76.5 hours.
+
+simAU distance: 0.3464646464646465 | 1119.7543931217629 time = 178.21444671419397 years | 1217 particles | 563 step number |
+| 275476.0 second | 4591.3 minutes | 76.5 hours.
+
+simAU distance: 0.3464646464646465 | 1121.7432996814819 time = 178.53099102452114 years | 1217 particles | 564 step number |
+| 275698.1 second | 4595.0 minutes | 76.6 hours.
+
+simAU distance: 0.3464646464646465 | 1123.7322062412009 time = 178.84753533484832 years | 1217 particles | 565 step number |
+| 275920.1 second | 4598.7 minutes | 76.6 hours.
+
+simAU distance: 0.3464646464646465 | 1125.7211128009199 time = 179.1640796451755 years | 1217 particles | 566 step number |
+| 276133.8 second | 4602.2 minutes | 76.7 hours.
+
+simAU distance: 0.3464646464646465 | 1127.7100193606386 time = 179.48062395550264 years | 1216 particles | 567 step number |
+| 276344.3 second | 4605.7 minutes | 76.8 hours.
+
+simAU distance: 0.3464646464646465 | 1129.6989259203576 time = 179.7971682658298 years | 1216 particles | 568 step number |
+| 276547.1 second | 4609.1 minutes | 76.8 hours.
+
+simAU distance: 0.3464646464646465 | 1131.6878324800766 time = 180.11371257615698 years | 1216 particles | 569 step number |
+| 276749.9 second | 4612.5 minutes | 76.9 hours.
+
+simAU distance: 0.3464646464646465 | 1133.6767390397954 time = 180.43025688648413 years | 1216 particles | 570 step number |
+| 276951.8 second | 4615.9 minutes | 76.9 hours.
+
+simAU distance: 0.3464646464646465 | 1135.6656455995144 time = 180.7468011968113 years | 1216 particles | 571 step number |
+| 277149.8 second | 4619.2 minutes | 77.0 hours.
+
+simAU distance: 0.3464646464646465 | 1137.6545521592334 time = 181.06334550713848 years | 1216 particles | 572 step number |
+| 277350.6 second | 4622.5 minutes | 77.0 hours.
+
+simAU distance: 0.3464646464646465 | 1139.6434587189524 time = 181.37988981746565 years | 1216 particles | 573 step number |
+| 277546.3 second | 4625.8 minutes | 77.1 hours.
+
+simAU distance: 0.3464646464646465 | 1141.6323652786712 time = 181.69643412779277 years | 1216 particles | 574 step number |
+| 277743.1 second | 4629.1 minutes | 77.2 hours.
+
+simAU distance: 0.3464646464646465 | 1143.6212718383902 time = 182.01297843811997 years | 1216 particles | 575 step number |
+| 277942.0 second | 4632.4 minutes | 77.2 hours.
+
+simAU distance: 0.3464646464646465 | 1145.6101783981092 time = 182.32952274844715 years | 1216 particles | 576 step number |
+| 278136.4 second | 4635.6 minutes | 77.3 hours.
+
+simAU distance: 0.3464646464646465 | 1147.5990849578282 time = 182.64606705877432 years | 1216 particles | 577 step number |
+| 278333.0 second | 4638.9 minutes | 77.3 hours.
+
+simAU distance: 0.3464646464646465 | 1149.587991517547 time = 182.96261136910144 years | 1216 particles | 578 step number |
+| 278531.3 second | 4642.2 minutes | 77.4 hours.
+
+simAU distance: 0.3464646464646465 | 1151.576898077266 time = 183.2791556794286 years | 1216 particles | 579 step number |
+| 278726.0 second | 4645.4 minutes | 77.4 hours.
+
+simAU distance: 0.3464646464646465 | 1153.565804636985 time = 183.5956999897558 years | 1216 particles | 580 step number |
+| 278921.8 second | 4648.7 minutes | 77.5 hours.
+
+simAU distance: 0.3464646464646465 | 1155.554711196704 time = 183.91224430008296 years | 1216 particles | 581 step number |
+| 279122.5 second | 4652.0 minutes | 77.5 hours.
+
+simAU distance: 0.3464646464646465 | 1157.5436177564227 time = 184.2287886104101 years | 1216 particles | 582 step number |
+| 279319.1 second | 4655.3 minutes | 77.6 hours.
+
+simAU distance: 0.3464646464646465 | 1159.5325243161417 time = 184.54533292073728 years | 1216 particles | 583 step number |
+| 279515.4 second | 4658.6 minutes | 77.6 hours.
+
+simAU distance: 0.3464646464646465 | 1161.5214308758607 time = 184.86187723106445 years | 1216 particles | 584 step number |
+| 279717.0 second | 4661.9 minutes | 77.7 hours.
+
+simAU distance: 0.3464646464646465 | 1163.5103374355797 time = 185.17842154139163 years | 1216 particles | 585 step number |
+| 279921.6 second | 4665.4 minutes | 77.8 hours.
+
+simAU distance: 0.3464646464646465 | 1165.4992439952985 time = 185.49496585171877 years | 1216 particles | 586 step number |
+| 280125.3 second | 4668.8 minutes | 77.8 hours.
+
+simAU distance: 0.3464646464646465 | 1167.4881505550175 time = 185.81151016204595 years | 1216 particles | 587 step number |
+| 280330.7 second | 4672.2 minutes | 77.9 hours.
+
+simAU distance: 0.3464646464646465 | 1169.4770571147365 time = 186.12805447237312 years | 1216 particles | 588 step number |
+| 280542.7 second | 4675.7 minutes | 77.9 hours.
+
+simAU distance: 0.3464646464646465 | 1171.4659636744555 time = 186.4445987827003 years | 1216 particles | 589 step number |
+| 280760.9 second | 4679.3 minutes | 78.0 hours.
+
+simAU distance: 0.3464646464646465 | 1173.4548702341742 time = 186.76114309302744 years | 1216 particles | 590 step number |
+| 280985.5 second | 4683.1 minutes | 78.1 hours.
+
+simAU distance: 0.3464646464646465 | 1175.4437767938932 time = 187.07768740335462 years | 1216 particles | 591 step number |
+| 281218.9 second | 4687.0 minutes | 78.1 hours.
+
+simAU distance: 0.3464646464646465 | 1177.4326833536122 time = 187.3942317136818 years | 1216 particles | 592 step number |
+| 281455.1 second | 4690.9 minutes | 78.2 hours.
+
+simAU distance: 0.3464646464646465 | 1179.4215899133312 time = 187.71077602400896 years | 1216 particles | 593 step number |
+| 281701.4 second | 4695.0 minutes | 78.3 hours.
+
+simAU distance: 0.3464646464646465 | 1181.41049647305 time = 188.02732033433608 years | 1216 particles | 594 step number |
+| 281965.5 second | 4699.4 minutes | 78.3 hours.
+
+simAU distance: 0.3464646464646465 | 1183.399403032769 time = 188.34386464466326 years | 1216 particles | 595 step number |
+| 282224.6 second | 4703.7 minutes | 78.4 hours.
+
+simAU distance: 0.3464646464646465 | 1185.388309592488 time = 188.66040895499043 years | 1216 particles | 596 step number |
+| 282494.3 second | 4708.2 minutes | 78.5 hours.
+
+simAU distance: 0.3464646464646465 | 1187.377216152207 time = 188.9769532653176 years | 1215 particles | 597 step number |
+| 282785.1 second | 4713.1 minutes | 78.6 hours.
+
+simAU distance: 0.3464646464646465 | 1189.3661227119258 time = 189.29349757564475 years | 1215 particles | 598 step number |
+| 283085.3 second | 4718.1 minutes | 78.6 hours.
+
+simAU distance: 0.3464646464646465 | 1191.3550292716448 time = 189.61004188597192 years | 1215 particles | 599 step number |
+| 283386.5 second | 4723.1 minutes | 78.7 hours.
+
+simAU distance: 0.3464646464646465 | 1193.3439358313638 time = 189.9265861962991 years | 1214 particles | 600 step number |
+| 283692.5 second | 4728.2 minutes | 78.8 hours.
+
+simAU distance: 0.3464646464646465 | 1195.3328423910825 time = 190.24313050662624 years | 1214 particles | 601 step number |
+| 284010.7 second | 4733.5 minutes | 78.9 hours.
+
+simAU distance: 0.3464646464646465 | 1197.3217489508015 time = 190.55967481695342 years | 1213 particles | 602 step number |
+| 284346.8 second | 4739.1 minutes | 79.0 hours.
+
+simAU distance: 0.3464646464646465 | 1199.3106555105205 time = 190.8762191272806 years | 1213 particles | 603 step number |
+| 284701.0 second | 4745.0 minutes | 79.1 hours.
+
+simAU distance: 0.3464646464646465 | 1201.2995620702395 time = 191.19276343760777 years | 1212 particles | 604 step number |
+| 285107.2 second | 4751.8 minutes | 79.2 hours.
+
+simAU distance: 0.3464646464646465 | 1203.2884686299583 time = 191.5093077479349 years | 1212 particles | 605 step number |
+| 285504.6 second | 4758.4 minutes | 79.3 hours.
+
+simAU distance: 0.3464646464646465 | 1205.2773751896773 time = 191.8258520582621 years | 1211 particles | 606 step number |
+| 285991.6 second | 4766.5 minutes | 79.4 hours.
+
+simAU distance: 0.3464646464646465 | 1207.2662817493963 time = 192.14239636858926 years | 1211 particles | 607 step number |
+| 286421.2 second | 4773.7 minutes | 79.6 hours.
+
+simAU distance: 0.3464646464646465 | 1209.2551883091153 time = 192.45894067891643 years | 1211 particles | 608 step number |
+| 286934.1 second | 4782.2 minutes | 79.7 hours.
+
+simAU distance: 0.3464646464646465 | 1211.244094868834 time = 192.77548498924358 years | 1211 particles | 609 step number |
+| 287420.4 second | 4790.3 minutes | 79.8 hours.
+
+simAU distance: 0.3464646464646465 | 1213.233001428553 time = 193.09202929957075 years | 1211 particles | 610 step number |
+| 287896.6 second | 4798.3 minutes | 80.0 hours.
+
+simAU distance: 0.3464646464646465 | 1215.221907988272 time = 193.40857360989793 years | 1210 particles | 611 step number |
+| 288421.2 second | 4807.0 minutes | 80.1 hours.
+
+simAU distance: 0.3464646464646465 | 1217.210814547991 time = 193.7251179202251 years | 1210 particles | 612 step number |
+| 288939.0 second | 4815.7 minutes | 80.3 hours.
+
+simAU distance: 0.3464646464646465 | 1219.1997211077098 time = 194.04166223055222 years | 1210 particles | 613 step number |
+| 289435.9 second | 4823.9 minutes | 80.4 hours.
+
+simAU distance: 0.3464646464646465 | 1221.1886276674288 time = 194.3582065408794 years | 1210 particles | 614 step number |
+| 289932.5 second | 4832.2 minutes | 80.5 hours.
+
+simAU distance: 0.3464646464646465 | 1223.1775342271478 time = 194.67475085120657 years | 1210 particles | 615 step number |
+| 290443.8 second | 4840.7 minutes | 80.7 hours.
+
+simAU distance: 0.3464646464646465 | 1225.1664407868668 time = 194.99129516153374 years | 1210 particles | 616 step number |
+| 290964.5 second | 4849.4 minutes | 80.8 hours.
+
+simAU distance: 0.3464646464646465 | 1227.1553473465856 time = 195.3078394718609 years | 1210 particles | 617 step number |
+| 291435.5 second | 4857.3 minutes | 81.0 hours.
+
+simAU distance: 0.3464646464646465 | 1229.1442539063046 time = 195.62438378218806 years | 1210 particles | 618 step number |
+| 291882.1 second | 4864.7 minutes | 81.1 hours.
+
+simAU distance: 0.3464646464646465 | 1231.1331604660236 time = 195.94092809251524 years | 1210 particles | 619 step number |
+| 292375.6 second | 4872.9 minutes | 81.2 hours.
+
+simAU distance: 0.3464646464646465 | 1233.1220670257426 time = 196.2574724028424 years | 1210 particles | 620 step number |
+| 292799.0 second | 4880.0 minutes | 81.3 hours.
+
+simAU distance: 0.3464646464646465 | 1235.1109735854614 time = 196.57401671316956 years | 1210 particles | 621 step number |
+| 293238.5 second | 4887.3 minutes | 81.5 hours.
+
+simAU distance: 0.3464646464646465 | 1237.0998801451804 time = 196.89056102349673 years | 1210 particles | 622 step number |
+| 293665.6 second | 4894.4 minutes | 81.6 hours.
+
+simAU distance: 0.3464646464646465 | 1239.0887867048993 time = 197.2071053338239 years | 1210 particles | 623 step number |
+| 294058.2 second | 4901.0 minutes | 81.7 hours.
+
+simAU distance: 0.3464646464646465 | 1241.0776932646183 time = 197.52364964415108 years | 1210 particles | 624 step number |
+| 294424.6 second | 4907.1 minutes | 81.8 hours.
+
+simAU distance: 0.3464646464646465 | 1243.0665998243371 time = 197.84019395447822 years | 1210 particles | 625 step number |
+| 294786.7 second | 4913.1 minutes | 81.9 hours.
+
+simAU distance: 0.3464646464646465 | 1245.0555063840561 time = 198.1567382648054 years | 1210 particles | 626 step number |
+| 295107.5 second | 4918.5 minutes | 82.0 hours.
+
+simAU distance: 0.3464646464646465 | 1247.0444129437751 time = 198.47328257513257 years | 1210 particles | 627 step number |
+| 295425.6 second | 4923.8 minutes | 82.1 hours.
+
+simAU distance: 0.3464646464646465 | 1249.0333195034939 time = 198.7898268854597 years | 1210 particles | 628 step number |
+| 295739.8 second | 4929.0 minutes | 82.1 hours.
+
+simAU distance: 0.3464646464646465 | 1251.0222260632129 time = 199.10637119578686 years | 1210 particles | 629 step number |
+| 296042.0 second | 4934.0 minutes | 82.2 hours.
+
+simAU distance: 0.3464646464646465 | 1253.0111326229319 time = 199.42291550611404 years | 1210 particles | 630 step number |
+| 296345.9 second | 4939.1 minutes | 82.3 hours.
+
+simAU distance: 0.3464646464646465 | 1255.0000391826509 time = 199.7394598164412 years | 1210 particles | 631 step number |
+| 296645.9 second | 4944.1 minutes | 82.4 hours.
+
+simAU distance: 0.3464646464646465 | 1256.9889457423697 time = 200.05600412676836 years | 1210 particles | 632 step number |
+| 296940.8 second | 4949.0 minutes | 82.5 hours.
+
+simAU distance: 0.3464646464646465 | 1258.9778523020886 time = 200.37254843709553 years | 1209 particles | 633 step number |
+| 297224.4 second | 4953.7 minutes | 82.6 hours.
+
+simAU distance: 0.3464646464646465 | 1260.9667588618076 time = 200.6890927474227 years | 1209 particles | 634 step number |
+| 297497.7 second | 4958.3 minutes | 82.6 hours.
+
+simAU distance: 0.3464646464646465 | 1262.9556654215266 time = 201.00563705774988 years | 1208 particles | 635 step number |
+| 297769.6 second | 4962.8 minutes | 82.7 hours.
+
+simAU distance: 0.3464646464646465 | 1264.9445719812454 time = 201.32218136807703 years | 1208 particles | 636 step number |
+| 298036.7 second | 4967.3 minutes | 82.8 hours.
+
+simAU distance: 0.3464646464646465 | 1266.9334785409644 time = 201.6387256784042 years | 1208 particles | 637 step number |
+| 298302.4 second | 4971.7 minutes | 82.9 hours.
+
+simAU distance: 0.3464646464646465 | 1268.9223851006834 time = 201.95526998873137 years | 1208 particles | 638 step number |
+| 298561.2 second | 4976.0 minutes | 82.9 hours.
+
+simAU distance: 0.3464646464646465 | 1270.9112916604024 time = 202.27181429905855 years | 1208 particles | 639 step number |
+| 298819.3 second | 4980.3 minutes | 83.0 hours.
+
+simAU distance: 0.3464646464646465 | 1272.9001982201212 time = 202.5883586093857 years | 1208 particles | 640 step number |
+| 299080.1 second | 4984.7 minutes | 83.1 hours.
+
+simAU distance: 0.3464646464646465 | 1274.8891047798402 time = 202.90490291971287 years | 1208 particles | 641 step number |
+| 299339.5 second | 4989.0 minutes | 83.1 hours.
+
+simAU distance: 0.3464646464646465 | 1276.8780113395592 time = 203.22144723004004 years | 1208 particles | 642 step number |
+| 299595.0 second | 4993.3 minutes | 83.2 hours.
+
+simAU distance: 0.3464646464646465 | 1278.8669178992782 time = 203.53799154036722 years | 1208 particles | 643 step number |
+| 299854.6 second | 4997.6 minutes | 83.3 hours.
+
+simAU distance: 0.3464646464646465 | 1280.855824458997 time = 203.85453585069436 years | 1208 particles | 644 step number |
+| 300121.1 second | 5002.0 minutes | 83.4 hours.
+
+simAU distance: 0.3464646464646465 | 1282.844731018716 time = 204.17108016102154 years | 1207 particles | 645 step number |
+| 300389.2 second | 5006.5 minutes | 83.4 hours.
+
+simAU distance: 0.3464646464646465 | 1284.833637578435 time = 204.4876244713487 years | 1207 particles | 646 step number |
+| 300657.2 second | 5011.0 minutes | 83.5 hours.
+
+simAU distance: 0.3464646464646465 | 1286.822544138154 time = 204.80416878167588 years | 1207 particles | 647 step number |
+| 300928.3 second | 5015.5 minutes | 83.6 hours.
+
+simAU distance: 0.3464646464646465 | 1288.8114506978727 time = 205.120713092003 years | 1207 particles | 648 step number |
+| 301197.6 second | 5020.0 minutes | 83.7 hours.
+
+simAU distance: 0.3464646464646465 | 1290.8003572575917 time = 205.43725740233018 years | 1207 particles | 649 step number |
+| 301465.9 second | 5024.4 minutes | 83.7 hours.
+
+simAU distance: 0.3464646464646465 | 1292.7892638173107 time = 205.75380171265735 years | 1207 particles | 650 step number |
+| 301737.7 second | 5029.0 minutes | 83.8 hours.
+
+simAU distance: 0.3464646464646465 | 1294.7781703770297 time = 206.07034602298452 years | 1207 particles | 651 step number |
+| 302002.8 second | 5033.4 minutes | 83.9 hours.
+
+simAU distance: 0.3464646464646465 | 1296.7670769367485 time = 206.38689033331167 years | 1206 particles | 652 step number |
+| 302268.6 second | 5037.8 minutes | 84.0 hours.
+
+simAU distance: 0.3464646464646465 | 1298.7559834964675 time = 206.70343464363884 years | 1206 particles | 653 step number |
+| 302531.7 second | 5042.2 minutes | 84.0 hours.
+
+simAU distance: 0.3464646464646465 | 1300.7448900561865 time = 207.01997895396602 years | 1206 particles | 654 step number |
+| 302800.5 second | 5046.7 minutes | 84.1 hours.
+
+simAU distance: 0.3464646464646465 | 1302.7337966159052 time = 207.33652326429316 years | 1206 particles | 655 step number |
+| 303072.5 second | 5051.2 minutes | 84.2 hours.
+
+simAU distance: 0.3464646464646465 | 1304.7227031756242 time = 207.65306757462034 years | 1206 particles | 656 step number |
+| 303345.4 second | 5055.8 minutes | 84.3 hours.
+
+simAU distance: 0.3464646464646465 | 1306.7116097353432 time = 207.9696118849475 years | 1206 particles | 657 step number |
+| 303615.4 second | 5060.3 minutes | 84.3 hours.
+
+simAU distance: 0.3464646464646465 | 1308.7005162950622 time = 208.28615619527469 years | 1206 particles | 658 step number |
+| 303897.5 second | 5065.0 minutes | 84.4 hours.
+
+simAU distance: 0.3464646464646465 | 1310.689422854781 time = 208.60270050560183 years | 1206 particles | 659 step number |
+| 304185.2 second | 5069.8 minutes | 84.5 hours.
+
+simAU distance: 0.3464646464646465 | 1312.6783294145 time = 208.919244815929 years | 1206 particles | 660 step number |
+| 304475.9 second | 5074.6 minutes | 84.6 hours.
+
+simAU distance: 0.3464646464646465 | 1314.667235974219 time = 209.23578912625618 years | 1206 particles | 661 step number |
+| 304774.2 second | 5079.6 minutes | 84.7 hours.
+
+simAU distance: 0.3464646464646465 | 1316.656142533938 time = 209.55233343658335 years | 1206 particles | 662 step number |
+| 305082.8 second | 5084.7 minutes | 84.7 hours.
+
+simAU distance: 0.3464646464646465 | 1318.6450490936568 time = 209.86887774691047 years | 1206 particles | 663 step number |
+| 305395.4 second | 5089.9 minutes | 84.8 hours.
+
+simAU distance: 0.3464646464646465 | 1320.6339556533758 time = 210.18542205723764 years | 1206 particles | 664 step number |
+| 305710.4 second | 5095.2 minutes | 84.9 hours.
+
+simAU distance: 0.3464646464646465 | 1322.6228622130948 time = 210.50196636756485 years | 1205 particles | 665 step number |
+| 306033.9 second | 5100.6 minutes | 85.0 hours.
+
+simAU distance: 0.3464646464646465 | 1324.6117687728138 time = 210.81851067789202 years | 1205 particles | 666 step number |
+| 306382.0 second | 5106.4 minutes | 85.1 hours.
+
+simAU distance: 0.3464646464646465 | 1326.6006753325325 time = 211.13505498821914 years | 1205 particles | 667 step number |
+| 306814.4 second | 5113.6 minutes | 85.2 hours.
+
+simAU distance: 0.3464646464646465 | 1328.5895818922515 time = 211.4515992985463 years | 1205 particles | 668 step number |
+| 307342.2 second | 5122.4 minutes | 85.4 hours.
+
+simAU distance: 0.3464646464646465 | 1330.5784884519705 time = 211.7681436088735 years | 1205 particles | 669 step number |
+| 307951.6 second | 5132.5 minutes | 85.5 hours.
+
+simAU distance: 0.3464646464646465 | 1332.5673950116895 time = 212.08468791920066 years | 1205 particles | 670 step number |
+| 308571.3 second | 5142.9 minutes | 85.7 hours.
+
+simAU distance: 0.3464646464646465 | 1334.5563015714083 time = 212.4012322295278 years | 1205 particles | 671 step number |
+| 309179.1 second | 5153.0 minutes | 85.9 hours.
+
+simAU distance: 0.3464646464646465 | 1336.5452081311273 time = 212.71777653985498 years | 1205 particles | 672 step number |
+| 309778.6 second | 5163.0 minutes | 86.0 hours.
+
+simAU distance: 0.3464646464646465 | 1338.5341146908463 time = 213.03432085018216 years | 1205 particles | 673 step number |
+| 310313.3 second | 5171.9 minutes | 86.2 hours.
+
+simAU distance: 0.3464646464646465 | 1340.5230212505653 time = 213.35086516050933 years | 1205 particles | 674 step number |
+| 310558.8 second | 5176.0 minutes | 86.3 hours.
+
+simAU distance: 0.3464646464646465 | 1342.511927810284 time = 213.66740947083647 years | 1204 particles | 675 step number |
+| 310803.1 second | 5180.1 minutes | 86.3 hours.
+
+simAU distance: 0.3464646464646465 | 1344.500834370003 time = 213.98395378116365 years | 1203 particles | 676 step number |
+| 311046.4 second | 5184.1 minutes | 86.4 hours.
+
+simAU distance: 0.3464646464646465 | 1346.489740929722 time = 214.30049809149082 years | 1203 particles | 677 step number |
+| 311289.2 second | 5188.2 minutes | 86.5 hours.
+
+simAU distance: 0.3464646464646465 | 1348.478647489441 time = 214.617042401818 years | 1203 particles | 678 step number |
+| 311532.1 second | 5192.2 minutes | 86.5 hours.
+
+simAU distance: 0.3464646464646465 | 1350.4675540491598 time = 214.93358671214514 years | 1203 particles | 679 step number |
+| 311775.3 second | 5196.3 minutes | 86.6 hours.
+
+simAU distance: 0.3464646464646465 | 1352.4564606088788 time = 215.25013102247232 years | 1203 particles | 680 step number |
+| 312018.6 second | 5200.3 minutes | 86.7 hours.
+
+simAU distance: 0.3464646464646465 | 1354.4453671685978 time = 215.5666753327995 years | 1203 particles | 681 step number |
+| 312265.3 second | 5204.4 minutes | 86.7 hours.
+
+simAU distance: 0.3464646464646465 | 1356.4342737283168 time = 215.88321964312667 years | 1203 particles | 682 step number |
+| 312514.0 second | 5208.6 minutes | 86.8 hours.
+
+simAU distance: 0.3464646464646465 | 1358.4231802880356 time = 216.19976395345378 years | 1203 particles | 683 step number |
+| 312765.8 second | 5212.8 minutes | 86.9 hours.
+
+simAU distance: 0.3464646464646465 | 1360.4120868477546 time = 216.51630826378096 years | 1203 particles | 684 step number |
+| 313016.4 second | 5216.9 minutes | 86.9 hours.
+
+simAU distance: 0.3464646464646465 | 1362.4009934074736 time = 216.83285257410813 years | 1203 particles | 685 step number |
+| 313268.9 second | 5221.1 minutes | 87.0 hours.
+
+simAU distance: 0.3464646464646465 | 1364.3898999671924 time = 217.14939688443528 years | 1203 particles | 686 step number |
+| 313523.4 second | 5225.4 minutes | 87.1 hours.
+
+simAU distance: 0.3464646464646465 | 1366.3788065269114 time = 217.46594119476245 years | 1203 particles | 687 step number |
+| 313777.1 second | 5229.6 minutes | 87.2 hours.
+
+simAU distance: 0.3464646464646465 | 1368.3677130866304 time = 217.78248550508962 years | 1202 particles | 688 step number |
+| 314033.4 second | 5233.9 minutes | 87.2 hours.
+
+simAU distance: 0.3464646464646465 | 1370.3566196463494 time = 218.0990298154168 years | 1202 particles | 689 step number |
+| 314290.2 second | 5238.2 minutes | 87.3 hours.
+
+simAU distance: 0.3464646464646465 | 1372.3455262060681 time = 218.41557412574394 years | 1201 particles | 690 step number |
+| 314546.2 second | 5242.4 minutes | 87.4 hours.
+
+simAU distance: 0.3464646464646465 | 1374.3344327657871 time = 218.73211843607112 years | 1201 particles | 691 step number |
+| 314805.3 second | 5246.8 minutes | 87.4 hours.
+
+simAU distance: 0.3464646464646465 | 1376.3233393255061 time = 219.0486627463983 years | 1201 particles | 692 step number |
+| 315067.9 second | 5251.1 minutes | 87.5 hours.
+
+simAU distance: 0.3464646464646465 | 1378.3122458852251 time = 219.36520705672547 years | 1201 particles | 693 step number |
+| 315331.6 second | 5255.5 minutes | 87.6 hours.
+
+simAU distance: 0.3464646464646465 | 1380.301152444944 time = 219.6817513670526 years | 1201 particles | 694 step number |
+| 315590.6 second | 5259.8 minutes | 87.7 hours.
+
+simAU distance: 0.3464646464646465 | 1382.290059004663 time = 219.9982956773798 years | 1201 particles | 695 step number |
+| 315855.2 second | 5264.3 minutes | 87.7 hours.
+
+simAU distance: 0.3464646464646465 | 1384.278965564382 time = 220.31483998770696 years | 1201 particles | 696 step number |
+| 316122.2 second | 5268.7 minutes | 87.8 hours.
+
+simAU distance: 0.3464646464646465 | 1386.267872124101 time = 220.63138429803413 years | 1201 particles | 697 step number |
+| 316389.9 second | 5273.2 minutes | 87.9 hours.
+
+simAU distance: 0.3464646464646465 | 1388.2567786838197 time = 220.94792860836128 years | 1201 particles | 698 step number |
+| 316653.6 second | 5277.6 minutes | 88.0 hours.
+
+simAU distance: 0.3464646464646465 | 1390.2456852435387 time = 221.26447291868845 years | 1201 particles | 699 step number |
+| 316920.8 second | 5282.0 minutes | 88.0 hours.
+
+simAU distance: 0.3464646464646465 | 1392.2345918032577 time = 221.58101722901563 years | 1201 particles | 700 step number |
+| 317188.6 second | 5286.5 minutes | 88.1 hours.
+
+simAU distance: 0.3464646464646465 | 1394.2234983629767 time = 221.8975615393428 years | 1201 particles | 701 step number |
+| 317457.9 second | 5291.0 minutes | 88.2 hours.
+
+simAU distance: 0.3464646464646465 | 1396.2124049226954 time = 222.21410584966992 years | 1201 particles | 702 step number |
+| 317723.7 second | 5295.4 minutes | 88.3 hours.
+
+simAU distance: 0.3464646464646465 | 1398.2013114824144 time = 222.5306501599971 years | 1201 particles | 703 step number |
+| 317987.0 second | 5299.8 minutes | 88.3 hours.
+
+simAU distance: 0.3464646464646465 | 1400.1902180421334 time = 222.84719447032427 years | 1201 particles | 704 step number |
+| 318259.8 second | 5304.3 minutes | 88.4 hours.
+
+simAU distance: 0.3464646464646465 | 1402.1791246018524 time = 223.16373878065144 years | 1201 particles | 705 step number |
+| 318533.4 second | 5308.9 minutes | 88.5 hours.
+
+simAU distance: 0.3464646464646465 | 1404.1680311615712 time = 223.4802830909786 years | 1201 particles | 706 step number |
+| 318806.3 second | 5313.4 minutes | 88.6 hours.
+
+simAU distance: 0.3464646464646465 | 1406.1569377212902 time = 223.79682740130576 years | 1201 particles | 707 step number |
+| 319080.0 second | 5318.0 minutes | 88.6 hours.
+
+simAU distance: 0.3464646464646465 | 1408.1458442810092 time = 224.11337171163294 years | 1201 particles | 708 step number |
+| 319355.3 second | 5322.6 minutes | 88.7 hours.
+
+simAU distance: 0.3464646464646465 | 1410.1347508407282 time = 224.4299160219601 years | 1201 particles | 709 step number |
+| 319633.1 second | 5327.2 minutes | 88.8 hours.
+
+simAU distance: 0.3464646464646465 | 1412.123657400447 time = 224.74646033228726 years | 1200 particles | 710 step number |
+| 319913.0 second | 5331.9 minutes | 88.9 hours.
+
+simAU distance: 0.3464646464646465 | 1414.112563960166 time = 225.06300464261443 years | 1200 particles | 711 step number |
+| 320193.3 second | 5336.6 minutes | 88.9 hours.
+
+simAU distance: 0.3464646464646465 | 1416.101470519885 time = 225.3795489529416 years | 1200 particles | 712 step number |
+| 320468.2 second | 5341.1 minutes | 89.0 hours.
+
+simAU distance: 0.3464646464646465 | 1418.0903770796037 time = 225.69609326326875 years | 1200 particles | 713 step number |
+| 320749.3 second | 5345.8 minutes | 89.1 hours.
+
+simAU distance: 0.3464646464646465 | 1420.0792836393227 time = 226.01263757359592 years | 1200 particles | 714 step number |
+| 321037.8 second | 5350.6 minutes | 89.2 hours.
+
+simAU distance: 0.3464646464646465 | 1422.0681901990417 time = 226.3291818839231 years | 1200 particles | 715 step number |
+| 321320.5 second | 5355.3 minutes | 89.3 hours.
+
+simAU distance: 0.3464646464646465 | 1424.0570967587607 time = 226.64572619425027 years | 1200 particles | 716 step number |
+| 321612.7 second | 5360.2 minutes | 89.3 hours.
+
+simAU distance: 0.3464646464646465 | 1426.0460033184795 time = 226.9622705045774 years | 1200 particles | 717 step number |
+| 321908.3 second | 5365.1 minutes | 89.4 hours.
+
+simAU distance: 0.3464646464646465 | 1428.0349098781985 time = 227.27881481490456 years | 1200 particles | 718 step number |
+| 322205.4 second | 5370.1 minutes | 89.5 hours.
+
+simAU distance: 0.3464646464646465 | 1430.0238164379175 time = 227.59535912523174 years | 1200 particles | 719 step number |
+| 322505.4 second | 5375.1 minutes | 89.6 hours.
+
+simAU distance: 0.3464646464646465 | 1432.0127229976365 time = 227.9119034355589 years | 1200 particles | 720 step number |
+| 322814.7 second | 5380.2 minutes | 89.7 hours.
+
+simAU distance: 0.3464646464646465 | 1434.0016295573553 time = 228.22844774588606 years | 1200 particles | 721 step number |
+| 323124.0 second | 5385.4 minutes | 89.8 hours.
+
+simAU distance: 0.3464646464646465 | 1435.9905361170743 time = 228.54499205621323 years | 1200 particles | 722 step number |
+| 323591.9 second | 5393.2 minutes | 89.9 hours.
+
+simAU distance: 0.3464646464646465 | 1437.9794426767933 time = 228.8615363665404 years | 1200 particles | 723 step number |
+| 323921.8 second | 5398.7 minutes | 90.0 hours.
+
+simAU distance: 0.3464646464646465 | 1439.9683492365123 time = 229.17808067686758 years | 1200 particles | 724 step number |
+| 324272.3 second | 5404.5 minutes | 90.1 hours.
+
+simAU distance: 0.3464646464646465 | 1441.957255796231 time = 229.49462498719473 years | 1200 particles | 725 step number |
+| 324767.3 second | 5412.8 minutes | 90.2 hours.
+
+simAU distance: 0.3464646464646465 | 1443.94616235595 time = 229.8111692975219 years | 1200 particles | 726 step number |
+| 325474.2 second | 5424.6 minutes | 90.4 hours.
+
+simAU distance: 0.3464646464646465 | 1445.935068915669 time = 230.12771360784907 years | 1200 particles | 727 step number |
+| 326533.7 second | 5442.2 minutes | 90.7 hours.
+
+simAU distance: 0.3464646464646465 | 1447.923975475388 time = 230.44425791817625 years | 1200 particles | 728 step number |
+| 327655.9 second | 5460.9 minutes | 91.0 hours.
+
+simAU distance: 0.3464646464646465 | 1449.9128820351068 time = 230.7608022285034 years | 1200 particles | 729 step number |
+| 328874.0 second | 5481.2 minutes | 91.4 hours.
+
+simAU distance: 0.3464646464646465 | 1451.9017885948258 time = 231.07734653883057 years | 1200 particles | 730 step number |
+| 330155.0 second | 5502.6 minutes | 91.7 hours.
+
+simAU distance: 0.3464646464646465 | 1453.8906951545448 time = 231.39389084915774 years | 1199 particles | 731 step number |
+| 331387.7 second | 5523.1 minutes | 92.1 hours.
+
+simAU distance: 0.3464646464646465 | 1455.8796017142638 time = 231.71043515948492 years | 1199 particles | 732 step number |
+| 332590.8 second | 5543.2 minutes | 92.4 hours.
+
+simAU distance: 0.3464646464646465 | 1457.8685082739826 time = 232.02697946981206 years | 1198 particles | 733 step number |
+| 333707.8 second | 5561.8 minutes | 92.7 hours.
+
+simAU distance: 0.3464646464646465 | 1459.8574148337016 time = 232.34352378013924 years | 1197 particles | 734 step number |
+| 334712.1 second | 5578.5 minutes | 93.0 hours.
+
+simAU distance: 0.3464646464646465 | 1461.8463213934206 time = 232.6600680904664 years | 1196 particles | 735 step number |
+| 335681.4 second | 5594.7 minutes | 93.2 hours.
+
+simAU distance: 0.3464646464646465 | 1463.8352279531396 time = 232.97661240079358 years | 1196 particles | 736 step number |
+| 336628.1 second | 5610.5 minutes | 93.5 hours.
+
+simAU distance: 0.3464646464646465 | 1465.8241345128583 time = 233.2931567111207 years | 1196 particles | 737 step number |
+| 337551.6 second | 5625.9 minutes | 93.8 hours.
+
+simAU distance: 0.3464646464646465 | 1467.8130410725773 time = 233.60970102144788 years | 1196 particles | 738 step number |
+| 338482.6 second | 5641.4 minutes | 94.0 hours.
+
+simAU distance: 0.3464646464646465 | 1469.8019476322963 time = 233.92624533177505 years | 1196 particles | 739 step number |
+| 339427.9 second | 5657.1 minutes | 94.3 hours.
+
+simAU distance: 0.3464646464646465 | 1471.790854192015 time = 234.2427896421022 years | 1196 particles | 740 step number |
+| 340460.4 second | 5674.3 minutes | 94.6 hours.
+
+simAU distance: 0.3464646464646465 | 1473.779760751734 time = 234.55933395242937 years | 1196 particles | 741 step number |
+| 341501.7 second | 5691.7 minutes | 94.9 hours.
+
+simAU distance: 0.3464646464646465 | 1475.768667311453 time = 234.87587826275654 years | 1196 particles | 742 step number |
+| 342621.3 second | 5710.4 minutes | 95.2 hours.
+
+simAU distance: 0.3464646464646465 | 1477.757573871172 time = 235.19242257308372 years | 1195 particles | 743 step number |
+| 343759.0 second | 5729.3 minutes | 95.5 hours.
+
+simAU distance: 0.3464646464646465 | 1479.7464804308909 time = 235.50896688341086 years | 1195 particles | 744 step number |
+| 344829.8 second | 5747.2 minutes | 95.8 hours.
+
+simAU distance: 0.3464646464646465 | 1481.7353869906099 time = 235.82551119373804 years | 1195 particles | 745 step number |
+| 345929.8 second | 5765.5 minutes | 96.1 hours.
+
+simAU distance: 0.3464646464646465 | 1483.7242935503289 time = 236.1420555040652 years | 1195 particles | 746 step number |
+| 347011.2 second | 5783.5 minutes | 96.4 hours.
+
+simAU distance: 0.3464646464646465 | 1485.7132001100479 time = 236.4585998143924 years | 1195 particles | 747 step number |
+| 348081.1 second | 5801.4 minutes | 96.7 hours.
+
+simAU distance: 0.3464646464646465 | 1487.7021066697666 time = 236.77514412471953 years | 1194 particles | 748 step number |
+| 349200.7 second | 5820.0 minutes | 97.0 hours.
+
+simAU distance: 0.3464646464646465 | 1489.6910132294856 time = 237.0916884350467 years | 1194 particles | 749 step number |
+| 350300.4 second | 5838.3 minutes | 97.3 hours.
+
+simAU distance: 0.3464646464646465 | 1491.6799197892046 time = 237.40823274537388 years | 1193 particles | 750 step number |
+| 351326.7 second | 5855.4 minutes | 97.6 hours.
+
+simAU distance: 0.3464646464646465 | 1493.6688263489236 time = 237.72477705570105 years | 1193 particles | 751 step number |
+| 352324.6 second | 5872.1 minutes | 97.9 hours.
+
+simAU distance: 0.3464646464646465 | 1495.6577329086424 time = 238.04132136602817 years | 1193 particles | 752 step number |
+| 353214.1 second | 5886.9 minutes | 98.1 hours.
+
+simAU distance: 0.3464646464646465 | 1497.6466394683614 time = 238.35786567635535 years | 1193 particles | 753 step number |
+| 353885.8 second | 5898.1 minutes | 98.3 hours.
+
+simAU distance: 0.3464646464646465 | 1499.6355460280804 time = 238.67440998668252 years | 1193 particles | 754 step number |
+| 354336.0 second | 5905.6 minutes | 98.4 hours.
+
+simAU distance: 0.3464646464646465 | 1501.6244525877994 time = 238.99095429700972 years | 1193 particles | 755 step number |
+| 354664.6 second | 5911.1 minutes | 98.5 hours.
+
+simAU distance: 0.3464646464646465 | 1503.6133591475182 time = 239.30749860733684 years | 1193 particles | 756 step number |
+| 354947.5 second | 5915.8 minutes | 98.6 hours.
+
+simAU distance: 0.3464646464646465 | 1505.6022657072372 time = 239.624042917664 years | 1193 particles | 757 step number |
+| 355208.8 second | 5920.1 minutes | 98.7 hours.
+
+simAU distance: 0.3464646464646465 | 1507.5911722669562 time = 239.9405872279912 years | 1193 particles | 758 step number |
+| 355464.3 second | 5924.4 minutes | 98.7 hours.
+
+simAU distance: 0.3464646464646465 | 1509.5800788266752 time = 240.25713153831836 years | 1193 particles | 759 step number |
+| 355708.4 second | 5928.5 minutes | 98.8 hours.
+
+simAU distance: 0.3464646464646465 | 1511.568985386394 time = 240.5736758486455 years | 1193 particles | 760 step number |
+| 355946.0 second | 5932.4 minutes | 98.9 hours.
+
+simAU distance: 0.3464646464646465 | 1513.557891946113 time = 240.89022015897268 years | 1193 particles | 761 step number |
+| 356176.1 second | 5936.3 minutes | 98.9 hours.
+
+simAU distance: 0.3464646464646465 | 1515.546798505832 time = 241.20676446929986 years | 1193 particles | 762 step number |
+| 356402.1 second | 5940.0 minutes | 99.0 hours.
+
+simAU distance: 0.3464646464646465 | 1517.535705065551 time = 241.52330877962703 years | 1193 particles | 763 step number |
+| 356619.8 second | 5943.7 minutes | 99.1 hours.
+
+simAU distance: 0.3464646464646465 | 1519.5246116252697 time = 241.83985308995418 years | 1193 particles | 764 step number |
+| 356840.3 second | 5947.3 minutes | 99.1 hours.
+
+simAU distance: 0.3464646464646465 | 1521.5135181849887 time = 242.15639740028135 years | 1193 particles | 765 step number |
+| 357066.2 second | 5951.1 minutes | 99.2 hours.
+
+simAU distance: 0.3464646464646465 | 1523.5024247447077 time = 242.47294171060852 years | 1193 particles | 766 step number |
+| 357274.6 second | 5954.6 minutes | 99.2 hours.
+
+simAU distance: 0.3464646464646465 | 1525.4913313044267 time = 242.7894860209357 years | 1192 particles | 767 step number |
+| 357500.0 second | 5958.3 minutes | 99.3 hours.
+
+simAU distance: 0.3464646464646465 | 1527.4802378641455 time = 243.10603033126284 years | 1192 particles | 768 step number |
+| 357711.5 second | 5961.9 minutes | 99.4 hours.
+
+simAU distance: 0.3464646464646465 | 1529.4691444238645 time = 243.42257464159002 years | 1192 particles | 769 step number |
+| 357905.3 second | 5965.1 minutes | 99.4 hours.
+
+simAU distance: 0.3464646464646465 | 1531.4580509835835 time = 243.7391189519172 years | 1192 particles | 770 step number |
+| 358094.5 second | 5968.2 minutes | 99.5 hours.
+
+simAU distance: 0.3464646464646465 | 1533.4469575433022 time = 244.0556632622443 years | 1190 particles | 771 step number |
+| 358276.9 second | 5971.3 minutes | 99.5 hours.
+
+simAU distance: 0.3464646464646465 | 1535.4358641030212 time = 244.37220757257148 years | 1189 particles | 772 step number |
+| 358457.3 second | 5974.3 minutes | 99.6 hours.
+
+simAU distance: 0.3464646464646465 | 1537.4247706627402 time = 244.68875188289866 years | 1188 particles | 773 step number |
+| 358639.3 second | 5977.3 minutes | 99.6 hours.
+
+simAU distance: 0.3464646464646465 | 1539.4136772224592 time = 245.00529619322583 years | 1188 particles | 774 step number |
+| 358809.7 second | 5980.2 minutes | 99.7 hours.
+
+simAU distance: 0.3464646464646465 | 1541.402583782178 time = 245.32184050355298 years | 1188 particles | 775 step number |
+| 358973.6 second | 5982.9 minutes | 99.7 hours.
+
+simAU distance: 0.3464646464646465 | 1543.391490341897 time = 245.63838481388015 years | 1188 particles | 776 step number |
+| 359135.9 second | 5985.6 minutes | 99.8 hours.
+
+simAU distance: 0.3464646464646465 | 1545.380396901616 time = 245.95492912420733 years | 1188 particles | 777 step number |
+| 359292.5 second | 5988.2 minutes | 99.8 hours.
+
+simAU distance: 0.3464646464646465 | 1547.369303461335 time = 246.2714734345345 years | 1188 particles | 778 step number |
+| 359447.3 second | 5990.8 minutes | 99.8 hours.
+
+simAU distance: 0.3464646464646465 | 1549.3582100210538 time = 246.58801774486165 years | 1188 particles | 779 step number |
+| 359604.5 second | 5993.4 minutes | 99.9 hours.
+
+simAU distance: 0.3464646464646465 | 1551.3471165807728 time = 246.90456205518882 years | 1188 particles | 780 step number |
+| 359755.2 second | 5995.9 minutes | 99.9 hours.
+
+simAU distance: 0.3464646464646465 | 1553.3360231404918 time = 247.221106365516 years | 1187 particles | 781 step number |
+| 359901.3 second | 5998.4 minutes | 100.0 hours.
+
+simAU distance: 0.3464646464646465 | 1555.3249297002108 time = 247.53765067584317 years | 1187 particles | 782 step number |
+| 360045.1 second | 6000.8 minutes | 100.0 hours.
+
+simAU distance: 0.3464646464646465 | 1557.3138362599295 time = 247.8541949861703 years | 1187 particles | 783 step number |
+| 360188.0 second | 6003.1 minutes | 100.1 hours.
+
+simAU distance: 0.3464646464646465 | 1559.3027428196485 time = 248.1707392964975 years | 1187 particles | 784 step number |
+| 360326.8 second | 6005.4 minutes | 100.1 hours.
+
+simAU distance: 0.3464646464646465 | 1561.2916493793675 time = 248.48728360682466 years | 1187 particles | 785 step number |
+| 360468.1 second | 6007.8 minutes | 100.1 hours.
+
+simAU distance: 0.3464646464646465 | 1563.2805559390865 time = 248.80382791715184 years | 1187 particles | 786 step number |
+| 360610.4 second | 6010.2 minutes | 100.2 hours.
+
+simAU distance: 0.3464646464646465 | 1565.2694624988053 time = 249.12037222747898 years | 1187 particles | 787 step number |
+| 360744.0 second | 6012.4 minutes | 100.2 hours.
+
+simAU distance: 0.3464646464646465 | 1567.2583690585243 time = 249.43691653780616 years | 1187 particles | 788 step number |
+| 360889.1 second | 6014.8 minutes | 100.2 hours.
+
+simAU distance: 0.3464646464646465 | 1569.2472756182433 time = 249.75346084813333 years | 1187 particles | 789 step number |
+| 361026.6 second | 6017.1 minutes | 100.3 hours.
+
+simAU distance: 0.3464646464646465 | 1571.2361821779623 time = 250.0700051584605 years | 1187 particles | 790 step number |
+| 361162.6 second | 6019.4 minutes | 100.3 hours.
+
+simAU distance: 0.3464646464646465 | 1573.225088737681 time = 250.38654946878762 years | 1187 particles | 791 step number |
+| 361306.4 second | 6021.8 minutes | 100.4 hours.
+
+simAU distance: 0.3464646464646465 | 1575.2139952974 time = 250.7030937791148 years | 1187 particles | 792 step number |
+| 361440.2 second | 6024.0 minutes | 100.4 hours.
+
+simAU distance: 0.3464646464646465 | 1577.202901857119 time = 251.01963808944197 years | 1187 particles | 793 step number |
+| 361591.5 second | 6026.5 minutes | 100.4 hours.
+
+simAU distance: 0.3464646464646465 | 1579.191808416838 time = 251.33618239976914 years | 1187 particles | 794 step number |
+| 361738.5 second | 6029.0 minutes | 100.5 hours.
+
+simAU distance: 0.3464646464646465 | 1581.1807149765568 time = 251.6527267100963 years | 1187 particles | 795 step number |
+| 361875.0 second | 6031.2 minutes | 100.5 hours.
+
+simAU distance: 0.3464646464646465 | 1583.1696215362758 time = 251.96927102042346 years | 1187 particles | 796 step number |
+| 362020.7 second | 6033.7 minutes | 100.6 hours.
+
+simAU distance: 0.3464646464646465 | 1585.1585280959948 time = 252.28581533075064 years | 1187 particles | 797 step number |
+| 362160.9 second | 6036.0 minutes | 100.6 hours.
+
+simAU distance: 0.3464646464646465 | 1587.1474346557136 time = 252.60235964107778 years | 1187 particles | 798 step number |
+| 362304.3 second | 6038.4 minutes | 100.6 hours.
+
+simAU distance: 0.3464646464646465 | 1589.1363412154326 time = 252.91890395140496 years | 1187 particles | 799 step number |
+| 362454.2 second | 6040.9 minutes | 100.7 hours.
+
+simAU distance: 0.3464646464646465 | 1591.1252477751516 time = 253.23544826173213 years | 1187 particles | 800 step number |
+| 362614.7 second | 6043.6 minutes | 100.7 hours.
+
+simAU distance: 0.3464646464646465 | 1593.1141543348706 time = 253.5519925720593 years | 1187 particles | 801 step number |
+| 362754.6 second | 6045.9 minutes | 100.8 hours.
+
+simAU distance: 0.3464646464646465 | 1595.1030608945894 time = 253.86853688238645 years | 1187 particles | 802 step number |
+| 362913.2 second | 6048.6 minutes | 100.8 hours.
+
+simAU distance: 0.3464646464646465 | 1597.0919674543084 time = 254.18508119271362 years | 1187 particles | 803 step number |
+| 363066.1 second | 6051.1 minutes | 100.9 hours.
+
+simAU distance: 0.3464646464646465 | 1599.0808740140274 time = 254.5016255030408 years | 1187 particles | 804 step number |
+| 363211.8 second | 6053.5 minutes | 100.9 hours.
+
+simAU distance: 0.3464646464646465 | 1601.0697805737464 time = 254.81816981336797 years | 1186 particles | 805 step number |
+| 363361.4 second | 6056.0 minutes | 100.9 hours.
+
+simAU distance: 0.3464646464646465 | 1603.0586871334651 time = 255.1347141236951 years | 1186 particles | 806 step number |
+| 363511.7 second | 6058.5 minutes | 101.0 hours.
+
+simAU distance: 0.3464646464646465 | 1605.0475936931841 time = 255.45125843402226 years | 1186 particles | 807 step number |
+| 363655.6 second | 6060.9 minutes | 101.0 hours.
+
+simAU distance: 0.3464646464646465 | 1607.0365002529031 time = 255.76780274434944 years | 1186 particles | 808 step number |
+| 363803.2 second | 6063.4 minutes | 101.1 hours.
+
+simAU distance: 0.3464646464646465 | 1609.0254068126221 time = 256.08434705467664 years | 1185 particles | 809 step number |
+| 363957.9 second | 6066.0 minutes | 101.1 hours.
+
+simAU distance: 0.3464646464646465 | 1611.014313372341 time = 256.40089136500376 years | 1185 particles | 810 step number |
+| 364102.1 second | 6068.4 minutes | 101.1 hours.
+
+simAU distance: 0.3464646464646465 | 1613.00321993206 time = 256.71743567533093 years | 1185 particles | 811 step number |
+| 364243.5 second | 6070.7 minutes | 101.2 hours.
+
+simAU distance: 0.3464646464646465 | 1614.992126491779 time = 257.0339799856581 years | 1185 particles | 812 step number |
+| 364388.0 second | 6073.1 minutes | 101.2 hours.
+
+simAU distance: 0.3464646464646465 | 1616.981033051498 time = 257.3505242959853 years | 1185 particles | 813 step number |
+| 364533.2 second | 6075.6 minutes | 101.3 hours.
+
+simAU distance: 0.3464646464646465 | 1618.9699396112167 time = 257.6670686063124 years | 1185 particles | 814 step number |
+| 364673.9 second | 6077.9 minutes | 101.3 hours.
+
+simAU distance: 0.3464646464646465 | 1620.9588461709357 time = 257.9836129166396 years | 1185 particles | 815 step number |
+| 364828.7 second | 6080.5 minutes | 101.3 hours.
+
+simAU distance: 0.3464646464646465 | 1622.9477527306547 time = 258.3001572269668 years | 1185 particles | 816 step number |
+| 364979.0 second | 6083.0 minutes | 101.4 hours.
+
+simAU distance: 0.3464646464646465 | 1624.9366592903737 time = 258.616701537294 years | 1185 particles | 817 step number |
+| 365119.7 second | 6085.3 minutes | 101.4 hours.
+
+simAU distance: 0.3464646464646465 | 1626.9255658500924 time = 258.9332458476211 years | 1185 particles | 818 step number |
+| 365260.2 second | 6087.7 minutes | 101.5 hours.
+
+simAU distance: 0.3464646464646465 | 1628.9144724098114 time = 259.24979015794827 years | 1185 particles | 819 step number |
+| 365399.3 second | 6090.0 minutes | 101.5 hours.
+
+simAU distance: 0.3464646464646465 | 1630.9033789695304 time = 259.56633446827544 years | 1185 particles | 820 step number |
+| 365539.7 second | 6092.3 minutes | 101.5 hours.
+
+simAU distance: 0.3464646464646465 | 1632.8922855292494 time = 259.8828787786026 years | 1185 particles | 821 step number |
+| 365683.3 second | 6094.7 minutes | 101.6 hours.
+
+simAU distance: 0.3464646464646465 | 1634.8811920889682 time = 260.19942308892973 years | 1185 particles | 822 step number |
+| 365827.5 second | 6097.1 minutes | 101.6 hours.
+
+simAU distance: 0.3464646464646465 | 1636.8700986486872 time = 260.5159673992569 years | 1185 particles | 823 step number |
+| 365970.9 second | 6099.5 minutes | 101.7 hours.
+
+simAU distance: 0.3464646464646465 | 1638.8590052084062 time = 260.8325117095841 years | 1185 particles | 824 step number |
+| 366111.5 second | 6101.9 minutes | 101.7 hours.
+
+simAU distance: 0.3464646464646465 | 1640.847911768125 time = 261.14905601991126 years | 1185 particles | 825 step number |
+| 366252.4 second | 6104.2 minutes | 101.7 hours.
+
+simAU distance: 0.3464646464646465 | 1642.836818327844 time = 261.46560033023843 years | 1185 particles | 826 step number |
+| 366390.9 second | 6106.5 minutes | 101.8 hours.
+
+simAU distance: 0.3464646464646465 | 1644.825724887563 time = 261.7821446405656 years | 1185 particles | 827 step number |
+| 366530.0 second | 6108.8 minutes | 101.8 hours.
+
+simAU distance: 0.3464646464646465 | 1646.814631447282 time = 262.0986889508928 years | 1185 particles | 828 step number |
+| 366670.7 second | 6111.2 minutes | 101.9 hours.
+
+simAU distance: 0.3464646464646465 | 1648.8035380070007 time = 262.4152332612199 years | 1185 particles | 829 step number |
+| 366831.3 second | 6113.9 minutes | 101.9 hours.
+
+simAU distance: 0.3464646464646465 | 1650.7924445667197 time = 262.73177757154707 years | 1185 particles | 830 step number |
+| 366984.0 second | 6116.4 minutes | 101.9 hours.
+
+simAU distance: 0.3464646464646465 | 1652.7813511264387 time = 263.04832188187424 years | 1185 particles | 831 step number |
+| 367129.3 second | 6118.8 minutes | 102.0 hours.
+
+simAU distance: 0.3464646464646465 | 1654.7702576861577 time = 263.3648661922014 years | 1185 particles | 832 step number |
+| 367272.8 second | 6121.2 minutes | 102.0 hours.
+
+simAU distance: 0.3464646464646465 | 1656.7591642458765 time = 263.68141050252854 years | 1185 particles | 833 step number |
+| 367422.5 second | 6123.7 minutes | 102.1 hours.
+
+simAU distance: 0.3464646464646465 | 1658.7480708055955 time = 263.9979548128557 years | 1184 particles | 834 step number |
+| 367584.2 second | 6126.4 minutes | 102.1 hours.
+
+simAU distance: 0.3464646464646465 | 1660.7369773653145 time = 264.3144991231829 years | 1183 particles | 835 step number |
+| 367748.0 second | 6129.1 minutes | 102.2 hours.
+
+simAU distance: 0.3464646464646465 | 1662.7258839250335 time = 264.63104343351006 years | 1183 particles | 836 step number |
+| 367907.9 second | 6131.8 minutes | 102.2 hours.
+
+simAU distance: 0.3464646464646465 | 1664.7147904847523 time = 264.94758774383723 years | 1183 particles | 837 step number |
+| 368055.4 second | 6134.3 minutes | 102.2 hours.
+
+simAU distance: 0.3464646464646465 | 1666.7036970444713 time = 265.2641320541644 years | 1182 particles | 838 step number |
+| 368224.2 second | 6137.1 minutes | 102.3 hours.
+
+simAU distance: 0.3464646464646465 | 1668.6926036041903 time = 265.5806763644916 years | 1182 particles | 839 step number |
+| 368373.0 second | 6139.5 minutes | 102.3 hours.
+
+simAU distance: 0.3464646464646465 | 1670.6815101639093 time = 265.89722067481875 years | 1182 particles | 840 step number |
+| 368525.1 second | 6142.1 minutes | 102.4 hours.
+
+simAU distance: 0.3464646464646465 | 1672.670416723628 time = 266.2137649851459 years | 1182 particles | 841 step number |
+| 368691.2 second | 6144.9 minutes | 102.4 hours.
+
+simAU distance: 0.3464646464646465 | 1674.659323283347 time = 266.53030929547305 years | 1182 particles | 842 step number |
+| 368847.4 second | 6147.5 minutes | 102.5 hours.
+
+simAU distance: 0.3464646464646465 | 1676.648229843066 time = 266.8468536058002 years | 1182 particles | 843 step number |
+| 369003.5 second | 6150.1 minutes | 102.5 hours.
+
+simAU distance: 0.3464646464646465 | 1678.637136402785 time = 267.1633979161274 years | 1182 particles | 844 step number |
+| 369166.6 second | 6152.8 minutes | 102.5 hours.
+
+simAU distance: 0.3464646464646465 | 1680.6260429625038 time = 267.47994222645457 years | 1181 particles | 845 step number |
+| 369340.3 second | 6155.7 minutes | 102.6 hours.
+
+simAU distance: 0.3464646464646465 | 1682.6149495222228 time = 267.79648653678174 years | 1181 particles | 846 step number |
+| 369502.7 second | 6158.4 minutes | 102.6 hours.
+
+simAU distance: 0.3464646464646465 | 1684.6038560819418 time = 268.1130308471089 years | 1181 particles | 847 step number |
+| 369663.8 second | 6161.1 minutes | 102.7 hours.
+
+simAU distance: 0.3464646464646465 | 1686.5927626416608 time = 268.4295751574361 years | 1181 particles | 848 step number |
+| 369830.8 second | 6163.8 minutes | 102.7 hours.
+
+simAU distance: 0.3464646464646465 | 1688.5816692013796 time = 268.7461194677632 years | 1181 particles | 849 step number |
+| 370006.9 second | 6166.8 minutes | 102.8 hours.
+
+simAU distance: 0.3464646464646465 | 1690.5705757610986 time = 269.0626637780904 years | 1181 particles | 850 step number |
+| 370180.4 second | 6169.7 minutes | 102.8 hours.
+
+simAU distance: 0.3464646464646465 | 1692.5594823208176 time = 269.37920808841756 years | 1181 particles | 851 step number |
+| 370351.1 second | 6172.5 minutes | 102.9 hours.
+
+simAU distance: 0.3464646464646465 | 1694.5483888805365 time = 269.69575239874473 years | 1181 particles | 852 step number |
+| 370525.5 second | 6175.4 minutes | 102.9 hours.
+
+simAU distance: 0.3464646464646465 | 1696.5372954402553 time = 270.01229670907185 years | 1181 particles | 853 step number |
+| 370698.6 second | 6178.3 minutes | 103.0 hours.
+
+simAU distance: 0.3464646464646465 | 1698.5262019999743 time = 270.328841019399 years | 1181 particles | 854 step number |
+| 370871.9 second | 6181.2 minutes | 103.0 hours.
+
+simAU distance: 0.3464646464646465 | 1700.5151085596933 time = 270.6453853297262 years | 1181 particles | 855 step number |
+| 371048.9 second | 6184.1 minutes | 103.1 hours.
+
+simAU distance: 0.3464646464646465 | 1702.504015119412 time = 270.96192964005337 years | 1181 particles | 856 step number |
+| 371229.4 second | 6187.2 minutes | 103.1 hours.
+
+simAU distance: 0.3464646464646465 | 1704.492921679131 time = 271.27847395038054 years | 1181 particles | 857 step number |
+| 371411.0 second | 6190.2 minutes | 103.2 hours.
+
+simAU distance: 0.3464646464646465 | 1706.48182823885 time = 271.5950182607077 years | 1181 particles | 858 step number |
+| 371590.1 second | 6193.2 minutes | 103.2 hours.
+
+simAU distance: 0.3464646464646465 | 1708.470734798569 time = 271.9115625710349 years | 1180 particles | 859 step number |
+| 371768.8 second | 6196.1 minutes | 103.3 hours.
+
+simAU distance: 0.3464646464646465 | 1710.4596413582879 time = 272.228106881362 years | 1180 particles | 860 step number |
+| 371949.5 second | 6199.2 minutes | 103.3 hours.
+
+simAU distance: 0.3464646464646465 | 1712.4485479180069 time = 272.5446511916892 years | 1180 particles | 861 step number |
+| 372131.0 second | 6202.2 minutes | 103.4 hours.
+
+simAU distance: 0.3464646464646465 | 1714.4374544777259 time = 272.86119550201636 years | 1180 particles | 862 step number |
+| 372314.0 second | 6205.2 minutes | 103.4 hours.
+
+simAU distance: 0.3464646464646465 | 1716.4263610374448 time = 273.17773981234353 years | 1180 particles | 863 step number |
+| 372503.2 second | 6208.4 minutes | 103.5 hours.
+
+simAU distance: 0.3464646464646465 | 1718.4152675971636 time = 273.4942841226707 years | 1180 particles | 864 step number |
+| 372688.8 second | 6211.5 minutes | 103.5 hours.
+
+simAU distance: 0.3464646464646465 | 1720.4041741568826 time = 273.8108284329979 years | 1180 particles | 865 step number |
+| 372875.1 second | 6214.6 minutes | 103.6 hours.
+
+simAU distance: 0.3464646464646465 | 1722.3930807166016 time = 274.12737274332505 years | 1180 particles | 866 step number |
+| 373069.5 second | 6217.8 minutes | 103.6 hours.
+
+simAU distance: 0.3464646464646465 | 1724.3819872763206 time = 274.4439170536522 years | 1180 particles | 867 step number |
+| 373260.5 second | 6221.0 minutes | 103.7 hours.
+
+simAU distance: 0.3464646464646465 | 1726.3708938360394 time = 274.76046136397935 years | 1180 particles | 868 step number |
+| 373466.5 second | 6224.4 minutes | 103.7 hours.
+
+simAU distance: 0.3464646464646465 | 1728.3598003957584 time = 275.0770056743065 years | 1180 particles | 869 step number |
+| 373668.3 second | 6227.8 minutes | 103.8 hours.
+
+simAU distance: 0.3464646464646465 | 1730.3487069554774 time = 275.3935499846337 years | 1180 particles | 870 step number |
+| 373856.8 second | 6230.9 minutes | 103.8 hours.
+
+simAU distance: 0.3464646464646465 | 1732.3376135151964 time = 275.71009429496087 years | 1180 particles | 871 step number |
+| 374059.3 second | 6234.3 minutes | 103.9 hours.
+
+simAU distance: 0.3464646464646465 | 1734.3265200749152 time = 276.026638605288 years | 1180 particles | 872 step number |
+| 374249.4 second | 6237.5 minutes | 104.0 hours.
+
+simAU distance: 0.3464646464646465 | 1736.3154266346342 time = 276.34318291561516 years | 1180 particles | 873 step number |
+| 374435.2 second | 6240.6 minutes | 104.0 hours.
+
+simAU distance: 0.3464646464646465 | 1738.3043331943531 time = 276.65972722594233 years | 1180 particles | 874 step number |
+| 374622.0 second | 6243.7 minutes | 104.1 hours.
+
+simAU distance: 0.3464646464646465 | 1740.2932397540721 time = 276.9762715362695 years | 1180 particles | 875 step number |
+| 374814.7 second | 6246.9 minutes | 104.1 hours.
+
+simAU distance: 0.3464646464646465 | 1742.282146313791 time = 277.2928158465967 years | 1180 particles | 876 step number |
+| 375000.6 second | 6250.0 minutes | 104.2 hours.
+
+simAU distance: 0.3464646464646465 | 1744.27105287351 time = 277.60936015692386 years | 1180 particles | 877 step number |
+| 375182.8 second | 6253.0 minutes | 104.2 hours.
+
+simAU distance: 0.3464646464646465 | 1746.259959433229 time = 277.92590446725103 years | 1180 particles | 878 step number |
+| 375365.6 second | 6256.1 minutes | 104.3 hours.
+
+simAU distance: 0.3464646464646465 | 1748.248865992948 time = 278.2424487775782 years | 1180 particles | 879 step number |
+| 375550.8 second | 6259.2 minutes | 104.3 hours.
+
+simAU distance: 0.3464646464646465 | 1750.2377725526667 time = 278.5589930879053 years | 1180 particles | 880 step number |
+| 375735.6 second | 6262.3 minutes | 104.4 hours.
+
+simAU distance: 0.3464646464646465 | 1752.2266791123857 time = 278.8755373982325 years | 1180 particles | 881 step number |
+| 375917.6 second | 6265.3 minutes | 104.4 hours.
+
+simAU distance: 0.3464646464646465 | 1754.2155856721047 time = 279.19208170855967 years | 1180 particles | 882 step number |
+| 376099.2 second | 6268.3 minutes | 104.5 hours.
+
+simAU distance: 0.3464646464646465 | 1756.2044922318235 time = 279.50862601888684 years | 1180 particles | 883 step number |
+| 376283.5 second | 6271.4 minutes | 104.5 hours.
+
+simAU distance: 0.3464646464646465 | 1758.1933987915424 time = 279.825170329214 years | 1180 particles | 884 step number |
+| 376473.1 second | 6274.6 minutes | 104.6 hours.
+
+simAU distance: 0.3464646464646465 | 1760.1823053512614 time = 280.1417146395412 years | 1179 particles | 885 step number |
+| 376666.7 second | 6277.8 minutes | 104.6 hours.
+
+simAU distance: 0.3464646464646465 | 1762.1712119109804 time = 280.45825894986837 years | 1178 particles | 886 step number |
+| 376850.7 second | 6280.8 minutes | 104.7 hours.
+
+simAU distance: 0.3464646464646465 | 1764.1601184706992 time = 280.7748032601955 years | 1178 particles | 887 step number |
+| 377029.4 second | 6283.8 minutes | 104.7 hours.
+
+simAU distance: 0.3464646464646465 | 1766.1490250304182 time = 281.09134757052266 years | 1178 particles | 888 step number |
+| 377218.4 second | 6287.0 minutes | 104.8 hours.
+
+simAU distance: 0.3464646464646465 | 1768.1379315901372 time = 281.40789188084983 years | 1178 particles | 889 step number |
+| 377418.7 second | 6290.3 minutes | 104.8 hours.
+
+simAU distance: 0.3464646464646465 | 1770.1268381498562 time = 281.724436191177 years | 1178 particles | 890 step number |
+| 377617.7 second | 6293.6 minutes | 104.9 hours.
+
+simAU distance: 0.3464646464646465 | 1772.115744709575 time = 282.0409805015041 years | 1178 particles | 891 step number |
+| 377819.5 second | 6297.0 minutes | 104.9 hours.
+
+simAU distance: 0.3464646464646465 | 1774.104651269294 time = 282.3575248118313 years | 1178 particles | 892 step number |
+| 378018.2 second | 6300.3 minutes | 105.0 hours.
+
+simAU distance: 0.3464646464646465 | 1776.093557829013 time = 282.67406912215847 years | 1178 particles | 893 step number |
+| 378213.7 second | 6303.6 minutes | 105.1 hours.
+
+simAU distance: 0.3464646464646465 | 1778.082464388732 time = 282.99061343248565 years | 1178 particles | 894 step number |
+| 378414.0 second | 6306.9 minutes | 105.1 hours.
+
+simAU distance: 0.3464646464646465 | 1780.0713709484507 time = 283.3071577428128 years | 1178 particles | 895 step number |
+| 378616.0 second | 6310.3 minutes | 105.2 hours.
+
+simAU distance: 0.3464646464646465 | 1782.0602775081697 time = 283.62370205314 years | 1178 particles | 896 step number |
+| 378795.4 second | 6313.3 minutes | 105.2 hours.
+
+simAU distance: 0.3464646464646465 | 1784.0491840678887 time = 283.94024636346717 years | 1178 particles | 897 step number |
+| 378973.2 second | 6316.2 minutes | 105.3 hours.
+
+simAU distance: 0.3464646464646465 | 1786.0380906276077 time = 284.25679067379434 years | 1178 particles | 898 step number |
+| 379151.8 second | 6319.2 minutes | 105.3 hours.
+
+simAU distance: 0.3464646464646465 | 1788.0269971873265 time = 284.57333498412146 years | 1178 particles | 899 step number |
+| 379338.3 second | 6322.3 minutes | 105.4 hours.
+
+simAU distance: 0.3464646464646465 | 1790.0159037470455 time = 284.88987929444863 years | 1178 particles | 900 step number |
+| 379540.7 second | 6325.7 minutes | 105.4 hours.
+
+simAU distance: 0.3464646464646465 | 1792.0048103067645 time = 285.2064236047758 years | 1178 particles | 901 step number |
+| 379737.6 second | 6329.0 minutes | 105.5 hours.
+
+simAU distance: 0.3464646464646465 | 1793.9937168664835 time = 285.522967915103 years | 1178 particles | 902 step number |
+| 379942.3 second | 6332.4 minutes | 105.5 hours.
+
+simAU distance: 0.3464646464646465 | 1795.9826234262023 time = 285.8395122254301 years | 1178 particles | 903 step number |
+| 380140.3 second | 6335.7 minutes | 105.6 hours.
+
+simAU distance: 0.3464646464646465 | 1797.9715299859213 time = 286.1560565357573 years | 1178 particles | 904 step number |
+| 380341.0 second | 6339.0 minutes | 105.7 hours.
+
+simAU distance: 0.3464646464646465 | 1799.9604365456403 time = 286.47260084608445 years | 1177 particles | 905 step number |
+| 380565.1 second | 6342.8 minutes | 105.7 hours.
+
+simAU distance: 0.3464646464646465 | 1801.9493431053593 time = 286.7891451564117 years | 1177 particles | 906 step number |
+| 380761.5 second | 6346.0 minutes | 105.8 hours.
+
+simAU distance: 0.3464646464646465 | 1803.938249665078 time = 287.1056894667388 years | 1177 particles | 907 step number |
+| 380959.9 second | 6349.3 minutes | 105.8 hours.
+
+simAU distance: 0.3464646464646465 | 1805.927156224797 time = 287.42223377706597 years | 1177 particles | 908 step number |
+| 381141.9 second | 6352.4 minutes | 105.9 hours.
+
+simAU distance: 0.3464646464646465 | 1807.916062784516 time = 287.73877808739314 years | 1177 particles | 909 step number |
+| 381321.3 second | 6355.4 minutes | 105.9 hours.
+
+simAU distance: 0.3464646464646465 | 1809.904969344235 time = 288.0553223977203 years | 1177 particles | 910 step number |
+| 381498.6 second | 6358.3 minutes | 106.0 hours.
+
+simAU distance: 0.3464646464646465 | 1811.8938759039538 time = 288.37186670804743 years | 1177 particles | 911 step number |
+| 381679.8 second | 6361.3 minutes | 106.0 hours.
+
+simAU distance: 0.3464646464646465 | 1813.8827824636728 time = 288.6884110183746 years | 1177 particles | 912 step number |
+| 381856.8 second | 6364.3 minutes | 106.1 hours.
+
+simAU distance: 0.3464646464646465 | 1815.8716890233918 time = 289.0049553287018 years | 1177 particles | 913 step number |
+| 382033.4 second | 6367.2 minutes | 106.1 hours.
+
+simAU distance: 0.3464646464646465 | 1817.8605955831106 time = 289.32149963902896 years | 1177 particles | 914 step number |
+| 382210.5 second | 6370.2 minutes | 106.2 hours.
+
+simAU distance: 0.3464646464646465 | 1819.8495021428296 time = 289.63804394935613 years | 1177 particles | 915 step number |
+| 382386.6 second | 6373.1 minutes | 106.2 hours.
+
+simAU distance: 0.3464646464646465 | 1821.8384087025486 time = 289.9545882596833 years | 1177 particles | 916 step number |
+| 382583.3 second | 6376.4 minutes | 106.3 hours.
+
+simAU distance: 0.3464646464646465 | 1823.8273152622676 time = 290.2711325700105 years | 1177 particles | 917 step number |
+| 382782.4 second | 6379.7 minutes | 106.3 hours.
+
+simAU distance: 0.3464646464646465 | 1825.8162218219863 time = 290.5876768803376 years | 1177 particles | 918 step number |
+| 382982.8 second | 6383.0 minutes | 106.4 hours.
+
+simAU distance: 0.3464646464646465 | 1827.8051283817053 time = 290.90422119066477 years | 1177 particles | 919 step number |
+| 383182.4 second | 6386.4 minutes | 106.4 hours.
+
+simAU distance: 0.3464646464646465 | 1829.7940349414243 time = 291.22076550099194 years | 1177 particles | 920 step number |
+| 383380.6 second | 6389.7 minutes | 106.5 hours.
+
+simAU distance: 0.3464646464646465 | 1831.7829415011433 time = 291.5373098113191 years | 1177 particles | 921 step number |
+| 383579.9 second | 6393.0 minutes | 106.5 hours.
+
+simAU distance: 0.3464646464646465 | 1833.771848060862 time = 291.85385412164624 years | 1177 particles | 922 step number |
+| 383782.7 second | 6396.4 minutes | 106.6 hours.
+
+simAU distance: 0.3464646464646465 | 1835.760754620581 time = 292.1703984319734 years | 1177 particles | 923 step number |
+| 383983.9 second | 6399.7 minutes | 106.7 hours.
+
+simAU distance: 0.3464646464646465 | 1837.7496611803 time = 292.4869427423006 years | 1177 particles | 924 step number |
+| 384162.5 second | 6402.7 minutes | 106.7 hours.
+
+simAU distance: 0.3464646464646465 | 1839.738567740019 time = 292.80348705262776 years | 1177 particles | 925 step number |
+| 384340.4 second | 6405.7 minutes | 106.8 hours.
+
+simAU distance: 0.3464646464646465 | 1841.7274742997379 time = 293.12003136295493 years | 1177 particles | 926 step number |
+| 384518.4 second | 6408.6 minutes | 106.8 hours.
+
+simAU distance: 0.3464646464646465 | 1843.7163808594569 time = 293.4365756732821 years | 1177 particles | 927 step number |
+| 384703.3 second | 6411.7 minutes | 106.9 hours.
+
+simAU distance: 0.3464646464646465 | 1845.7052874191759 time = 293.7531199836093 years | 1177 particles | 928 step number |
+| 384883.5 second | 6414.7 minutes | 106.9 hours.
+
+simAU distance: 0.3464646464646465 | 1847.6941939788949 time = 294.06966429393646 years | 1177 particles | 929 step number |
+| 385066.2 second | 6417.8 minutes | 107.0 hours.
+
+simAU distance: 0.3464646464646465 | 1849.6831005386136 time = 294.3862086042636 years | 1177 particles | 930 step number |
+| 385249.0 second | 6420.8 minutes | 107.0 hours.
+
+simAU distance: 0.3464646464646465 | 1851.6720070983326 time = 294.70275291459075 years | 1177 particles | 931 step number |
+| 385430.4 second | 6423.8 minutes | 107.1 hours.
+
+simAU distance: 0.3464646464646465 | 1853.6609136580516 time = 295.0192972249179 years | 1177 particles | 932 step number |
+| 385613.7 second | 6426.9 minutes | 107.1 hours.
+
+simAU distance: 0.3464646464646465 | 1855.6498202177706 time = 295.3358415352451 years | 1177 particles | 933 step number |
+| 385797.5 second | 6430.0 minutes | 107.2 hours.
+
+simAU distance: 0.3464646464646465 | 1857.6387267774894 time = 295.65238584557227 years | 1177 particles | 934 step number |
+| 385977.4 second | 6433.0 minutes | 107.2 hours.
+
+simAU distance: 0.3464646464646465 | 1859.6276333372084 time = 295.96893015589944 years | 1177 particles | 935 step number |
+| 386156.5 second | 6435.9 minutes | 107.3 hours.
+
+simAU distance: 0.3464646464646465 | 1861.6165398969274 time = 296.2854744662266 years | 1177 particles | 936 step number |
+| 386334.3 second | 6438.9 minutes | 107.3 hours.
+
+simAU distance: 0.3464646464646465 | 1863.6054464566464 time = 296.6020187765538 years | 1177 particles | 937 step number |
+| 386512.2 second | 6441.9 minutes | 107.4 hours.
+
+simAU distance: 0.3464646464646465 | 1865.5943530163652 time = 296.9185630868809 years | 1177 particles | 938 step number |
+| 386691.7 second | 6444.9 minutes | 107.4 hours.
+
+simAU distance: 0.3464646464646465 | 1867.5832595760842 time = 297.2351073972081 years | 1176 particles | 939 step number |
+| 386895.0 second | 6448.3 minutes | 107.5 hours.
+
+simAU distance: 0.3464646464646465 | 1869.5721661358032 time = 297.55165170753526 years | 1176 particles | 940 step number |
+| 387190.3 second | 6453.2 minutes | 107.6 hours.
+
+simAU distance: 0.3464646464646465 | 1871.561072695522 time = 297.8681960178624 years | 1176 particles | 941 step number |
+| 387367.9 second | 6456.1 minutes | 107.6 hours.
+
+simAU distance: 0.3464646464646465 | 1873.549979255241 time = 298.18474032818955 years | 1176 particles | 942 step number |
+| 387557.2 second | 6459.3 minutes | 107.7 hours.
+
+simAU distance: 0.3464646464646465 | 1875.53888581496 time = 298.5012846385167 years | 1176 particles | 943 step number |
+| 387762.0 second | 6462.7 minutes | 107.7 hours.
+
+simAU distance: 0.3464646464646465 | 1877.527792374679 time = 298.8178289488439 years | 1176 particles | 944 step number |
+| 387935.8 second | 6465.6 minutes | 107.8 hours.
+
+simAU distance: 0.3464646464646465 | 1879.5166989343977 time = 299.13437325917107 years | 1176 particles | 945 step number |
+| 388113.7 second | 6468.6 minutes | 107.8 hours.
+
+simAU distance: 0.3464646464646465 | 1881.5056054941167 time = 299.45091756949824 years | 1176 particles | 946 step number |
+| 388307.2 second | 6471.8 minutes | 107.9 hours.
+
+simAU distance: 0.3464646464646465 | 1883.4945120538357 time = 299.7674618798254 years | 1175 particles | 947 step number |
+| 388504.6 second | 6475.1 minutes | 107.9 hours.
+
+simAU distance: 0.3464646464646465 | 1885.4834186135547 time = 300.0840061901526 years | 1174 particles | 948 step number |
+| 388677.0 second | 6478.0 minutes | 108.0 hours.
+
+simAU distance: 0.3464646464646465 | 1887.4723251732735 time = 300.4005505004797 years | 1174 particles | 949 step number |
+| 388863.5 second | 6481.1 minutes | 108.0 hours.
+
+simAU distance: 0.3464646464646465 | 1889.4612317329925 time = 300.7170948108069 years | 1172 particles | 950 step number |
+| 389056.6 second | 6484.3 minutes | 108.1 hours.
+
+simAU distance: 0.3464646464646465 | 1891.4501382927115 time = 301.03363912113406 years | 1172 particles | 951 step number |
+| 389238.1 second | 6487.3 minutes | 108.1 hours.
+
+simAU distance: 0.3464646464646465 | 1893.4390448524305 time = 301.35018343146123 years | 1172 particles | 952 step number |
+| 389417.4 second | 6490.3 minutes | 108.2 hours.
+
+simAU distance: 0.3464646464646465 | 1895.4279514121492 time = 301.6667277417884 years | 1172 particles | 953 step number |
+| 389597.9 second | 6493.3 minutes | 108.2 hours.
+
+simAU distance: 0.3464646464646465 | 1897.4168579718682 time = 301.9832720521156 years | 1172 particles | 954 step number |
+| 389763.2 second | 6496.1 minutes | 108.3 hours.
+
+simAU distance: 0.3464646464646465 | 1899.4057645315872 time = 302.29981636244275 years | 1172 particles | 955 step number |
+| 389930.5 second | 6498.8 minutes | 108.3 hours.
+
+simAU distance: 0.3464646464646465 | 1901.3946710913062 time = 302.61636067276993 years | 1172 particles | 956 step number |
+| 390093.1 second | 6501.6 minutes | 108.4 hours.
+
+simAU distance: 0.3464646464646465 | 1903.383577651025 time = 302.93290498309705 years | 1172 particles | 957 step number |
+| 390261.8 second | 6504.4 minutes | 108.4 hours.
+
+simAU distance: 0.3464646464646465 | 1905.372484210744 time = 303.2494492934242 years | 1171 particles | 958 step number |
+| 390423.9 second | 6507.1 minutes | 108.5 hours.
+
+simAU distance: 0.3464646464646465 | 1907.361390770463 time = 303.5659936037514 years | 1171 particles | 959 step number |
+| 390587.9 second | 6509.8 minutes | 108.5 hours.
+
+simAU distance: 0.3464646464646465 | 1909.350297330182 time = 303.88253791407857 years | 1171 particles | 960 step number |
+| 390749.7 second | 6512.5 minutes | 108.5 hours.
+
+simAU distance: 0.3464646464646465 | 1911.3392038899008 time = 304.1990822244057 years | 1171 particles | 961 step number |
+| 390913.2 second | 6515.2 minutes | 108.6 hours.
+
+simAU distance: 0.3464646464646465 | 1913.3281104496198 time = 304.51562653473286 years | 1171 particles | 962 step number |
+| 391069.0 second | 6517.8 minutes | 108.6 hours.
+
+simAU distance: 0.3464646464646465 | 1915.3170170093388 time = 304.83217084506003 years | 1171 particles | 963 step number |
+| 391229.4 second | 6520.5 minutes | 108.7 hours.
+
+simAU distance: 0.3464646464646465 | 1917.3059235690578 time = 305.1487151553872 years | 1171 particles | 964 step number |
+| 391387.5 second | 6523.1 minutes | 108.7 hours.
+
+simAU distance: 0.3464646464646465 | 1919.2948301287765 time = 305.4652594657144 years | 1170 particles | 965 step number |
+| 391548.0 second | 6525.8 minutes | 108.8 hours.
+
+simAU distance: 0.3464646464646465 | 1921.2837366884955 time = 305.78180377604156 years | 1170 particles | 966 step number |
+| 391702.5 second | 6528.4 minutes | 108.8 hours.
+
+simAU distance: 0.3464646464646465 | 1923.2726432482145 time = 306.09834808636873 years | 1170 particles | 967 step number |
+| 391860.7 second | 6531.0 minutes | 108.9 hours.
+
+simAU distance: 0.3464646464646465 | 1925.2615498079333 time = 306.41489239669585 years | 1170 particles | 968 step number |
+| 392015.4 second | 6533.6 minutes | 108.9 hours.
+
+simAU distance: 0.3464646464646465 | 1927.2504563676523 time = 306.731436707023 years | 1170 particles | 969 step number |
+| 392170.8 second | 6536.2 minutes | 108.9 hours.
+
+simAU distance: 0.3464646464646465 | 1929.2393629273713 time = 307.0479810173502 years | 1170 particles | 970 step number |
+| 392324.1 second | 6538.7 minutes | 109.0 hours.
+
+simAU distance: 0.3464646464646465 | 1931.2282694870903 time = 307.36452532767737 years | 1169 particles | 971 step number |
+| 392477.2 second | 6541.3 minutes | 109.0 hours.
+
+simAU distance: 0.3464646464646465 | 1933.217176046809 time = 307.68106963800454 years | 1169 particles | 972 step number |
+| 392631.2 second | 6543.9 minutes | 109.1 hours.
+
+simAU distance: 0.3464646464646465 | 1935.206082606528 time = 307.9976139483317 years | 1169 particles | 973 step number |
+| 392791.2 second | 6546.5 minutes | 109.1 hours.
+
+simAU distance: 0.3464646464646465 | 1937.194989166247 time = 308.3141582586589 years | 1169 particles | 974 step number |
+| 392944.6 second | 6549.1 minutes | 109.2 hours.
+
+simAU distance: 0.3464646464646465 | 1939.183895725966 time = 308.63070256898607 years | 1169 particles | 975 step number |
+| 393099.1 second | 6551.7 minutes | 109.2 hours.
+
+simAU distance: 0.3464646464646465 | 1941.1728022856848 time = 308.9472468793132 years | 1169 particles | 976 step number |
+| 393262.4 second | 6554.4 minutes | 109.2 hours.
+
+simAU distance: 0.3464646464646465 | 1943.1617088454038 time = 309.26379118964036 years | 1169 particles | 977 step number |
+| 393418.2 second | 6557.0 minutes | 109.3 hours.
+
+simAU distance: 0.3464646464646465 | 1945.1506154051228 time = 309.58033549996753 years | 1169 particles | 978 step number |
+| 393572.1 second | 6559.5 minutes | 109.3 hours.
+
+simAU distance: 0.3464646464646465 | 1947.1395219648418 time = 309.8968798102947 years | 1169 particles | 979 step number |
+| 393739.9 second | 6562.3 minutes | 109.4 hours.
+
+simAU distance: 0.3464646464646465 | 1949.1284285245606 time = 310.2134241206218 years | 1169 particles | 980 step number |
+| 393906.1 second | 6565.1 minutes | 109.4 hours.
+
+simAU distance: 0.3464646464646465 | 1951.1173350842796 time = 310.529968430949 years | 1169 particles | 981 step number |
+| 394073.4 second | 6567.9 minutes | 109.5 hours.
+
+simAU distance: 0.3464646464646465 | 1953.1062416439986 time = 310.8465127412762 years | 1169 particles | 982 step number |
+| 394241.0 second | 6570.7 minutes | 109.5 hours.
+
+simAU distance: 0.3464646464646465 | 1955.0951482037176 time = 311.16305705160335 years | 1169 particles | 983 step number |
+| 394408.6 second | 6573.5 minutes | 109.6 hours.
+
+simAU distance: 0.3464646464646465 | 1957.0840547634364 time = 311.4796013619305 years | 1168 particles | 984 step number |
+| 394672.0 second | 6577.9 minutes | 109.6 hours.
+
+simAU distance: 0.3464646464646465 | 1959.0729613231554 time = 311.7961456722577 years | 1168 particles | 985 step number |
+| 394840.2 second | 6580.7 minutes | 109.7 hours.
+
+simAU distance: 0.3464646464646465 | 1961.0618678828744 time = 312.11268998258487 years | 1168 particles | 986 step number |
+| 395004.4 second | 6583.4 minutes | 109.7 hours.
+
+simAU distance: 0.3464646464646465 | 1963.0507744425934 time = 312.42923429291204 years | 1168 particles | 987 step number |
+| 395169.9 second | 6586.2 minutes | 109.8 hours.
+
+simAU distance: 0.3464646464646465 | 1965.0396810023121 time = 312.74577860323916 years | 1168 particles | 988 step number |
+| 395338.7 second | 6589.0 minutes | 109.8 hours.
+
+simAU distance: 0.3464646464646465 | 1967.0285875620311 time = 313.06232291356633 years | 1168 particles | 989 step number |
+| 395509.2 second | 6591.8 minutes | 109.9 hours.
+
+simAU distance: 0.3464646464646465 | 1969.0174941217501 time = 313.3788672238935 years | 1168 particles | 990 step number |
+| 395676.2 second | 6594.6 minutes | 109.9 hours.
+
+simAU distance: 0.3464646464646465 | 1971.0064006814691 time = 313.6954115342207 years | 1168 particles | 991 step number |
+| 395847.1 second | 6597.5 minutes | 110.0 hours.
+
+simAU distance: 0.3464646464646465 | 1972.995307241188 time = 314.0119558445478 years | 1167 particles | 992 step number |
+| 396017.4 second | 6600.3 minutes | 110.0 hours.
+
+simAU distance: 0.3464646464646465 | 1974.984213800907 time = 314.328500154875 years | 1167 particles | 993 step number |
+| 396188.7 second | 6603.1 minutes | 110.1 hours.
+
+simAU distance: 0.3464646464646465 | 1976.973120360626 time = 314.64504446520215 years | 1167 particles | 994 step number |
+| 396365.3 second | 6606.1 minutes | 110.1 hours.
+
+simAU distance: 0.3464646464646465 | 1978.962026920345 time = 314.9615887755293 years | 1167 particles | 995 step number |
+| 396535.9 second | 6608.9 minutes | 110.1 hours.
+
+simAU distance: 0.3464646464646465 | 1980.9509334800637 time = 315.2781330858565 years | 1167 particles | 996 step number |
+| 396706.1 second | 6611.8 minutes | 110.2 hours.
+
+simAU distance: 0.3464646464646465 | 1982.9398400397827 time = 315.59467739618367 years | 1167 particles | 997 step number |
+| 396879.4 second | 6614.7 minutes | 110.2 hours.
+
+simAU distance: 0.3464646464646465 | 1984.9287465995017 time = 315.91122170651084 years | 1166 particles | 998 step number |
+| 397054.7 second | 6617.6 minutes | 110.3 hours.
+
+simAU distance: 0.3464646464646465 | 1986.9176531592204 time = 316.22776601683796 years | 1166 particles | 999 step number |
+| 397230.6 second | 6620.5 minutes | 110.3 hours.
+
+Done at 397230 seconds!
+Distance (done): 0.3464646464646465 | 1986.9176531592204 time = 316.22776601683796 years | 1166 particles | 1000 step number |
+| 397230.8 second | 6620.5 minutes | 110.3 hours.
+
+Masses 0.003920000000000007 and 0.003920000000000007.
+Ending distance 0.3464646464646465.
+
+Distance 0.3464646464646465 in total took 397231 seconds (6620.52 minutes, 110.34 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [0.003920000000000007, 0.003920000000000007, 0.0, 0.3464646464646465]]
+There are 1166 particles remaining.
+Final directory is /geode2/home/u100/taylor11/Carbonate/Downloads/Rebound/ReboundResonances/simAU/Jupiter.
+Email sent successfully!
+Sun Dec  5 17:43:51 EST 2021

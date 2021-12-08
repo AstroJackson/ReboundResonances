@@ -1,0 +1,51 @@
+Email sent successfully!
+2 0.10656022367666107
+Starting mass: 0.001. Starting Radius: 0.00029814534797077306.
+Steps: 1000
+Beginning distance 0.10656022367666107.
+Total steps: 1000
+distance: 0.10656022367666107 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.10656022367666107 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+simAU distance: 0.10656022367666107 | 1.9889065597189395 time = 0.3165443103271652 years | 1980 particles | 1 step number |
+| 206.9 second | 3.4 minutes | 0.1 hours.
+
+simAU distance: 0.10656022367666107 | 3.977813119437879 time = 0.6330886206543304 years | 1964 particles | 2 step number |
+| 379.6 second | 6.3 minutes | 0.1 hours.
+
+simAU distance: 0.10656022367666107 | 5.966719679156818 time = 0.9496329309814955 years | 1955 particles | 3 step number |
+| 540.7 second | 9.0 minutes | 0.2 hours.
+
+simAU distance: 0.10656022367666107 | 7.955626238875758 time = 1.2661772413086607 years | 1943 particles | 4 step number |
+| 736.5 second | 12.3 minutes | 0.2 hours.
+
+simAU distance: 0.10656022367666107 | 9.944532798594697 time = 1.5827215516358257 years | 1936 particles | 5 step number |
+| 963.1 second | 16.1 minutes | 0.3 hours.
+
+TIME:10.654601902758495
+########################################
+
+
+The planets collided!Time: 10.654601902758495
+
+
+########################################
+simAU distance: 0.10656022367666107 | 11.933439358313636 time = 1.899265861962991 years | 1928 particles | 6 step number |
+| 1209.2 second | 20.2 minutes | 0.3 hours.
+
+Done at 1209 seconds!
+Distance (done): 0.10656022367666107 | 11.933439358313636 time = 1.899265861962991 years | 1928 particles | 1000 step number |
+| 1209.5 second | 20.2 minutes | 0.3 hours.
+
+Masses 0.002740000000000002 and 0.0.
+Ending distance 0.10656022367666107.
+
+Distance 0.10656022367666107 in total took 1209 seconds (20.16 minutes, 0.34 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [0.002740000000000002, 0.0, 100.0, 0.10656022367666107]]
+There are 1928 particles remaining.
+Final directory is /geode2/home/u100/taylor11/Carbonate/Downloads/Rebound/ReboundResonances/simAU/Jupiter.
+Email sent successfully!
+Tue Nov 16 15:40:20 EST 2021

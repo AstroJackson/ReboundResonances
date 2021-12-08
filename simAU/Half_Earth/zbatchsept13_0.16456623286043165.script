@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH -J SimAU_Half_Earth_sept13_0.16456623286043165
+#SBATCH -p general
+#SBATCH -o SimAU_Half_Earth_sept13_0.16456623286043165_%j.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=taylor11@iu.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
+#SBATCH --time=4-00:00:00
+#SBATCH --mem=64G
+
+python3 massListSorter.py 5476.927242999274
+sleep 5
+python3 simAUBatchsept13.py --comboIndex 48 --date sept13
+sleep 5
+wait
+python3 massListSorter.py 5476.927242999274 Masslists/Half_Earthsept13Batch
+
+date

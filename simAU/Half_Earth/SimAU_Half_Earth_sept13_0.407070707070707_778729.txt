@@ -1,0 +1,16 @@
+Email sent successfully!
+Traceback (most recent call last):
+  File "simAUBatchsept13.py", line 672, in <module>
+    saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+  File "simAUBatchsept13.py", line 324, in saveFigs
+    os.mkdir(path+innerFolder+str(distance))
+OSError: [Errno 122] Disk quota exceeded: 'Arrays/Half_Earthsept13Batch/0.407070707070707'
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+OSError: [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "massListSorter.py", line 52, in <module>
+    massListSorter(sys.argv[2])
+  File "massListSorter.py", line 11, in massListSorter
+    splitted[-1] = float(splitted[-1])
+IndexError: list index out of range
+Sun Oct 24 15:32:54 EDT 2021

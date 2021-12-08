@@ -11,11 +11,11 @@
 #SBATCH --time=4-00:00:00
 #SBATCH --mem=64G
 
-python3 massListSorter.py 378.3870954824665
+python3 massListSorter.py 878.6427283277078
 sleep 5
 python3 simAUBatchsept13.py --comboIndex 148 --date sept13
 sleep 5
 wait
-python3 massListSorter.py 378.3870954824665 Masslists/Jupitersept13Batch
+python3 massListSorter.py 878.6427283277078 Masslists/Jupitersept13Batch
 
 date

@@ -21,6 +21,9 @@ def batchErrorList(path):
     not_in = []
     if not os.path.exists(path):
         print(f"Path {path} does not exist.")
+        q = input("Make full list?")
+        if q =='y': 
+            return combo
         return []
     with open(path) as readFile:
         contents = readFile.read().split()[13::4]
@@ -54,7 +57,7 @@ for folder in folders:
     else: errorList = batchErrorList(folder)
     print(f"{folder}: {errorList}")
     for dist in errorList:
-        message += f"sbatch ./zbatch{date}_{dist}.script\nsleep .3\n"
+        message += f"sbatch zbatch{date}_{dist}.script\nsleep .3\n"
         timerNumber = np.random.random() * np.random.random() * 100 * 100 # highly unlikely two different distances will yield the same time number
         if folders == default:
             batchScript = f"#!/bin/bash\
@@ -66,8 +69,8 @@ for folder in folders:
 \n#SBATCH --mail-user=taylor11@iu.edu\
 \n#SBATCH --nodes=1\
 \n#SBATCH --ntasks-per-node=1\
-\n#SBATCH --cpus-per-task=3\
-\n#SBATCH --time=48:00:00\
+\n#SBATCH --cpus-per-task=2\
+\n#SBATCH --time=4-00:00:00\
 \n#SBATCH --mem=64G\
 \n\
 \npython3 massListSorter.py {timerNumber}\

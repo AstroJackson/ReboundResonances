@@ -1,0 +1,2 @@
+Email sent successfully!
+slurmstepd: error: *** JOB 885441 ON c24 CANCELLED AT 2021-12-07T05:00:15 DUE TO TIME LIMIT ***

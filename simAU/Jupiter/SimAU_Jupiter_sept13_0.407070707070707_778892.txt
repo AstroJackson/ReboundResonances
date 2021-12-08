@@ -1,0 +1,2 @@
+Email sent successfully!
+slurmstepd: error: *** JOB 778892 ON c5 CANCELLED AT 2021-11-01T12:33:13 ***

@@ -1,0 +1,36 @@
+Email sent successfully!
+8 0.11212121212121212
+Starting mass: 0.001. Starting Radius: 0.00029814534797077306.
+Steps: 1000
+Beginning distance 0.11212121212121212.
+Total steps: 1000
+distance: 0.11212121212121212 | 0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes.
+
+simAU distance: 0.11212121212121212 | 0.0 time = 0.0 years | 2003 particles | 0 step number |
+| 0.0 second | 0.0 minutes | 0.0 hours.
+
+TIME:0.6061062747031035
+########################################
+
+
+The planets collided!Time: 0.6061062747031035
+
+
+########################################
+simAU distance: 0.11212121212121212 | 1.9889065597189395 time = 0.3165443103271652 years | 1979 particles | 1 step number |
+| 174.9 second | 2.9 minutes | 0.0 hours.
+
+Done at 175 seconds!
+Distance (done): 0.11212121212121212 | 1.9889065597189395 time = 0.3165443103271652 years | 1979 particles | 1000 step number |
+| 175.3 second | 2.9 minutes | 0.0 hours.
+
+Masses 0.0022300000000000006 and 0.0.
+Ending distance 0.11212121212121212.
+
+Distance 0.11212121212121212 in total took 175 seconds (2.93 minutes, 0.05 hours).
+[['inner planet mass', 'outer planet mass', 'distance'], [0.0022300000000000006, 0.0, 100.0, 0.11212121212121212]]
+There are 1979 particles remaining.
+Final directory is /geode2/home/u100/taylor11/Carbonate/Downloads/Rebound/ReboundResonances/simAU/Jupiter.
+Email sent successfully!
+Tue Nov 16 15:23:07 EST 2021

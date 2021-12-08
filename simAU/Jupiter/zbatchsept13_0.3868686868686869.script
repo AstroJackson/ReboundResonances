@@ -8,14 +8,15 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=2
-#SBATCH --time=4-00:00:00
+#SBATCH --qos=long
+#SBATCH --time=7-00:00:00
 #SBATCH --mem=64G
 
-python3 massListSorter.py 227.55543749926636
+python3 massListSorter.py 760.3596842232971
 sleep 5
 python3 simAUBatchsept13.py --comboIndex 130 --date sept13
 sleep 5
 wait
-python3 massListSorter.py 227.55543749926636 Masslists/Jupitersept13Batch
+python3 massListSorter.py 760.3596842232971 Masslists/Jupitersept13Batch
 
 date

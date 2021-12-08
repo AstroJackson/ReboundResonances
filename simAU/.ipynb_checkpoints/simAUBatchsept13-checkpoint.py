@@ -203,7 +203,8 @@ def masslist_txt_append(masslist, filepath,sim = None, write_type = 'a', **kwarg
         #data = data.copy() #comment out this line to not have the original list change
         percentdif = abs((data[0]-data[1])/data[0])*100
         roundedpercentdif = round(percentdif,2)
-        data.insert(2,percentdif)
+        if len(data) < 4:
+            data.insert(2,percentdif)
         for j in data:
             message += str(j)
             message +='\t'
@@ -325,14 +326,19 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
             if not os.path.isdir(path+innerFolder+str(distance)+"/Arrays"):
                 os.mkdir(path+innerFolder+str(distance)+"/Arrays")
     
-    np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+    np.savez("Arrays/"+"graph_data_arrays"+str(dist), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
+    
+    #np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+    #eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
+    #particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
 
     if kwargs.get("just_arrays"):
-        np.savez("Arrays/"+"graph_data_arrays"+str(dist), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
-    eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
-    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
+        pass
+        #np.savez("Arrays/"+"graph_data_arrays"+str(dist), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+    #eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
+    #particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
     else:
         plt.clf() # clears any graphs
         quickplot(sim)
@@ -352,8 +358,8 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.xlabel('Time (2pi*yr)')
         plt.ylabel('Eccentricity')
         plt.savefig("Figures/"+innerFolder+str(distance)+"/Eccentricity"+addOn+".pdf")
-        np.save("Figures/"+innerFolder+str(distance)+"/Arrays/Eccentricity"+addOn, eccs)
-        np.save("Figures/"+innerFolder+str(distance)+"/Arrays/times"+addOn, times)
+        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/Eccentricity"+addOn, eccs)
+        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/times"+addOn, times)
 
         plt.clf()
         plt.plot(times, relative_x_value)
@@ -361,7 +367,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.xlabel('Time (2pi*yr)')
         plt.ylabel('X Value (AU)')
         plt.savefig("Figures/"+innerFolder+str(distance)+"/relativeXValue"+addOn+".pdf")
-        np.save("Figures/"+innerFolder+str(distance)+"/Arrays/relativeXValue"+addOn, relative_x_value)
+        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/relativeXValue"+addOn, relative_x_value)
 
         plt.clf()
         plt.plot(times, masses)
@@ -369,7 +375,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.xlabel('Time (2pi*yr)')
         plt.ylabel('Mass (Solar Masses)')
         plt.savefig("Figures/"+innerFolder+str(distance)+"/masses"+addOn+".pdf")
-        np.save("Figures/"+innerFolder+str(distance)+"/Arrays/masses"+addOn, masses)
+        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/masses"+addOn, masses)
 
         plt.clf()
         fig, axs = plt.subplots(1, 2)
@@ -386,7 +392,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.xlabel('Time (2pi*yr)')
         plt.ylabel('Distance (AU)')
         plt.savefig("Figures/"+innerFolder+str(distance)+"/interplanetaryDistance"+addOn+".pdf")
-        np.save("Figures/"+innerFolder+str(distance)+"/Arrays/inderplanetaryDistance"+addOn, interplanetdistance)
+        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/inderplanetaryDistance"+addOn, interplanetdistance)
 
         plt.clf()
         plt.plot(times, particleNumber)
@@ -394,7 +400,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.xlabel('Time (2pi*yr)')
         plt.ylabel('sim.N (AU)')
         plt.savefig("Figures/"+innerFolder+str(distance)+"/particleNumber"+addOn+".pdf")
-        np.save("Figures/"+innerFolder+str(distance)+"/Arrays/particleNumber"+addOn, particleNumber)
+        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/particleNumber"+addOn, particleNumber)
 
         plt.clf()
         plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
@@ -402,7 +408,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.xlabel('Time (2pi*yr)')
         plt.ylabel('Eccs')
         plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccs"+addOn+".pdf")
-        np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
+        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
 
         plt.clf()
         plt.plot(times, [avg(EccsList, nonNegative = True) for EccsList in asteroidEccs],linewidth=1)
@@ -424,7 +430,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.ylabel('Semi Major Axis (AU)')
         plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
         plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxis"+addOn+".pdf")
-        np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidAU"+addOn, asteroidAU)
+        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidAU"+addOn, asteroidAU)
 
         plt.clf()
         plt.plot(times, [avg(asteroidAUList, positive = True) for asteroidAUList in asteroidAU],linewidth=1)
@@ -670,3 +676,4 @@ masslist_txt_append(simAU_masses,f'Masslists/{presentDirectory}{CLargs.date}Batc
 print(simAU_masses)
 print("There are {} particles remaining.".format(sim.N))
 saveFigs(innerFolder= f"{presentDirectory}{CLargs.date}Batch", distance = distance, addOn = f"_{distance}",leaveGithub = "Rebound", leaveEnd = f"{CLargs.date}/{presentDirectory}")
+
