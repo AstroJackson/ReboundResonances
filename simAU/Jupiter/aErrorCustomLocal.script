@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo Enter the indices with a space between them.
+read -p 'indices = ' indices
+echo indices entered: $indices
+
+for i in $indices
+do
+python3 simAUBatchsept13.py --date sept13 --comboIndex $i &
+done
+
+echo python started
+
+date
