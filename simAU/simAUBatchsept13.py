@@ -327,7 +327,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
                 os.mkdir(path+innerFolder+str(distance)+"/Arrays")
                         
                                            # should be distance
-    np.savez("Arrays/"+"graph_data_arrays"+str(distance), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+    np.savez("Arrays/"+"graph_array_"+str(distance), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
     
