@@ -2,6 +2,8 @@
 # coding: utf-8
 
 # In[2]:
+print("hi")
+
 
 import rebound, numpy as np, matplotlib as mpl
 mpl.use('Agg') # found here:https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server
