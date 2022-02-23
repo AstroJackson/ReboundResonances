@@ -1,2 +1,0 @@
-Email sent successfully!
-slurmstepd: error: *** JOB 844629 ON c64 CANCELLED AT 2021-11-21T10:29:54 DUE TO TIME LIMIT ***

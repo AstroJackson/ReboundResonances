@@ -1,7 +1,0 @@
-Something went wrong…. Connection unexpectedly closed
-  File "simAUBatchsept13.py", line 207
-    data.insert(2,percentdif)
-                            ^
-TabError: inconsistent use of tabs and spaces in indentation
-Something went wrong…. Connection unexpectedly closed
-Sun Nov 14 17:25:10 EST 2021

@@ -1,2 +1,0 @@
-Email sent successfully!
-slurmstepd: error: *** JOB 844628 ON c38 CANCELLED AT 2021-11-21T10:23:54 DUE TO TIME LIMIT ***

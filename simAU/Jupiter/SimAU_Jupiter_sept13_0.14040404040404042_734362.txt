@@ -1,2 +1,0 @@
-Email sent successfully!
-slurmstepd: error: *** JOB 734362 ON c3 CANCELLED AT 2021-10-03T14:59:36 ***

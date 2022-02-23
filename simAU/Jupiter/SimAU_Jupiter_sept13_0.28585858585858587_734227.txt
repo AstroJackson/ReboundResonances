@@ -1,2 +1,0 @@
-Email sent successfully!
-slurmstepd: error: *** JOB 734227 ON c16 CANCELLED AT 2021-09-28T22:01:33 ***
