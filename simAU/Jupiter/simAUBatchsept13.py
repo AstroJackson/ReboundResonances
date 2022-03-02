@@ -63,11 +63,11 @@ def leaveGithub(top: str = "Rebound", end: str = "simAU") -> None:
             except FileExistsError:
                 continue
     os.chdir(end)
-
+    
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
     sim.add(m=1) #creates a star of mass 1
-    sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with some starting mass at .1 AU
     sim.add(m=startingMass, a=distance, f=np.pi, r=R0) 
     return sim
      
@@ -316,7 +316,9 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
 
     if innerFolder:
         innerFolder += "/"
-        for path in ["Arrays/", "Figures/"]:
+        if not os.path.isdir("Arrays/"):
+            os.mkdir("Arrays/")
+        for path in ["Figures/"]:
             if not os.path.isdir(path):
                 os.mkdir(path)
             if not os.path.isdir(path+innerFolder):
