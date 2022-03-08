@@ -1,7 +1,0 @@
-Email sent successfully!
-  File "simAUBatchsept13.py", line 207
-    data.insert(2,percentdif)
-                            ^
-TabError: inconsistent use of tabs and spaces in indentation
-Email sent successfully!
-Sun Nov 14 17:20:39 EST 2021

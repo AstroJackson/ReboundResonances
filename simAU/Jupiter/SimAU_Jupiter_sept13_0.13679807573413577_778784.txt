@@ -1,2 +1,0 @@
-Email sent successfully!
-slurmstepd: error: *** JOB 778784 ON c63 CANCELLED AT 2021-10-28T23:36:50 DUE TO TIME LIMIT ***

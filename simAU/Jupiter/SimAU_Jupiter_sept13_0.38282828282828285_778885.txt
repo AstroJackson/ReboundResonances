@@ -1,2 +1,0 @@
-Email sent successfully!
-slurmstepd: error: *** JOB 778885 ON c47 CANCELLED AT 2021-11-01T12:33:13 ***
