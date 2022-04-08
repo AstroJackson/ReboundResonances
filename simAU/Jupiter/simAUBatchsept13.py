@@ -650,7 +650,7 @@ info = int(CLargs.comboIndex)
 print(info, combo[info])
 print(f"Starting mass: {startingMass}. Starting Radius: {startingRadius}.")
 distance = combo[info] # this selects the distance
-revolutionsOfInnerPlanet = 10000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
+revolutionsOfInnerPlanet = 10#000 # The following sets up and runs the simulation, collecting data every setRevFreq revolutions
 #endTime = 10000 #years of simulation
 revTime = 0.1**1.5 # time for one revolution of the inner planet at the very beginning at least
 endTime = revTime * revolutionsOfInnerPlanet
