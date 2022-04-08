@@ -204,7 +204,7 @@ def masslist_txt_append(masslist, filepath,sim = None, write_type = 'a', **kwarg
         percentdif = abs((data[0]-data[1])/data[0])*100
         roundedpercentdif = round(percentdif,2)
         if len(data) < 4:
-			data.insert(2,percentdif)
+            data.insert(2,percentdif)
         for j in data:
             message += str(j)
             message +='\t'

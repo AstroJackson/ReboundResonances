@@ -63,11 +63,11 @@ def leaveGithub(top: str = "Rebound", end: str = "simAU") -> None:
             except FileExistsError:
                 continue
     os.chdir(end)
-
+    
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
     sim.add(m=1) #creates a star of mass 1
-    sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with some starting mass at .1 AU
     sim.add(m=startingMass, a=distance, f=np.pi, r=R0) 
     return sim
      
@@ -316,7 +316,9 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
 
     if innerFolder:
         innerFolder += "/"
-        for path in ["Arrays/", "Figures/"]:
+        if not os.path.isdir("Arrays/"):
+            os.mkdir("Arrays/")
+        for path in ["Figures/"]:
             if not os.path.isdir(path):
                 os.mkdir(path)
             if not os.path.isdir(path+innerFolder):
@@ -325,8 +327,9 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
                 os.mkdir(path+innerFolder+str(distance))
             if not os.path.isdir(path+innerFolder+str(distance)+"/Arrays"):
                 os.mkdir(path+innerFolder+str(distance)+"/Arrays")
-    
-    np.savez("Arrays/"+"graph_data_arrays"+str(dist), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
+                        
+                                           # should be distance
+    np.savez("Arrays/"+"graph_array_"+str(distance), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
     
