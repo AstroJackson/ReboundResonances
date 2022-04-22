@@ -63,11 +63,11 @@ def leaveGithub(top: str = "Rebound", end: str = "simAU") -> None:
             except FileExistsError:
                 continue
     os.chdir(end)
-
+    
 def simAU(distance, R0 = startingRadius): #can set the sma of the second planet easily this way
     sim = rebound.Simulation()
     sim.add(m=1) #creates a star of mass 1
-    sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with mass 0.001 at 1 AU
+    sim.add(m=startingMass, a=.1, r=R0)  #creates a planet with some starting mass at .1 AU
     sim.add(m=startingMass, a=distance, f=np.pi, r=R0) 
     return sim
      
@@ -316,7 +316,9 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
 
     if innerFolder:
         innerFolder += "/"
-        for path in ["Arrays/", "Figures/"]:
+        if not os.path.isdir("Arrays/"):
+            os.mkdir("Arrays/")
+        for path in ["Figures/"]:
             if not os.path.isdir(path):
                 os.mkdir(path)
             if not os.path.isdir(path+innerFolder):
@@ -328,7 +330,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
                         
                                            # should be distance
     np.savez("Arrays/"+"graph_array_"+str(distance), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
-    eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
+    eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses, star_position = star_position,\
     particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
     
     #np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
@@ -537,7 +539,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
 #     T=80*2*np.pi #years of simulation
     # Planet variables
     global times, dist, relative_x_value,relative_y_value, eccs, position1, position2, \
-    interplanetdistance, masses, particleNumber
+    interplanetdistance, masses, particleNumber, star_position
     times = np.linspace(Ti,Tf,stepnumber)
     #diftimes = list()
     dist = np.zeros((len(times),n)) 
@@ -546,6 +548,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
     eccs = np.zeros((len(times),n))
     position1 = np.zeros((len(times),2))
     position2 = np.zeros((len(times),2))
+    star_position = np.zeros((len(times),2))
     interplanetdistance = np.zeros((len(times),1))
     particleNumber = np.zeros((len(times),1))
     masses = np.zeros((len(times),n))
@@ -581,6 +584,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
         particleNumber[i] = sim.N
         position1[i] = [ps[1].x,ps[1].y]
         position2[i] = [ps[2].x,ps[2].y]
+        star_position = [ps[0].x,ps[0].y]
         for planet in range(n):
             planetdif = planet+1
             dist[i,planet] = np.linalg.norm(np.array(ps[planetdif].xyz)-np.array(ps[0].xyz))
@@ -588,8 +592,6 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
             relative_y_value[i,planet] = ps[planetdif].y - ps[0].y
             eccs[i,planet] = ps[planetdif].e
             masses[i,planet] = ps[planetdif].m
-        position1[i] = [relative_x_value[i,0],relative_y_value[i,0]]
-        position2[i] = [relative_x_value[i,1],relative_y_value[i,1]]
         #### Data collection from asteroids:
         if asteroidCollect:
             for roidNumber in range(3,simNi):

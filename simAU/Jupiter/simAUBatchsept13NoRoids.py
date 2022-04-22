@@ -331,7 +331,7 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
                                            # should be distance
     np.savez("Arrays/"+"graph_array_"+str(distance), times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses, star_position = star_position,\
-    particleNumber=particleNumber, asteroidAU=asteroidAU, asteroidEccs=asteroidEccs, asteroidX=asteroidX, asteroidY=asteroidY)
+    particleNumber=particleNumber)
     
     #np.savez("Figures/"+innerFolder+str(distance)+"/graph_data_arrays", times=times, dist=dist, relative_x_value=relative_x_value, relative_y_value=relative_y_value,\
     #eccs=eccs, position1=position1, position2=position2, interplanetdistance=interplanetdistance, masses=masses,\
@@ -350,10 +350,6 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.clf()
         rebound.OrbitPlot(sim,slices=0.3,color=True)
         plt.savefig("Figures/"+innerFolder+str(distance)+"/reboundPlot"+addOn+".pdf")
-
-        plt.clf()
-        rebound.OrbitPlot(sim, slices = .3, color = True, lw = 1, plotparticles = [1,2])
-        plt.savefig("Figures/"+innerFolder+str(distance)+"/reboundPlotOnlyPlanets"+addOn+".pdf")
 
         plt.clf()
         plt.plot(times, eccs)
@@ -383,8 +379,8 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.clf()
         fig, axs = plt.subplots(1, 2)
         fig.suptitle('Planet Positions')
-        axs[0].plot(list(position1[:,0]), list(position1[:,1]),'o')
-        axs[1].plot(list(position2[:,0]), list(position2[:,1]),'o')
+        axs[0].plot(relative_x_value[:,0], relative_y_value[:,0],'o')
+        axs[1].plot(relative_x_value[:,1], relative_y_value[:,1],'o')
         axs[0].set_aspect('equal')
         axs[1].set_aspect('equal')
         plt.savefig("Figures/"+innerFolder+str(distance)+"/scatterPlotPositions"+addOn+".pdf")
@@ -405,51 +401,6 @@ def saveFigs(innerFolder = "", addOn = "", distance = None, **kwargs):
         plt.savefig("Figures/"+innerFolder+str(distance)+"/particleNumber"+addOn+".pdf")
         #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/particleNumber"+addOn, particleNumber)
 
-        plt.clf()
-        plt.plot(times, asteroidEccs[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
-        plt.title('Asteroid Eccentricity Over Time')
-        plt.xlabel('Time (2pi*yr)')
-        plt.ylabel('Eccs')
-        plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccs"+addOn+".pdf")
-        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidEccs"+addOn, asteroidEccs)
-
-        plt.clf()
-        plt.plot(times, [avg(EccsList, nonNegative = True) for EccsList in asteroidEccs],linewidth=1)
-        plt.title('Asteroid Eccentricity AVERAGE Over Time')
-        plt.xlabel('Time (2pi*yr)')
-        plt.ylabel('Eccentricity')
-        plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccsAverage"+addOn+".pdf")
-
-        plt.clf()
-        num_bins = 30
-        plt.hist([data for data in asteroidEccs[-1] if data >= 0], num_bins)
-        plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidEccsHistoEnd"+addOn+".pdf")
-
-        plt.clf()
-        plt.plot(times, asteroidAU[:,[i for i in range(0,simNi-2-1,50)]], linewidth=1)
-        # Does not plot every asteroid
-        plt.title('Asteroid Semi Major Axis Over Time')
-        plt.xlabel('Time (2pi*yr)')
-        plt.ylabel('Semi Major Axis (AU)')
-        plt.ylim(bottom=-.3, top = 5) # Only want to graph part of escaping asteroids
-        plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxis"+addOn+".pdf")
-        #np.save("Figures/"+innerFolder+str(distance)+"/Arrays/asteroidAU"+addOn, asteroidAU)
-
-        plt.clf()
-        plt.plot(times, [avg(asteroidAUList, positive = True) for asteroidAUList in asteroidAU],linewidth=1)
-        plt.title('Asteroid Semi Major Axis AVERAGE Over Time')
-        plt.xlabel('Time (2pi*yr)')
-        plt.ylabel('Semi Major Axis (AU)')
-        plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisAverage"+addOn+".pdf")
-
-        plt.clf()
-        num_bins =30
-        plt.hist([data for data in asteroidAU[0] if data > 0], num_bins)
-        plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoStart"+addOn+".pdf")
-
-        plt.clf()
-        plt.hist([data for data in asteroidAU[-1] if data > 0], num_bins)
-        plt.savefig("Figures/"+innerFolder+str(distance)+"/RoidSMAxisHistoEnd"+addOn+".pdf")
 
     os.chdir(beginning) # Return back to original directory
     print(f"Final directory is {os.getcwd()}.")
@@ -530,9 +481,9 @@ def generateSystem(sma, simulation = simAU,seed = None, asteroidnumber = 1000):
     #quickplot(sim)
     return sim
     
-def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwargs): 
+def quickcollect2(n, Ti, Tf, stepnumber, distance,**kwargs): 
     """
-    Collects orbital data on the first two bodies in a system and the asteroids as well if asteroidCollect is set to True.
+    Collects orbital data on the first two bodies in a system.
     """
     initialtime = tiempo.monotonic()
 #     n=2 #number of planets
@@ -553,13 +504,7 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
     particleNumber = np.zeros((len(times),1))
     masses = np.zeros((len(times),n))
     ps = sim.particles
-    # Asteroid variables:
-    global asteroidAU, asteroidEccs, simNi, asteroidX, asteroidY
     simNi = sim.N
-    asteroidAU = np.zeros((len(times),simNi-n-1)) # n is the number of planets, 1 is the number of stars
-    asteroidEccs = np.negative(np.ones((len(times),simNi-n-1)))
-    asteroidX = np.zeros((len(times),simNi-n-1))
-    asteroidY = np.zeros((len(times),simNi-n-1))
     #
     print(f"Total steps: {stepnumber}")
     print("distance: {} | {} time = {} years | {} particles | {} step number |\n| {} second | {} minutes.\n"\
@@ -567,9 +512,9 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
     ,round((tiempo.monotonic()-initialtime)/60,1)))
     #
     for i, t in enumerate(times):
+        sim.integrate(t)
         if planetDestroyed:
             break # not interested in what happens in systems where the planets collide
-        sim.integrate(t)
         print("simAU distance: {} | {} time = {} years | {} particles | {} step number |\n\
 | {} second | {} minutes | {} hours.\n"\
         .format(distance,t,t/tau,sim.N,i,round((tiempo.monotonic()-initialtime),1)\
@@ -592,19 +537,6 @@ def quickcollect2(n, Ti, Tf, stepnumber, distance, asteroidCollect = False,**kwa
             relative_y_value[i,planet] = ps[planetdif].y - ps[0].y
             eccs[i,planet] = ps[planetdif].e
             masses[i,planet] = ps[planetdif].m
-        #### Data collection from asteroids:
-        if asteroidCollect:
-            for roidNumber in range(3,simNi):
-                #print("index:{}, roidNumber: {}".format(index,roidNumber))
-                index = roidNumber - n -1
-                try:                    
-                    asteroidAU[i,index] = ps[str(roidNumber)].a # Using a string so that the hash will be used
-                    asteroidEccs[i,index] = ps[str(roidNumber)].e
-                    asteroidX[i, index] = ps[str(roidNumber)].x
-                    asteroidY[i, index] = ps[str(roidNumber)].y
-                except rebound.ParticleNotFound:
-                    continue # The asteroid has been destroyed, move onto the next one.
-        ####
     finaltime = tiempo.monotonic()
 #     print('done')
     #print("{} done at {} seconds!".format((a+1)/10,int(finaltime-initialtime)))
@@ -662,12 +594,16 @@ stepFrequency = stepRevFreq * revTime  # how often should a step occur (years)
 steps = int(revolutionsOfInnerPlanet/stepRevFreq)
 print(f"Steps: {steps}")
 print("Beginning distance {}.".format(distance))
-sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 2000, sma = distance)
-quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, asteroidCollect = True, distance = distance) # Can override 'steps' by setting a value directly
+sim = generateSystem(simulation = simAU, seed ='strict', asteroidnumber = 0, sma = distance)
+quickcollect2(n=2, Ti = 0 * tau, Tf=endTime * tau, stepnumber = steps, distance = distance) # Can override 'steps' by setting a value directly
 ps = sim.particles
-print("Masses {} and {}.".format(ps[1].m,ps[2].m))
 print("Ending distance {}.\n".format(distance))
-pre_list = [ps[1].m, ps[2].m, distance]
+if planetDestroyed:
+    pre_list = [ps[1].m, 0, distance]
+    print("Masses {} and {}.".format(ps[1].m, 0))
+else:
+    print("Masses {} and {}.".format(ps[1].m,ps[2].m))
+    pre_list = [ps[1].m, ps[2].m, distance]
 simAU_masses.append(pre_list)
 BIGfinal = tiempo.monotonic()
 #
